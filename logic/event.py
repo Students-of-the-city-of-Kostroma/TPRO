@@ -5,7 +5,7 @@ import re
 
 INACTIVE_DAYS = ymls.CONFIG['INACTIVE_DAYS']
 
-class EventAction:
+class GHEvent:
     def __init__(self, event : Event):
         self.event_issue = {
             'review_requested' :  self._review_requested,
