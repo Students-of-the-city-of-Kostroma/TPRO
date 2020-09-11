@@ -1,8 +1,8 @@
 import yaml, os
 
-INFO = {'issues_events':{}}
+INFO = {}
 INFO_FILE_NAME = 'info.yml'
-CONFIG = {'INACTIVE_DAYS':2}
+CONFIG = {}
 CONFIG_FILE_NAME = 'config.yml'
 try:
     with open(INFO_FILE_NAME) as f:
@@ -24,3 +24,9 @@ def save_info():
 def save_config():
     with open(CONFIG_FILE_NAME, 'w') as f:
         yaml.dump(CONFIG, f)
+
+def check_structure(lvl1, lvl2):
+    if lvl1 not in INFO:
+        INFO[lvl1] = {}
+    if lvl2 not in INFO[lvl1]:
+        INFO[lvl1][lvl2] = []

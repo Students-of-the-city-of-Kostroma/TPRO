@@ -1,9 +1,9 @@
 from github import Repository, RateLimitExceededException
-from logic.event import GHEvent
 from logic import ymls
 import traceback, time
 from datetime import datetime, timedelta
 from logic.repository import TRPO_Repository
+from logic.events.event import Event
 
 class Listener:
     def __init__(self, repo : Repository):
@@ -20,29 +20,20 @@ class Listener:
                     today
                 )
             
-            for event in repo.get_issues_events():
+            for event in repo.get_events():
                 if i >= limit: break
                 else: i += 1
                 try:
                     sleep = int((int(event.raw_headers['x-ratelimit-limit']) \
                         - int(event.raw_headers['x-ratelimit-remaining'])) * 0.72)
-                    event_event = event.raw_data['event']
-                    if event_event not in ymls.INFO['issues_events']:
-                        ymls.INFO['issues_events'][event_event] = []
-                    if event.id not in ymls.INFO['issues_events'][event_event]:
+                    if event.repo is None:
                         event.repo = repo
-                        GHEvent(event)
-                except ConnectionError:
+                    Event(event)
+                except:
                     print(traceback.format_exc())
                     print(f'SLEEEEEEP--->{sleep}')
                     ymls.save_info()
-                    time.sleep(sleep)
-                except RateLimitExceededException:
-                    print(traceback.format_exc())
-                    print(f'SLEEEEEEP--->{sleep}')
-                    ymls.save_info()
-                    time.sleep(sleep)
-                    
+                    time.sleep(sleep) 
 
             print(f'SLEEEEEEP--->{sleep}')
             ymls.save_info()

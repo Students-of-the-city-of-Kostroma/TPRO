@@ -1,16 +1,24 @@
-from github import Event
 from logic import ymls
+from logic.events.issue_comment_event import IssueCommentEvent
+from logic.events.issues_event import IssuesEvent
 from datetime import datetime, timedelta
 import re
 
 INACTIVE_DAYS = ymls.CONFIG['INACTIVE_DAYS']
 
-class GHEvent:
-    def __init__(self, event : Event):
+class Event:
+    def __init__(self, event):
+        self.events = {
+            'IssueCommentEvent' : IssueCommentEvent,
+            'IssuesEvent' : IssuesEvent
+        }
+        
+        '''
         self.event_issue = {
             'review_requested' :  self._review_requested,
             'closed' : self._closed,
             'subscribed' : self._mute,
+            'unsubscribed' : self._mute,
             'mentioned' : self._mute,
             'moved_columns_in_project' :  self._mute,
             'added_to_project' :  self._mute,
@@ -25,15 +33,18 @@ class GHEvent:
             'referenced' : self._mute,
             'renamed' : self._mute
         }
-        print(
-            event.id, 
-            event.created_at + timedelta(hours=3), 
-            event.raw_data['event'], 
-            event.raw_data['issue']['number'],
-            event.raw_data['actor']['login']
-        )
-        if event.raw_data['event'] in self.event_issue:
-            self.event_issue[event.raw_data['event']](event)
+        '''
+        
+
+        if event.type in self.events:
+            self.events[event.type](event)
+        else:
+            print(
+                event.id, 
+                event.created_at + timedelta(hours=3), 
+                event.type, 
+                'Обработчик не определен'
+            )
 
     def _unassigned(self, event):
         if len(event.issue.assignees) < 1:

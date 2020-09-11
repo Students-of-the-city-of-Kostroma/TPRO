@@ -13,7 +13,7 @@ class TRPO_Repository:
         dt_down = today - timedelta(days=days)
         sum = 0
         for member in contributers:
-            key = f'@{member.login}'
+            key = f'{member.login}'
             statistic[key] = {'days':[0 for _ in range(days)], 'sum':0}
             for event in member.get_events():
                 if event.created_at.date() < today:
@@ -45,7 +45,7 @@ class TRPO_Repository:
         return self.repo.create_issue(
             title = title,
             body = body,
-            assignees = 'YuriSilenok',
+            assignees = ['YuriSilenok'],
             milestone = self.get_backlog_milestone(),
             labels = ['info']
         )
