@@ -9,7 +9,7 @@ class Listener:
     def __init__(self, repo : Repository):
         self.repo = repo
         today = datetime.now().date()
-        if ymls.INFO['LAST_CREATED_STATISTICS'] < today\
+        if ymls.INFO.get('LAST_CREATED_STATISTICS', (datetime.now() - timedelta(days=1)).date()) < today\
         and datetime.now().hour > 2:
             ymls.INFO['LAST_CREATED_STATISTICS'] = today
             trpo_repo = TRPO_Repository(repo)
