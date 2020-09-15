@@ -9,7 +9,8 @@ class Listener:
     def __init__(self, repo : Repository):
         self.repo = repo
         today = datetime.now().date()
-        if ymls.CONFIG['LAST_CREATED_STATISTICS'] < today:
+        if ymls.CONFIG['LAST_CREATED_STATISTICS'] < today\
+        and datetime.now().hour > 2:
             ymls.CONFIG['LAST_CREATED_STATISTICS'] = today
             trpo_repo = TRPO_Repository(repo)
             trpo_repo.create_statistic_team(
