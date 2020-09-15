@@ -1,5 +1,4 @@
-while[True]
-do
+:start
 git pull
 py -m main
-done
+goto start
