@@ -1,6 +1,101 @@
 INACTIVE_DAYS: 2
-LAST_CREATED_STATISTICS: 2020-09-11
+LAST_CREATED_STATISTICS: 2020-09-15
 ORG: Students-of-the-city-of-Kostroma
 REPO: Student-timetable
 TEAM: Elite
 TOKEN: eF_:VRseMFIyha@8tI^ArexQHmX^=[S=I3o<F7m@
+TO_STRING:
+  CreateEvent:
+  - payload.ref
+  DeleteEvent:
+  - payload.ref
+  IssueCommentEvent:
+  - payload.issue.number
+  - payload.comment.body
+  IssuesEvent:
+  - payload.action
+  - payload.issue.number
+  - payload.issue.title
+  PullRequestEvent:
+  - payload.action
+  - payload.pull_request.number
+  - payload.pull_request.title
+  PullRequestReviewCommentEvent:
+  - payload.pull_request.number
+  - payload.comment.body
+  PullRequestReviewEvent:
+  - payload.review.state
+  - payload.pull_request.number
+  - payload.pull_request.title
+  PushEvent:
+  - payload.ref
+  - payload.commits.0.message
+  added_to_project:
+  - issue.number
+  - issue.title
+  assigned:
+  - assigner.login
+  - assignee.login
+  - issue.number
+  - issue.title
+  closed:
+  - issue.number
+  - issue.title
+  connected:
+  - issue.number
+  - issue.title
+  head_ref_deleted:
+  - issue.number
+  - issue.title
+  labeled:
+  - label.name
+  - issue.number
+  - issue.title
+  mentioned:
+  - issue.number
+  - issue.title
+  merged:
+  - issue.number
+  - issue.title
+  milestoned:
+  - milestone.title
+  - issue.number
+  - issue.title
+  moved_columns_in_project:
+  - issue.number
+  - issue.title
+  ready_for_review:
+  - issue.number
+  - issue.title
+  referenced:
+  - issue.number
+  - issue.title
+  renamed:
+  - issue.number
+  - rename.from
+  - rename.to
+  reopened:
+  - issue.number
+  - issue.title
+  review_dismissed:
+  - issue.number
+  - issue.title
+  review_request_removed:
+  - issue.number
+  - issue.title
+  review_requested:
+  - issue.number
+  - requested_reviewer.login
+  - requested_team.name
+  - issue.title
+  subscribed:
+  - issue.number
+  - issue.title
+  unassigned:
+  - assigner.login
+  - assignee.login
+  - issue.number
+  - issue.title
+  unsubscribed:
+  - issue.number
+  - issue.title

@@ -20,5 +20,5 @@ if __name__ == '__main__':
         except:
             sleep = 60
             print(traceback.format_exc())
-            print(f'SLEEEEEEP--->{sleep}')
+            print(f'SLEEEEEEP->{sleep}')
             time.sleep(sleep)

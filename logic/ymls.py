@@ -24,9 +24,3 @@ def save_info():
 def save_config():
     with open(CONFIG_FILE_NAME, 'w') as f:
         yaml.dump(CONFIG, f)
-
-def check_structure(lvl1, lvl2):
-    if lvl1 not in INFO:
-        INFO[lvl1] = {}
-    if lvl2 not in INFO[lvl1]:
-        INFO[lvl1][lvl2] = []
