@@ -21,6 +21,6 @@ if __name__ == '__main__':
         print(f'SLEEEEEEP->{sleep}')
         time.sleep(sleep)
     if 'Windows' in platform.platform():
-        os.system(r'.\run.bat')
+        os.system(r'.\rerun.bat')
     else:
         raise NotImplementedError
