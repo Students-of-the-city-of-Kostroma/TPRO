@@ -3,7 +3,6 @@ LAST_CREATED_STATISTICS: 2020-09-15
 ORG: Students-of-the-city-of-Kostroma
 REPO: Student-timetable
 TEAM: Elite
-TOKEN: eF_:VRseMFIyha@8tI^ArexQHmX^=[S=I3o<F7m@
 TO_STRING:
   CreateEvent:
   - payload.ref

@@ -128,3 +128,5 @@ dmypy.json
 enigma.yml
 info.yml
 .vscode/launch.json
+secret.yml
+.vscode/settings.json

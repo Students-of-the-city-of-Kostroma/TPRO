@@ -33,7 +33,8 @@ class Listener:
                 print(traceback.format_exc())
                 print(f'SLEEEEEEP--->{sleep}')
                 ymls.save_info()
-                time.sleep(sleep) 
+                time.sleep(sleep)
+            break
 
     def process_events(self, events):
         i , limit = 0, 100
