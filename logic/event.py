@@ -123,7 +123,8 @@ EVENTS = {
     'renamed' : mute,
     'reopened' : mute,
     'review_request_removed' : mute,
-    'ready_for_review' : mute
+    'ready_for_review' : mute,
+    'comment_deleted' : mute
 }
 
 def to_string(event):
