@@ -1,5 +1,4 @@
 INACTIVE_DAYS: 2
-LAST_CREATED_STATISTICS: 2020-09-15
 ORG: Students-of-the-city-of-Kostroma
 REPO: Student-timetable
 TEAM: Elite
@@ -38,6 +37,9 @@ TO_STRING:
   - issue.number
   - issue.title
   closed:
+  - issue.number
+  - issue.title
+  comment_deleted:
   - issue.number
   - issue.title
   connected:
@@ -96,8 +98,5 @@ TO_STRING:
   - issue.number
   - issue.title
   unsubscribed:
-  - issue.number
-  - issue.title
-  comment_deleted:
   - issue.number
   - issue.title
