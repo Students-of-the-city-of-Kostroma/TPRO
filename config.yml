@@ -98,3 +98,6 @@ TO_STRING:
   unsubscribed:
   - issue.number
   - issue.title
+  comment_deleted:
+  - payload.issue.number
+  - payload.comment.body
