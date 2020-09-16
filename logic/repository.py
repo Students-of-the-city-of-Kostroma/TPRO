@@ -67,7 +67,7 @@ class Repository:
             # проверка активности для открытых задач
             if 'pull_request' not in issue.raw_data:
                 # количество полных дней отсутствия активности
-                issue_inactive_days = (datetime.now() - issue.updated_at).days
+                issue_inactive_days = (datetime.now() - issue.updated_at + timedelta(hours=3)).days
                 branch = None
                 try: branch = self.repo.get_branch('issue-'+ str(issue.number))
                 except: pass
@@ -87,7 +87,7 @@ class Repository:
                         if request_user.login == 'YuriSilenok':
                             request_review_teamled.append(pr)
                             break
-                    inactive_days_now = (datetime.now() - pr.updated_at).days
+                    inactive_days_now = (datetime.now() - pr.updated_at + timedelta(hours=3)).days
                     if pull_inactive_days is None or inactive_days_now < pull_inactive_days:
                         pull_inactive = pr
                         pull_inactive_days = inactive_days_now
