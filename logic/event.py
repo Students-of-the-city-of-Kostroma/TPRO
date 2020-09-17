@@ -8,7 +8,11 @@ WORK_BRANCH = r'^issue-\d$'
 HEAD_BRANCH = r'^(issue-\d+|dev)$'
 MESS_BRANCH = 'Нарушены [требования именования веток]'\
 '(https://github.com/Students-of-the-city-of-Kostroma/'\
-'Student-timetable/blob/dev/Docs/branches.md).'
+'Student-timetable/blob/dev/Docs/branches.md#issue-d).'
+WHITE_BOX_PATH = r'Docs/UT-(Insert|Update|Delete)-C\p{L}+/'
+WHITE_BOX_PATH_CODE = WHITE_BOX_PATH + 'CODE.png'
+WHITE_BOX_PATH_GRAPH = WHITE_BOX_PATH + 'GRAPH.md'
+WHITE_BOX_PATH_REPORT = WHITE_BOX_PATH + 'REPORT.md'
 
 def mute(event):
     DB[event.type].append(event.id)
@@ -64,10 +68,10 @@ def check_base_and_head_branch_in_request(event):
     and not(pull.raw_data['base']['ref'] == 'master'\
     and pull.raw_data['head']['ref'] == 'dev'\
     or pull.raw_data['base']['ref'] == 'dev'\
-    and re.match(r'^issue-\d+$', pull.raw_data['head']['ref'])):
+    and re.match(WORK_BRANCH, pull.raw_data['head']['ref'])):
         if not re.match(HEAD_BRANCH, pull.raw_data['head']['ref']):
             pull.create_issue_comment(
-                f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответсвует требованиям.'
+                f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.'
             )
         elif pull.raw_data['base']['ref'] == 'master'\
         and pull.raw_data['head']['ref'] != 'dev':
@@ -81,10 +85,14 @@ def check_base_and_head_branch_in_request(event):
                 f'{MESS_BRANCH} Что-то не так, но я не знаю что.'
             )
         
+def check_code(event):
+
+    pass
 
 def review_requested(event):
     check_base_and_head_branch_in_request(event)
     check_for_unreviewed_requests(event)
+    check_code(event)
     mute(event)
 
 def unassigned(event):
@@ -101,7 +109,7 @@ def assigned(event):
     assigned_pull(event)
     if len(event.issue.assignees) > 1:
         event.issue.edit(
-            assignees = [a.login for a in event.issue.assignees if a.login != 'YuriSilenok']
+            assignee = [a.login for a in event.issue.assignees if a.login != 'YuriSilenok'][0]
         )
         event.issue.create_comment(
             body = f'У одной задачи может быть только один ответсвенный'
@@ -130,7 +138,7 @@ def pull_open(event):
         event.raw_data['issue']['number'])
     if not re.match(WORK_BRANCH, pull.raw_data['head']['ref']):
         pull.create_issue_comment(
-            f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответсвует требованиям.')
+            f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.')
         pull.edit(state='close')
 
 TO_STRING = ymls.CONFIG['TO_STRING']
