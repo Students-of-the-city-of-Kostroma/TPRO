@@ -18,11 +18,12 @@ def issue_closed(event):
         )
     mute(event)
 
-def review_requested(event):
+def check_for_unreviewed_requests(event):
     pull = event.repo.get_pull(
             event.raw_data['issue']['number']
         )
-    if event.actor.login == 'YuriSilenok'\
+    if pull.state == 'open'\
+    and event.actor.login == 'YuriSilenok'\
     and len([rr for rr in pull.get_review_requests()[0] if rr.login == 'YuriSilenok']) > 0:
         not_review = {}
         for pull_scan in event.repo.get_pulls(state='open'):
@@ -49,6 +50,37 @@ def review_requested(event):
                 pull.create_issue_comment(
                     body = mess
                 )
+
+def check_base_and_head_branch_in_request(event):
+    pull = event.repo.get_pull(
+        event.raw_data['issue']['number'])
+    if not(pull.raw_data['base']['ref'] == 'master'\
+    and pull.raw_data['head']['ref'] == 'dev'\
+    or pull.raw_data['base']['ref'] == 'dev'\
+    and re.match(r'^issue-\d+$', pull.raw_data['head']['ref'])):
+        mess = 'Нарушены [требования именования веток]'\
+'(https://github.com/Students-of-the-city-of-Kostroma/'\
+'Student-timetable/blob/dev/Docs/branches.md).'
+        if not re.match(r'^(issue-\d+|dev)$', pull.raw_data['head']['ref']):
+            pull.create_comment(
+                f'{mess} Головная ветка не соответсвует требованиям.'
+            )
+        elif pull.raw_data['base']['ref'] == 'master'\
+        and pull.raw_data['head']['ref'] != 'dev':
+            pull.create_review(
+                body = f'{mess} Слияние в ветку master возможно только из ветки dev.',
+                event = 'REQUEST_CHANGES'
+            )
+            pull.edit(state = 'close')
+        else:
+            pull.create_comment(
+                f'{mess} Что-то не так, но я не знаю что.'
+            )
+        
+
+def review_requested(event):
+    check_base_and_head_branch_in_request(event)
+    check_for_unreviewed_requests(event)
     mute(event)
 
 def unassigned(event):
