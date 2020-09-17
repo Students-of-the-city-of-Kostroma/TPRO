@@ -23,7 +23,9 @@ class Listener:
         master = repo.get_branch('master')
         sleep = int((int(master.raw_headers['x-ratelimit-limit']) \
             - int(master.raw_headers['x-ratelimit-remaining'])) * 0.72)
-        print(f'{datetime.now()}-->SLEEEEEEP-->{sleep}')
+        sleep_minutes = sleep//60
+        sleep_seconds = f'0{sleep%60}' if sleep < 10 else sleep%60
+        print(f'{datetime.now()}-->SLEEEEEEP-->{sleep_minutes}:{sleep_seconds}')
         ymls.save_info()
         time.sleep(sleep)
 
