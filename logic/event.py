@@ -62,7 +62,7 @@ def check_base_and_head_branch_in_request(event):
 '(https://github.com/Students-of-the-city-of-Kostroma/'\
 'Student-timetable/blob/dev/Docs/branches.md).'
         if not re.match(r'^(issue-\d+|dev)$', pull.raw_data['head']['ref']):
-            pull.create_comment(
+            pull.create_issue_comment(
                 f'{mess} Головная ветка не соответсвует требованиям.'
             )
         elif pull.raw_data['base']['ref'] == 'master'\
@@ -73,7 +73,7 @@ def check_base_and_head_branch_in_request(event):
             )
             pull.edit(state = 'close')
         else:
-            pull.create_comment(
+            pull.create_issue_comment(
                 f'{mess} Что-то не так, но я не знаю что.'
             )
         
