@@ -4,6 +4,11 @@ import re
 
 DB = ymls.INFO
 INACTIVE_DAYS = ymls.CONFIG['INACTIVE_DAYS']
+WORK_BRANCH = r'^issue-\d$'
+HEAD_BRANCH = r'^(issue-\d+|dev)$'
+MESS_BRANCH = 'Нарушены [требования именования веток]'\
+'(https://github.com/Students-of-the-city-of-Kostroma/'\
+'Student-timetable/blob/dev/Docs/branches.md).'
 
 def mute(event):
     DB[event.type].append(event.id)
@@ -54,27 +59,26 @@ def check_for_unreviewed_requests(event):
 def check_base_and_head_branch_in_request(event):
     pull = event.repo.get_pull(
         event.raw_data['issue']['number'])
-    if not(pull.raw_data['base']['ref'] == 'master'\
+    if 'requested_reviewer' in event.raw_data\
+    and 'YuriSilenok' == event.raw_data['requested_reviewer']['login']\
+    and not(pull.raw_data['base']['ref'] == 'master'\
     and pull.raw_data['head']['ref'] == 'dev'\
     or pull.raw_data['base']['ref'] == 'dev'\
     and re.match(r'^issue-\d+$', pull.raw_data['head']['ref'])):
-        mess = 'Нарушены [требования именования веток]'\
-'(https://github.com/Students-of-the-city-of-Kostroma/'\
-'Student-timetable/blob/dev/Docs/branches.md).'
-        if not re.match(r'^(issue-\d+|dev)$', pull.raw_data['head']['ref']):
+        if not re.match(HEAD_BRANCH, pull.raw_data['head']['ref']):
             pull.create_issue_comment(
-                f'{mess} Головная ветка не соответсвует требованиям.'
+                f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответсвует требованиям.'
             )
         elif pull.raw_data['base']['ref'] == 'master'\
         and pull.raw_data['head']['ref'] != 'dev':
             pull.create_review(
-                body = f'{mess} Слияние в ветку master возможно только из ветки dev.',
+                body = f'{MESS_BRANCH} Слияние в ветку master возможно только из ветки dev.',
                 event = 'REQUEST_CHANGES'
             )
             pull.edit(state = 'close')
         else:
             pull.create_issue_comment(
-                f'{mess} Что-то не так, но я не знаю что.'
+                f'{MESS_BRANCH} Что-то не так, но я не знаю что.'
             )
         
 
@@ -120,6 +124,15 @@ def assigned_pull(event):
         event.issue.edit(
             assignees = assignees
         )
+
+def pull_open(event):
+    pull = event.repo.get_pull(
+        event.raw_data['issue']['number'])
+    if not re.match(WORK_BRANCH, pull.raw_data['head']['ref']):
+        pull.create_issue_comment(
+            f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответсвует требованиям.')
+        pull.edit(state='close')
+
 TO_STRING = ymls.CONFIG['TO_STRING']
 EVENTS = {
     'IssueCommentEvent' : mute,
@@ -129,8 +142,8 @@ EVENTS = {
     'CreateEvent' : mute,
     'DeleteEvent' : mute,
     'PullRequestEvent' : {
-        'opened' :  mute,
-        'reopened' : mute,
+        'opened' :  pull_open,
+        'reopened' : pull_open,
         'closed' : mute},
     'IssuesEvent' : {
         'opened' : mute,
