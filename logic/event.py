@@ -1,6 +1,6 @@
 from logic import ymls
 from datetime import datetime, timedelta
-import re
+import re, traceback
 
 DB = ymls.INFO
 INACTIVE_DAYS = ymls.CONFIG['INACTIVE_DAYS']
@@ -143,7 +143,10 @@ def pull_open(event):
 def check_branch(event):
     rgx = re.search(WORK_BRANCH, event.raw_data['payload']['ref'])
     if not rgx:
-        event.repo.get_git_ref(f"heads/{event.raw_data['payload']['ref']}").delete()
+        try:
+            event.repo.get_git_ref(f"heads/{event.raw_data['payload']['ref']}").delete()
+        except: 
+            print(traceback.format_exc())
         rgx = re.search(r'\d+$', event.raw_data['payload']['ref']) 
         if rgx:
             number = rgx[0]
@@ -151,7 +154,8 @@ def check_branch(event):
                 event.repo.get_issue(number).create_comment(
                     f"{MESS_BRANCH} Созданная ветка {event.raw_data['payload']['ref']} была удалена."
                 )
-            except: pass
+            except: 
+                print(traceback.format_exc())
         
 
 
