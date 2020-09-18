@@ -219,6 +219,8 @@ def to_string(event):
                     break
             if not isinstance(line, dict):
                 result += f' {line}'
+    with open('log.txt', 'a') as f:
+        f.write(result)
     return result
 
 def process(event):
