@@ -10,10 +10,11 @@ HEAD_BRANCH = r'^(issue-\d+|dev)$'
 MESS_BRANCH = 'Нарушены [требования именования веток]'\
 '(https://github.com/Students-of-the-city-of-Kostroma/'\
 'Student-timetable/blob/dev/Docs/branches.md#issue-d).'
-WHITE_BOX_PATH = r'Docs/UT-(Insert|Update|Delete)-C\p{L}+/'
+WHITE_BOX_PATH = r'^UnitTestOfTimetableOfClasses/  Docs/UT-(Insert|Update|Delete)-C\p{L}+/'
 WHITE_BOX_PATH_CODE = WHITE_BOX_PATH + 'CODE.png'
 WHITE_BOX_PATH_GRAPH = WHITE_BOX_PATH + 'GRAPH.md'
 WHITE_BOX_PATH_REPORT = WHITE_BOX_PATH + 'REPORT.md'
+ENTITIES = r'^(C|M)('+ '|'.join(ymls.CONFIG['ENTITIES']) +')$'
 
 def mute(event):
     DB[event.type].append(event.id)
@@ -27,15 +28,11 @@ def issue_closed(event):
 с целью выставления отметки в журнал.'
         )    
 
-def check_for_unreviewed_requests(event):
-    pull = event.repo.get_pull(
-            event.raw_data['issue']['number']
-        )
+def check_for_unreviewed_requests(pull):
     if pull.state == 'open'\
-    and event.actor.login == 'YuriSilenok'\
     and len([rr for rr in pull.get_review_requests()[0] if rr.login == 'YuriSilenok']) > 0:
         not_review = {}
-        for pull_scan in event.repo.get_pulls(state='open'):
+        for pull_scan in pull.repo.get_pulls(state='open'):
             for pull_scan_review in pull_scan.get_review_requests()[0]:
                 if pull.assignee.login == pull_scan_review.login:
                     for ev in pull_scan.get_issue_events():
@@ -60,12 +57,9 @@ def check_for_unreviewed_requests(event):
                     body = mess
                 )
 
-def check_base_and_head_branch_in_request(event):
-    pull = event.repo.get_pull(
-        event.raw_data['issue']['number'])
+def check_base_and_head_branch_in_request(pull):
     review_requests = pull.get_review_requests()
-    if 'requested_reviewer' in event.raw_data\
-    and ('YuriSilenok' in [user.login for user in review_requests[0]]\
+    if ('YuriSilenok' in [user.login for user in review_requests[0]]\
     or TEAM in [team.name for team in review_requests[1]])\
     and not(pull.raw_data['base']['ref'] == 'master'\
     and pull.raw_data['head']['ref'] == 'dev'\
@@ -87,14 +81,17 @@ def check_base_and_head_branch_in_request(event):
                 f'{MESS_BRANCH} Что-то не так, но я не знаю что.'
             )
         
-def check_code(event):
-    event
+def check_code(pull):
     pass
 
 def review_requested(event):
-    check_base_and_head_branch_in_request(event)
-    check_for_unreviewed_requests(event)
-    check_code(event)
+    pull = event.repo.get_pull(
+        event.raw_data['issue']['number'])
+    pull.repo = event.repo
+    check_base_and_head_branch_in_request(pull)
+    check_for_unreviewed_requests(pull)
+    check_code(pull)
+    check_labels(pull)
 
 def unassigned(event):
     if len(event.issue.assignees) < 1:
@@ -139,6 +136,21 @@ def pull_open(event):
         pull.create_issue_comment(
             f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.')
         pull.edit(state='close')
+
+def check_labels(pull):
+    if 'Unit test' in [l.name for l in pull.labels]:
+        entities_labels = [l.name for l in pull.labels if re.search(ENTITIES, l.name)]
+        if not entities_labels:
+            pull.create_issue_comment(
+                'Вместе с меткой `Unit test` необходимо указать '
+                'одну из меток приведенных ниже.\n'
+                '|Контроллер|Модель|\n|---|---|\n'+
+                '\n'.join([f'|C{e}|M{e}|' for e in ymls.CONFIG['ENTITIES']])
+            )
+    else: 
+        pull.create_issue_comment(
+            'Классифицирующая метка (label) не найдена.'
+        )
 
 def check_branch(event):
     rgx = re.search(WORK_BRANCH, event.raw_data['payload']['ref'])

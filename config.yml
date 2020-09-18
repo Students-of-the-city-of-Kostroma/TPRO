@@ -1,3 +1,19 @@
+ENTITIES:
+  - AcademicDegree
+  - AcademicLoad
+  - Auditor
+  - DirectionOfPreparation
+  - Discipline
+  - Enclosures
+  - Group
+  - HEI
+  - Institute
+  - StudyWeek
+  - Teacher
+  - Title
+  - TrainingProfiles
+  - TypesOfOccupations
+  - University
 INACTIVE_DAYS: 2
 ORG: Students-of-the-city-of-Kostroma
 REPO: Student-timetable
