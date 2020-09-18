@@ -142,10 +142,7 @@ def check_labels(pull):
         entities_labels = [l.name for l in pull.labels if re.search(ENTITIES, l.name)]
         if not entities_labels:
             pull.create_issue_comment(
-                'Вместе с меткой `Unit test` необходимо указать '
-                'одну из меток приведенных ниже.\n'
-                '|Контроллер|Модель|\n|---|---|\n'+
-                '\n'.join([f'|C{e}|M{e}|' for e in ymls.CONFIG['ENTITIES']])
+                r'Нарушено [требование](/Docs/labels.md) для метки `Unit test`'
             )
     else: 
         pull.create_issue_comment(
