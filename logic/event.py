@@ -151,9 +151,11 @@ def check_branch(event):
     rgx = re.search(r'\d+$', event.raw_data['payload']['ref']) 
     if not rgx:
         number = rgx[0]
-        event.repo.get_issue(number).create_comment(
-            f"{MESS_BRANCH} Созданная ветка {event.raw_data['payload']['ref']} была удалена."
-        )
+        try:
+            event.repo.get_issue(number).create_comment(
+                f"{MESS_BRANCH} Созданная ветка {event.raw_data['payload']['ref']} была удалена."
+            )
+        except: pass
         
 
 
