@@ -5,7 +5,7 @@ import re
 DB = ymls.INFO
 INACTIVE_DAYS = ymls.CONFIG['INACTIVE_DAYS']
 TEAM = ymls.CONFIG['TEAM']
-WORK_BRANCH = r'^issue-\d$'
+WORK_BRANCH = r'^issue-(\d)+$'
 HEAD_BRANCH = r'^(issue-\d+|dev)$'
 MESS_BRANCH = 'Нарушены [требования именования веток]'\
 '(https://github.com/Students-of-the-city-of-Kostroma/'\
@@ -71,8 +71,8 @@ def check_base_and_head_branch_in_request(event):
     and not(pull.raw_data['base']['ref'] == 'master'\
     and pull.raw_data['head']['ref'] == 'dev'\
     or pull.raw_data['base']['ref'] == 'dev'\
-    and re.match(WORK_BRANCH, pull.raw_data['head']['ref'])):
-        if not re.match(HEAD_BRANCH, pull.raw_data['head']['ref']):
+    and re.search(WORK_BRANCH, pull.raw_data['head']['ref'])):
+        if not re.search(HEAD_BRANCH, pull.raw_data['head']['ref']):
             pull.create_issue_comment(
                 f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.'
             )
@@ -124,7 +124,7 @@ def assigned_pull(event):
     and event.assigner.login != 'YuriSilenok'\
     and event.assignee.login == 'YuriSilenok':
         branch = event.repo.get_pull(event.issue.number).raw_data['head']['ref']
-        task_number = re.match(r'.*-(.*)', branch).group(1)
+        task_number = re.search(r'.*-(.*)', branch).group(1)
         event.issue.create_comment(
             body = f'После того, как преподаватель \
 провел положительную проверку запроса #{event.issue.number}, \
@@ -139,10 +139,23 @@ def assigned_pull(event):
 def pull_open(event):
     pull = event.repo.get_pull(
         event.raw_data['issue']['number'])
-    if not re.match(WORK_BRANCH, pull.raw_data['head']['ref']):
+    if not re.search(WORK_BRANCH, pull.raw_data['head']['ref']):
         pull.create_issue_comment(
             f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.')
         pull.edit(state='close')
+
+def check_branch(event):
+    rgx = re.search(WORK_BRANCH, event.raw_data['payload']['ref'])
+    if not rgx:
+        event.repo.get_git_ref(f"heads/{event.raw_data['payload']['ref']}").delete()
+    rgx = re.search(r'\d+$', event.raw_data['payload']['ref']) 
+    if not rgx:
+        number = rgx[0]
+        event.repo.get_issue(number).create_comment(
+            f"{MESS_BRANCH} Созданная ветка {event.raw_data['payload']['ref']} была удалена."
+        )
+        
+
 
 TO_STRING = ymls.CONFIG['TO_STRING']
 EVENTS = {
@@ -150,7 +163,7 @@ EVENTS = {
     'PushEvent' : mute,
     'PullRequestReviewEvent' : mute,
     'PullRequestReviewCommentEvent' : mute,
-    'CreateEvent' : mute,
+    'CreateEvent' : check_branch,
     'DeleteEvent' : mute,
     'PullRequestEvent' : {
         'opened' :  pull_open,
