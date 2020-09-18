@@ -135,6 +135,7 @@ def assigned_pull(event):
         event.issue.edit(
             assignees = assignees
         )
+    mute(event)
 
 def pull_open(event):
     pull = event.repo.get_pull(
@@ -143,6 +144,7 @@ def pull_open(event):
         pull.create_issue_comment(
             f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.')
         pull.edit(state='close')
+    mute(event)
 
 def check_branch(event):
     rgx = re.search(WORK_BRANCH, event.raw_data['payload']['ref'])
@@ -156,6 +158,7 @@ def check_branch(event):
                     f"{MESS_BRANCH} Созданная ветка {event.raw_data['payload']['ref']} была удалена."
                 )
             except: pass
+    mute(event)
         
 
 
