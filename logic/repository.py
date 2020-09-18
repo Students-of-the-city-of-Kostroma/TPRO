@@ -71,8 +71,6 @@ class Repository:
                 branch = None
                 try: branch = self.repo.get_branch('issue-'+ str(issue.number))
                 except: pass
-                try: branch = self.repo.get_branch('task-'+ str(issue.number))
-                except: pass
                 # количество дней отсутствия активности в ветке
                 branch_inactive_days = None
                 if branch is not None:
@@ -113,5 +111,6 @@ class Repository:
                         )
                     # предупредительный выстрел
                     elif branch is not None and branch_inactive_days > ymls.CONFIG['INACTIVE_DAYS'] * 2:
-                        mess = f'Устаревшая ветка {branch.name}, будет удалена в ближайшее время'
+                        mess = f'Ветка {branch.name} удалена'
+                        self.repo.get_git_ref(f"heads/{branch}").delete()
                         issue.create_comment(mess)
