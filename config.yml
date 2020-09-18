@@ -32,7 +32,6 @@ TO_STRING:
   - issue.number
   - issue.title
   assigned:
-  - assigner.login
   - assignee.login
   - issue.number
   - issue.title
@@ -93,7 +92,6 @@ TO_STRING:
   - issue.number
   - issue.title
   unassigned:
-  - assigner.login
   - assignee.login
   - issue.number
   - issue.title

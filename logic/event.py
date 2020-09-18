@@ -4,6 +4,7 @@ import re
 
 DB = ymls.INFO
 INACTIVE_DAYS = ymls.CONFIG['INACTIVE_DAYS']
+TEAM = ymls.CONFIG['TEAM']
 WORK_BRANCH = r'^issue-\d$'
 HEAD_BRANCH = r'^(issue-\d+|dev)$'
 MESS_BRANCH = 'Нарушены [требования именования веток]'\
@@ -63,8 +64,10 @@ def check_for_unreviewed_requests(event):
 def check_base_and_head_branch_in_request(event):
     pull = event.repo.get_pull(
         event.raw_data['issue']['number'])
+    review_requests = pull.get_review_requests()
     if 'requested_reviewer' in event.raw_data\
-    and 'YuriSilenok' == event.raw_data['requested_reviewer']['login']\
+    and ('YuriSilenok' in [user.login for user in review_requests[0]]\
+    or TEAM in [team.name for team in review_requests[1]])\
     and not(pull.raw_data['base']['ref'] == 'master'\
     and pull.raw_data['head']['ref'] == 'dev'\
     or pull.raw_data['base']['ref'] == 'dev'\
@@ -86,7 +89,7 @@ def check_base_and_head_branch_in_request(event):
             )
         
 def check_code(event):
-
+    event
     pass
 
 def review_requested(event):
