@@ -25,8 +25,7 @@ def issue_closed(event):
             body = 'Прежде чем закрыть задачу, \
 ее нужно перевесить на преподавателя, \
 с целью выставления отметки в журнал.'
-        )
-    mute(event)
+        )    
 
 def check_for_unreviewed_requests(event):
     pull = event.repo.get_pull(
@@ -96,7 +95,6 @@ def review_requested(event):
     check_base_and_head_branch_in_request(event)
     check_for_unreviewed_requests(event)
     check_code(event)
-    mute(event)
 
 def unassigned(event):
     if len(event.issue.assignees) < 1:
@@ -106,7 +104,6 @@ def unassigned(event):
         event.issue.create_comment(
             body = f'У каждой задачи должен быть ответсвенный'
         )
-    mute(event)
 
 def assigned(event):
     assigned_pull(event)
@@ -117,7 +114,6 @@ def assigned(event):
         event.issue.create_comment(
             body = f'У одной задачи может быть только один ответсвенный'
         )
-    mute(event)
 
 def assigned_pull(event):
     if event.issue.pull_request is not None\
@@ -135,7 +131,6 @@ def assigned_pull(event):
         event.issue.edit(
             assignees = assignees
         )
-    mute(event)
 
 def pull_open(event):
     pull = event.repo.get_pull(
@@ -144,7 +139,6 @@ def pull_open(event):
         pull.create_issue_comment(
             f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.')
         pull.edit(state='close')
-    mute(event)
 
 def check_branch(event):
     rgx = re.search(WORK_BRANCH, event.raw_data['payload']['ref'])
@@ -158,7 +152,6 @@ def check_branch(event):
                     f"{MESS_BRANCH} Созданная ветка {event.raw_data['payload']['ref']} была удалена."
                 )
             except: pass
-    mute(event)
         
 
 
@@ -235,9 +228,13 @@ def process(event):
             if isinstance(EVENTS[event.type], dict):
                 if event.payload['action'] in EVENTS[event.type]:
                     EVENTS[event.type][event.payload['action']](event)
+                    if EVENTS[event.type][event.payload['action']] != mute:
+                        mute(event)
                 else: 
                     print('Обработчик действия не реализован')
             else:
                 EVENTS[event.type](event)
+                if EVENTS[event.type] != mute:
+                        mute(event)
         else:
             print('Обработчик события не реализован')
