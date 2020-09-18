@@ -151,7 +151,7 @@ def check_branch(event):
         if rgx:
             number = rgx[0]
             try:
-                event.repo.get_issue(number).create_comment(
+                event.repo.get_issue(int(number)).create_comment(
                     f"{MESS_BRANCH} Созданная ветка {event.raw_data['payload']['ref']} была удалена."
                 )
             except: 
