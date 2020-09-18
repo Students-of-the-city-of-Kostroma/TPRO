@@ -142,7 +142,7 @@ def check_labels(pull):
         entities_labels = [l.name for l in pull.labels if re.search(ENTITIES, l.name)]
         if not entities_labels:
             pull.create_issue_comment(
-                r'Нарушено [требование](/Docs/labels.md) для метки `Unit test`'
+                r'Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для метки `Unit test`'
             )
     else: 
         pull.create_issue_comment(
