@@ -47,6 +47,9 @@ TO_STRING:
   head_ref_deleted:
   - issue.number
   - issue.title
+  base_ref_changed:
+  - issue.number
+  - issue.title
   labeled:
   - label.name
   - issue.number

@@ -174,6 +174,7 @@ EVENTS = {
     'closed' : mute,
     'unsubscribed' : mute,
     'head_ref_deleted' : mute,
+    'base_ref_changed' : mute,
     'merged' : mute,
     'referenced' : mute,
     'renamed' : mute,
