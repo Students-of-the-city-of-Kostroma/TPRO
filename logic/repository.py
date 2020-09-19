@@ -24,10 +24,10 @@ class Repository:
                             statistic[key]['sum'] += 1
                     else: break
             sum += statistic[key]['sum']
-        sum /= contributers.totalCount
+        sum = round(sum / contributers.totalCount, 1)
         comment = '|User|Events|By days|Score|\n| --- | --- | --- | --- |\n'
         for key in statistic:
-            score =  round(sum, 1) if key == '@YuriSilenok' else round(statistic[key]['sum'] / sum, 2)
+            score =  round(statistic[key]['sum'] / sum, 2)
             comment += f'|{key}|{statistic[key]["sum"]}|{statistic[key]["days"]}|{score}|\n'
         issue = self.get_issue_by_title_ot_create(
             title = 'Статистика активности по проекту',
@@ -35,7 +35,7 @@ class Repository:
                 'Статистика публикуется ежедневно.'
         )
         issue.create_comment(
-            f'Статистика на {today}\n{comment}'
+            f'Статистика на {today}, средний балл {sum}\n{comment}'
         )
 
     def get_issue_by_title_ot_create(self, title : str, body : str):
