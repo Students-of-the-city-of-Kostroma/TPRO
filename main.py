@@ -19,8 +19,8 @@ if __name__ == '__main__':
         repo.GITHUB = GITHUB
         student = Listener(repo)
         master = repo.get_branch('master')
-        hours_left = (datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])) - datetime.now()).seconds / 3600
-        requests_left = int(master._headers['x-ratelimit-remaining'])/(int(master._headers['x-ratelimit-limit']) * 0.9)
+        hours_left = ((datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])) - datetime.now()).seconds / 3600) * 1.01
+        requests_left = int(master._headers['x-ratelimit-remaining'])/(int(master._headers['x-ratelimit-limit']))
         sleep = int((hours_left - requests_left) * 3600)
         sleep = sleep if sleep >= 0 else 0
     except:
