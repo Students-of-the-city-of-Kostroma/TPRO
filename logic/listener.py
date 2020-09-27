@@ -20,14 +20,6 @@ class Listener:
             )
         self.process_events(repo.get_events())
         self.process_events(repo.get_issues_events())
-        master = repo.get_branch('master')
-        sleep = int((int(master.raw_headers['x-ratelimit-limit']) \
-            - int(master.raw_headers['x-ratelimit-remaining'])) * 0.72)
-        now = datetime.now().strftime('%H:%M:%S')
-        end_time = (datetime.now() + timedelta(seconds=sleep)).strftime('%H:%M:%S')
-        print(f'{now}-->SLEEEEEEP-->{end_time}')
-        ymls.save_info()
-        time.sleep(sleep)
 
     def process_events(self, events):
         i , limit = 0, 100

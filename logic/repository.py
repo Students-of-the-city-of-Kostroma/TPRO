@@ -1,5 +1,6 @@
 from datetime import datetime, date, timedelta
 from logic import ymls
+import difflib
 
 class Repository:
 
@@ -30,21 +31,19 @@ class Repository:
             score =  round(statistic[key]['sum'] / sum, 2)
             comment += f'|{key}|{statistic[key]["sum"]}|{statistic[key]["days"]}|{score}|\n'
         issue = self.get_issue_by_title_ot_create(
-            title = 'Статистика активности по проекту',
-            body = 'Это экспериментальная задача. \n'+
-                'Статистика публикуется ежедневно.'
-        )
-        issue.create_comment(
-            f'Статистика на {today}, средний балл {sum}\n{comment}'
+            title = 'Статистика активности по проекту'
         )
 
-    def get_issue_by_title_ot_create(self, title : str, body : str):
+        issue.edit(
+            body = f'Статистика на {today}, средний балл {sum}\n{comment}'
+        )
+
+    def get_issue_by_title_ot_create(self, title : str):
         for issue in self.repo.get_issues(state='open'):
             if issue.title == title:
                 return issue
         return self.repo.create_issue(
             title = title,
-            body = body,
             assignees = ['YuriSilenok'],
             milestone = self.get_backlog_milestone(),
             labels = ['info']
@@ -63,44 +62,72 @@ class Repository:
         )
 
     def check_issues(self):
+        header = f'|User|Remains|Issue|Branch|Request|\n|---|---|---|---|---|\n'
+        data = []
         for issue in self.repo.get_issues(state='open'):
             # проверка активности для открытых задач
             if 'pull_request' not in issue.raw_data:
                 # количество полных дней отсутствия активности
-                issue_inactive_days = (datetime.now() - issue.updated_at + timedelta(hours=3)).days
+                issue_updated_at = issue.updated_at + timedelta(hours=3)
+                issue_inactive_delta = datetime.now() - issue_updated_at
+                issue_inactive_days = issue_inactive_delta.days
+                issue_inactive_hours = int(issue_inactive_delta.seconds / 3600)
                 branch = None
+                try: branch = self.repo.get_branch('task-'+ str(issue.number))
+                except: pass
                 try: branch = self.repo.get_branch('issue-'+ str(issue.number))
                 except: pass
                 # количество дней отсутствия активности в ветке
                 branch_inactive_days = None
+                branch_inactive_hours = None
+                branch_inactive_delta = None
+                branch_last_modified = None
                 if branch is not None:
                     branch.commit.raw_data
-                    branch_inactive_days = (datetime.now() - datetime.strptime(branch.commit.last_modified, '%a, %d %b %Y %H:%M:%S GMT')).days
+                    branch_last_modified = datetime.strptime(branch.commit.last_modified, '%a, %d %b %Y %H:%M:%S GMT') + timedelta(hours=3)
+                    branch_inactive_delta = datetime.now() - branch_last_modified
+                    branch_inactive_days = branch_inactive_delta.days
+                    branch_inactive_hours = int(branch_inactive_delta.seconds / 3600)
                 # количество дней отсуствия актвиности в связанных запросах
                 pull_inactive_days= None
-                request_review_teamled = []
+                pull_inactive_hours = None
+                pull_inactive_delta = None
                 pull_inactive = None
-                for pr in self.repo.get_pulls(state='open'):
-                    for request_user in pr.get_review_requests()[0]:
-                        if request_user.login == 'YuriSilenok':
-                            request_review_teamled.append(pr)
-                            break
-                    inactive_days_now = (datetime.now() - pr.updated_at + timedelta(hours=3)).days
-                    if pull_inactive_days is None or inactive_days_now < pull_inactive_days:
-                        pull_inactive = pr
-                        pull_inactive_days = inactive_days_now
+                pull_updated_at = None
+                if branch is not None:
+                    # Ищем запрос связанный с веткой
+                    for pr in self.repo.get_pulls(state='open'):
+                        review_requests = pr.get_review_requests()
+                        if pr.raw_data['head']['ref'] == branch.name\
+                        and 'YuriSilenok' not in [u.login for u in review_requests[0]]\
+                        and 'Elite' not in [t.name for t in review_requests[1]]:
+                            pull_inactive = pr
+                            break                
+                if pull_inactive is not None:
+                    pull_updated_at = pr.updated_at + timedelta(hours=3)
+                    pull_inactive_delta = datetime.now() - pull_updated_at
+                    pull_inactive_days = pull_inactive_delta.days
+                    pull_inactive_hours = int(pull_inactive_delta.seconds / 3600)
                 # минимальное количество неактивных дней
-                inactive_list = [
-                    issue_inactive_days,
-                    branch_inactive_days,
-                    pull_inactive_days]
-                inactive_days = min([x for x in inactive_list if x is not None])
-                # запрос на преподавателе
-
+                inactive_list_delta = [
+                    issue_inactive_delta,
+                    branch_inactive_delta,
+                    pull_inactive_delta]
+                inactive_list_delta = [i for i in inactive_list_delta if i is not None]
+                inactive_delta = min(inactive_list_delta, key = lambda d: d.days * 24 + int(d.seconds / 3600))
+                if issue.title not in ['Текущая активность по задачам','Статистика активности по проекту']:
+                    remains = timedelta(days=ymls.CONFIG['INACTIVE_DAYS']) - inactive_delta
+                    data.append([
+                        f'[{issue.assignee.name}](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/issues/assigned/{issue.assignee.login})',
+                        f'{remains.days}д. {str(int(remains.seconds / 3600)).zfill(2)}ч.',
+                        f'#{issue.number}->{issue_inactive_days}д. {issue_inactive_hours}ч.<-{issue_updated_at}',
+                        f'{branch.name}->{branch_inactive_days}д. {branch_inactive_hours}ч.<-{branch_last_modified.strftime("%Y-%m-%d %H:%M:%S")}' if branch else ' ',
+                        f'#{pull_inactive.number}->{pull_inactive_days}д. {pull_inactive_hours}ч.<-{pull_updated_at.strftime("%Y-%m-%d %H:%M:%S")}' if pull_inactive else ' '
+                    ])
                 # снимаем задачу
-                if inactive_days > ymls.CONFIG['INACTIVE_DAYS'] and not request_review_teamled:
+                if inactive_delta.days >= ymls.CONFIG['INACTIVE_DAYS']:
                     if issue.assignee.login != 'YuriSilenok':
-                        mess = 'Задача с Вас снята, так как по ней давно не было активности. ' + \
+                        mess = 'Задача с Вас  снята, так как по ней давно не было активности. ' + \
                         f'Активность по основной задаче #{issue.number} составляет {issue_inactive_days} дней. ' + \
                         str('Ветка отсутствует. ' if branch_inactive_days is None else f'Активность в ветке {branch.name} составляет {branch_inactive_days} дней. ') + \
                         str('Запрос отсутствует. ' if pull_inactive is None else f'Активность по запросу #{pull_inactive.number} составляет {pull_inactive_days} дней. ') + \
@@ -109,8 +136,21 @@ class Repository:
                         issue.edit(
                             assignee = 'YuriSilenok'
                         )
-                    # предупредительный выстрел
-                    elif branch is not None and branch_inactive_days > ymls.CONFIG['INACTIVE_DAYS'] * 2:
-                        mess = f'Ветка {branch.name} удалена'
-                        self.repo.get_git_ref(f"heads/{branch}").delete()
-                        issue.create_comment(mess)
+                    # удаляем ветку
+                    elif branch is not None:
+                        self.repo.get_git_ref(f"heads/{branch.name}").delete()
+                        issue.create_comment(f'Ветка {branch.name} удалена')
+                    else:
+                        issue.edit(
+                            state = 'close'
+                        )
+        issue = self.get_issue_by_title_ot_create(
+                    title='Текущая активность по задачам'
+                )
+        
+        data = sorted(data, key=lambda row: row[1])
+        body = header+'\n'.join([f'|{"|".join(row)}|' for row in data])
+        if issue.body != body:
+            issue.edit(
+                body=body
+            )

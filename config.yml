@@ -70,6 +70,10 @@ TO_STRING:
   - label.name
   - issue.number
   - issue.title
+  unlabeled:
+  - label.name
+  - issue.number
+  - issue.title
   mentioned:
   - issue.number
   - issue.title
