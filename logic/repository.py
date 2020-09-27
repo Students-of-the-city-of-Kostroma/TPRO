@@ -121,7 +121,7 @@ class Repository:
                         f'[{issue.assignee.name}](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/issues/assigned/{issue.assignee.login})',
                         f'{remains.days}д. {str(int(remains.seconds / 3600)).zfill(2)}ч.',
                         f'#{issue.number}->{issue_inactive_days}д. {issue_inactive_hours}ч.<-{issue_updated_at}',
-                        f'{branch.name}->{branch_inactive_days}д. {branch_inactive_hours}ч.<-{branch_last_modified.strftime("%Y-%m-%d %H:%M:%S")}' if branch else ' ',
+                        f'[{branch.name}](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/commits/{branch.name})->{branch_inactive_days}д. {branch_inactive_hours}ч.<-{branch_last_modified.strftime("%Y-%m-%d %H:%M:%S")}' if branch else ' ',
                         f'#{pull_inactive.number}->{pull_inactive_days}д. {pull_inactive_hours}ч.<-{pull_updated_at.strftime("%Y-%m-%d %H:%M:%S")}' if pull_inactive else ' '
                     ])
                 # снимаем задачу
