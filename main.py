@@ -28,9 +28,6 @@ if __name__ == '__main__':
         print(traceback.format_exc())
         with open('errors.txt', 'w', encoding='utf-8') as f:
             f.write(f'{traceback.format_exc()}\n')
-        command = 'git commit -am "' + ymls.CONFIG['CORRECT_TIME'] + '" && git push'
-        print(command)
-        if os.system(command) != 0:
     finally:
         ymls.save_info()
         if master is None:
@@ -42,3 +39,7 @@ if __name__ == '__main__':
             print(datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])), master._headers['x-ratelimit-remaining'])
             print(f'{now}-->{sleep}-->{end_time}')
             time.sleep(sleep)
+        command = 'git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git push'
+        print(command)
+        os.system(command)
+        ymls.save_config()
