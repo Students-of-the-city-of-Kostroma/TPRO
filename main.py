@@ -19,11 +19,12 @@ if __name__ == '__main__':
         repo.GITHUB = GITHUB
         student = Listener(repo)
         master = repo.get_branch('master')
-        hours_left = ((datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])) - datetime.now()).seconds / 3600) * 1.01
+        hours_left = ((datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])) - datetime.now()).seconds / 3600) * ymls.CONFIG.get('CORRECT_TIME', 1)
         requests_left = int(master._headers['x-ratelimit-remaining'])/(int(master._headers['x-ratelimit-limit']))
         sleep = int((hours_left - requests_left) * 3600)
         sleep = sleep if sleep >= 0 else 0
     except:
+        ymls.CONFIG['CORRECT_TIME'] = ymls.CONFIG.get('CORRECT_TIME', 1) + 0.01
         print(traceback.format_exc())
         with open('errors.txt', 'a', encoding='utf-8') as f:
             f.write(f'{traceback.format_exc()}\n')
