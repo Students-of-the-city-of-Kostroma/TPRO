@@ -26,7 +26,7 @@ if __name__ == '__main__':
     except:
         ymls.CONFIG['CORRECT_TIME'] = ymls.CONFIG.get('CORRECT_TIME', 1) + 0.01
         print(traceback.format_exc())
-        with open('errors.txt', 'a', encoding='utf-8') as f:
+        with open('errors.txt', 'w', encoding='utf-8') as f:
             f.write(f'{traceback.format_exc()}\n')
         command = 'git commit -am "' + ymls.CONFIG['CORRECT_TIME'] + '" && git push'
         print(command)
