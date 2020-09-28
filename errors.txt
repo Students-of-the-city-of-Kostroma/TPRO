@@ -3,14 +3,14 @@ Traceback (most recent call last):
     student = Listener(repo)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 13, in __init__
     trpo_repo.check_issues()
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 99, in check_issues
-    for pr in self.repo.get_pulls(state='open'):
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 59, in __iter__
-    newElements = self._grow()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 71, in _grow
-    newElements = self._fetchNextPage()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 203, in _fetchNextPage
-    headers, data = self.__requester.requestJsonAndCheck(
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 101, in check_issues
+    if pr.raw_data['head']['ref'] == branch.name\
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 105, in raw_data
+    self._completeIfNeeded()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 303, in _completeIfNeeded
+    self.__complete()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 310, in __complete
+    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
   File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
     return self.__check(
   File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
