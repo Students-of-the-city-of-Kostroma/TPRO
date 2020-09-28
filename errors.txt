@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 20, in <module>
+    student = Listener(repo)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 13, in __init__
+    trpo_repo.check_issues()
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 101, in check_issues
+    if pr.raw_data['head']['ref'] == branch.name\
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 105, in raw_data
+    self._completeIfNeeded()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 303, in _completeIfNeeded
+    self.__complete()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 310, in __complete
+    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
+    return self.__check(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.RateLimitExceededException: 403 {"message": "API rate limit exceeded for user ID 14871471.", "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
