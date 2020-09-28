@@ -28,6 +28,9 @@ if __name__ == '__main__':
         print(traceback.format_exc())
         with open('errors.txt', 'a', encoding='utf-8') as f:
             f.write(f'{traceback.format_exc()}\n')
+        command = 'git commit -am "' + ymls.CONFIG['CORRECT_TIME'] + '" && git push'
+        print(command)
+        if os.system(command) != 0:
     finally:
         ymls.save_info()
         if master is None:
