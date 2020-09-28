@@ -101,7 +101,8 @@ def review_requested(event):
         check_base_and_head_branch_in_request(pull)
         check_for_unreviewed_requests(pull)
         check_code(pull)
-        check_labels(pull)        
+        check_labels(pull)
+    pull_open(event)
 
 def unassigned(event):
     if len(event.issue.assignees) < 1:
@@ -140,14 +141,10 @@ def assigned_pull(event):
         )
 
 def pull_open(event):
-    pull_number = event.payload['number']
+    pull_number = event.raw_data['issue']['number']
     pull = event.repo.get_pull(pull_number)
     re_branch = re.search(WORK_BRANCH, pull.raw_data['head']['ref'])
-    if not re_branch:
-        pull.create_issue_comment(
-            f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.')
-        pull.edit(state='close')
-    else:
+    if re_branch:
         if len(re_branch.regs) == 2:
             issue_number = int(re_branch[1])
             issue = event.repo.get_issue(issue_number)
@@ -155,6 +152,11 @@ def pull_open(event):
                 pull.create_issue_comment(
                     f'Основная задача #{issue_number} назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.')
                 pull.edit(state='close')
+    else:
+        pull.create_issue_comment(
+            f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.')
+        pull.edit(state='close')
+
 
 def check_white_box(pull):
     if 'Unit test' in [l.name for l in pull.labels]:
