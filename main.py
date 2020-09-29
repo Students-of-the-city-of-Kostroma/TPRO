@@ -39,7 +39,8 @@ if __name__ == '__main__':
             print(datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])), master._headers['x-ratelimit-remaining'])
             print(f'{now}-->{sleep}-->{end_time}')
             time.sleep(sleep)
+        ymls.save_config()
         command = 'git pull && git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git push'
         print(command)
         os.system(command)
-        ymls.save_config()
+        
