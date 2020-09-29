@@ -44,3 +44,8 @@
 13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
 13677295641 2020-09-29 17:51:30 IssuesEvent YuriSilenok closed 1199 Разработать форму "Добавить нагрузку"
 13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+13677467102 2020-09-29 18:02:59 IssueCommentEvent YuriSilenok 1088 Ветка issue-1088 удалена
+13677467065 2020-09-29 18:02:59 DeleteEvent YuriSilenok issue-1088
+13677467241 2020-09-29 18:03:00 PullRequestEvent YuriSilenok closed 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13677464475 2020-09-29 18:02:48 IssuesEvent YuriSilenok closed 1187 Исправить сбои автотестов расположенных в файле UT_Delete_CTeacher
+13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
