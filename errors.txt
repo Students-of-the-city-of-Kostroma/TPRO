@@ -1,20 +1,12 @@
 Traceback (most recent call last):
   File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 19, in <module>
     student = Listener(repo)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 13, in __init__
-    trpo_repo.check_issues()
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 102, in check_issues
-    and 'YuriSilenok' not in [u.login for u in review_requests[0]]\
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 102, in <listcomp>
-    and 'YuriSilenok' not in [u.login for u in review_requests[0]]\
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 59, in __iter__
-    newElements = self._grow()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 71, in _grow
-    newElements = self._fetchNextPage()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 203, in _fetchNextPage
-    headers, data = self.__requester.requestJsonAndCheck(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
-    return self.__check(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
-    raise self.__createException(status, responseHeaders, output)
-github.GithubException.RateLimitExceededException: 403 {"message": "API rate limit exceeded for user ID 14871471.", "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 21, in __init__
+    self.process_events(repo.get_events())
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 31, in process_events
+    EV.process(event)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 331, in process
+    print(to_string(event))
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 315, in to_string
+    rows = list(csv.reader(f, fieldnames=header))
+TypeError: 'fieldnames' is an invalid keyword argument for this function
