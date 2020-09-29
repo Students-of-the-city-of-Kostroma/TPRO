@@ -316,7 +316,7 @@ def to_string(event):
     with open('log.csv', 'r', encoding='utf-8') as f:
         rows = list(csv.reader(f))
     if len(rows) == 0:
-        rows = header
+        rows.append(header)
     rows.insert(1, data)
     with open('log.csv', 'w', encoding='utf-8') as f:
         writer = csv.writer(f)
