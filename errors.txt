@@ -7,6 +7,8 @@ Traceback (most recent call last):
     EV.process(event)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 317, in process
     EVENTS[event.type](event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 105, in review_requested
-    event.raw_data.get('payload',{})['number'] = event.raw_data['issue']['number']
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 106, in review_requested
+    pull_open(event)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 145, in pull_open
+    pull_number = event.raw_data['payload']['number']
 KeyError: 'payload'
