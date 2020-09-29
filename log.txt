@@ -124,3 +124,8 @@
 3820918686 2020-09-29 20:44:23 review_requested YuriSilenok 1338 YuriSilenok Добавил расписание для студентов на форму "расписание"
 3819821338 2020-09-29 17:08:49 review_requested VinogradovAlexandr781227 1363 JennyShel18 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
 3819821332 2020-09-29 17:08:49 review_requested VinogradovAlexandr781227 1363 FvckNeighbors Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+13679526598 2020-09-29 20:49:01 PullRequestEvent YuriSilenok closed 1338 Добавил расписание для студентов на форму "расписание"
+13679526361 2020-09-29 20:49:00 IssueCommentEvent YuriSilenok 1338 Нарушены [требования именования веток](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md#issue-d). Головная ветка task-1326 не соответствует требованиям.
+3820936273 2020-09-29 20:49:01 moved_columns_in_project YuriSilenok 1338 Добавил расписание для студентов на форму "расписание"
+3820936235 2020-09-29 20:49:01 closed YuriSilenok 1338 Добавил расписание для студентов на форму "расписание"
+3819821332 2020-09-29 17:08:49 review_requested VinogradovAlexandr781227 1363 FvckNeighbors Разработал историю функции корректировки учебной нагрузки для студентов вуза 
