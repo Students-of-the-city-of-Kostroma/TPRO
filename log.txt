@@ -49,3 +49,7 @@
 13677467241 2020-09-29 18:03:00 PullRequestEvent YuriSilenok closed 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13677464475 2020-09-29 18:02:48 IssuesEvent YuriSilenok closed 1187 Исправить сбои автотестов расположенных в файле UT_Delete_CTeacher
 13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+13677471487 2020-09-29 18:03:17 PullRequestEvent YuriSilenok closed 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13677471353 2020-09-29 18:03:16 IssueCommentEvent YuriSilenok 1032 Ветка issue-1032 удалена
+13677471305 2020-09-29 18:03:16 DeleteEvent YuriSilenok issue-1032
+13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
