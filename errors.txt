@@ -5,9 +5,8 @@ Traceback (most recent call last):
     self.process_events(repo.get_events())
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 31, in process_events
     EV.process(event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 310, in process
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 312, in process
     EVENTS[event.type][event.payload['action']](event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 144, in pull_open
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 146, in pull_open
     pull_number = event.raw_data['issue']['number']
 KeyError: 'issue'
-
