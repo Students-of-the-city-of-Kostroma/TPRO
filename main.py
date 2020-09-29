@@ -36,13 +36,15 @@ if __name__ == '__main__':
             print(datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])), master._headers['x-ratelimit-remaining'])
 
         ymls.save_config()
-
-        command = 'git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git pull && git push'
-        print(command)
-        os.system(command)
-
+        
         now = datetime.now().strftime('%H:%M:%S')
         end_time = (datetime.now() + timedelta(seconds=sleep)).strftime('%H:%M:%S')
         print(f'{now}-->{sleep}-->{end_time}')
         time.sleep(sleep)
+        
+        command = 'git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git pull && git push'
+        print(command)
+        os.system(command)
+
+
         
