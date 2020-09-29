@@ -53,3 +53,4 @@
 13677471353 2020-09-29 18:03:16 IssueCommentEvent YuriSilenok 1032 Ветка issue-1032 удалена
 13677471305 2020-09-29 18:03:16 DeleteEvent YuriSilenok issue-1032
 13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
