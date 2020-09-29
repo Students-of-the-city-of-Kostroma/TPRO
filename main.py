@@ -32,7 +32,7 @@ if __name__ == '__main__':
         ymls.save_info()
         if master is None:
             print('master is None')
-            time.sleep(60)
+            time.sleep(600)
         else:
             now = datetime.now().strftime('%H:%M:%S')
             end_time = (datetime.now() + timedelta(seconds=sleep)).strftime('%H:%M:%S')
