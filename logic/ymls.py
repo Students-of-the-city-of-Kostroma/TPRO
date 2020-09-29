@@ -1,4 +1,4 @@
-import yaml, os
+import yaml, os, csv
 
 INFO = {}
 INFO_FILE_NAME = 'info.yml'
