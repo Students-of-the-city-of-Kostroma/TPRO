@@ -312,7 +312,7 @@ def to_string(event):
                 data[-1] += f' {line}'
     with open('log.csv', 'w', encoding='utf-8') as f:
         header = ['id', 'date', 'event', 'user', 'message']
-        rows = list(csv.reader(f, fieldnames=header))
+        rows = list(csv.reader(f))
         if len(rows) == 0:
             rows = header
         rows.insert(1, data)
