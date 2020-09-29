@@ -22,7 +22,7 @@ if __name__ == '__main__':
         ymls.CONFIG['CORRECT_TIME'] = round(ymls.CONFIG.get('CORRECT_TIME', 1) + 0.01, 2)
         print(traceback.format_exc())
         with open('errors.txt', 'w', encoding='utf-8') as f:
-            f.write(f'{traceback.format_exc()}\n')
+            f.write(f'{traceback.format_exc()}')
     finally:
         ymls.save_info()
         if master is None:
