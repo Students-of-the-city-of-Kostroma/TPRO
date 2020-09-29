@@ -291,13 +291,7 @@ EVENTS = {
 def to_string(event):
     dt = event.created_at + timedelta(hours=3)
     result = f'{event.id} {dt} {event.type} {event.raw_data["actor"]["login"]}'
-    data = {
-        'id' : event.id,
-        'date' : dt,
-        'event' : event.type,
-        'user' : event.raw_data["actor"]["login"],
-        'message' : ''
-    }
+    data = [event.id, dt, event.type, event.raw_data["actor"]["login"], '']
     if event.type in TO_STRING:
         for param in TO_STRING[event.type]:
             line = event.raw_data
@@ -315,11 +309,16 @@ def to_string(event):
                     break
             if not isinstance(line, dict):
                 result += f' {line}'
-                data['message'] += f' {line}'
-    with open('log.csv', 'a', encoding='utf-8') as f:
-        fieldnames = ['id', 'date', 'event', 'user', 'message']
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writerow(data)
+                data[-1] += f' {line}'
+    with open('log.csv', 'w', encoding='utf-8') as f:
+        header = ['id', 'date', 'event', 'user', 'message']
+        rows = list(csv.reader(f, fieldnames=header))
+        if len(rows) == 0:
+            rows = header
+        rows.insert(1, data)
+        writer = csv.writer(f)
+        writer.writerows(rows)
+            
         
     return result
 
