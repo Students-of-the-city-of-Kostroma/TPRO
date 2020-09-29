@@ -8,5 +8,5 @@ Traceback (most recent call last):
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 317, in process
     EVENTS[event.type](event)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 105, in review_requested
-    event.raw_data['payload']['number'] = event.raw_data['issue']['number']
+    event.raw_data.get('payload',{})['number'] = event.raw_data['issue']['number']
 KeyError: 'payload'
