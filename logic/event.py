@@ -92,7 +92,13 @@ def check_code(pull):
     pass
 
 def check_reviewrs(pull):
-    pass
+    org = pull.repo.github.get_organization(ymls.CONFIG['ORG'])
+    member = org.get_team_by_slug(ymls.CONFIG['TEAM']).get_members()
+    team = set([nu.login for nu in member])
+    reviews = set([r.user.login for r in pull.get_reviews()])
+    requests = set([nu.login for nu in pull.get_review_requests()[0]])
+    unreviews = list(team - reviews - requests)
+    pull.create_review_request(reviews=unreviews)
 
 def review_requested(event):
     pull = event.repo.get_pull(event.raw_data['issue']['number'])
@@ -100,12 +106,12 @@ def review_requested(event):
     review_requests = pull.get_review_requests()
     if 'YuriSilenok' in [u.login for u in review_requests[0]]\
     or 'Elite' in [t.name for t in review_requests[1]]:
+        check_reviewrs(pull)
         check_white_box(pull)
         check_base_and_head_branch_in_request(pull)
         check_for_unreviewed_requests(pull)
         check_code(pull)
-        check_labels(pull)
-        check_reviewrs(pull)
+        check_labels(pull)        
 
     payload = event.raw_data.get('payload', {})
     payload['number'] = event.raw_data['issue']['number']

@@ -15,7 +15,7 @@ class Listener:
         and datetime.now().hour > 2:
             ymls.INFO['LAST_CREATED_STATISTICS'] = today
             trpo_repo.create_statistic_team(
-                repo.GITHUB.get_organization(ymls.CONFIG['ORG']).get_team_by_slug(ymls.CONFIG['TEAM']).get_members(),
+                repo.github.get_organization(ymls.CONFIG['ORG']).get_team_by_slug(ymls.CONFIG['TEAM']).get_members(),
                 today
             )
         self.process_events(repo.get_events())

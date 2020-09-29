@@ -15,7 +15,7 @@ if __name__ == '__main__':
         repo = GITHUB.get_repo(
                 full_name_or_id=f'{ymls.CONFIG["ORG"]}/{ymls.CONFIG["REPO"]}'
             )
-        repo.GITHUB = GITHUB
+        repo.github = GITHUB
         student = Listener(repo)
         master = repo.get_branch('master')
     except:
@@ -36,7 +36,7 @@ if __name__ == '__main__':
             print(datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])), master._headers['x-ratelimit-remaining'])
 
         ymls.save_config()
-        
+
         command = 'git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git pull && git push'
         print(command)
         os.system(command)
