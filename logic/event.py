@@ -102,6 +102,7 @@ def review_requested(event):
         check_for_unreviewed_requests(pull)
         check_code(pull)
         check_labels(pull)
+    event.raw_data['payload']['number'] = event.raw_data['issue']['number']
     pull_open(event)
 
 def unassigned(event):
