@@ -25,7 +25,7 @@ if __name__ == '__main__':
             f.write(f'{traceback.format_exc()}')
     finally:
         ymls.save_info()
-        sleep = 600
+        sleep = 120
         if master is None:
             print('master is None')
         else:
@@ -37,7 +37,7 @@ if __name__ == '__main__':
         now = datetime.now().strftime('%H:%M:%S')
         end_time = (datetime.now() + timedelta(seconds=sleep)).strftime('%H:%M:%S')
         print(f'{now}-->{sleep}-->{end_time}')
-        #time.sleep(sleep)
+        time.sleep(sleep)
         ymls.save_config()
         command = 'git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git pull && git push'
         print(command)
