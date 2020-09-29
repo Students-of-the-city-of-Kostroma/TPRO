@@ -91,3 +91,17 @@
 13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
 13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
 13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+13676656646 2020-09-29 17:08:51 PullRequestEvent VinogradovAlexandr781227 opened 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+3820125541 2020-09-29 18:03:17 moved_columns_in_project YuriSilenok 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3820125531 2020-09-29 18:03:17 head_ref_deleted YuriSilenok 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3820125501 2020-09-29 18:03:16 closed YuriSilenok 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3820123969 2020-09-29 18:03:00 moved_columns_in_project YuriSilenok 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3820123957 2020-09-29 18:02:59 head_ref_deleted YuriSilenok 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3820123922 2020-09-29 18:02:59 closed YuriSilenok 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3820122867 2020-09-29 18:02:48 moved_columns_in_project YuriSilenok 1187 Исправить сбои автотестов расположенных в файле UT_Delete_CTeacher
+3820122831 2020-09-29 18:02:48 closed YuriSilenok 1187 Исправить сбои автотестов расположенных в файле UT_Delete_CTeacher
+3820060582 2020-09-29 17:51:30 moved_columns_in_project YuriSilenok 1199 Разработать форму "Добавить нагрузку"
+3820060543 2020-09-29 17:51:29 closed YuriSilenok 1199 Разработать форму "Добавить нагрузку"
+3819821401 2020-09-29 17:08:50 added_to_project VinogradovAlexandr781227 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+3819821397 2020-09-29 17:08:50 assigned VinogradovAlexandr781227 VinogradovAlexandr781227 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+3819821356 2020-09-29 17:08:49 review_requested VinogradovAlexandr781227 1363 Heriuple Разработал историю функции корректировки учебной нагрузки для студентов вуза 

@@ -1,12 +1,12 @@
 Traceback (most recent call last):
   File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 19, in <module>
     student = Listener(repo)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 21, in __init__
-    self.process_events(repo.get_events())
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 22, in __init__
+    self.process_events(repo.get_issues_events())
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 31, in process_events
     EV.process(event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 312, in process
-    EVENTS[event.type][event.payload['action']](event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 146, in pull_open
-    pull_number = event.raw_data['issue']['number']
-KeyError: 'issue'
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 317, in process
+    EVENTS[event.type](event)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 105, in review_requested
+    event.raw_data['payload']['number'] = event.raw_data['issue']['number']
+KeyError: 'payload'
