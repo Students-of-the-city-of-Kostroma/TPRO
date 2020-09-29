@@ -141,9 +141,7 @@ def assigned_pull(event):
         )
 
 def pull_open(event):
-    with open('print.txt', 'w', encoding='utf-8') as f:
-            f.write(f'{event.raw_data}')
-    pull_number = event.raw_data['issue']['number']
+    pull_number = event.raw_data['payload']['number']
     pull = event.repo.get_pull(pull_number)
     re_branch = re.search(WORK_BRANCH, pull.raw_data['head']['ref'])
     if re_branch:
