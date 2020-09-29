@@ -1,6 +1,6 @@
 from logic import ymls
 from datetime import datetime, timedelta
-import re, traceback, os
+import re, traceback, os, csv
 from github.IssueEvent import IssueEvent
 from github.Issue import Issue
 
@@ -291,6 +291,13 @@ EVENTS = {
 def to_string(event):
     dt = event.created_at + timedelta(hours=3)
     result = f'{event.id} {dt} {event.type} {event.raw_data["actor"]["login"]}'
+    data = {
+        'id' : event.id,
+        'date' : dt,
+        'event' : event.type,
+        'user' : event.raw_data["actor"]["login"],
+        'message' : ''
+    }
     if event.type in TO_STRING:
         for param in TO_STRING[event.type]:
             line = event.raw_data
@@ -308,8 +315,13 @@ def to_string(event):
                     break
             if not isinstance(line, dict):
                 result += f' {line}'
-    with open('log.txt', 'a', encoding='utf-8') as f:
-        f.write(f'{result}\n')
+                data['message'] += f' {line}'
+    with open('log.csv', 'a', encoding='utf-8') as f:
+        fieldnames = ['id', 'date', 'event', 'user', 'message']
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerow(data)
+        
     return result
 
 def process(event):
