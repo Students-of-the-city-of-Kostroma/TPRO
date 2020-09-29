@@ -91,7 +91,7 @@ def check_base_and_head_branch_in_request(pull):
 def check_code(pull):
     pass
 
-def check_reviewrs(event):
+def check_reviewrs(pull):
     pass
 
 def review_requested(event):
@@ -105,7 +105,8 @@ def review_requested(event):
         check_for_unreviewed_requests(pull)
         check_code(pull)
         check_labels(pull)
-        
+        check_reviewrs(pull)
+
     payload = event.raw_data.get('payload', {})
     payload['number'] = event.raw_data['issue']['number']
     event.raw_data['payload'] = payload
