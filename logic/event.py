@@ -319,8 +319,7 @@ def to_string(event):
     with open('log.csv', 'a', encoding='utf-8') as f:
         fieldnames = ['id', 'date', 'event', 'user', 'message']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writerow(data)
-        
+        writer.writerow(data)        
     return result
 
 def process(event):
