@@ -3,7 +3,6 @@ from datetime import datetime, timedelta
 import re, traceback, os
 from github.IssueEvent import IssueEvent
 from github.Issue import Issue
-import csv
 
 DB = ymls.INFO
 INACTIVE_DAYS = ymls.CONFIG['INACTIVE_DAYS']
