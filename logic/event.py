@@ -310,16 +310,17 @@ def to_string(event):
             if not isinstance(line, dict):
                 result += f' {line}'
                 data[-1] += f' {line}'
+    
     rows = []
+    header = ['id', 'date', 'event', 'user', 'message']
     with open('log.csv', 'r', encoding='utf-8') as f:
-        header = ['id', 'date', 'event', 'user', 'message']
         rows = list(csv.reader(f))
-        if len(rows) == 0:
-            rows = header
-        rows.insert(1, data)
+    if len(rows) == 0:
+        rows = header
+    rows.insert(1, data)
+    with open('log.csv', 'w', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerows(rows)
-            
+        writer.writerows(rows)            
         
     return result
 
