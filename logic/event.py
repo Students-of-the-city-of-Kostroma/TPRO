@@ -310,7 +310,8 @@ def to_string(event):
             if not isinstance(line, dict):
                 result += f' {line}'
                 data[-1] += f' {line}'
-    with open('log.csv', 'w', encoding='utf-8') as f:
+    rows = []
+    with open('log.csv', 'r', encoding='utf-8') as f:
         header = ['id', 'date', 'event', 'user', 'message']
         rows = list(csv.reader(f))
         if len(rows) == 0:

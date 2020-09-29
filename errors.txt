@@ -8,5 +8,5 @@ Traceback (most recent call last):
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 331, in process
     print(to_string(event))
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 315, in to_string
-    rows = list(csv.reader(f, fieldnames=header))
-TypeError: 'fieldnames' is an invalid keyword argument for this function
+    rows = list(csv.reader(f))
+io.UnsupportedOperation: not readable
