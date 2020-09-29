@@ -1,5 +1,5 @@
 Traceback (most recent call last):
-  File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 20, in <module>
+  File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 19, in <module>
     student = Listener(repo)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 13, in __init__
     trpo_repo.check_issues()
