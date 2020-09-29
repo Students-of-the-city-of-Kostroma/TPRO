@@ -1,14 +1,42 @@
 Traceback (most recent call last):
   File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 19, in <module>
     student = Listener(repo)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 22, in __init__
-    self.process_events(repo.get_issues_events())
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 31, in process_events
-    EV.process(event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 317, in process
-    EVENTS[event.type](event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 106, in review_requested
-    pull_open(event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 145, in pull_open
-    pull_number = event.raw_data['payload']['number']
-KeyError: 'payload'
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 13, in __init__
+    trpo_repo.check_issues()
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 101, in check_issues
+    if pr.raw_data['head']['ref'] == branch.name\
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 105, in raw_data
+    self._completeIfNeeded()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 303, in _completeIfNeeded
+    self.__complete()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 310, in __complete
+    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 318, in requestJsonAndCheck
+    *self.requestJson(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 410, in requestJson
+    return self.__requestEncode(cnx, verb, url, parameters, headers, input, encode)
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 486, in __requestEncode
+    status, responseHeaders, output = self.__requestRaw(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 513, in __requestRaw
+    response = cnx.getresponse()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 110, in getresponse
+    r = verb(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 685, in send
+    r.content
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\models.py", line 829, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\models.py", line 751, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\response.py", line 571, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\response.py", line 767, in read_chunked
+    decoded = self._decode(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\response.py", line 399, in _decode
+    data = self._decoder.decompress(data)
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\response.py", line 86, in decompress
+    ret += self._obj.decompress(data)
+KeyboardInterrupt
