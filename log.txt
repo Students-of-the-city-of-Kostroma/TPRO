@@ -135,3 +135,16 @@
 3820962847 2020-09-29 20:55:58 closed YuriSilenok 1338 Добавил расписание для студентов на форму "расписание"
 3820949024 2020-09-29 20:52:27 moved_columns_in_project YuriSilenok 1338 Добавил расписание для студентов на форму "расписание"
 3820948972 2020-09-29 20:52:26 reopened YuriSilenok 1338 Добавил расписание для студентов на форму "расписание"
+13679601081 2020-09-29 20:55:58 PullRequestEvent YuriSilenok closed 1338 Добавил расписание для студентов на форму "расписание"
+13679600863 2020-09-29 20:55:57 IssueCommentEvent YuriSilenok 1338 Нарушены [требования именования веток](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md#issue-d). Головная ветка task-1326 не соответствует требованиям.
+13679583593 2020-09-29 20:54:21 PushEvent badsster refs/heads/issue-1344 Update README.md
+3820969672 2020-09-29 20:57:50 review_requested YuriSilenok 1361 YuriSilenok Разработала методические рекомендации к составлению пользовательской истории 
+13679642694 2020-09-29 20:59:50 IssueCommentEvent YuriSilenok 1361 У вас есть непроверенные запросы ['#1363']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса
+13679642527 2020-09-29 20:59:49 PullRequestReviewEvent YuriSilenok changes_requested 1361 Разработала методические рекомендации к составлению пользовательской истории 
+13679639307 2020-09-29 20:59:32 IssueCommentEvent ZhizhikinIvan 1338 @YuriSilenok Юрий Викторович, что бы переоткрыть задачу мне необходимо сделать так, что бы ветка соответствовала требованиям. Не могли бы вы подсказать, как это сделать?
+13679601081 2020-09-29 20:55:58 PullRequestEvent YuriSilenok closed 1338 Добавил расписание для студентов на форму "расписание"
+13679600863 2020-09-29 20:55:57 IssueCommentEvent YuriSilenok 1338 Нарушены [требования именования веток](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md#issue-d). Головная ветка task-1326 не соответствует требованиям.
+13679583593 2020-09-29 20:54:21 PushEvent badsster refs/heads/issue-1344 Update README.md
+3820976154 2020-09-29 20:59:31 subscribed YuriSilenok 1338 Добавил расписание для студентов на форму "расписание"
+3820976150 2020-09-29 20:59:31 mentioned YuriSilenok 1338 Добавил расписание для студентов на форму "расписание"
+3820969672 2020-09-29 20:57:50 review_requested YuriSilenok 1361 YuriSilenok Разработала методические рекомендации к составлению пользовательской истории 

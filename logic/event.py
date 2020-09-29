@@ -186,15 +186,15 @@ def check_label(event):
             )
 
 def check_labels(issue):
+    create_comment = issue.create_comment if  isinstance(issue, Issue) else issue.create_issue_comment
     if list({'Unit test'} & set([l.name for l in issue.labels])):
         entities_labels = [l.name for l in issue.labels if re.search(ENTITIES, l.name)]
         if not entities_labels:
-            create_comment = issue.create_comment if  isinstance(issue, Issue) else issue.create_issue_comment
             create_comment(
                 f'Не найдены сопутствующие метки для `Unit test`. {MESS_LABEL}'
             )
     else: 
-        issue.create_comment(
+        create_comment(
             f'Классифицирующая метка не найдена. {MESS_LABEL}'
         )
 
