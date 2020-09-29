@@ -161,3 +161,4 @@
 3821009404 2020-09-29 21:08:17 review_requested YuriSilenok 1361 YuriSilenok Разработала методические рекомендации к составлению пользовательской истории 
 13680974370 2020-09-29 23:06:21 PushEvent badsster refs/heads/issue-1344 Update README.md
 13680962417 2020-09-29 23:05:12 PushEvent badsster refs/heads/issue-1344 Update README.md
+13680980697 2020-09-29 23:06:59 PushEvent badsster refs/heads/issue-1344 Update README.md
