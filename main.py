@@ -42,7 +42,7 @@ if __name__ == '__main__':
         print(f'{now}-->{sleep}-->{end_time}')
         time.sleep(sleep)
         
-        command = 'git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git pull && git push'
+        command = 'git pull && git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git push'
         print(command)
         os.system(command)
 
