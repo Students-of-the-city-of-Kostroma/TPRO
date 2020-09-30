@@ -97,7 +97,7 @@ def check_reviewrs(pull):
     team = set([nu.login for nu in member])
     reviews = set([r.user.login for r in pull.get_reviews()])
     requests = set([nu.login for nu in pull.get_review_requests()[0]])
-    author = set(pull.author.login)
+    author = set(pull.user.login)
     unreviewers = list(team - reviews - requests - author)
     if len(unreviewers) > 0:
         pull.create_review_request(reviewers=unreviewers)
