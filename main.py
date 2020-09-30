@@ -37,14 +37,11 @@ if __name__ == '__main__':
 
         ymls.save_config()
         
+        command = 'git pull && git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git push'
+        print(command)
+        os.system(command)
+        
         now = datetime.now().strftime('%H:%M:%S')
         end_time = (datetime.now() + timedelta(seconds=sleep)).strftime('%H:%M:%S')
         print(f'{now}-->{sleep}-->{end_time}')
         time.sleep(sleep)
-        
-        command = 'git pull && git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git push'
-        print(command)
-        os.system(command)
-
-
-        
