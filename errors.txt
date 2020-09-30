@@ -5,16 +5,8 @@ Traceback (most recent call last):
     self.process_events(repo.get_issues_events())
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 31, in process_events
     EV.process(event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 350, in process
-    EVENTS[event.type](event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 112, in review_requested
-    check_reviewrs(pull)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 104, in check_reviewrs
-    pull.create_review_request(reviewers=unreviewers)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PullRequest.py", line 519, in create_review_request
-    headers, data = self._requester.requestJsonAndCheck(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
-    return self.__check(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
-    raise self.__createException(status, responseHeaders, output)
-github.GithubException.GithubException: 422 {"message": "Review cannot be requested from pull request author.", "documentation_url": "https://docs.github.com/rest/reference/pulls#request-reviewers-for-a-pull-request"}
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 340, in process
+    if event.id not in DB[event.type]:
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 330, in to_string
+    writer = csv.writer(f)
+ValueError: I/O operation on closed file.
