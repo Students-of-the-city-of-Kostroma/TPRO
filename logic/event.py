@@ -320,11 +320,13 @@ def to_string(event):
     
     rows = []
     header = ['id', 'date', 'event', 'user', 'message']
-    with open('log.csv', 'w+', encoding='utf-8') as f:
-        rows = [row for row in csv.reader(f) if row]
-        if len(rows) == 0:
-            rows.append(header)
-        rows.insert(1, data)
+    if os.path.exists('log.csv'):
+        with open('log.csv', 'r', encoding='utf-8') as f:
+            rows = [row for row in csv.reader(f) if row]
+    if len(rows) == 0:
+        rows.append(header)
+    rows.insert(1, data)
+    with open('log.csv', 'w', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerows(rows)            
         

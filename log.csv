@@ -1,2 +1,11 @@
 id,date,event,user,message
+13686318778,2020-09-30 11:31:47,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1363']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13686325923,2020-09-30 11:32:25,IssueCommentEvent,YuriSilenok," 1361 У вас есть непроверенные запросы ['#1363']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13686326091,2020-09-30 11:32:26,IssueCommentEvent,YuriSilenok, 1361 Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13686512791,2020-09-30 11:48:34,PushEvent,YuriSilenok, refs/heads/dev Update labels.md
+13686548689,2020-09-30 11:51:36,IssueCommentEvent,YuriSilenok," 1361 > Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+
+
+
+Обновил требования"
 3823302017,2020-09-30 11:31:29,review_requested,YuriSilenok, 1355 Kruuliter Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
