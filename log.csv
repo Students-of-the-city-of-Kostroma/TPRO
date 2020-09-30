@@ -1,4 +1,13 @@
 id,date,event,user,message
+3826353425,2020-09-30 23:36:43,review_requested,YuriSilenok, 1363 Kruuliter Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+3826353429,2020-09-30 23:36:43,review_requested,YuriSilenok, 1363 NesgovorovVS Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+3826353432,2020-09-30 23:36:43,review_requested,YuriSilenok, 1363 ZhizhikinIvan Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+3826353556,2020-09-30 23:36:45,moved_columns_in_project,YuriSilenok, 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+3826353571,2020-09-30 23:36:45,closed,YuriSilenok, 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+3826353602,2020-09-30 23:36:46,moved_columns_in_project,YuriSilenok, 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+13694827996,2020-09-30 23:36:45,PullRequestReviewEvent,YuriSilenok, changes_requested 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+13694828187,2020-09-30 23:36:46,PullRequestEvent,YuriSilenok, closed 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
+13694828344,2020-09-30 23:36:47,IssueCommentEvent,YuriSilenok, 1363 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
 3826349278,2020-09-30 23:35:33,review_requested,VinogradovAlexandr781227, 1363 YuriSilenok Разработал историю функции корректировки учебной нагрузки для студентов вуза 
 3826231200,2020-09-30 23:02:04,labeled,badsster, 1361 Methodological
 3826232284,2020-09-30 23:02:23,labeled,badsster, 1344 Documentation
