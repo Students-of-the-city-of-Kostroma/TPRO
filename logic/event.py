@@ -195,11 +195,17 @@ def check_label(event):
 
 def check_labels(issue):
     create_comment = issue.create_comment if  isinstance(issue, Issue) else issue.create_issue_comment
-    if list({'Unit test'} & set([l.name for l in issue.labels])):
+    labels = set([l.name for l in issue.labels])
+    if list({'Unit test'} & labels):
         entities_labels = [l.name for l in issue.labels if re.search(ENTITIES, l.name)]
         if not entities_labels:
             create_comment(
                 f'Не найдены сопутствующие метки для `Unit test`. {MESS_LABEL}'
+            )
+    elif list({'Documentation'} & labels):
+        if not list({'Methodological'} & labels):
+            create_comment(
+                f'Не найдены сопутствующие метки для `Documentation`. {MESS_LABEL}'
             )
     else: 
         create_comment(

@@ -5,7 +5,7 @@ Traceback (most recent call last):
     self.process_events(repo.get_issues_events())
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 31, in process_events
     EV.process(event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 344, in process
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 350, in process
     EVENTS[event.type](event)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 111, in review_requested
     check_reviewrs(pull)
