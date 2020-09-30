@@ -68,9 +68,8 @@ TO_STRING:
   - issue.number
   - issue.title
   labeled:
-  - label.name
   - issue.number
-  - issue.title
+  - label.name
   mentioned:
   - issue.number
   - issue.title
