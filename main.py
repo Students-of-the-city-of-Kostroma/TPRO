@@ -25,22 +25,21 @@ if __name__ == '__main__':
             f.write(f'{traceback.format_exc()}')
     finally:
         ymls.save_info()
+        ymls.save_config()
         sleep = 120
         if master is None:
             print('master is None')
         else:
+            command = 'git pull && git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git push'
+            print(command)
+            os.system(command)
+
             hours_left = ((datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])) - datetime.now()).seconds / 3600) * ymls.CONFIG.get('CORRECT_TIME', 1)
             requests_left = int(master._headers['x-ratelimit-remaining'])/(int(master._headers['x-ratelimit-limit']))
             sleep = int((hours_left - requests_left) * 3600)
             sleep = sleep if sleep >= 0 else 0
             print(datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])), master._headers['x-ratelimit-remaining'])
 
-        ymls.save_config()
-        
-        command = 'git pull && git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 1)) + '" && git push'
-        print(command)
-        os.system(command)
-        
         now = datetime.now().strftime('%H:%M:%S')
         end_time = (datetime.now() + timedelta(seconds=sleep)).strftime('%H:%M:%S')
         print(f'{now}-->{sleep}-->{end_time}')
