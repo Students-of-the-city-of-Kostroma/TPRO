@@ -1,4 +1,7 @@
 id,date,event,user,message
+3826231200,2020-09-30 23:02:04,labeled,badsster, 1361 Methodological
+3826232284,2020-09-30 23:02:23,labeled,badsster, 1344 Documentation
+3826232289,2020-09-30 23:02:23,labeled,badsster, 1344 Methodological
 13694444971,2020-09-30 22:59:10,IssueCommentEvent,YuriSilenok, 1361 Создайте её самостоятельно и назначте на запрос
 13694430771,2020-09-30 22:57:46,IssueCommentEvent,badsster," 1361 > > Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
 
