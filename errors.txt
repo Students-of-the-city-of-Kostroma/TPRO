@@ -1,5 +1,5 @@
 Traceback (most recent call last):
-  File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 19, in <module>
+  File "main.py", line 19, in <module>
     student = Listener(repo)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 22, in __init__
     self.process_events(repo.get_issues_events())
@@ -7,9 +7,9 @@ Traceback (most recent call last):
     EV.process(event)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 350, in process
     EVENTS[event.type](event)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 111, in review_requested
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 112, in review_requested
     check_reviewrs(pull)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 103, in check_reviewrs
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 104, in check_reviewrs
     pull.create_review_request(reviewers=unreviewers)
   File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PullRequest.py", line 519, in create_review_request
     headers, data = self._requester.requestJsonAndCheck(

@@ -100,6 +100,7 @@ def check_reviewrs(pull):
     author = set(pull.user.login)
     unreviewers = list(team - reviews - requests - author)
     if len(unreviewers) > 0:
+        print(unreviewers)
         pull.create_review_request(reviewers=unreviewers)
 
 def review_requested(event):
@@ -320,12 +321,11 @@ def to_string(event):
     
     rows = []
     header = ['id', 'date', 'event', 'user', 'message']
-    with open('log.csv', 'r', encoding='utf-8') as f:
+    with open('log.csv', 'w+', encoding='utf-8') as f:
         rows = list(csv.reader(f))
-    if len(rows) == 0:
-        rows.append(header)
-    rows.insert(1, data)
-    with open('log.csv', 'w', encoding='utf-8') as f:
+        if len(rows) == 0:
+            rows.append(header)
+        rows.insert(1, data)
         writer = csv.writer(f)
         writer.writerows(rows)            
         
