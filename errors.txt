@@ -9,6 +9,6 @@ Traceback (most recent call last):
     EVENTS[event.type](event)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 110, in review_requested
     check_reviewrs(pull)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 102, in check_reviewrs
-    pull.create_review_request(reviews=unreviews)
-TypeError: create_review_request() got an unexpected keyword argument 'reviews'
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 101, in check_reviewrs
+    if len(unreviews) > 0:
+NameError: name 'unreviews' is not defined
