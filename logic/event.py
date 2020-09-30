@@ -100,7 +100,7 @@ def check_reviewrs(pull):
     author = set(pull.user.login)
     unreviewers = list(team - reviews - requests - author)
     if len(unreviewers) > 0:
-        print(unreviewers)
+        print(author, unreviewers)
         pull.create_review_request(reviewers=unreviewers)
 
 def review_requested(event):
