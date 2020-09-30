@@ -1,20 +1,14 @@
 Traceback (most recent call last):
   File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 19, in <module>
     student = Listener(repo)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 13, in __init__
-    trpo_repo.check_issues()
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 121, in check_issues
-    f'[{issue.assignee.name}](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/issues/assigned/{issue.assignee.login})',
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\NamedUser.py", line 278, in name
-    self._completeIfNotSet(self._name)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 299, in _completeIfNotSet
-    self._completeIfNeeded()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 303, in _completeIfNeeded
-    self.__complete()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 310, in __complete
-    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
-    return self.__check(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
-    raise self.__createException(status, responseHeaders, output)
-github.GithubException.RateLimitExceededException: 403 {"message": "API rate limit exceeded for user ID 14871471.", "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 22, in __init__
+    self.process_events(repo.get_issues_events())
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 31, in process_events
+    EV.process(event)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 343, in process
+    EVENTS[event.type](event)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 110, in review_requested
+    check_reviewrs(pull)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 102, in check_reviewrs
+    pull.create_review_request(reviews=unreviews)
+TypeError: create_review_request() got an unexpected keyword argument 'reviews'
