@@ -1,8 +1,13 @@
 id,date,event,user,message
-13694430771,2020-09-30 22:57:46,IssueCommentEvent,badsster," 1361 > > Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
-> 
-> Обновил требования
-
+13694444971,2020-09-30 22:59:10,IssueCommentEvent,YuriSilenok, 1361 Создайте её самостоятельно и назначте на запрос
+13694430771,2020-09-30 22:57:46,IssueCommentEvent,badsster," 1361 > > Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+
+> 
+
+> Обновил требования
+
+
+
 Юрий Викторович, подскажите, а мне в labels самой составить метку Methodological или оставить как есть ? Просто я её не нашла "
 13693182693,2020-09-30 21:01:29,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Добавлены модель и таблица для расписания занятий
 3825499250,2020-09-30 19:50:09,connected,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
