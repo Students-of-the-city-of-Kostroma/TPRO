@@ -3,49 +3,16 @@ Traceback (most recent call last):
     student = Listener(repo)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 13, in __init__
     trpo_repo.check_issues()
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 99, in check_issues
-    for pr in self.repo.get_pulls(state='open'):
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 59, in __iter__
-    newElements = self._grow()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 71, in _grow
-    newElements = self._fetchNextPage()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 203, in _fetchNextPage
-    headers, data = self.__requester.requestJsonAndCheck(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 318, in requestJsonAndCheck
-    *self.requestJson(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 410, in requestJson
-    return self.__requestEncode(cnx, verb, url, parameters, headers, input, encode)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 486, in __requestEncode
-    status, responseHeaders, output = self.__requestRaw(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 513, in __requestRaw
-    response = cnx.getresponse()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 110, in getresponse
-    r = verb(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 543, in get
-    return self.request('GET', url, **kwargs)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 530, in request
-    resp = self.send(prep, **send_kwargs)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 643, in send
-    r = adapter.send(request, **kwargs)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
-    httplib_response = self._make_request(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
-    six.raise_from(e, None)
-  File "<string>", line 3, in raise_from
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
-    httplib_response = conn.getresponse()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 1347, in getresponse
-    response.begin()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 307, in begin
-    version, status, reason = self._read_status()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 268, in _read_status
-    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 669, in readinto
-    return self._sock.recv_into(b)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\ssl.py", line 1241, in recv_into
-    return self.read(nbytes, buffer)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\ssl.py", line 1099, in read
-    return self._sslobj.read(len, buffer)
-KeyboardInterrupt
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 101, in check_issues
+    if pr.raw_data['head']['ref'] == branch.name\
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 105, in raw_data
+    self._completeIfNeeded()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 303, in _completeIfNeeded
+    self.__complete()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 310, in __complete
+    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
+    return self.__check(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.RateLimitExceededException: 403 {"message": "API rate limit exceeded for user ID 14871471.", "documentation_url": "https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
