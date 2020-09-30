@@ -98,7 +98,7 @@ def check_reviewrs(pull):
     reviews = set([r.user.login for r in pull.get_reviews()])
     requests = set([nu.login for nu in pull.get_review_requests()[0]])
     unreviewers = list(team - reviews - requests)
-    if len(unreviews) > 0:
+    if len(unreviewers) > 0:
         pull.create_review_request(reviewers=unreviewers)
 
 def review_requested(event):

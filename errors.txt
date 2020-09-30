@@ -9,6 +9,12 @@ Traceback (most recent call last):
     EVENTS[event.type](event)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 110, in review_requested
     check_reviewrs(pull)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 101, in check_reviewrs
-    if len(unreviews) > 0:
-NameError: name 'unreviews' is not defined
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 102, in check_reviewrs
+    pull.create_review_request(reviewers=unreviewers)
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PullRequest.py", line 519, in create_review_request
+    headers, data = self._requester.requestJsonAndCheck(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
+    return self.__check(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.GithubException: 422 {"message": "Review cannot be requested from pull request author.", "documentation_url": "https://docs.github.com/rest/reference/pulls#request-reviewers-for-a-pull-request"}
