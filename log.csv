@@ -1,4 +1,5 @@
 id,date,event,user,message
+13692313992,2020-09-30 19:42:35,DeleteEvent,ZhizhikinIvan, task-1326
 13686558117,2020-09-30 11:52:24,PushEvent,YuriSilenok, refs/heads/issue-1065 Update labels.md
 13686559481,2020-09-30 11:52:31,PushEvent,YuriSilenok, refs/heads/issue-1087 Update labels.md
 13686560859,2020-09-30 11:52:38,PushEvent,YuriSilenok, refs/heads/issue-1095 Update labels.md
