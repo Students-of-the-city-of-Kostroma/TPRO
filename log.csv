@@ -1,4 +1,9 @@
 id,date,event,user,message
+3829990094,2020-10-01 18:03:27,closed,YuriSilenok, 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
+3829990152,2020-10-01 18:03:27,moved_columns_in_project,YuriSilenok, 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
+3829990964,2020-10-01 18:03:37,closed,YuriSilenok, 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
+3829991003,2020-10-01 18:03:37,moved_columns_in_project,YuriSilenok, 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
+13704830135,2020-10-01 18:03:27,IssuesEvent,YuriSilenok, closed 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
 3826353425,2020-09-30 23:36:43,review_requested,YuriSilenok, 1363 Kruuliter Разработал историю функции корректировки учебной нагрузки для студентов вуза 
 3826353429,2020-09-30 23:36:43,review_requested,YuriSilenok, 1363 NesgovorovVS Разработал историю функции корректировки учебной нагрузки для студентов вуза 
 3826353432,2020-09-30 23:36:43,review_requested,YuriSilenok, 1363 ZhizhikinIvan Разработал историю функции корректировки учебной нагрузки для студентов вуза 
