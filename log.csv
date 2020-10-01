@@ -1,4 +1,5 @@
 id,date,event,user,message
+13704832525,2020-10-01 18:03:37,IssuesEvent,YuriSilenok, closed 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
 3829990094,2020-10-01 18:03:27,closed,YuriSilenok, 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
 3829990152,2020-10-01 18:03:27,moved_columns_in_project,YuriSilenok, 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
 3829990964,2020-10-01 18:03:37,closed,YuriSilenok, 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
