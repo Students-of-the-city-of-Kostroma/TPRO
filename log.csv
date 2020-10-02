@@ -1,4 +1,5 @@
 id,date,event,user,message
+13712923028,2020-10-02 11:11:17,PullRequestReviewEvent,MyachevM, commented 1363 Разработал историю функции корректировки учебной нагрузки для студентов вуза 
 13712832980,2020-10-02 11:01:24,PushEvent,MyachevM, refs/heads/issue-1281 update unit test
 13709320656,2020-10-02 00:59:46,PushEvent,NesgovorovVS, refs/heads/issue-1354 add
 13709336551,2020-10-02 01:01:41,PushEvent,NesgovorovVS, refs/heads/issue-1065 R3
