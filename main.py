@@ -19,7 +19,7 @@ if __name__ == '__main__':
         student = Listener(repo)
         master = repo.get_branch('master')
     except:
-        ymls.CONFIG['CORRECT_TIME'] = round(ymls.CONFIG.get('CORRECT_TIME', 0.01) + 0.01, 2)
+        ymls.CONFIG['CORRECT_TIME'] = round(ymls.CONFIG.get('CORRECT_TIME', 0.0) + 0.01, 2)
         print(traceback.format_exc())
         with open('errors.txt', 'w', encoding='utf-8') as f:
             f.write(f'{traceback.format_exc()}')
@@ -30,11 +30,11 @@ if __name__ == '__main__':
         if master is None:
             print('master is None')
         else:
-            command = 'git pull && git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 0.01)) + '" && git push'
+            command = 'git pull && git commit -am "' + str(ymls.CONFIG.get('CORRECT_TIME', 0.0)) + '" && git push'
             print(command)
             os.system(command)
 
-            hours_left = ((datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])) - datetime.now()).seconds / 3600) + ymls.CONFIG.get('CORRECT_TIME', 0.01)
+            hours_left = ((datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])) - datetime.now()).seconds / 3600) + ymls.CONFIG.get('CORRECT_TIME', 0.0)
             requests_left = int(master._headers['x-ratelimit-remaining'])/(int(master._headers['x-ratelimit-limit']))
             sleep = int((hours_left - requests_left) * 3600)
             sleep = sleep if sleep >= 0 else 0
