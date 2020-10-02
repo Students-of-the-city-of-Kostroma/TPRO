@@ -1,6 +1,9 @@
 id,date,event,user,message
-13713171938,2020-10-02 11:37:07,IssueCommentEvent,YuriSilenok," 1363 > Задача находится в закрытых
-
+13713187925,2020-10-02 11:38:47,IssueCommentEvent,YuriSilenok," 1363 хотя нет, все хорошо, на момент вашего запроса на проверку, этот запрос еще был открыт. "
+13713171938,2020-10-02 11:37:07,IssueCommentEvent,YuriSilenok," 1363 > Задача находится в закрытых
+
+
+
 да, это ложное срабатывание, внесу дополнительное условие"
 13712949609,2020-10-02 11:14:08,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3832862761,2020-10-02 11:12:54,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
