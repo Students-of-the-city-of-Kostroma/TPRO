@@ -88,7 +88,7 @@ def check_base_and_head_branch_in_request(pull):
                 f'{MESS_BRANCH} Что-то не так, но я не знаю что.'
             )
         
-def check_code(pull):
+def check_code_UT(pull):
     pass
 
 def check_reviewrs(pull):
@@ -112,7 +112,7 @@ def review_requested(event):
         check_white_box(pull)
         check_base_and_head_branch_in_request(pull)
         check_for_unreviewed_requests(pull)
-        check_code(pull)
+        check_code_UT(pull)
         check_labels(pull)        
 
     payload = event.raw_data.get('payload', {})
