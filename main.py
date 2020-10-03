@@ -41,7 +41,8 @@ if __name__ == '__main__':
             sleep = int((hours_left - requests_left) * 3600)
             sleep = sleep if sleep >= 0 else 0
             print(datetime.fromtimestamp(int(master._headers['x-ratelimit-reset'])), master._headers['x-ratelimit-remaining'])
-
+        while sleep > 3600:
+            sleep -= 3600 
         now = datetime.now().strftime('%H:%M:%S')
         end_time = (datetime.now() + timedelta(seconds=sleep)).strftime('%H:%M:%S')
         print(f'{now}-->{sleep}-->{end_time}')

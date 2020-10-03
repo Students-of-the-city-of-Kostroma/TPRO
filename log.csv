@@ -1,4 +1,16 @@
 id,date,event,user,message
+13725943088,2020-10-03 23:53:02,IssueCommentEvent,YuriSilenok, 1355 Нарушены [требования именования веток](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md#issue-d). Созданная ветка 1355 была удалена.
+13725621823,2020-10-03 22:20:05,CreateEvent,YuriSilenok, 1355
+13725623447,2020-10-03 22:20:29,DeleteEvent,YuriSilenok, 1355
+13725698041,2020-10-03 22:41:25,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Доработка заполнения расписания в RefData
+13725755941,2020-10-03 22:57:38,PushEvent,NesgovorovVS, refs/heads/issue-1354 metod
+13725763891,2020-10-03 22:59:46,PushEvent,NesgovorovVS, refs/heads/issue-1065 delwhitebox
+13725769850,2020-10-03 23:01:09,PushEvent,NesgovorovVS, refs/heads/issue-1240 delWB
+13725775463,2020-10-03 23:02:41,PushEvent,NesgovorovVS, refs/heads/issue-1087 delUN
+13725788166,2020-10-03 23:06:17,PushEvent,NesgovorovVS, refs/heads/issue-1328 razmer
+13725861447,2020-10-03 23:28:12,IssueCommentEvent,YuriSilenok, 1355 Я начинаю тестировать новый функционал скрипта на вашем запросе.
+13725898788,2020-10-03 23:39:24,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13725898797,2020-10-03 23:39:23,PullRequestReviewCommentEvent,YuriSilenok, 1355 ожидается начало комментария `/// <summary>` или конец класса
 13724256082,2020-10-03 16:27:07,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3836589661,2020-10-03 16:25:37,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13724249537,2020-10-03 16:25:24,PushEvent,MyachevM, refs/heads/issue-1281 update unit test
