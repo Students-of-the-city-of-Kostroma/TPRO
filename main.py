@@ -1,4 +1,4 @@
-from github import Github
+from github import Github, RateLimitExceededException
 from other import enigma
 from logic.listener import Listener
 from logic import ymls
@@ -18,8 +18,10 @@ if __name__ == '__main__':
         repo.github = GITHUB
         student = Listener(repo)
         master = repo.get_branch('master')
-    except:
+    except RateLimitExceededException:
         ymls.CONFIG['CORRECT_TIME'] = round(ymls.CONFIG.get('CORRECT_TIME', 0.0) + 0.01, 2)
+        print(traceback.format_exc())
+    except:
         print(traceback.format_exc())
         with open('errors.txt', 'w', encoding='utf-8') as f:
             f.write(f'{traceback.format_exc()}')
