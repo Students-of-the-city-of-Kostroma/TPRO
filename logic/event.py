@@ -330,7 +330,7 @@ def create_branch(event):
             number = rgx[1]
             try:
                 event.repo.get_issue(int(number)).create_comment(
-                    f"{MESS_BRANCH} Созданная ветка {event.raw_data['payload']['ref']} была удалена."
+                    f"{MESS_BRANCH} Созданная ветка `{event.raw_data['payload']['ref']}`` была удалена."
                 )
             except: 
                 print(traceback.format_exc())
