@@ -88,8 +88,109 @@ def check_base_and_head_branch_in_request(pull):
                 f'{MESS_BRANCH} Что-то не так, но я не знаю что.'
             )
         
-def check_code_UT(pull):
-    pass
+def check_code_UT(pull, file):
+    content_file = pull.repo.get_contents(file.filename, pull.head.ref)
+    text = content_file.decoded_content.decode('utf-8').split('\n')
+    
+    state = 'using'
+    graph = {
+        'using' : {
+            r'(\ufeff){,1}using [\w+\.]+;': 'using',
+            r'$' : 'post_using'
+        },
+        'post_using' : {
+            r'$' : 'post_using',
+            r'namespace UnitTestOfTimetableOfClasses' : 'namespace'
+        },
+        'namespace' : {
+            r'\{' : 'namespace_begin'
+        },
+        'namespace_begin' : {
+            r' {4}\[TestClass\]' : 'param_test_class'
+        },
+        'param_test_class' : {
+            r' {4}public class UT_((I|U|D)С)|('+CLASSES+r')' : 'header_controller_test_class',
+            r' {4}public class UT_M|('+CLASSES+r')' : 'header_model_test_class'
+        },
+        'header_controller_test_class' : {
+            r' {4}\{' : 'begin_controller_test_class'
+        },
+        'header_model_test_class' : {
+            r' {4}\{' : 'pre_comment'
+        },
+        'begin_controller_test_class' : {
+            r' {8}readonly RefData refData = new RefData\(\);' : 'pre_comment'
+        },
+        'pre_comment' : {
+            r'$' : 'pre_comment',
+            r' {8}/// <summary>' : 'comment_start_summary',
+            r' {8}\}$' : 'end_class'
+        },
+        'comment_start_summary' : {
+            r' {8}///[\w+\.]+' : 'comment_summary',
+            r' {8}/// </summary>' : 'comment_end_summary'
+        },
+        'comment_end_summary' : {
+            r'\[TestMethod\]' : 'param_method'
+        },
+        'param_method' : {
+            r' {8}public void ((I|U|D)C)|('+CLASSES+r')_\d+\(\)' : 'header_method'
+        },
+        'header_method' : {
+            r' {8}\{' : 'begin_method'
+        },
+        'header_method' : {
+            r' {12}\{' : 'body_method'
+        },
+        'body_method' : {
+            r' {12}.*' : 'body_method',
+            r' {8}\}$' : 'pre_comment'
+        },
+        'end_class' : {
+            r' {4}\}$' : 'end_namespace'
+        },
+        'end_namespace' : {
+            r'\}$' : 'end_file'
+        },
+        'end_namespace' : {
+            r'$' : 'end_file'
+        }
+    }
+    messages ={
+        'pre_comment' : 'Ожидается начало комментария `/// <summary>` или конец класса'
+    }
+    for ind in range(len(text)):
+        line = text[ind]
+        reg = None
+        for transfer in graph[state]:
+            reg = re.match(transfer, line)
+            if reg:
+                state = graph[state][transfer]
+                break
+        if reg is None:
+            position = -1
+            diff = file.patch.split('\n')
+            for ind in range(len(diff)):
+                if diff[ind].find(line) > -1:
+                    position = ind
+                    break
+            mess = ''
+            if state in messages and position > -1:
+                mess = messages[state]
+            else:
+                mess = f'В файле `{file.filename}` после строки `{line}` ожидается любое из списка`{list(graph[state])}`'
+            if position == -1:
+                pull.create_issue_comment(
+                    mess
+                )
+            else:
+                pull.create_review_comment(
+                    body = mess,
+                    commit_id=repo.get_branch(pull.head.ref).commit,
+                    path=file.filename,
+                    position=position
+                )
+            break
 
 def check_reviewrs(pull):
     org = pull.repo.github.get_organization(ymls.CONFIG['ORG'])
@@ -112,8 +213,8 @@ def review_requested(event):
         check_white_box(pull)
         check_base_and_head_branch_in_request(pull)
         check_for_unreviewed_requests(pull)
-        check_code_UT(pull)
-        check_labels(pull)        
+        check_labels(pull)
+        switch_file(pull)
 
     payload = event.raw_data.get('payload', {})
     payload['number'] = event.raw_data['issue']['number']
@@ -183,6 +284,11 @@ def check_white_box(pull):
                     event = 'REQUEST_CHANGES')
                 break
 
+def switch_file(pull):
+    for file in pull.get_files():
+        if re.match(f'{TESTS_PATH}UnitTest.cs$', file.filename):
+            check_code_UT(pull, file)
+        else: print('Нет обработчика на файл {file.filename}')
 
 def check_label(event):
     if 'Unit test' == event.label.name:
