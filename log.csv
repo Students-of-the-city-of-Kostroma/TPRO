@@ -1,4 +1,18 @@
 id,date,event,user,message
+13727642939,2020-10-04 10:37:13,PushEvent,YuriSilenok, refs/heads/issue-1065 Update README.md
+13727643306,2020-10-04 10:37:20,PushEvent,YuriSilenok, refs/heads/issue-1087 Update README.md
+13727643699,2020-10-04 10:37:27,PushEvent,YuriSilenok, refs/heads/issue-1095 Update README.md
+13727644098,2020-10-04 10:37:35,PushEvent,YuriSilenok, refs/heads/issue-1240 Update README.md
+13727644443,2020-10-04 10:37:42,PushEvent,YuriSilenok, refs/heads/issue-1281 Update README.md
+13727644789,2020-10-04 10:37:49,PushEvent,YuriSilenok, refs/heads/issue-1326 Update README.md
+13727645118,2020-10-04 10:37:55,PushEvent,YuriSilenok, refs/heads/issue-1328 Update README.md
+13727645402,2020-10-04 10:38:02,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
+13727645743,2020-10-04 10:38:09,PushEvent,YuriSilenok, refs/heads/issue-1346 Update README.md
+13727646079,2020-10-04 10:38:15,PushEvent,YuriSilenok, refs/heads/issue-1347 Update README.md
+13727646423,2020-10-04 10:38:23,PushEvent,YuriSilenok, refs/heads/issue-1354 Update README.md
+13727646744,2020-10-04 10:38:30,PushEvent,YuriSilenok, refs/heads/task-1087 Update README.md
+13727647026,2020-10-04 10:38:37,PushEvent,YuriSilenok, refs/heads/task-1240 Update README.md
+13727647331,2020-10-04 10:38:44,PushEvent,YuriSilenok, refs/heads/task-1328 Update README.md
 13727635450,2020-10-04 10:34:30,PushEvent,YuriSilenok, refs/heads/dev Update README.md
 13725943088,2020-10-03 23:53:02,IssueCommentEvent,YuriSilenok, 1355 Нарушены [требования именования веток](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md#issue-d). Созданная ветка 1355 была удалена.
 13725621823,2020-10-03 22:20:05,CreateEvent,YuriSilenok, 1355
