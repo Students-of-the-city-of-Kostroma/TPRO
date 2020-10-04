@@ -345,20 +345,19 @@ def push_event(event):
                     issue.create_comment(f'Ветка {branch_name} в которой Вы ведете активность не соответствует [требованиям]'
                     '(https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md)')
                 except: pass
-    if branch_name == 'dev':
-        command = 'cd ..\\Student-timetable && git checkout dev && git pull'
+    if branch_name not in ['master', 'dev']:
+        command = f'cd ..\\Student-timetable && git checkout dev && git pull && git checkout {branch_name} && git pull'
         print(command)
         if os.system(command) != 0:
             print(f'ERROR: {command}')
-        for branch in event.repo.get_branches():
-            if branch.name not in ['master', 'dev']:
-                command = f'cd ..\\Student-timetable && git checkout {branch.name} && git pull && git merge dev && git push'
-                print(command)
-                if os.system(command) != 0:
-                    print(f'ERROR: {command}')
-                    command = f'cd ..\\Student-timetable && git merge --abort'
-                    if os.system(command) != 0:  
-                        print(f'ERROR: {command}')  
+            return
+        command = f'cd ..\\Student-timetable && git checkout {branch_name} && git pull && git merge dev && git push'
+        print(command)
+        if os.system(command) != 0:
+            print(f'ERROR: {command}')
+            command = f'cd ..\\Student-timetable && git merge --abort'
+            if os.system(command) != 0:  
+                print(f'ERROR: {command}')  
 
 TO_STRING = ymls.CONFIG['TO_STRING']
 EVENTS = {
