@@ -1,4 +1,5 @@
 id,date,event,user,message
+13727635450,2020-10-04 10:34:30,PushEvent,YuriSilenok, refs/heads/dev Update README.md
 13725943088,2020-10-03 23:53:02,IssueCommentEvent,YuriSilenok, 1355 Нарушены [требования именования веток](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md#issue-d). Созданная ветка 1355 была удалена.
 13725621823,2020-10-03 22:20:05,CreateEvent,YuriSilenok, 1355
 13725623447,2020-10-03 22:20:29,DeleteEvent,YuriSilenok, 1355
