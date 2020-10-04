@@ -286,7 +286,7 @@ def check_white_box(pull):
 
 def switch_file(pull):
     for file in pull.get_files():
-        if re.match(f'.*.cs$', file.filename):
+        if re.match(r'.*\.cs$', file.filename):
             check_code(pull, file)
         else: print('Нет обработчика на файл {file.filename}')
 
