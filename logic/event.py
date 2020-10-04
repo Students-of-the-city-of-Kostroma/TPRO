@@ -351,7 +351,7 @@ def push_event(event):
         if os.system(command) != 0:
             print(f'ERROR: {command}')
             return
-        command = f'cd ..\\Student-timetable && git checkout {branch_name} && git pull && git merge dev && git push'
+        command = f'cd ..\\Student-timetable && git merge dev && git push'
         print(command)
         if os.system(command) != 0:
             print(f'ERROR: {command}')
