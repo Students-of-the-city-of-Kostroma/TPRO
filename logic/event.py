@@ -88,7 +88,7 @@ def check_base_and_head_branch_in_request(pull):
                 f'{MESS_BRANCH} Что-то не так, но я не знаю что.'
             )
         
-def check_code_UT(pull, file):
+def check_code(pull, file):
     content_file = pull.repo.get_contents(file.filename, pull.head.ref)
     text = content_file.decoded_content.decode('utf-8').split('\n')
     
@@ -286,8 +286,8 @@ def check_white_box(pull):
 
 def switch_file(pull):
     for file in pull.get_files():
-        if re.match(f'{TESTS_PATH}UnitTest.cs$', file.filename):
-            check_code_UT(pull, file)
+        if re.match(f'.*.cs$', file.filename):
+            check_code(pull, file)
         else: print('Нет обработчика на файл {file.filename}')
 
 def check_label(event):
