@@ -1,4 +1,5 @@
 id,date,event,user,message
+13729507801,2020-10-04 19:11:09,IssueCommentEvent,YuriSilenok," 1361 Коммит это просто фиксация изменений, что бы запросить проверку нужно в этом запросе, об этом я уже писал [здесь](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1361#issuecomment-701203558)"
 13729478538,2020-10-04 19:04:09,PushEvent,YuriSilenok, refs/heads/dev требования к коду
 13729350314,2020-10-04 18:33:39,IssueCommentEvent,badsster," 1361 > У вас есть непроверенные запросы ['#1358', '#1355']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса
 
