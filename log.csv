@@ -1,4 +1,5 @@
 id,date,event,user,message
+13729951215,2020-10-04 21:02:53,PushEvent,YuriSilenok, refs/heads/issue-1326 требования к коду
 13729947324,2020-10-04 21:01:53,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Доработка RedData для заполнения таблицы расписания
 13729729765,2020-10-04 20:06:28,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13729729769,2020-10-04 20:06:28,PullRequestReviewCommentEvent,YuriSilenok, 1355 Ожидается начало комментария `/// <summary>` или конец класса
