@@ -1,4 +1,21 @@
 id,date,event,user,message
+3841801592,2020-10-05 21:13:48,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+3841801596,2020-10-05 21:13:48,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+13741343845,2020-10-05 21:13:48,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
+
+>Если вы считаете что работа выполнена, то нужно запросить проверку в запросе на слияние.
+
+
+
+Юрий Викторович, поясните пожалуйста, как мне организовать проверку только RefData, ведь изменения уже закомичены (https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1364/commits/20947f8b82a263aefca9dddc94a3a3fb7d9f4565)?
+
+
+
+Мы с вами договаривались, что приведение RefData к нормальному виду и загрузка данных без ошибок, вы зачтёте как отдельную, недостающую лабораторную (https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1338#issuecomment-695822170 и https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1338#issuecomment-696347417).
+
+
+
+Вторая лабораторная, по реализации отображения расписания пока в процессе. Осталось реализовать отображение самого расписания в таблице."
 13741235832,2020-10-05 21:04:33,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Частичное отображение расписания. Добавлены коментарии.
 13740325252,2020-10-05 19:45:02,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
 13740327616,2020-10-05 19:45:13,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
