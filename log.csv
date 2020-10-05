@@ -1,4 +1,5 @@
 id,date,event,user,message
+13739680951,2020-10-05 18:52:41,IssueCommentEvent,YuriSilenok," 1358 Вполне возможно вы правы, вы наткнулись на нестыковку тест ид в отчете и в модульных тестах"
 3840967756,2020-10-05 18:05:48,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13739108508,2020-10-05 18:09:51,PullRequestReviewEvent,ifuwmnn, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13739075945,2020-10-05 18:07:36,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
