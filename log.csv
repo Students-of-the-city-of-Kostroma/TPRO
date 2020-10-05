@@ -1,4 +1,9 @@
 id,date,event,user,message
+3840943314,2020-10-05 18:01:06,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13738961809,2020-10-05 17:59:29,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13738962922,2020-10-05 17:59:33,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13738962939,2020-10-05 17:59:33,PullRequestReviewCommentEvent,YuriSilenok, 1355 Ожидается начало комментария `/// <summary>` или конец класса
+13738963360,2020-10-05 17:59:35,IssueCommentEvent,YuriSilenok, 1355 Проверку поправил
 3840932566,2020-10-05 17:59:05,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13738902840,2020-10-05 17:55:19,PullRequestReviewEvent,ifuwmnn, dismissed 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 3840912346,2020-10-05 17:55:19,review_dismissed,ifuwmnn, 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
