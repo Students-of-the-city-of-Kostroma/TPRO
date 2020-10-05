@@ -186,7 +186,7 @@ def check_code(pull, file):
             else:
                 pull.create_review_comment(
                     body = mess,
-                    commit_id=repo.get_branch(pull.head.ref).commit,
+                    commit_id=pull.repo.get_branch(pull.head.ref).commit,
                     path=file.filename,
                     position=position
                 )
