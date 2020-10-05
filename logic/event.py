@@ -290,9 +290,12 @@ def check_white_box(pull):
 
 def switch_file(pull):
     for file in pull.get_files():
-        if file.status != 'removed' and re.match(r'.*\.cs$', file.filename):
-            check_code(pull, file)
-        else: print(f'Нет обработчика на файл {file.filename}')
+        print(file.status, file)
+        if file.status != 'removed':
+            if re.match(r'.*\.cs$', file.filename):
+                check_code(pull, file)
+            else: 
+                print(f'Нет обработчика для файла {file.filename}')
 
 def check_label(event):
     if 'Unit test' == event.label.name:
