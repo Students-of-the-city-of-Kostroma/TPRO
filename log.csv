@@ -1,4 +1,8 @@
 id,date,event,user,message
+3840769551,2020-10-05 17:28:50,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3840769658,2020-10-05 17:28:51,review_requested,MyachevM, 1355 ifuwmnn Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13738542556,2020-10-05 17:30:32,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3840769658,2020-10-05 17:28:51,review_requested,MyachevM, 1355 ifuwmnn Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13738511970,2020-10-05 17:28:25,PushEvent,MyachevM, refs/heads/issue-1281 rename file
 3840746021,2020-10-05 17:24:27,moved_columns_in_project,MyachevM, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13738438836,2020-10-05 17:23:23,PullRequestReviewEvent,ifuwmnn, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
