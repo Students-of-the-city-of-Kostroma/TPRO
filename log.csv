@@ -1,4 +1,12 @@
 id,date,event,user,message
+3841973210,2020-10-05 21:58:54,labeled,NesgovorovVS, 1367 Unit test
+3841973212,2020-10-05 21:58:54,labeled,NesgovorovVS, 1367 Script
+3841973215,2020-10-05 21:58:54,labeled,NesgovorovVS, 1367 Низкий
+3841973219,2020-10-05 21:58:54,labeled,NesgovorovVS, 1367 Нагрузка
+3841973229,2020-10-05 21:58:54,milestoned,NesgovorovVS, Backlog 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3841973268,2020-10-05 21:58:54,assigned,NesgovorovVS, NesgovorovVS 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3841973269,2020-10-05 21:58:54,added_to_project,NesgovorovVS, 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+13741837064,2020-10-05 21:58:54,PullRequestEvent,NesgovorovVS, opened 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
 13741817356,2020-10-05 21:57:03,PushEvent,YuriSilenok, refs/heads/issue-1240 требования к коду
 13741796010,2020-10-05 21:55:02,PushEvent,NesgovorovVS, refs/heads/issue-1240 addwhitebox
 13741796369,2020-10-05 21:55:04,PushEvent,YuriSilenok, refs/heads/issue-1065 требования к коду
