@@ -294,8 +294,10 @@ def check_files(pull):
         if file.status != 'removed':
             if re.match(r'.*\.cs$', file.filename):
                 check_code(pull, file)
+            elif re.match(TESTS_PATH+r'(code\.png|graph\.png)$', file.filename):
+                pass
             else: 
-                print(f'Нет обработчика для файла {file.filename}')
+                pull.create_issue_comment(f'Нет обработчика для файла {file.filename}')
 
 def check_label(event):
     if 'Unit test' == event.label.name:
