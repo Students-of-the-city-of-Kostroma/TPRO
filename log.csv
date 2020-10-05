@@ -1,4 +1,5 @@
 id,date,event,user,message
+13738902840,2020-10-05 17:55:19,PullRequestReviewEvent,ifuwmnn, dismissed 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 3840912346,2020-10-05 17:55:19,review_dismissed,ifuwmnn, 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13738836205,2020-10-05 17:50:46,IssueCommentEvent,YuriSilenok," 1355 > Файл `UnitTestOfTimetableOfClasses/UT_Delete_CTeacher.cs` не соответствует требованиям. Нарушены требования именования папок или файлов к [белому ящику](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/White-box/README.md) или [модульным тестам](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md).
 
