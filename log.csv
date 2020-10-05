@@ -1,4 +1,7 @@
 id,date,event,user,message
+13742254086,2020-10-05 22:37:57,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13742254101,2020-10-05 22:37:56,PullRequestReviewCommentEvent,YuriSilenok, 1355 Ожидается начало комментария `/// <summary>` или конец класса
+13742254159,2020-10-05 22:37:57,IssueCommentEvent,YuriSilenok, 1355 Нет обработчика для файла UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md
 3842115831,2020-10-05 22:37:07,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13742235593,2020-10-05 22:36:09,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13742241066,2020-10-05 22:36:40,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
