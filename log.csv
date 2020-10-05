@@ -1,4 +1,5 @@
 id,date,event,user,message
+13739108508,2020-10-05 18:09:51,PullRequestReviewEvent,ifuwmnn, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13739075945,2020-10-05 18:07:36,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13739076866,2020-10-05 18:07:40,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13739076887,2020-10-05 18:07:39,PullRequestReviewCommentEvent,YuriSilenok, 1355 Ожидается начало комментария `/// <summary>` или конец класса
