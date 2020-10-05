@@ -1,4 +1,5 @@
 id,date,event,user,message
+13738068684,2020-10-05 16:57:42,PushEvent,YuriSilenok, refs/heads/issue-1344 Отредактирована пользовательская история
 3840481573,2020-10-05 16:34:50,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13737768111,2020-10-05 16:35:58,PushEvent,YuriSilenok, refs/heads/issue-1281 требования к коду
 13737769272,2020-10-05 16:36:03,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
