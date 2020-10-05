@@ -1,4 +1,6 @@
 id,date,event,user,message
+13740325252,2020-10-05 19:45:02,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
+13740327616,2020-10-05 19:45:13,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
 13739723174,2020-10-05 18:55:57,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3841214792,2020-10-05 18:54:46,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13739704226,2020-10-05 18:54:29,IssueCommentEvent,YuriSilenok, 1355 Продолжаю проверку скрипта
