@@ -1,4 +1,27 @@
 id,date,event,user,message
+3839678952,2020-10-05 13:21:20,review_requested,YuriSilenok, 1365 NordScandinavian Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13735564214,2020-10-05 13:21:13,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
+13735564396,2020-10-05 13:21:14,PullRequestEvent,YuriSilenok, closed 1365 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13735565878,2020-10-05 13:21:22,IssueCommentEvent,YuriSilenok, 1365 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13735566231,2020-10-05 13:21:24,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
+13735566867,2020-10-05 13:21:28,IssueCommentEvent,YuriSilenok, 1365 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13735567170,2020-10-05 13:21:29,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
+13735567841,2020-10-05 13:21:33,IssueCommentEvent,YuriSilenok, 1365 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13735568199,2020-10-05 13:21:35,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
+13735569015,2020-10-05 13:21:40,IssueCommentEvent,YuriSilenok, 1365 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13735569359,2020-10-05 13:21:42,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
+13735570080,2020-10-05 13:21:45,IssueCommentEvent,YuriSilenok, 1365 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13735570372,2020-10-05 13:21:47,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
+13735571083,2020-10-05 13:21:51,IssueCommentEvent,YuriSilenok, 1365 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13735571439,2020-10-05 13:21:53,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
+13735572161,2020-10-05 13:21:57,IssueCommentEvent,YuriSilenok, 1365 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13735572486,2020-10-05 13:21:59,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
+13735573144,2020-10-05 13:22:03,IssueCommentEvent,YuriSilenok, 1365 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13735573499,2020-10-05 13:22:05,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
+13735574247,2020-10-05 13:22:08,IssueCommentEvent,YuriSilenok, 1365 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13735574540,2020-10-05 13:22:10,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
+13735575198,2020-10-05 13:22:14,IssueCommentEvent,YuriSilenok, 1365 Классифицирующая метка не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13735575577,2020-10-05 13:22:16,IssueCommentEvent,YuriSilenok, 1365 Основная задача #1346 назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.
 3839674334,2020-10-05 13:20:09,mentioned,YuriSilenok, 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
 3839674339,2020-10-05 13:20:09,subscribed,YuriSilenok, 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
 3839674936,2020-10-05 13:20:17,labeled,VinogradovAlexandr781227, 1365 Story
