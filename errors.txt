@@ -1,18 +1,16 @@
 Traceback (most recent call last):
   File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 19, in <module>
     student = Listener(repo)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 21, in __init__
-    self.process_events(repo.get_events())
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 26, in process_events
-    for event in events:
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 59, in __iter__
-    newElements = self._grow()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 71, in _grow
-    newElements = self._fetchNextPage()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 203, in _fetchNextPage
-    headers, data = self.__requester.requestJsonAndCheck(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
-    return self.__check(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
-    raise self.__createException(status, responseHeaders, output)
-github.GithubException.GithubException: 502 {"message": "Server Error"}
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 22, in __init__
+    self.process_events(repo.get_issues_events())
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 31, in process_events
+    EV.process(event)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 460, in process
+    EVENTS[event.type](event)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 219, in review_requested
+    switch_file(pull)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 294, in switch_file
+    check_code(pull, file)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 189, in check_code
+    commit_id=repo.get_branch(pull.head.ref).commit,
+NameError: name 'repo' is not defined

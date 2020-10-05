@@ -1,4 +1,10 @@
 id,date,event,user,message
+3840481573,2020-10-05 16:34:50,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13737768111,2020-10-05 16:35:58,PushEvent,YuriSilenok, refs/heads/issue-1281 требования к коду
+13737769272,2020-10-05 16:36:03,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13737771620,2020-10-05 16:36:13,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+3840481573,2020-10-05 16:34:50,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13737749254,2020-10-05 16:34:35,PushEvent,MyachevM, refs/heads/issue-1281 Update UT_Delete_CTeacher.cs
 13737460215,2020-10-05 16:13:12,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
 13737359441,2020-10-05 16:05:23,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
 13737235891,2020-10-05 15:55:31,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
