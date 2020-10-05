@@ -20,7 +20,8 @@ MESS_UT = 'Нарушены требования именования папок
 ' или [модульным тестам]'\
 '(https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md).'
 CLASSES = '|'.join(ymls.CONFIG['ENTITIES'])
-TESTS_PATH = f'^UnitTestOfTimetableOfClasses/(C|M)({CLASSES})/(Insert|Update|Delete)/'
+METHODS = 'Insert|Update|Delete'
+TESTS_PATH = f'^UnitTestOfTimetableOfClasses/(C|M)({CLASSES})/({METHODS})/'
 UT_PATH = f'{TESTS_PATH}(code.png|graph.png|whiteBox.md|UnitTest.cs)$'
 ENTITIES = f'^(C|M)({CLASSES})$'
 
@@ -346,7 +347,7 @@ def push_event(event):
     if re_branch_name is None:
         re_branch_name = re.search(r'\D*(\d+)\D*', branch_name)
         if re_branch_name is not None and len(re_branch_name.regs) > 1:
-                try: 
+                try:
                     issue = event.repo.get_issue(re_branch_name[1])
                     issue.create_comment(f'Ветка {branch_name} в которой Вы ведете активность не соответствует [требованиям]'
                     '(https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md)')
