@@ -262,6 +262,8 @@ def assigned_pull(event):
 def pull_open(event):
     pull_number = event.raw_data['payload']['number']
     pull = event.repo.get_pull(pull_number)
+    if pull.state != 'open':
+        return
     re_branch = re.search(WORK_BRANCH, pull.raw_data['head']['ref'])
     if re_branch:
         if len(re_branch.regs) == 2:
