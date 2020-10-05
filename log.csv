@@ -1,4 +1,6 @@
 id,date,event,user,message
+13741879026,2020-10-05 22:02:41,PushEvent,YuriSilenok, refs/heads/issue-1087 требования к коду
+13741879636,2020-10-05 22:02:45,IssueCommentEvent,YuriSilenok, 1368 Не найдены сопутствующие метки для `Unit test`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
 3841985504,2020-10-05 22:02:00,labeled,NesgovorovVS, 1368 Unit test
 3841985505,2020-10-05 22:02:00,labeled,NesgovorovVS, 1368 Auto test
 3841985506,2020-10-05 22:02:00,labeled,NesgovorovVS, 1368 Script
