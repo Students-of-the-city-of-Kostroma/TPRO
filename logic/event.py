@@ -205,6 +205,8 @@ def check_reviewrs(pull):
 
 def review_requested(event):
     pull = event.repo.get_pull(event.raw_data['issue']['number'])
+    if pull.state != 'open':
+        return
     pull.repo = event.repo
     review_requests = pull.get_review_requests()
     if 'YuriSilenok' in [u.login for u in review_requests[0]]\
