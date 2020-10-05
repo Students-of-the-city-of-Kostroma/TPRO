@@ -1,4 +1,14 @@
 id,date,event,user,message
+3841985504,2020-10-05 22:02:00,labeled,NesgovorovVS, 1368 Unit test
+3841985505,2020-10-05 22:02:00,labeled,NesgovorovVS, 1368 Auto test
+3841985506,2020-10-05 22:02:00,labeled,NesgovorovVS, 1368 Script
+3841985507,2020-10-05 22:02:00,labeled,NesgovorovVS, 1368 Низкий
+3841985512,2020-10-05 22:02:00,milestoned,NesgovorovVS, Backlog 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+3841985525,2020-10-05 22:02:01,assigned,NesgovorovVS, NesgovorovVS 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+3841985546,2020-10-05 22:02:01,added_to_project,NesgovorovVS, 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+13741855146,2020-10-05 22:00:32,PushEvent,NesgovorovVS, refs/heads/issue-1087 addwhitebox
+13741855189,2020-10-05 22:00:32,IssueCommentEvent,YuriSilenok, 1367 Не найдены сопутствующие метки для `Unit test`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13741871694,2020-10-05 22:02:01,PullRequestEvent,NesgovorovVS, opened 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
 3841973210,2020-10-05 21:58:54,labeled,NesgovorovVS, 1367 Unit test
 3841973212,2020-10-05 21:58:54,labeled,NesgovorovVS, 1367 Script
 3841973215,2020-10-05 21:58:54,labeled,NesgovorovVS, 1367 Низкий
