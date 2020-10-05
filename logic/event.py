@@ -289,6 +289,9 @@ def check_white_box(pull):
                     event = 'REQUEST_CHANGES')
                 break
 
+def check_user_story(pull, file):
+    pass
+
 def check_files(pull):
     for file in pull.get_files():
         if file.status != 'removed':
