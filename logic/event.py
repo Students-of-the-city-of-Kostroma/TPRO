@@ -292,8 +292,9 @@ def switch_file(pull):
     for file in pull.get_files():
         print(file.status, file)
         if file.status != 'removed':
+            print(file.status)
             if re.match(r'.*\.cs$', file.filename):
-                check_code(pull, file)
+                pass#check_code(pull, file)
             else: 
                 print(f'Нет обработчика для файла {file.filename}')
 
