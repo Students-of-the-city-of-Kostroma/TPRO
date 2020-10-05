@@ -267,7 +267,7 @@ def pull_open(event):
             issue = event.repo.get_issue(issue_number)
             if 'YuriSilenok' == issue.assignee.login:
                 pull.create_issue_comment(
-                    f'Основная задача #{issue_number} назначена на преподавателя. Это значит вы не можете вести дальнейшую активность по этой задаче.')
+                    f'Основная задача #{issue_number} назначена на преподавателя. Вы не можете вести дальнейшую активность по этой задаче.')
                 pull.edit(state='close')
     else:
         pull.create_issue_comment(
@@ -315,7 +315,7 @@ def check_labels(issue):
             )
     else: 
         create_comment(
-            f'Классифицирующая метка не найдена. {MESS_LABEL}'
+            f'Метка определяющая тип задачи не найдена. {MESS_LABEL}'
         )
 
 def create_branch(event):
