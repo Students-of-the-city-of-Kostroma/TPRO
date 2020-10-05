@@ -212,11 +212,11 @@ def review_requested(event):
     if 'YuriSilenok' in [u.login for u in review_requests[0]]\
     or 'Elite' in [t.name for t in review_requests[1]]:
         check_reviewrs(pull)
-        check_white_box(pull)
+        #check_white_box(pull)
         check_base_and_head_branch_in_request(pull)
         check_for_unreviewed_requests(pull)
         check_labels(pull)
-        switch_file(pull)
+        check_files(pull)
 
     payload = event.raw_data.get('payload', {})
     payload['number'] = event.raw_data['issue']['number']
@@ -288,13 +288,11 @@ def check_white_box(pull):
                     event = 'REQUEST_CHANGES')
                 break
 
-def switch_file(pull):
+def check_files(pull):
     for file in pull.get_files():
-        print(file.status, file)
         if file.status != 'removed':
-            print(file.status)
             if re.match(r'.*\.cs$', file.filename):
-                pass#check_code(pull, file)
+                check_code(pull, file)
             else: 
                 print(f'Нет обработчика для файла {file.filename}')
 
