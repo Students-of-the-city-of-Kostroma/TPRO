@@ -22,7 +22,7 @@ class Listener:
         self.process_events(repo.get_issues_events())
 
     def process_events(self, events):
-        i , limit = 0, 100
+        i , limit = 0, 50
         for event in events:
             if i < limit: i += 1
             else: break
