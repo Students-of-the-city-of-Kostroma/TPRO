@@ -1,4 +1,11 @@
 id,date,event,user,message
+3845906708,2020-10-06 17:54:08,closed,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3845906744,2020-10-06 17:54:08,moved_columns_in_project,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3845906977,2020-10-06 17:54:11,closed,YuriSilenok, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3845907027,2020-10-06 17:54:11,moved_columns_in_project,YuriSilenok, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13746599540,2020-10-06 09:06:14,PullRequestEvent,NordScandinavian, reopened 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13746600489,2020-10-06 09:06:23,PullRequestEvent,NordScandinavian, reopened 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13746599540,2020-10-06 09:06:14,PullRequestEvent,NordScandinavian, reopened 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3843599119,2020-10-06 09:06:13,reopened,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3843599119,2020-10-06 09:06:13,reopened,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
