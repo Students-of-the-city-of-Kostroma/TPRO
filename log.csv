@@ -1,6 +1,8 @@
 id,date,event,user,message
 3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
 3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
+3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
+3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
 13751222869,2020-10-06 16:06:24,IssueCommentEvent,YuriSilenok," 1364 я не могу зачесть кусочно-блочно, вы сами не хотели создавать отдельную задачу для выправления рефдаты. Вы можете сделать это сейчас и командой `git cherry-pick` перенести нужные коммиты в новую ветку, либо ждать пока будет одобрен этот запрос за две задачи сразу."
 3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
 3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
