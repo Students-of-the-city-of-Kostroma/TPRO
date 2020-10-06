@@ -158,7 +158,7 @@ def check_code(pull, file):
         }
     }
     messages ={
-        'pre_comment' : 'Ожидается начало комментария `/// <summary>` или конец класса'
+        'pre_comment' : 'Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса'
     }
     for ind in range(len(text)):
         line = text[ind]
