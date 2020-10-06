@@ -1,4 +1,18 @@
 id,date,event,user,message
+3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
+3843599119,2020-10-06 09:06:13,reopened,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3843599147,2020-10-06 09:06:14,moved_columns_in_project,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
+3843599495,2020-10-06 09:06:22,reopened,NordScandinavian, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3843599556,2020-10-06 09:06:23,moved_columns_in_project,NordScandinavian, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3843601693,2020-10-06 09:07:09,unassigned,YuriSilenok, YuriSilenok 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
+3843601704,2020-10-06 09:07:09,assigned,NordScandinavian, NordScandinavian 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
+3843601969,2020-10-06 09:07:15,unassigned,YuriSilenok, YuriSilenok 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
+3843601981,2020-10-06 09:07:15,assigned,NordScandinavian, NordScandinavian 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
+13746599118,2020-10-06 09:06:11,CreateEvent,NordScandinavian, issue-1088
+13746599540,2020-10-06 09:06:14,PullRequestEvent,NordScandinavian, reopened 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13746600413,2020-10-06 09:06:22,CreateEvent,NordScandinavian, issue-1032
+13746600489,2020-10-06 09:06:23,PullRequestEvent,NordScandinavian, reopened 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 3842981413,2020-10-06 03:52:28,labeled,YuriSilenok, 1369 info
 3842981417,2020-10-06 03:52:28,milestoned,YuriSilenok, Backlog 1369 Статистика активности команды Elite
 3842981427,2020-10-06 03:52:28,assigned,YuriSilenok, YuriSilenok 1369 Статистика активности команды Elite
