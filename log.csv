@@ -1,4 +1,10 @@
 id,date,event,user,message
+13752777932,2020-10-06 17:54:06,IssueCommentEvent,YuriSilenok, 1356 Основная задача #1032 закрыта. Вы не можете вести дальнейшую активность по этому запросу.
+13752778340,2020-10-06 17:54:08,PullRequestEvent,YuriSilenok, closed 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13752778909,2020-10-06 17:54:10,IssueCommentEvent,YuriSilenok, 1357 Основная задача #1088 закрыта. Вы не можете вести дальнейшую активность по этому запросу.
+13752779187,2020-10-06 17:54:11,PullRequestEvent,YuriSilenok, closed 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13752817492,2020-10-06 17:56:40,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13752817566,2020-10-06 17:56:40,PullRequestReviewCommentEvent,YuriSilenok, 1355 А как на счет погуглить?
 3845906708,2020-10-06 17:54:08,closed,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 3845906744,2020-10-06 17:54:08,moved_columns_in_project,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 3845906977,2020-10-06 17:54:11,closed,YuriSilenok, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
