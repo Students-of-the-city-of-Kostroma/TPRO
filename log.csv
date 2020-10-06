@@ -1,4 +1,8 @@
 id,date,event,user,message
+3847182203,2020-10-06 22:22:06,unlabeled,NordScandinavian, Преподаватель 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3847182205,2020-10-06 22:22:06,labeled,NordScandinavian, 1356 CTeacher
+3847183845,2020-10-06 22:22:33,unlabeled,NordScandinavian, Институт 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+3847183848,2020-10-06 22:22:33,labeled,NordScandinavian, 1358 CInstitute
 3847171793,2020-10-06 22:19:09,reopened,NordScandinavian, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 3847171833,2020-10-06 22:19:09,moved_columns_in_project,NordScandinavian, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 3847171954,2020-10-06 22:19:11,reopened,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
