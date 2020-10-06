@@ -139,6 +139,8 @@ id,date,event,user,message
 3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
 3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
 3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
+3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
+3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
 13747399552,2020-10-06 10:33:29,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
 3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
 3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
