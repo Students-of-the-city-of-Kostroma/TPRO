@@ -1,4 +1,7 @@
 id,date,event,user,message
+13755988820,2020-10-06 22:13:33,PushEvent,badsster," refs/heads/issue-1344 Update README.md
+
+Исправила небольшие погрешности документа"
 13753584502,2020-10-06 18:48:24,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13753584514,2020-10-06 18:48:23,PullRequestReviewCommentEvent,YuriSilenok, 1355 Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса
 13753584628,2020-10-06 18:48:24,IssueCommentEvent,YuriSilenok, 1355 Нет обработчика для файла `UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md`
