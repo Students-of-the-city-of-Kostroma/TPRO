@@ -1,6 +1,8 @@
 id,date,event,user,message
 3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
 3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
+3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
+3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
 3843601693,2020-10-06 09:07:09,unassigned,YuriSilenok, NordScandinavian 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
 3843601704,2020-10-06 09:07:09,assigned,NordScandinavian, NordScandinavian 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
 3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
