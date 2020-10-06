@@ -1,4 +1,6 @@
 id,date,event,user,message
+3847868071,2020-10-07 01:52:34,mentioned,YuriSilenok, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3847868075,2020-10-07 01:52:34,subscribed,YuriSilenok, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13756502853,2020-10-06 23:02:28,PushEvent,badsster, refs/heads/issue-1344 Update README.md
 13756497860,2020-10-06 23:02:00,PullRequestReviewEvent,badsster, commented 1361 Разработала методические рекомендации к составлению пользовательской истории 
 13756497903,2020-10-06 23:01:59,PullRequestReviewCommentEvent,badsster," 1361 Тестирование;
