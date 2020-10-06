@@ -414,7 +414,8 @@ EVENTS = {
     'review_request_removed' : mute,
     'ready_for_review' : mute,
     'comment_deleted' : mute,
-    'unlabeled' : mute
+    'unlabeled' : mute,
+    'head_ref_restored' : mute
 }
 
 def to_string(event):
