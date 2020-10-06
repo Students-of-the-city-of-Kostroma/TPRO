@@ -273,7 +273,11 @@ def pull_open(event):
             issue = event.repo.get_issue(issue_number)
             if 'YuriSilenok' == issue.assignee.login:
                 pull.create_issue_comment(
-                    f'Основная задача #{issue_number} назначена на преподавателя. Вы не можете вести дальнейшую активность по этой задаче.')
+                    f'Основная задача #{issue_number} назначена на преподавателя. Вы не можете вести дальнейшую активность по этому запросу.')
+                pull.edit(state='close')
+            if 'open' != issue.state:
+                pull.create_issue_comment(
+                    f'Основная задача #{issue_number} закрыта. Вы не можете вести дальнейшую активность по этому запросу.')
                 pull.edit(state='close')
     else:
         pull.create_issue_comment(
