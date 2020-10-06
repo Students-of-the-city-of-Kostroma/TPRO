@@ -1,4 +1,10 @@
 id,date,event,user,message
+3842981413,2020-10-06 03:52:28,labeled,YuriSilenok, 1369 info
+3842981417,2020-10-06 03:52:28,milestoned,YuriSilenok, Backlog 1369 Статистика активности команды Elite
+3842981427,2020-10-06 03:52:28,assigned,YuriSilenok, YuriSilenok 1369 Статистика активности команды Elite
+3842982610,2020-10-06 03:53:08,closed,YuriSilenok, 1350 Статистика активности по проекту
+13744755839,2020-10-06 03:52:28,IssuesEvent,YuriSilenok, opened 1369 Статистика активности команды Elite
+13744759621,2020-10-06 03:53:08,IssuesEvent,YuriSilenok, closed 1350 Статистика активности по проекту
 13742254086,2020-10-05 22:37:57,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13742254101,2020-10-05 22:37:56,PullRequestReviewCommentEvent,YuriSilenok, 1355 Ожидается начало комментария `/// <summary>` или конец класса
 13742254159,2020-10-05 22:37:57,IssueCommentEvent,YuriSilenok, 1355 Нет обработчика для файла UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md
