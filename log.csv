@@ -3,6 +3,8 @@ id,date,event,user,message
 3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
 3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
 3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
+3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
+3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
 13752112021,2020-10-06 17:08:49,PullRequestReviewEvent,MyachevM, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13752112141,2020-10-06 17:08:48,PullRequestReviewCommentEvent,MyachevM," 1355 > 
 
