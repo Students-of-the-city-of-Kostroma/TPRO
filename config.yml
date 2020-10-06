@@ -49,7 +49,7 @@ TO_STRING:
   - issue.number
   - issue.title
   assigned:
-  - assignee.login
+  - assigner.login
   - issue.number
   - issue.title
   base_ref_changed:
@@ -111,7 +111,7 @@ TO_STRING:
   - issue.number
   - issue.title
   unassigned:
-  - assignee.login
+  - assigner.login
   - issue.number
   - issue.title
   unlabeled:
