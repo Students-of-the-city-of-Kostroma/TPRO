@@ -1,4 +1,17 @@
 id,date,event,user,message
+3847171793,2020-10-06 22:19:09,reopened,NordScandinavian, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3847171833,2020-10-06 22:19:09,moved_columns_in_project,NordScandinavian, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3847171954,2020-10-06 22:19:11,reopened,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3847171998,2020-10-06 22:19:12,moved_columns_in_project,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3847178889,2020-10-06 22:21:07,unlabeled,NordScandinavian, Институт 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3847178890,2020-10-06 22:21:07,labeled,NordScandinavian, 1357 CUniversity
+13756046565,2020-10-06 22:18:57,IssuesEvent,NordScandinavian, reopened 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
+13756048691,2020-10-06 22:19:09,PullRequestEvent,NordScandinavian, reopened 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13756049190,2020-10-06 22:19:12,PullRequestEvent,NordScandinavian, reopened 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13756053023,2020-10-06 22:19:35,PushEvent,badsster," refs/heads/issue-1344 Update labels.md
+
+Исправила небольшие ошибки"
+13756068575,2020-10-06 22:21:03,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Разработка отображения расписания
 3847170648,2020-10-06 22:18:48,reopened,NordScandinavian, 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
 3847170675,2020-10-06 22:18:48,moved_columns_in_project,NordScandinavian, 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
 3847171178,2020-10-06 22:18:57,reopened,NordScandinavian, 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
