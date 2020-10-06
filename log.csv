@@ -24,6 +24,8 @@ id,date,event,user,message
 3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
 3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
 3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
+3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
+3843598923,2020-10-06 09:06:10,head_ref_restored,NordScandinavian,
 3843599119,2020-10-06 09:06:13,reopened,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3843599147,2020-10-06 09:06:14,moved_columns_in_project,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3843599425,2020-10-06 09:06:20,head_ref_restored,NordScandinavian,
