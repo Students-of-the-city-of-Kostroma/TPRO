@@ -1,4 +1,9 @@
 id,date,event,user,message
+3847170648,2020-10-06 22:18:48,reopened,NordScandinavian, 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
+3847170675,2020-10-06 22:18:48,moved_columns_in_project,NordScandinavian, 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
+3847171178,2020-10-06 22:18:57,reopened,NordScandinavian, 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
+3847171204,2020-10-06 22:18:57,moved_columns_in_project,NordScandinavian, 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
+13756045016,2020-10-06 22:18:48,IssuesEvent,NordScandinavian, reopened 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
 13755988820,2020-10-06 22:13:33,PushEvent,badsster," refs/heads/issue-1344 Update README.md
 
 Исправила небольшие погрешности документа"
