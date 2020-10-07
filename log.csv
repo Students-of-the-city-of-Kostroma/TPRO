@@ -1,4 +1,12 @@
 id,date,event,user,message
+13766327209,2020-10-07 17:26:38,IssueCommentEvent,YuriSilenok," 1360 > В файле `UnitTestOfTimetableOfClasses/UT_Delete_CGroup.cs` после строки `namespace UnitTestOfTimetableOfClasses` ожидается любое из списка`['(\\ufeff){,1}using [\\w+\\.]+;', '$']`
+
+На самом деле проблема в том, что после конструкции using должен идти разделитель в виде пустой строки. В данном случая после строки `using LibOfTimetableOfClasses;` должен идти этот разделитель."
+13766335443,2020-10-07 17:27:11,IssueCommentEvent,YuriSilenok," 1360 > Нет обработчика для файла
+
+
+
+Это значит что обнаружен неизвестный файл, проверьте требования к именованию файлов"
 3850705516,2020-10-07 16:59:40,review_requested,YuriSilenok, 1367 ifuwmnn Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
 3850705520,2020-10-07 16:59:40,review_requested,YuriSilenok, 1367 YuriSilenok Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
 3850712775,2020-10-07 17:00:57,moved_columns_in_project,YuriSilenok, 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
