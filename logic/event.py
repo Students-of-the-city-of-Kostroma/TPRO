@@ -158,7 +158,8 @@ def check_code(pull, file):
         }
     }
     messages ={
-        'pre_comment' : 'Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса'
+        'pre_comment' : 'Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса',
+        'param_test_class' : 'Ожидается имя класса соответствующее [требованиям](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md)'
     }
     oldLine = ''
     for ind in range(len(text)):
