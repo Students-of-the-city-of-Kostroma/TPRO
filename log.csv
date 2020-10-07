@@ -1,4 +1,6 @@
 id,date,event,user,message
+13766756680,2020-10-07 17:56:02,PullRequestReviewEvent,YuriSilenok, commented 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+13766756752,2020-10-07 17:56:02,PullRequestReviewCommentEvent,YuriSilenok, 1367 Требования для имени класса [здесь](/Docs/Unit-test/README.md)
 13766654768,2020-10-07 17:49:06,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1368', '#1367', '#1360']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13766655194,2020-10-07 17:49:08,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13766655217,2020-10-07 17:49:08,PullRequestReviewCommentEvent,YuriSilenok," 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `    [TestClass]` ожидается любое из списка`[' {4}public class UT_((I|U|D)С)|(AcademicDegree|AcademicLoad|Auditor|DirectionOfPreparation|Discipline|Enclosures|Group|HEI|Institute|StudyWeek|Teacher|Title|TrainingProfiles|TypesOfOccupations|University)', ' {4}public class UT_M|(AcademicDegree|AcademicLoad|Auditor|DirectionOfPreparation|Discipline|Enclosures|Group|HEI|Institute|StudyWeek|Teacher|Title|TrainingProfiles|TypesOfOccupations|University)']`"
