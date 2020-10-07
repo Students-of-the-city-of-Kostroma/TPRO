@@ -281,10 +281,6 @@ def pull_open(event):
                 pull.create_issue_comment(
                     f'Основная задача #{issue_number} закрыта. Вы не можете вести дальнейшую активность по этому запросу.')
                 pull.edit(state='close')
-    else:
-        pull.create_issue_comment(
-            f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.')
-        pull.edit(state='close')
 
 
 def check_white_box(pull):
