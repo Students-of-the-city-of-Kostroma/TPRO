@@ -315,12 +315,12 @@ def check_label(event):
         issue = event.repo.get_issue(event.raw_data['issue']['number'])
         entities_labels = [l.name for l in issue.labels if re.search(ENTITIES, l.name)]
         if not entities_labels:
-            issue.create_comment(
-                f'Не найдены сопутствующие метки для `{event.label.name}`. {MESS_LABEL}'                
-            )
+            create_comment(event.issue,
+                f'Не найдены сопутствующие метки для `{event.label.name}`. {MESS_LABEL}')
 
 def create_comment(issue, comment):
-    cc = issue.create_comment if  isinstance(issue, Issue) else issue.create_issue_comment
+    cr_comm = issue.create_comment if  isinstance(issue, Issue) else issue.create_issue_comment
+    cr_comm(body=comment)
 
 
 def check_labels(issue):
