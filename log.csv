@@ -1,4 +1,11 @@
 id,date,event,user,message
+3851702342,2020-10-07 20:25:31,mentioned,YuriSilenok, 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+3851702347,2020-10-07 20:25:31,subscribed,YuriSilenok, 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+13768664391,2020-10-07 20:25:32,IssueCommentEvent,NordScandinavian," 1358 > UnitTestOfTimetableOfClasses и создать новую метку
+
+
+
+@YuriSilenok, я правильно понял, что нужно переместить мой отчёт в указанную в этом комменте директорию?"
 13767391519,2020-10-07 18:40:54,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13767391520,2020-10-07 18:40:54,PullRequestReviewCommentEvent,YuriSilenok, 1355 Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса
 3851231480,2020-10-07 18:39:05,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
