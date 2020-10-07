@@ -1,4 +1,7 @@
 id,date,event,user,message
+13771012561,2020-10-08 00:12:11,IssueCommentEvent,YuriSilenok," 1358 > Файл `Docs/CInstitute/Delete/CODE.PNG` не соответствует требованиям. Нарушены требования именования папок или файлов к [белому ящику](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/White-box/README.md) или [модульным тестам](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md).
+
+о том в каких папках и под какими именами написано в этих требованиях."
 13770984765,2020-10-08 00:09:16,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13770984782,2020-10-08 00:09:15,PullRequestReviewCommentEvent,YuriSilenok, 1355 к полям так же нужны комментарии
 13770937489,2020-10-08 00:04:25,PullRequestReviewEvent,YuriSilenok, commented 1361 Разработала методические рекомендации к составлению пользовательской истории 
