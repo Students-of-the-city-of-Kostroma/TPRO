@@ -31,12 +31,10 @@ def mute(event):
 def issue_closed(event):
     if event.raw_data['actor']['login'] != 'YuriSilenok':
         event.issue.edit(state = 'open')
-        event.issue.create_comment(
-            body = 'Прежде чем закрыть задачу, \
-ее нужно перевесить на преподавателя, \
-с целью выставления отметки в журнал.'
-        )    
-def check_body(issue):
+        create_comment(event.issue,
+            'Прежде чем закрыть задачу, '
+            'ее нужно перевесить на преподавателя, '
+            'с целью выставления отметки в журнал.')    
 
 def check_for_unreviewed_requests(pull):
     if pull.state == 'open':
