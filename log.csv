@@ -1,4 +1,7 @@
 id,date,event,user,message
+3851790234,2020-10-07 20:48:05,moved_columns_in_project,NordScandinavian, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13768912560,2020-10-07 20:48:05,PullRequestReviewEvent,NordScandinavian, changes_requested 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13768922043,2020-10-07 20:48:58,PullRequestReviewEvent,NordScandinavian, changes_requested 1360 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
 13768885548,2020-10-07 20:45:34,PushEvent,YuriSilenok, refs/heads/issue-1032 Update labels.md
 13768895539,2020-10-07 20:46:29,PullRequestReviewEvent,NordScandinavian, changes_requested 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
 13768905306,2020-10-07 20:47:24,PullRequestReviewEvent,NordScandinavian, changes_requested 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
