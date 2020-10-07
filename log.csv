@@ -1,4 +1,5 @@
 id,date,event,user,message
+13769590280,2020-10-07 21:51:38,PushEvent,YuriSilenok, refs/heads/issue-1346 требования к коду
 3852026095,2020-10-07 21:50:22,review_dismissed,VinogradovAlexandr781227, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13769577287,2020-10-07 21:50:22,PushEvent,VinogradovAlexandr781227, refs/heads/issue-1346 User_Story v3
 13769577357,2020-10-07 21:50:22,PullRequestReviewEvent,MyachevM, dismissed 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
