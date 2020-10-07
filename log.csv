@@ -1,4 +1,7 @@
 id,date,event,user,message
+13768885548,2020-10-07 20:45:34,PushEvent,YuriSilenok, refs/heads/issue-1032 Update labels.md
+13768895539,2020-10-07 20:46:29,PullRequestReviewEvent,NordScandinavian, changes_requested 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+13768905306,2020-10-07 20:47:24,PullRequestReviewEvent,NordScandinavian, changes_requested 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
 13768868567,2020-10-07 20:44:01,PushEvent,NordScandinavian, refs/heads/issue-1032 fixed naming files of unit-test
 3851748149,2020-10-07 20:37:03,mentioned,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 3851748153,2020-10-07 20:37:03,subscribed,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
