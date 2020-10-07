@@ -1,4 +1,7 @@
 id,date,event,user,message
+3851199776,2020-10-07 18:32:37,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13767263955,2020-10-07 18:31:26,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
+13767269474,2020-10-07 18:31:51,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13767215900,2020-10-07 18:27:58,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13767215904,2020-10-07 18:27:57,PullRequestReviewCommentEvent,YuriSilenok," 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `` ожидается любое из списка`['(\\ufeff){,1}using [\\w+\\.]+;', '$']`"
 3851169398,2020-10-07 18:26:26,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
