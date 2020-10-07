@@ -307,7 +307,8 @@ def check_files(pull):
             elif re.match(TESTS_PATH+r'(code\.png|graph\.png|whiteBox.md)$', file.filename):
                 pass
             else: 
-                pull.create_issue_comment(f'Нет обработчика для файла `{file.filename}`')
+                pull.create_issue_comment(f'Неизвестный файл `{file.filename}`')
+                break
 
 def check_label(event):
     if 'Unit test' == event.label.name:
