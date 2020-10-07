@@ -36,6 +36,7 @@ def issue_closed(event):
 ее нужно перевесить на преподавателя, \
 с целью выставления отметки в журнал.'
         )    
+def check_body(issue):
 
 def check_for_unreviewed_requests(pull):
     if pull.state == 'open':
@@ -320,24 +321,24 @@ def check_label(event):
                 f'Не найдены сопутствующие метки для `{event.label.name}`. {MESS_LABEL}'                
             )
 
+def create_comment(issue, comment):
+    cc = issue.create_comment if  isinstance(issue, Issue) else issue.create_issue_comment
+
+
 def check_labels(issue):
-    create_comment = issue.create_comment if  isinstance(issue, Issue) else issue.create_issue_comment
     labels = set([l.name for l in issue.labels])
     if list({'Unit test'} & labels):
         entities_labels = [l.name for l in issue.labels if re.search(ENTITIES, l.name)]
         if not entities_labels:
-            create_comment(
-                f'Не найдены сопутствующие метки для `Unit test`. {MESS_LABEL}'
-            )
+            create_comment(issue, 
+                f'Не найдены сопутствующие метки для `Unit test`. {MESS_LABEL}')
     elif list({'Documentation'} & labels):
         if not list({'Methodological'} & labels):
-            create_comment(
-                f'Не найдены сопутствующие метки для `Documentation`. {MESS_LABEL}'
-            )
+            create_comment(issue, 
+                f'Не найдены сопутствующие метки для `Documentation`. {MESS_LABEL}')
     else: 
-        create_comment(
-            f'Метка определяющая тип задачи не найдена. {MESS_LABEL}'
-        )
+        create_comment(issue, 
+            f'Метка определяющая тип задачи не найдена. {MESS_LABEL}')
 
 def create_branch(event):
     rgx = re.search(WORK_BRANCH, event.raw_data['payload']['ref'])
@@ -350,9 +351,8 @@ def create_branch(event):
         if rgx is not None and len(rgx.regs) > 1:
             number = rgx[1]
             try:
-                event.repo.get_issue(int(number)).create_comment(
-                    f"{MESS_BRANCH} Созданная ветка `{event.raw_data['payload']['ref']}` была удалена."
-                )
+                create_comment(event.repo.get_issue(int(number)),
+                    f"{MESS_BRANCH} Созданная ветка `{event.raw_data['payload']['ref']}` была удалена.")
             except: 
                 print(traceback.format_exc())
 def push_event(event):
@@ -363,8 +363,9 @@ def push_event(event):
         if re_branch_name is not None and len(re_branch_name.regs) > 1:
                 try:
                     issue = event.repo.get_issue(re_branch_name[1])
-                    issue.create_comment(f'Ветка {branch_name} в которой Вы ведете активность не соответствует [требованиям]'
-                    '(https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md)')
+                    create_comment(issue,
+                        f'Ветка {branch_name} в которой Вы ведете активность не соответствует [требованиям]'
+                        '(https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md)')
                 except: pass
     if branch_name not in ['master', 'dev']:
         command = f'cd ..\\Student-timetable && git checkout dev && git pull && git checkout {branch_name} && git pull'
