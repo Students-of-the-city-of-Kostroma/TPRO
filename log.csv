@@ -1,4 +1,14 @@
 id,date,event,user,message
+3851748149,2020-10-07 20:37:03,mentioned,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3851748153,2020-10-07 20:37:03,subscribed,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13768776377,2020-10-07 20:35:38,PushEvent,YuriSilenok, refs/heads/issue-1088 Update labels.md
+13768792143,2020-10-07 20:37:03,IssueCommentEvent,NordScandinavian," 1356 > 1. Тебе нужно папку CTeacher со скринами и отчётом, переместить из папки Docs в папку UnitTestOfTimetableOfClasses
+
+> 2. Тебе нужно создать новую метку CTeacher
+
+
+
+@YuriSilenok, я не понимаю этого коммента, зачем мне переносить файлы отчёта в папку, где лежат автотесты?"
 13768750797,2020-10-07 20:33:19,PushEvent,NordScandinavian, refs/heads/issue-1088 fixed naming files of unit-test
 3851702342,2020-10-07 20:25:31,mentioned,YuriSilenok, 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 3851702347,2020-10-07 20:25:31,subscribed,YuriSilenok, 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
