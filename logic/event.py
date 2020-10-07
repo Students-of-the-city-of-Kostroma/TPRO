@@ -180,7 +180,7 @@ def check_code(pull, file):
             if state in messages and position > -1:
                 mess = messages[state]
             else:
-                mess = f'В файле `{file.filename}` после строки `{line}` ожидается любое из списка`{list(graph[state])}`'
+                mess = f'В файле `{file.filename}` после строки `{oldLine}` ожидается любое из списка`{list(graph[state])}`'
             if position == -1:
                 pull.create_issue_comment(
                     mess
