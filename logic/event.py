@@ -160,6 +160,7 @@ def check_code(pull, file):
     messages ={
         'pre_comment' : 'Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса'
     }
+    oldLine = ''
     for ind in range(len(text)):
         line = text[ind]
         reg = None
@@ -192,6 +193,7 @@ def check_code(pull, file):
                     position=position
                 )
             break
+        oldLine = line
 
 def check_reviewrs(pull):
     org = pull.repo.github.get_organization(ymls.CONFIG['ORG'])
