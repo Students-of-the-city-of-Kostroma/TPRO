@@ -269,6 +269,10 @@ def pull_open(event):
     pull = event.repo.get_pull(pull_number)
     if pull.state != 'open':
         return
+
+    if pull.body == '':
+        pull.create_issue_comment(body='Описание запроса должно содержать сведения о том, какую задачу он закрывает в случае мержа')
+
     re_branch = re.search(WORK_BRANCH, pull.raw_data['head']['ref'])
     if re_branch:
         if len(re_branch.regs) == 2:
