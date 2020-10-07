@@ -1,4 +1,21 @@
 id,date,event,user,message
+3850705516,2020-10-07 16:59:40,review_requested,YuriSilenok, 1367 ifuwmnn Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3850705520,2020-10-07 16:59:40,review_requested,YuriSilenok, 1367 YuriSilenok Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3850712775,2020-10-07 17:00:57,moved_columns_in_project,YuriSilenok, 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3850714638,2020-10-07 17:01:17,closed,YuriSilenok, 1262 Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+3850714681,2020-10-07 17:01:18,moved_columns_in_project,YuriSilenok, 1262 Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+13765952416,2020-10-07 17:00:57,PullRequestReviewEvent,YuriSilenok, changes_requested 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+13765952882,2020-10-07 17:00:59,IssueCommentEvent,YuriSilenok, 1367 Нет обработчика для файла `UnitTestOfTimetableOfClasses/CAcademicLoad/Insert/CODE.png`
+13765952647,2020-10-07 17:00:58,IssueCommentEvent,YuriSilenok, 1367 Не найдены сопутствующие метки для `Unit test`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13765953074,2020-10-07 17:01:00,IssueCommentEvent,YuriSilenok, 1367 Нет обработчика для файла `UnitTestOfTimetableOfClasses/CAcademicLoad/Insert/GRAPH.PNG`
+13765953290,2020-10-07 17:01:01,IssueCommentEvent,YuriSilenok, 1367 Нет обработчика для файла `UnitTestOfTimetableOfClasses/CAcademicLoad/Insert/whitebox.md`
+13765953723,2020-10-07 17:01:02,PullRequestReviewCommentEvent,YuriSilenok," 1367 В файле `UnitTestOfTimetableOfClasses/UT_Insert_CAdemicLoad.cs` после строки `    public class UT_Insert_CAcademicLoad` ожидается любое из списка`[' {4}public class UT_((I|U|D)С)|(AcademicDegree|AcademicLoad|Auditor|DirectionOfPreparation|Discipline|Enclosures|Group|HEI|Institute|StudyWeek|Teacher|Title|TrainingProfiles|TypesOfOccupations|University)', ' {4}public class UT_M|(AcademicDegree|AcademicLoad|Auditor|DirectionOfPreparation|Discipline|Enclosures|Group|HEI|Institute|StudyWeek|Teacher|Title|TrainingProfiles|TypesOfOccupations|University)']`"
+13765953696,2020-10-07 17:01:02,PullRequestReviewEvent,YuriSilenok, commented 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+13765953876,2020-10-07 17:01:03,IssueCommentEvent,YuriSilenok, 1367 Нет обработчика для файла `UnitTestOfTimetableOfClasses/UnitTestOfTimetableOfClasses.csproj`
+13765957339,2020-10-07 17:01:16,IssueCommentEvent,YuriSilenok, 1262 Нарушены [требования именования веток](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md#issue-d). Головная ветка task-1240 не соответствует требованиям.
+13765957678,2020-10-07 17:01:18,PullRequestEvent,YuriSilenok, closed 1262 Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+13765964382,2020-10-07 17:01:44,PushEvent,NesgovorovVS, refs/heads/issue-1354 prob
+13766009603,2020-10-07 17:04:47,PushEvent,NesgovorovVS, refs/heads/issue-1328 fix
 3850630133,2020-10-07 16:45:20,review_requested,NesgovorovVS, 1360 Elite Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
 3850635435,2020-10-07 16:46:25,review_requested,NesgovorovVS, 1262 MyachevM Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
 3850635852,2020-10-07 16:46:31,review_requested,NesgovorovVS, 1262 ZhizhikinIvan Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
