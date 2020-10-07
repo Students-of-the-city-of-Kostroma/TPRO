@@ -1,6 +1,21 @@
 id,date,event,user,message
-13771012561,2020-10-08 00:12:11,IssueCommentEvent,YuriSilenok," 1358 > Файл `Docs/CInstitute/Delete/CODE.PNG` не соответствует требованиям. Нарушены требования именования папок или файлов к [белому ящику](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/White-box/README.md) или [модульным тестам](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md).
-
+3852562789,2020-10-08 00:22:06,mentioned,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3852562791,2020-10-08 00:22:06,subscribed,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13771102415,2020-10-08 00:22:06,IssueCommentEvent,YuriSilenok," 1356 > > 1. Тебе нужно папку CTeacher со скринами и отчётом, переместить из папки Docs в папку UnitTestOfTimetableOfClasses
+
+> > 2. Тебе нужно создать новую метку CTeacher
+
+> 
+
+> @YuriSilenok, я не понимаю этого коммента, зачем мне переносить файлы отчёта в папку, где лежат автотесты?
+
+
+
+думаю вам стоит ознакомится с требованиями в расположению файлов. они несколько изменились."
+13771012561,2020-10-08 00:12:11,IssueCommentEvent,YuriSilenok," 1358 > Файл `Docs/CInstitute/Delete/CODE.PNG` не соответствует требованиям. Нарушены требования именования папок или файлов к [белому ящику](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/White-box/README.md) или [модульным тестам](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md).
+
+
+
 о том в каких папках и под какими именами написано в этих требованиях."
 13770984765,2020-10-08 00:09:16,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13770984782,2020-10-08 00:09:15,PullRequestReviewCommentEvent,YuriSilenok, 1355 к полям так же нужны комментарии
