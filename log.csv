@@ -1,4 +1,5 @@
 id,date,event,user,message
+13769775057,2020-10-07 22:09:23,PushEvent,VinogradovAlexandr781227, refs/heads/issue-1346 User_Story v4
 13769653882,2020-10-07 21:57:46,PullRequestReviewEvent,YuriSilenok, changes_requested 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13769653998,2020-10-07 21:57:47,IssueCommentEvent,YuriSilenok," 1366 У вас есть непроверенные запросы ['#1368', '#1367', '#1360']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13769654130,2020-10-07 21:57:47,IssueCommentEvent,YuriSilenok, 1366 Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
