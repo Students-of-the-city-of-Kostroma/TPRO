@@ -1,4 +1,9 @@
 id,date,event,user,message
+3850627114,2020-10-07 16:44:42,review_requested,NesgovorovVS, 1360 VinogradovAlexandr781227 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
+3850627327,2020-10-07 16:44:45,review_requested,NesgovorovVS, 1360 NordScandinavian Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
+3850627614,2020-10-07 16:44:48,review_requested,NesgovorovVS, 1360 MyachevM Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
+3850628208,2020-10-07 16:44:56,review_requested,NesgovorovVS, 1360 badsster Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
+3850629338,2020-10-07 16:45:10,review_requested,NesgovorovVS, 1360 ZhizhikinIvan Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
 3850553695,2020-10-07 16:30:04,unassigned,YuriSilenok, YuriSilenok 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
 3850553709,2020-10-07 16:30:04,assigned,VinogradovAlexandr781227, YuriSilenok 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
 3849881154,2020-10-07 13:52:01,unassigned,VinogradovAlexandr781227, YuriSilenok 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
