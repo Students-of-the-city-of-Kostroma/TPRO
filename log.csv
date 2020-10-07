@@ -1,4 +1,7 @@
 id,date,event,user,message
+3852026095,2020-10-07 21:50:22,review_dismissed,VinogradovAlexandr781227, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13769577287,2020-10-07 21:50:22,PushEvent,VinogradovAlexandr781227, refs/heads/issue-1346 User_Story v3
+13769577357,2020-10-07 21:50:22,PullRequestReviewEvent,MyachevM, dismissed 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 3851790234,2020-10-07 20:48:05,moved_columns_in_project,NordScandinavian, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13768912560,2020-10-07 20:48:05,PullRequestReviewEvent,NordScandinavian, changes_requested 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13768922043,2020-10-07 20:48:58,PullRequestReviewEvent,NordScandinavian, changes_requested 1360 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
