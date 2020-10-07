@@ -290,6 +290,26 @@ def check_white_box(pull):
                 break
 
 def check_user_story(pull, file):
+    content = pull.repo.get_contents(file.filename, pull.head.ref)
+    text_file = content.decoded_content.decode('utf-8').split('\n')
+    file_text = {
+            'numbering' : {
+                r'^\d+\W' : 'numb'
+            },
+            'character_restriction_title' : {
+                r'.{0,20}' : 'title'
+            }
+        }
+    final_text = {
+        'title_first_level' : {
+            r'^\W{1}': 'first_level',
+            r'^\W{2}': 'second_level',
+            r'^\W{3}': 'third_level'
+        },
+        'lists' : {
+            r'^\W{1}': 'list'
+        }
+    }
     pass
 
 def check_files(pull):
