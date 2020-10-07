@@ -230,34 +230,34 @@ def unassigned(event):
     if len(event.issue.assignees) < 1:
         event.issue.edit(
             assignee = event.assignee.login)
-        event.issue.create_comment(
-            body = f'У каждой задачи должен быть ответсвенный')
+        create_comment(event.issue,
+            f'У каждой задачи должен быть ответсвенный')
 
 def assigned(event):
     if len(event.issue.assignees) > 1:
         event.issue.edit(
             assignee = [a.login for a in event.issue.assignees if a.login != 'YuriSilenok'][0])
-        event.issue.create_comment(
-            body = f'У одной задачи/запроса может быть только один ответсвенный')
+        create_comment(event.issue,
+            f'У одной задачи/запроса может быть только один ответсвенный')
 
     if event.issue.pull_request is None:
         issue = event.issue
         if issue.state == 'close':
             issue.edit(
                 assignee = [user.login for user in issue.assignees if user.login != event.raw_data['assignee']['login']])
-            issue.create_comment(
-                body='Нельзя менять ответсвенного в закрытых задачах')
+            create_comment(event.issue,
+                'Нельзя менять ответсвенного в закрытых задачах')
     else:
         pull = event.repo.get_pull(event.issue.number)
         if event.assigner.login != 'YuriSilenok'\
         and event.assignee.login == 'YuriSilenok':
             branch = event.repo.get_pull(event.issue.number).raw_data['head']['ref']
             task_number = re.search(r'.*-(.*)', branch).group(1)
-            event.issue.create_comment(
-                body = f'После того, как преподаватель \
-провел положительную проверку запроса #{event.issue.number}, \
-Вы должны смержить запрос. После этого перевесить основную \
-задачу #{task_number} на преподавателя.'
+            create_comment(event.issue,
+                f'После того, как преподаватель '
+                'провел положительную проверку запроса #{event.issue.number}, '
+                'Вы должны смержить запрос. После этого перевесить основную '
+                'задачу #{task_number} на преподавателя.'
             )
             event.issue.edit(
                 assignees = [a.login for a in event.issue.assignees if a.login != 'YuriSilenok']
