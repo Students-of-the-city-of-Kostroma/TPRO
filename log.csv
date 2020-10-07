@@ -1,4 +1,6 @@
 id,date,event,user,message
+3851231480,2020-10-07 18:39:05,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13767364022,2020-10-07 18:38:50,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13767288574,2020-10-07 18:33:17,PullRequestReviewCommentEvent,YuriSilenok, 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `    public class UT_DСTeacher                    ` ожидается любое из списка`[' {4}\\{']`
 13767288545,2020-10-07 18:33:17,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3851199776,2020-10-07 18:32:37,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
