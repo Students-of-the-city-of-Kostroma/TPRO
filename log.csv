@@ -1,4 +1,6 @@
 id,date,event,user,message
+13770984765,2020-10-08 00:09:16,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13770984782,2020-10-08 00:09:15,PullRequestReviewCommentEvent,YuriSilenok, 1355 к полям так же нужны комментарии
 13770937489,2020-10-08 00:04:25,PullRequestReviewEvent,YuriSilenok, commented 1361 Разработала методические рекомендации к составлению пользовательской истории 
 13770937520,2020-10-08 00:04:25,PullRequestReviewCommentEvent,YuriSilenok," 1361 > Пример:
 
