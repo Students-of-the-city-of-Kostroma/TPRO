@@ -1,4 +1,40 @@
 id,date,event,user,message
+3850630133,2020-10-07 16:45:20,review_requested,NesgovorovVS, 1360 Elite Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
+3850635435,2020-10-07 16:46:25,review_requested,NesgovorovVS, 1262 MyachevM Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+3850635852,2020-10-07 16:46:31,review_requested,NesgovorovVS, 1262 ZhizhikinIvan Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+3850636419,2020-10-07 16:46:39,review_requested,NesgovorovVS, 1262 VinogradovAlexandr781227 Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+3850637317,2020-10-07 16:46:50,review_requested,NesgovorovVS, 1262 Elite Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+3850637461,2020-10-07 16:46:52,review_requested,NesgovorovVS, 1262 NordScandinavian Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+3850638327,2020-10-07 16:47:04,review_requested,NesgovorovVS, 1262 badsster Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+3850660598,2020-10-07 16:51:26,review_requested,YuriSilenok, 1368 ifuwmnn Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+3850660604,2020-10-07 16:51:26,review_requested,YuriSilenok, 1368 YuriSilenok Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+3850660962,2020-10-07 16:51:30,labeled,NesgovorovVS, 1368 CUniversity
+3850667434,2020-10-07 16:52:45,moved_columns_in_project,YuriSilenok, 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+3850669180,2020-10-07 16:53:03,review_requested,YuriSilenok, 1262 ifuwmnn Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+3850670394,2020-10-07 16:53:16,review_requested,NesgovorovVS, 1367 ZhizhikinIvan Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3850670397,2020-10-07 16:53:16,review_requested,NesgovorovVS, 1367 VinogradovAlexandr781227 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3850670398,2020-10-07 16:53:16,review_requested,NesgovorovVS, 1367 badsster Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3850670399,2020-10-07 16:53:16,review_requested,NesgovorovVS, 1367 MyachevM Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3850670403,2020-10-07 16:53:16,review_requested,NesgovorovVS, 1367 NordScandinavian Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3850670404,2020-10-07 16:53:16,review_requested,NesgovorovVS, 1367 Elite Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+13765828012,2020-10-07 16:52:45,PullRequestReviewEvent,YuriSilenok, changes_requested 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+13765828329,2020-10-07 16:52:46,IssueCommentEvent,YuriSilenok, 1368 Не найдены сопутствующие метки для `Unit test`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13765828718,2020-10-07 16:52:47,IssueCommentEvent,YuriSilenok, 1368 Нет обработчика для файла `UnitTestOfTimetableOfClasses/CUniversity/Insert/CODE.png`
+13765828927,2020-10-07 16:52:48,IssueCommentEvent,YuriSilenok, 1368 Нет обработчика для файла `UnitTestOfTimetableOfClasses/CUniversity/Insert/GRAPH.PNG`
+13765829112,2020-10-07 16:52:49,IssueCommentEvent,YuriSilenok, 1368 Нет обработчика для файла `UnitTestOfTimetableOfClasses/CUniversity/Insert/whitebox.md`
+13765832889,2020-10-07 16:53:04,PullRequestReviewEvent,YuriSilenok, changes_requested 1262 Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+3850638327,2020-10-07 16:47:04,review_requested,NesgovorovVS, 1262 badsster Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+3850648962,2020-10-07 16:49:04,review_requested,NesgovorovVS, 1368 ZhizhikinIvan Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+3850648963,2020-10-07 16:49:05,review_requested,NesgovorovVS, 1368 VinogradovAlexandr781227 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+3850648966,2020-10-07 16:49:05,review_requested,NesgovorovVS, 1368 badsster Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+3850648969,2020-10-07 16:49:05,review_requested,NesgovorovVS, 1368 MyachevM Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+3850650641,2020-10-07 16:49:25,review_requested,NesgovorovVS, 1368 NordScandinavian Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+3850650645,2020-10-07 16:49:25,review_requested,NesgovorovVS, 1368 Elite Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
+13765738795,2020-10-07 16:46:40,PullRequestReviewEvent,YuriSilenok, changes_requested 1360 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
+13765739032,2020-10-07 16:46:41,IssueCommentEvent,YuriSilenok, 1360 Нет обработчика для файла `UnitTestOfTimetableOfClasses/CGroup/Delete/CODE.png`
+13765739216,2020-10-07 16:46:42,IssueCommentEvent,YuriSilenok, 1360 Нет обработчика для файла `UnitTestOfTimetableOfClasses/CGroup/Delete/GRAPH.PNG`
+13765739408,2020-10-07 16:46:43,IssueCommentEvent,YuriSilenok, 1360 Нет обработчика для файла `UnitTestOfTimetableOfClasses/CGroup/Delete/whiteBox.md`
+13765739666,2020-10-07 16:46:44,IssueCommentEvent,YuriSilenok," 1360 В файле `UnitTestOfTimetableOfClasses/UT_Delete_CGroup.cs` после строки `namespace UnitTestOfTimetableOfClasses` ожидается любое из списка`['(\\ufeff){,1}using [\\w+\\.]+;', '$']`"
 3850627114,2020-10-07 16:44:42,review_requested,NesgovorovVS, 1360 VinogradovAlexandr781227 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
 3850627327,2020-10-07 16:44:45,review_requested,NesgovorovVS, 1360 NordScandinavian Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
 3850627614,2020-10-07 16:44:48,review_requested,NesgovorovVS, 1360 MyachevM Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
