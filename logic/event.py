@@ -127,7 +127,7 @@ def check_code(pull, file):
             r' {8}\}$' : 'end_class'
         },
         'comment_start_summary' : {
-            r' {8}///[\w+\.]+' : 'comment_summary',
+            r' {8}///[\w+ \.]+' : 'comment_start_summary',
             r' {8}/// </summary>' : 'comment_end_summary'
         },
         'comment_end_summary' : {
