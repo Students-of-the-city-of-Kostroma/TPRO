@@ -1,4 +1,8 @@
 id,date,event,user,message
+13784229344,2020-10-08 23:31:37,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13784229653,2020-10-08 23:31:40,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13784229672,2020-10-08 23:31:39,PullRequestReviewCommentEvent,YuriSilenok," 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `            Assert.AreEqual(refData.CTeacher.Delete(tcher), false, ""Преподаватель был удалён, не смотря на то, что таблица преподавателей пуста"");` ожидается любое из списка`[' {12}.*', ' {8}\\}$']`"
+13784247835,2020-10-08 23:33:31,PushEvent,badsster, refs/heads/issue-1344 Update README.md
 3857232427,2020-10-08 23:23:34,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3857169051,2020-10-08 23:05:52,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3857212583,2020-10-08 23:18:12,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
