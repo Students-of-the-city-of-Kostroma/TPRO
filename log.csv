@@ -1,4 +1,7 @@
 id,date,event,user,message
+13777627824,2020-10-08 14:14:28,IssueCommentEvent,YuriSilenok," 1367 > Нет обработчика для файла `UnitTestOfTimetableOfClasses/UnitTestOfTimetableOfClasses.csproj`
+
+Добавил игнорирование этого файла"
 3853049916,2020-10-08 03:52:34,closed,YuriSilenok, 1369 Статистика активности команды Elite
 13772548400,2020-10-08 03:52:35,IssuesEvent,YuriSilenok, closed 1369 Статистика активности команды Elite
 3852562789,2020-10-08 00:22:06,mentioned,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
