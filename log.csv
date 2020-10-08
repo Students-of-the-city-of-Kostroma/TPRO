@@ -1,4 +1,10 @@
 id,date,event,user,message
+13782933387,2020-10-08 21:24:38,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13782933735,2020-10-08 21:24:40,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13782933760,2020-10-08 21:24:40,PullRequestReviewCommentEvent,YuriSilenok," 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `        /// <summary>` ожидается любое из списка`[' {8}///[\\w+\\.]+', ' {8}/// </summary>']`"
+13782933876,2020-10-08 21:24:41,IssueCommentEvent,YuriSilenok, 1355 Неизвестный файл `UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md`
+13782946050,2020-10-08 21:25:49,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13782946080,2020-10-08 21:25:49,PullRequestReviewCommentEvent,YuriSilenok," 1355 так, что-то тут не так, смотрю"
 3856783191,2020-10-08 21:20:04,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
 3856783200,2020-10-08 21:20:04,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
 3856789377,2020-10-08 21:21:45,review_requested,MyachevM, 1355 ifuwmnn Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
