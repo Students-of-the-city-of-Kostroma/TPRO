@@ -1,4 +1,5 @@
 id,date,event,user,message
+13781536561,2020-10-08 19:18:39,IssueCommentEvent,YuriSilenok, 1355 к полю refData так же должен быть комментарий
 13781482192,2020-10-08 19:14:08,PullRequestReviewEvent,ifuwmnn, changes_requested 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13781337674,2020-10-08 19:02:31,PullRequestReviewEvent,ifuwmnn, commented 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
 13781304908,2020-10-08 19:00:02,PullRequestReviewEvent,ifuwmnn, changes_requested 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
