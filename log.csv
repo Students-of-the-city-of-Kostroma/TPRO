@@ -1,5 +1,8 @@
 id,date,event,user,message
-13779862155,2020-10-08 17:15:34,IssueCommentEvent,YuriSilenok," 1366 - опять анонимный коммит, разберитесь с этим
+13781167207,2020-10-08 18:49:20,PullRequestReviewEvent,ifuwmnn, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13781183849,2020-10-08 18:50:39,PullRequestReviewEvent,ifuwmnn, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13779862155,2020-10-08 17:15:34,IssueCommentEvent,YuriSilenok," 1366 - опять анонимный коммит, разберитесь с этим
+
 - если хотите проверку вашей работы, запросите ее в запросе."
 13777627824,2020-10-08 14:14:28,IssueCommentEvent,YuriSilenok," 1367 > Нет обработчика для файла `UnitTestOfTimetableOfClasses/UnitTestOfTimetableOfClasses.csproj`
 
