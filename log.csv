@@ -1,4 +1,98 @@
 id,date,event,user,message
+3857169051,2020-10-08 23:05:52,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3857212583,2020-10-08 23:18:12,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13783904096,2020-10-08 22:59:17,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13783910884,2020-10-08 22:59:58,PullRequestReviewCommentEvent,YuriSilenok," 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `        /// </summary>` ожидается любое из списка`[' {8}///[\\w+ \\.]+', ' {8}/// </summary>']`"
+13783910865,2020-10-08 22:59:58,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13783911024,2020-10-08 22:59:59,IssueCommentEvent,YuriSilenok, 1355 Неизвестный файл `UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md`
+13783976722,2020-10-08 23:06:25,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13783985285,2020-10-08 23:07:18,PullRequestReviewEvent,badsster, commented 1361 Разработала методические рекомендации к составлению пользовательской истории 
+13783985324,2020-10-08 23:07:17,PullRequestReviewCommentEvent,badsster," 1361 Изменила описание блока тестирования.
+
+
+
+Тестирование;
+
+- Начало тестового сценария: Сценарий-""Порядковый номер теста"";
+
+- После нумерации теста и знака двоеточие идет заголовок с заглавной буквы;
+
+- Описание одного сценария состоит из последовательности шагов, что нужно сделать с системой;
+
+- После всех шагов мы описываем ""Ожидаемый результат"", который и будет являться проверкой тестов;
+
+- Количество тест-кейсов не менее трех.
+
+"
+13783989639,2020-10-08 23:07:45,PushEvent,badsster, refs/heads/issue-1344 Update README.md
+13784038185,2020-10-08 23:12:37,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13784084166,2020-10-08 23:17:11,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13784084171,2020-10-08 23:17:11,PullRequestReviewCommentEvent,YuriSilenok, 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `        /// </summary>` ожидается любое из списка`['\\[TestMethod\\]']`
+13784084262,2020-10-08 23:17:12,IssueCommentEvent,YuriSilenok, 1355 Неизвестный файл `UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md`
+13784099639,2020-10-08 23:18:45,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13784100034,2020-10-08 23:18:47,PullRequestReviewCommentEvent,YuriSilenok, 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `        public void DCTeacher_1()` ожидается любое из списка`[' {12}\\{']`
+13784100134,2020-10-08 23:18:48,IssueCommentEvent,YuriSilenok, 1355 Неизвестный файл `UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md`
+13784100018,2020-10-08 23:18:48,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3857169051,2020-10-08 23:05:52,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3857212583,2020-10-08 23:18:12,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13783904096,2020-10-08 22:59:17,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13783910884,2020-10-08 22:59:58,PullRequestReviewCommentEvent,YuriSilenok," 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `        /// </summary>` ожидается любое из списка`[' {8}///[\\w+ \\.]+', ' {8}/// </summary>']`"
+13783910865,2020-10-08 22:59:58,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13783911024,2020-10-08 22:59:59,IssueCommentEvent,YuriSilenok, 1355 Неизвестный файл `UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md`
+13783976722,2020-10-08 23:06:25,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13783985285,2020-10-08 23:07:18,PullRequestReviewEvent,badsster, commented 1361 Разработала методические рекомендации к составлению пользовательской истории 
+13783985324,2020-10-08 23:07:17,PullRequestReviewCommentEvent,badsster," 1361 Изменила описание блока тестирования.
+
+
+
+Тестирование;
+
+- Начало тестового сценария: Сценарий-""Порядковый номер теста"";
+
+- После нумерации теста и знака двоеточие идет заголовок с заглавной буквы;
+
+- Описание одного сценария состоит из последовательности шагов, что нужно сделать с системой;
+
+- После всех шагов мы описываем ""Ожидаемый результат"", который и будет являться проверкой тестов;
+
+- Количество тест-кейсов не менее трех.
+
+"
+13783989639,2020-10-08 23:07:45,PushEvent,badsster, refs/heads/issue-1344 Update README.md
+13784038185,2020-10-08 23:12:37,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13784084166,2020-10-08 23:17:11,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13784084171,2020-10-08 23:17:11,PullRequestReviewCommentEvent,YuriSilenok, 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `        /// </summary>` ожидается любое из списка`['\\[TestMethod\\]']`
+13784084262,2020-10-08 23:17:12,IssueCommentEvent,YuriSilenok, 1355 Неизвестный файл `UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md`
+3857169051,2020-10-08 23:05:52,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13783904096,2020-10-08 22:59:17,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13783910884,2020-10-08 22:59:58,PullRequestReviewCommentEvent,YuriSilenok," 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `        /// </summary>` ожидается любое из списка`[' {8}///[\\w+ \\.]+', ' {8}/// </summary>']`"
+13783910865,2020-10-08 22:59:58,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13783911024,2020-10-08 22:59:59,IssueCommentEvent,YuriSilenok, 1355 Неизвестный файл `UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md`
+13783976722,2020-10-08 23:06:25,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13783985285,2020-10-08 23:07:18,PullRequestReviewEvent,badsster, commented 1361 Разработала методические рекомендации к составлению пользовательской истории 
+13783985324,2020-10-08 23:07:17,PullRequestReviewCommentEvent,badsster," 1361 Изменила описание блока тестирования.
+
+
+
+Тестирование;
+
+- Начало тестового сценария: Сценарий-""Порядковый номер теста"";
+
+- После нумерации теста и знака двоеточие идет заголовок с заглавной буквы;
+
+- Описание одного сценария состоит из последовательности шагов, что нужно сделать с системой;
+
+- После всех шагов мы описываем ""Ожидаемый результат"", который и будет являться проверкой тестов;
+
+- Количество тест-кейсов не менее трех.
+
+"
+13783989639,2020-10-08 23:07:45,PushEvent,badsster, refs/heads/issue-1344 Update README.md
+3857169051,2020-10-08 23:05:52,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13783904096,2020-10-08 22:59:17,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13783910884,2020-10-08 22:59:58,PullRequestReviewCommentEvent,YuriSilenok," 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `        /// </summary>` ожидается любое из списка`[' {8}///[\\w+ \\.]+', ' {8}/// </summary>']`"
+13783910865,2020-10-08 22:59:58,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13783911024,2020-10-08 22:59:59,IssueCommentEvent,YuriSilenok, 1355 Неизвестный файл `UnitTestOfTimetableOfClasses/CTeacher/Delete/whiteBox.md`
 3856938339,2020-10-08 22:01:59,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13783669439,2020-10-08 22:35:53,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13783680901,2020-10-08 22:36:59,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"

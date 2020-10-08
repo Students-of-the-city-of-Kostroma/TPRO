@@ -127,11 +127,11 @@ def check_code(pull, file):
             r' {8}\}$' : 'end_class'
         },
         'comment_start_summary' : {
-            r' {8}///[\w+ \.]+' : 'comment_start_summary',
-            r' {8}/// </summary>' : 'comment_end_summary'
+            r' {8}/// </summary>' : 'comment_end_summary',
+            r' {8}///[\w+ \.]+' : 'comment_start_summary'
         },
         'comment_end_summary' : {
-            r'\[TestMethod\]' : 'param_method'
+            r' {8}\[TestMethod\]' : 'param_method'
         },
         'param_method' : {
             r' {8}public void ((I|U|D)C)|('+CLASSES+r')_\d+\(\)' : 'header_method'
@@ -140,7 +140,7 @@ def check_code(pull, file):
             r' {8}\{' : 'begin_method'
         },
         'header_method' : {
-            r' {12}\{' : 'body_method'
+            r' {8}\{' : 'body_method'
         },
         'body_method' : {
             r' {12}.*' : 'body_method',
@@ -304,7 +304,7 @@ def check_files(pull):
         if file.status != 'removed':
             if re.match(r'.*\.cs$', file.filename):
                 check_code(pull, file)
-            elif re.match(TESTS_PATH+r'(code\.png|graph\.png|\.md)$', file.filename):
+            elif re.match(TESTS_PATH+r'(code\.png|graph\.png|whiteBox\.md)$', file.filename):
                 pass
             elif re.match(r'\.csproj', file.filename):
                 with open('errors.txt', 'w', encoding='utf-8') as f:
