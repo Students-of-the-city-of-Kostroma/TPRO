@@ -1,4 +1,13 @@
 id,date,event,user,message
+3856783191,2020-10-08 21:20:04,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+3856783200,2020-10-08 21:20:04,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+3856789377,2020-10-08 21:21:45,review_requested,MyachevM, 1355 ifuwmnn Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3856789474,2020-10-08 21:21:46,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13782884149,2020-10-08 21:20:04,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
+
+Закомитил рабочий вариант, расписание выбирается, но есть некоторые проблемы с отображением. 
+
+Вероятно проблемы связаны с компонентом TableLayoutPanel. Буду разбираться."
 13782854254,2020-10-08 21:17:18,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Отображение расписания
 13782870365,2020-10-08 21:18:46,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 3856345929,2020-10-08 19:27:17,moved_columns_in_project,ifuwmnn, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
