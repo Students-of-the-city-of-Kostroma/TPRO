@@ -1,4 +1,6 @@
 id,date,event,user,message
+13782854254,2020-10-08 21:17:18,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Отображение расписания
+13782870365,2020-10-08 21:18:46,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 3856345929,2020-10-08 19:27:17,moved_columns_in_project,ifuwmnn, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 13781639160,2020-10-08 19:27:17,PullRequestReviewEvent,ifuwmnn, changes_requested 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 13781582351,2020-10-08 19:22:31,PullRequestReviewEvent,ifuwmnn, commented 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
