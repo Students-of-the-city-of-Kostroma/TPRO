@@ -1,4 +1,7 @@
 id,date,event,user,message
+13782933760,2020-10-08 21:24:40,PullRequestReviewCommentEvent,YuriSilenok," 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `        /// <summary>` ожидается любое из списка`[' {8}///[\\w+\\.]+', ' {8}/// </summary>']`"
+13783195309,2020-10-08 21:49:38,PushEvent,badsster, refs/heads/issue-1344 Delete EXAMPLE.PNG
+13783196988,2020-10-08 21:49:48,PushEvent,badsster, refs/heads/issue-1344 Delete SAMPLE.PNG
 13783175344,2020-10-08 21:47:37,PullRequestReviewEvent,badsster, commented 1361 Разработала методические рекомендации к составлению пользовательской истории 
 13783175366,2020-10-08 21:47:37,PullRequestReviewCommentEvent,badsster," 1361 > Да, давайте так, выглядит логично.
 

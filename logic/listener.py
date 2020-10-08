@@ -8,6 +8,10 @@ from logic import event as EV
 class Listener:
     def __init__(self, repo):
         self.repo = repo
+
+        self.process_events(repo.get_events())
+        self.process_events(repo.get_issues_events())
+
         today = datetime.now().date()
         trpo_repo = Repository(repo)
         trpo_repo.check_issues()
@@ -18,8 +22,7 @@ class Listener:
                 repo.github.get_organization(ymls.CONFIG['ORG']).get_team_by_slug(ymls.CONFIG['TEAM']).get_members(),
                 today
             )
-        self.process_events(repo.get_events())
-        self.process_events(repo.get_issues_events())
+
 
     def process_events(self, events):
         i , limit = 0, 50

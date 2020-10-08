@@ -304,7 +304,7 @@ def check_files(pull):
         if file.status != 'removed':
             if re.match(r'.*\.cs$', file.filename):
                 check_code(pull, file)
-            elif re.match(TESTS_PATH+r'(code\.png|graph\.png)$', file.filename):
+            elif re.match(TESTS_PATH+r'(code\.png|graph\.png|\.md)$', file.filename):
                 pass
             elif re.match(r'\.csproj', file.filename):
                 with open('errors.txt', 'w', encoding='utf-8') as f:
