@@ -292,7 +292,7 @@ def check_white_box(pull):
 def check_user_story(pull, file):
     content = pull.repo.get_contents(file.filename, pull.head.ref)
     text_file = content.decoded_content.decode('utf-8').split('\n')
-    file_text = {
+    failing_text = {
             'numbering' : {
                 r'^\d+\W' : 'numb'
             },
@@ -310,7 +310,13 @@ def check_user_story(pull, file):
             r'^\W{1}': 'list'
         }
     }
-    pass
+    for line in text_file:
+        for failing in failing_text['numbering']:
+            if re.match(failing, line):
+                mes = f'В файле `{file.filename}` не должно быть нумерации'
+            pass
+        for final in final_text:
+            pass
 
 def check_files(pull):
     for file in pull.get_files():
