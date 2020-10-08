@@ -1,4 +1,11 @@
 id,date,event,user,message
+13784861164,2020-10-09 00:38:11,PullRequestReviewEvent,badsster, commented 1361 Разработала методические рекомендации к составлению пользовательской истории 
+13784861181,2020-10-09 00:38:10,PullRequestReviewCommentEvent,badsster," 1361 Создала документ по первому варианту.
+
+Если неправильно, то перенесу.
+
+[Образец](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/issue-1344/Docs/Technical/UserStories/Story-0/READMY.md)"
+13784876318,2020-10-09 00:39:57,PushEvent,badsster, refs/heads/issue-1344 Update README.md
 13784852248,2020-10-09 00:37:10,PushEvent,badsster, refs/heads/issue-1344 Update READMY.md
 13784423849,2020-10-08 23:51:25,PushEvent,badsster, refs/heads/issue-1344 Create READMY.md
 13784229344,2020-10-08 23:31:37,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
