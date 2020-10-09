@@ -1,4 +1,18 @@
 id,date,event,user,message
+3859111613,2020-10-09 11:46:34,review_requested,MyachevM, 1366 MyachevM Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3859114218,2020-10-09 11:47:16,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3859114218,2020-10-09 11:47:16,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3859114218,2020-10-09 11:47:16,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3859114218,2020-10-09 11:47:16,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3859114218,2020-10-09 11:47:16,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13788795268,2020-10-09 10:51:10,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1366']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13788884790,2020-10-09 11:00:11,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13788884876,2020-10-09 11:00:10,PullRequestReviewCommentEvent,YuriSilenok," 1355 В файле `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs` после строки `            Assert.AreEqual(refData.CTeacher.Delete(tcher), false, ""Преподаватель был удалён, не смотря на то, что таблица преподавателей пуста"");` ожидается любое из списка`[' {12}.*', ' {8}\\}$']`"
+13788897845,2020-10-09 11:01:20,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13788898116,2020-10-09 11:01:20,PullRequestReviewCommentEvent,YuriSilenok, 1355 у вас пробел после фигурной скобки в 19 строке.
+13789320771,2020-10-09 11:42:03,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
+13789364347,2020-10-09 11:46:07,PullRequestReviewEvent,MyachevM, approved 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13789372325,2020-10-09 11:46:52,PullRequestReviewEvent,MyachevM, changes_requested 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 3858899678,2020-10-09 10:50:43,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13784891426,2020-10-09 00:41:42,PushEvent,badsster, refs/heads/issue-1344 Update READMY.md
 13784861164,2020-10-09 00:38:11,PullRequestReviewEvent,badsster, commented 1361 Разработала методические рекомендации к составлению пользовательской истории 

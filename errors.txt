@@ -11,6 +11,12 @@ Traceback (most recent call last):
     check_files(pull)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 306, in check_files
     check_code(pull, file)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 167, in check_code
-    for transfer in graph[state]:
-KeyError: 'comment_summary'
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 189, in check_code
+    pull.create_review_comment(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PullRequest.py", line 414, in create_review_comment
+    headers, data = self._requester.requestJsonAndCheck(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
+    return self.__check(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.GithubException: 422 {"message": "Validation Failed", "errors": [{"resource": "PullRequestReviewComment", "code": "invalid", "field": "position"}], "documentation_url": "https://docs.github.com/rest/reference/pulls#create-a-review-comment-for-a-pull-request"}

@@ -134,13 +134,10 @@ def check_code(pull, file):
             r' {8}\[TestMethod\]' : 'param_method'
         },
         'param_method' : {
-            r' {8}public void ((I|U|D)C)|('+CLASSES+r')_\d+\(\)' : 'header_method'
+            r' {8}public void ((I|U|D)C)|('+CLASSES+r')_\d+\(\)$' : 'header_method'
         },
         'header_method' : {
-            r' {8}\{' : 'begin_method'
-        },
-        'header_method' : {
-            r' {8}\{' : 'body_method'
+            r' {8}\{$' : 'begin_method'
         },
         'body_method' : {
             r' {12}.*' : 'body_method',
@@ -177,10 +174,10 @@ def check_code(pull, file):
                     position = ind
                     break
             mess = ''
-            if state in messages and position > -1:
+            if state in messages and position > 0:
                 mess = messages[state]
             else:
-                mess = f'В файле `{file.filename}` после строки `{oldLine}` ожидается любое из списка`{list(graph[state])}`'
+                mess = f'После строки `{oldLine}` ожидается любое из списка`{list(graph[state])}`'
             if position == -1:
                 pull.create_issue_comment(
                     mess
