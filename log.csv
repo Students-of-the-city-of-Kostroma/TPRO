@@ -1,4 +1,6 @@
 id,date,event,user,message
+13795650458,2020-10-09 21:23:50,PullRequestReviewEvent,YuriSilenok, changes_requested 1361 Разработала методические рекомендации к составлению пользовательской истории 
+13795650600,2020-10-09 21:23:51,IssueCommentEvent,YuriSilenok, 1361 Неизвестный файл `Docs/Contributers/DocStyle/README.md`
 3861316931,2020-10-09 21:21:34,review_requested,badsster, 1361 YuriSilenok Разработала методические рекомендации к составлению пользовательской истории 
 3861317074,2020-10-09 21:21:37,review_requested,badsster, 1361 MyachevM Разработала методические рекомендации к составлению пользовательской истории 
 13795628001,2020-10-09 21:21:25,IssueCommentEvent,badsster," 1361 > Работа готова для проверки?
