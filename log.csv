@@ -1,4 +1,6 @@
 id,date,event,user,message
+13795510826,2020-10-09 21:08:39,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13795510875,2020-10-09 21:08:38,PullRequestReviewCommentEvent,YuriSilenok, 1355 Вы знаете в чем проблема?
 3861179062,2020-10-09 20:39:38,review_requested,YuriSilenok, 1357 VinogradovAlexandr781227 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3861181725,2020-10-09 20:40:27,moved_columns_in_project,YuriSilenok, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13795244864,2020-10-09 20:40:26,PullRequestReviewEvent,YuriSilenok, changes_requested 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
