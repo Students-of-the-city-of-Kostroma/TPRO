@@ -1,4 +1,6 @@
 id,date,event,user,message
+13793288528,2020-10-09 17:45:06,PushEvent,YuriSilenok, refs/heads/issue-1065 Update README.md
+13793290571,2020-10-09 17:45:15,PushEvent,YuriSilenok, refs/heads/issue-1354 Update README.md
 13793238093,2020-10-09 17:40:59,PushEvent,NesgovorovVS, refs/heads/issue-1354 1-ICENcl
 13793268182,2020-10-09 17:43:28,PushEvent,NesgovorovVS, refs/heads/issue-1065 perem
 3860428347,2020-10-09 17:26:48,assigned,NesgovorovVS, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
