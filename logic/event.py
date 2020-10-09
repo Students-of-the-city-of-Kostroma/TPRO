@@ -95,7 +95,7 @@ def check_code(pull, file):
     state = 'using'
     graph = {
         'using' : {
-            r'(\ufeff){,1}using [\w+\.]+;': 'using',
+            r'(\ufeff){,1}using [\w+\.]+;$': 'using',
             r'$' : 'post_using'
         },
         'post_using' : {
@@ -103,35 +103,35 @@ def check_code(pull, file):
             r'namespace UnitTestOfTimetableOfClasses' : 'namespace'
         },
         'namespace' : {
-            r'\{' : 'namespace_begin'
+            r'\{$' : 'namespace_begin'
         },
         'namespace_begin' : {
-            r' {4}\[TestClass\]' : 'param_test_class'
+            r' {4}\[TestClass\]$' : 'param_test_class'
         },
         'param_test_class' : {
-            r' {4}public class UT_((I|U|D)С)|('+CLASSES+r')' : 'header_controller_test_class',
-            r' {4}public class UT_M|('+CLASSES+r')' : 'header_model_test_class'
+            r' {4}public class UT_((I|U|D)С)|('+CLASSES+r')$' : 'header_controller_test_class',
+            r' {4}public class UT_M|('+CLASSES+r')$' : 'header_model_test_class'
         },
         'header_controller_test_class' : {
-            r' {4}\{' : 'begin_controller_test_class'
+            r' {4}\{$' : 'begin_controller_test_class'
         },
         'header_model_test_class' : {
-            r' {4}\{' : 'pre_comment'
+            r' {4}\{$' : 'pre_comment'
         },
         'begin_controller_test_class' : {
-            r' {8}readonly RefData refData = new RefData\(\);' : 'pre_comment'
+            r' {8}readonly RefData refData = new RefData\(\);$' : 'pre_comment'
         },
         'pre_comment' : {
             r'$' : 'pre_comment',
-            r' {8}/// <summary>' : 'comment_start_summary',
+            r' {8}/// <summary>$' : 'comment_start_summary',
             r' {8}\}$' : 'end_class'
         },
         'comment_start_summary' : {
-            r' {8}/// </summary>' : 'comment_end_summary',
+            r' {8}/// </summary>$' : 'comment_end_summary',
             r' {8}///[\w+ \.]+' : 'comment_start_summary'
         },
         'comment_end_summary' : {
-            r' {8}\[TestMethod\]' : 'param_method'
+            r' {8}\[TestMethod\]$' : 'param_method'
         },
         'param_method' : {
             r' {8}public void ((I|U|D)C)|('+CLASSES+r')_\d+\(\)$' : 'header_method'
