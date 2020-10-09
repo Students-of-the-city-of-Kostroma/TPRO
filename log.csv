@@ -1,4 +1,16 @@
 id,date,event,user,message
+3861175664,2020-10-09 20:38:37,review_requested,NordScandinavian, 1357 YuriSilenok Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3861177718,2020-10-09 20:39:15,unassigned,YuriSilenok, NordScandinavian 1095 Исправить сбои в автотестах расположенных в файле  UT_Delete_CInstitute 
+3861177727,2020-10-09 20:39:15,assigned,NordScandinavian, NordScandinavian 1095 Исправить сбои в автотестах расположенных в файле  UT_Delete_CInstitute 
+13795213326,2020-10-09 20:37:00,IssueCommentEvent,NordScandinavian," 1358 > > Файл `Docs/CInstitute/Delete/CODE.PNG` не соответствует требованиям. Нарушены требования именования папок или файлов к [белому ящику](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/White-box/README.md) или [модульным тестам](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md).
+
+> 
+
+> о том в каких папках и под какими именами написано в этих требованиях.
+
+
+
+Ознакомлюсь и поправлю"
 3861164078,2020-10-09 20:35:00,review_requested,NordScandinavian, 1357 MyachevM Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3861168575,2020-10-09 20:36:24,mentioned,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 3861168578,2020-10-09 20:36:24,subscribed,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
