@@ -91,6 +91,9 @@ def check_base_and_head_branch_in_request(pull):
 def check_code(pull, file):
     content_file = pull.repo.get_contents(file.filename, pull.head.ref)
     text = content_file.decoded_content.decode('utf-8').split('\n')
+    path_ns = file.filename.split('/')
+    path_ns.remove(path_ns[-1])
+    ns  = 'namespace ' + r'\.'.join(path_ns) + '$'
     
     state = 'using'
     graph = {
@@ -100,7 +103,7 @@ def check_code(pull, file):
         },
         'post_using' : {
             r'$' : 'post_using',
-            r'namespace UnitTestOfTimetableOfClasses' : 'namespace'
+            ns : 'namespace'
         },
         'namespace' : {
             r'\{$' : 'namespace_begin'
