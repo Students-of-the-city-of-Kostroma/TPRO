@@ -184,7 +184,7 @@ def check_code(pull, file):
                 )
             else:
                 pull.create_review_comment(
-                    body = mess,
+                    body = mess + ' Нарушено [ребование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.',
                     commit_id=pull.repo.get_branch(pull.head.ref).commit,
                     path=file.filename,
                     position=position
