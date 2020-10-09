@@ -302,9 +302,13 @@ def check_user_story(pull, file):
         }
     final_text = {
         'title_first_level' : {
-            r'^\W{1}': 'first_level',
-            r'^\W{2}': 'second_level',
-            r'^\W{3}': 'third_level'
+            r'\#{1}': 'title_second_level'
+        },
+        'title_second_level' : {
+            r'\#{2}': 'title_third_level'
+        },
+        'title_third_level' : {
+            r'\#{3}': 'lists'
         },
         'lists' : {
             r'^\W{1}': 'list'
@@ -317,6 +321,7 @@ def check_user_story(pull, file):
             pass
         for final in final_text:
             pass
+    pull.create_issue_comment(mes)
 
 def check_files(pull):
     for file in pull.get_files():
