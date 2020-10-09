@@ -1,4 +1,7 @@
 id,date,event,user,message
+3860314845,2020-10-09 17:03:04,unassigned,NesgovorovVS, YuriSilenok 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+3860314853,2020-10-09 17:03:04,assigned,YuriSilenok, YuriSilenok 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+13792763457,2020-10-09 17:03:03,IssueCommentEvent,YuriSilenok," 1354 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1354 составляет 21 дней. Активность в ветке issue-1354 составляет 2 дней. Запрос отсутствует. Нет запросов, которые должен проверить преподаватель"
 13791135831,2020-10-09 14:38:08,PushEvent,YuriSilenok, refs/heads/dev Update README.md
 13790736313,2020-10-09 13:56:06,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13790736339,2020-10-09 13:56:05,PullRequestReviewCommentEvent,YuriSilenok, 1355 После строки `        public void DCTeacher_1()` ожидается любое из списка`[' {8}\\{$']`
