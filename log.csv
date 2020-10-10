@@ -1,4 +1,8 @@
 id,date,event,user,message
+13802121714,2020-10-10 22:10:05,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13802121724,2020-10-10 22:10:05,PullRequestReviewCommentEvent,YuriSilenok," 1355 ![image](https://user-images.githubusercontent.com/14871471/95663153-51ebf800-0b45-11eb-9af2-c1f78061b4f8.png)
+
+Проблема в этих пробелах."
 13802096852,2020-10-10 22:02:47,PushEvent,YuriSilenok, refs/heads/issue-1281 Update README.md
 13802084365,2020-10-10 21:59:18,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13802064855,2020-10-10 21:53:29,PullRequestReviewEvent,MyachevM, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
