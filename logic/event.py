@@ -314,13 +314,18 @@ def check_user_story(pull, file):
             r'^\W{1}': 'list'
         }
     }
-    for line in text_file:
+    for line in range(len(text_file)):
         for failing in failing_text['numbering']:
-            if re.match(failing, line):
+            if re.match(failing, text_file[line]==True):
                 mes = f'В файле `{file.filename}` не должно быть нумерации'
             pass
         for final in final_text:
-            pass
+            if(re.match(final,final['title_first_level'])!=True and line!=0):
+                mes = f'В файле `{file.filename}` отсутствует заглавие 1-го уровня'
+            elif(re.match(final,final['title_second_level'])==True and line!=0):
+                pass
+            else:
+                mes = f'В файле `{file.filename}` в первой строке заглавие второго уровня вместо первого уровня'
     pull.create_issue_comment(mes)
 
 def check_files(pull):
