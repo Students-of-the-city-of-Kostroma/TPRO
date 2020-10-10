@@ -1,4 +1,12 @@
 id,date,event,user,message
+13802064855,2020-10-10 21:53:29,PullRequestReviewEvent,MyachevM, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13802064858,2020-10-10 21:53:28,PullRequestReviewCommentEvent,MyachevM," 1355 > Вы знаете в чем проблема?
+
+
+
+Честно говоря не понимаю, так как у меня стоит открывающая скобка как и положено
+
+а комментарий к методу есть и находится на своём месте где и должен быть"
 13801885058,2020-10-10 21:04:06,IssueCommentEvent,VinogradovAlexandr781227, 1366 Небольшая заминка. Изменения будут утром 
 13800887620,2020-10-10 16:48:48,PushEvent,YuriSilenok, refs/heads/issue-1087 Update README.md
 13800888034,2020-10-10 16:48:55,PushEvent,YuriSilenok, refs/heads/issue-1240 Update README.md
