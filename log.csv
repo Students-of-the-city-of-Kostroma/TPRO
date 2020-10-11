@@ -1,4 +1,6 @@
 id,date,event,user,message
+13806654488,2020-10-11 21:34:53,PullRequestReviewEvent,MyachevM, changes_requested 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13806660320,2020-10-11 21:36:19,PullRequestReviewEvent,MyachevM, changes_requested 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13806645795,2020-10-11 21:32:38,PullRequestReviewEvent,MyachevM, changes_requested 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 3863899757,2020-10-11 20:25:15,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
 3863899759,2020-10-11 20:25:15,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
