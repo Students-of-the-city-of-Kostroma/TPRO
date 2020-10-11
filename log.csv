@@ -1,4 +1,7 @@
 id,date,event,user,message
+13803858736,2020-10-11 08:48:45,PullRequestReviewEvent,YuriSilenok, changes_requested 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+13803858790,2020-10-11 08:48:47,IssueCommentEvent,YuriSilenok, 1358 Проблема в файле LibOfTimetableOfClasses/CUniversity.cs. После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+13803858815,2020-10-11 08:48:48,IssueCommentEvent,YuriSilenok, 1358 Неизвестный файл `UnitTestOfTimetableOfClasses/CInstitute/Delete/CODE.PNG`
 3863368701,2020-10-11 08:47:22,review_requested,YuriSilenok, 1358 YuriSilenok Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13803709764,2020-10-11 07:49:36,PushEvent,YuriSilenok, refs/heads/issue-1032 Update README.md
 13803711977,2020-10-11 07:50:31,PullRequestReviewEvent,YuriSilenok, changes_requested 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
