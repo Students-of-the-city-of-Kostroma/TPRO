@@ -1,4 +1,8 @@
 id,date,event,user,message
+3863336760,2020-10-11 07:40:24,review_requested,NordScandinavian, 1358 ifuwmnn Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+3863336781,2020-10-11 07:40:24,review_requested,NordScandinavian, 1358 MyachevM Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+3863336789,2020-10-11 07:40:25,review_requested,NordScandinavian, 1358 YuriSilenok Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+13803687220,2020-10-11 07:40:15,PushEvent,NordScandinavian, refs/heads/issue-1095 fixed location files of unit-test
 13802121714,2020-10-10 22:10:05,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13802121724,2020-10-10 22:10:05,PullRequestReviewCommentEvent,YuriSilenok," 1355 ![image](https://user-images.githubusercontent.com/14871471/95663153-51ebf800-0b45-11eb-9af2-c1f78061b4f8.png)
 
