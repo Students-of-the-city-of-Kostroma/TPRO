@@ -180,14 +180,15 @@ def check_code(pull, file):
             if state in messages and position > 0:
                 mess = messages[state]
             else:
-                mess = f'После строки `{oldLine}` ожидается любое из списка`{list(graph[state])}`'
+                mess = f'После строки `{oldLine}` ожидается любое из списка`{list(graph[state])}`'+\
+                    ' Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.'
             if position == -1:
                 pull.create_issue_comment(
-                    mess
+                    f'Проблема в файле {file.filename}. ' + mess
                 )
             else:
                 pull.create_review_comment(
-                    body = mess + ' Нарушено [ребование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.',
+                    body = mess,
                     commit_id=pull.repo.get_branch(pull.head.ref).commit,
                     path=file.filename,
                     position=position
@@ -306,7 +307,7 @@ def check_files(pull):
                 check_code(pull, file)
             elif re.match(TESTS_PATH+r'(code\.png|graph\.png|whiteBox\.md)$', file.filename):
                 pass
-            elif re.match(r'.*README\.md$', file.filename):
+            elif re.match(r'(.*README\.md|.*\.csproj)$', file.filename):
                 pass
             elif re.match(r'\.csproj', file.filename):
                 with open('errors.txt', 'w', encoding='utf-8') as f:
