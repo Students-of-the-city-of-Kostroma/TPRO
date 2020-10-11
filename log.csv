@@ -1,4 +1,5 @@
 id,date,event,user,message
+13806724901,2020-10-11 21:52:28,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13806681814,2020-10-11 21:41:32,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1364']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13806681934,2020-10-11 21:41:34,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13806681940,2020-10-11 21:41:34,PullRequestReviewCommentEvent,YuriSilenok," 1355 После строки `using Microsoft.VisualStudio.TestTools.UnitTesting;` ожидается любое из списка`['(\\ufeff){,1}using [\\w+\\.]+;$', '$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
