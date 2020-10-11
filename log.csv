@@ -1,4 +1,10 @@
 id,date,event,user,message
+3863339922,2020-10-11 07:48:03,review_requested,NordScandinavian, 1356 ifuwmnn Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3863339925,2020-10-11 07:48:04,review_requested,NordScandinavian, 1356 MyachevM Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3863339930,2020-10-11 07:48:04,review_requested,NordScandinavian, 1356 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13803699177,2020-10-11 07:45:13,PushEvent,YuriSilenok, refs/heads/issue-1088 Update README.md
+13803701309,2020-10-11 07:46:08,PullRequestReviewEvent,YuriSilenok, changes_requested 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13803705121,2020-10-11 07:47:46,PushEvent,NordScandinavian, refs/heads/issue-1032 fixed location files of unit-test
 3863338068,2020-10-11 07:43:32,review_requested,NordScandinavian, 1357 YuriSilenok Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3863338071,2020-10-11 07:43:32,review_requested,NordScandinavian, 1357 ifuwmnn Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13803688554,2020-10-11 07:40:43,PushEvent,YuriSilenok, refs/heads/issue-1095 требования к коду
