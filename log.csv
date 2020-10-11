@@ -1,4 +1,6 @@
 id,date,event,user,message
+13806747715,2020-10-11 21:58:24,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13806747717,2020-10-11 21:58:23,PullRequestReviewCommentEvent,YuriSilenok," 1355 После строки `` ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CTeacher\\.Delete$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
 3863982903,2020-10-11 21:58:06,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13806745113,2020-10-11 21:57:44,PullRequestReviewEvent,MyachevM," changes_requested 1364 Добавил расписание для студентов на форму ""расписание"""
 13806724901,2020-10-11 21:52:28,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
