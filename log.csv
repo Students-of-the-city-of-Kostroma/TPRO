@@ -1,4 +1,5 @@
 id,date,event,user,message
+3863368701,2020-10-11 08:47:22,review_requested,YuriSilenok, 1358 YuriSilenok Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13803709764,2020-10-11 07:49:36,PushEvent,YuriSilenok, refs/heads/issue-1032 Update README.md
 13803711977,2020-10-11 07:50:31,PullRequestReviewEvent,YuriSilenok, changes_requested 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 3863339922,2020-10-11 07:48:03,review_requested,NordScandinavian, 1356 ifuwmnn Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
