@@ -1,4 +1,51 @@
 id,date,event,user,message
+3863890548,2020-10-11 20:14:00,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+3863890550,2020-10-11 20:14:00,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+3863891067,2020-10-11 20:14:35,review_requested,ZhizhikinIvan," 1364 YuriSilenok Добавил расписание для студентов на форму ""расписание"""
+3863892626,2020-10-11 20:16:18,review_requested,YuriSilenok," 1364 badsster Добавил расписание для студентов на форму ""расписание"""
+3863892627,2020-10-11 20:16:18,review_requested,YuriSilenok," 1364 ifuwmnn Добавил расписание для студентов на форму ""расписание"""
+3863892628,2020-10-11 20:16:18,review_requested,YuriSilenok," 1364 MyachevM Добавил расписание для студентов на форму ""расписание"""
+3863892630,2020-10-11 20:16:18,review_requested,YuriSilenok," 1364 NesgovorovVS Добавил расписание для студентов на форму ""расписание"""
+3863892631,2020-10-11 20:16:18,review_requested,YuriSilenok," 1364 NordScandinavian Добавил расписание для студентов на форму ""расписание"""
+3863892633,2020-10-11 20:16:18,review_requested,YuriSilenok," 1364 VinogradovAlexandr781227 Добавил расписание для студентов на форму ""расписание"""
+3863894246,2020-10-11 20:18:08,moved_columns_in_project,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+13806343290,2020-10-11 20:18:08,PullRequestReviewEvent,YuriSilenok," changes_requested 1364 Добавил расписание для студентов на форму ""расписание"""
+13806343343,2020-10-11 20:18:09,IssueCommentEvent,YuriSilenok, 1364 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13806343502,2020-10-11 20:18:11,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13806343515,2020-10-11 20:18:10,PullRequestReviewCommentEvent,YuriSilenok, 1364 После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+13806343618,2020-10-11 20:18:12,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13806343622,2020-10-11 20:18:12,PullRequestReviewCommentEvent,YuriSilenok, 1364 После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+13806343719,2020-10-11 20:18:14,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13806343728,2020-10-11 20:18:13,PullRequestReviewCommentEvent,YuriSilenok, 1364 После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+13806343847,2020-10-11 20:18:15,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13806343857,2020-10-11 20:18:15,PullRequestReviewCommentEvent,YuriSilenok, 1364 После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+13806343929,2020-10-11 20:18:17,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13806343937,2020-10-11 20:18:16,PullRequestReviewCommentEvent,YuriSilenok, 1364 После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+13806344041,2020-10-11 20:18:18,PullRequestReviewCommentEvent,YuriSilenok, 1364 После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+13806344033,2020-10-11 20:18:18,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13806344132,2020-10-11 20:18:20,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13806344139,2020-10-11 20:18:19,PullRequestReviewCommentEvent,YuriSilenok, 1364 После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+13806344222,2020-10-11 20:18:21,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13806344227,2020-10-11 20:18:21,PullRequestReviewCommentEvent,YuriSilenok, 1364 После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+13806344300,2020-10-11 20:18:22,IssueCommentEvent,YuriSilenok, 1364 Проблема в файле LibOfTimetableOfClasses/MDirectionOfPreparation.cs. После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+3863891067,2020-10-11 20:14:35,review_requested,ZhizhikinIvan," 1364 YuriSilenok Добавил расписание для студентов на форму ""расписание"""
+13806326559,2020-10-11 20:14:00,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
+
+Юрий Викторович, я закончил разработку по задаче:
+
+1. Осуществляется выбор ""Института"", ""Направления подготовки"", ""Группы"" и отображение расписания для выбранной группы.
+
+2. Исправлены и подготовлены тестовые данные в RefData.
+
+
+
+Я не нашёл решения проблемы, как уменьшить высоту последнего ряд в таблице расписания. 
+
+Ещё есть момент, перерисовка расписания при смене группы занимает некоторое время.
+
+
+
+Прошу проверить и если всё верно, зачесть мне 2 лабораторные работы."
 13806307763,2020-10-11 20:09:24,PushEvent,YuriSilenok, refs/heads/issue-1326 Add files via upload
 13806300353,2020-10-11 20:07:35,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Последние изменения по задаче
 13804984922,2020-10-11 14:39:50,IssueCommentEvent,ZhizhikinIvan, 1364 Необходимо ещё немного доработать отображение расписания.
