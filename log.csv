@@ -1,4 +1,12 @@
 id,date,event,user,message
+3864020069,2020-10-11 22:41:51,mentioned,YuriSilenok, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3864020071,2020-10-11 22:41:51,subscribed,YuriSilenok, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13806913534,2020-10-11 22:41:08,PushEvent,YuriSilenok, refs/heads/issue-1346 Update README.md
+13806916165,2020-10-11 22:41:51,IssueCommentEvent,VinogradovAlexandr781227, 1366 Всё поправил. @YuriSilenok проверьте пожалуйста что там с анонимностью. Вроде у комита аватарка появилась.
+13806920210,2020-10-11 22:42:56,PullRequestReviewEvent,YuriSilenok, changes_requested 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13806920247,2020-10-11 22:42:57,IssueCommentEvent,YuriSilenok," 1366 У вас есть непроверенные запросы ['#1364']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13806920296,2020-10-11 22:42:58,IssueCommentEvent,YuriSilenok, 1366 Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13806920361,2020-10-11 22:42:59,IssueCommentEvent,YuriSilenok, 1366 Неизвестный файл `Docs/user_story.md`
 3864019161,2020-10-11 22:40:46,review_requested,VinogradovAlexandr781227, 1366 MyachevM Разработал историю функции корректировки учебной нагрузки для студентов вуза
 3864019325,2020-10-11 22:40:58,review_requested,VinogradovAlexandr781227, 1366 YuriSilenok Разработал историю функции корректировки учебной нагрузки для студентов вуза
 3864019331,2020-10-11 22:40:59,review_requested,VinogradovAlexandr781227, 1366 ifuwmnn Разработал историю функции корректировки учебной нагрузки для студентов вуза
