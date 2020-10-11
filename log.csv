@@ -1,4 +1,7 @@
 id,date,event,user,message
+13807083687,2020-10-11 23:26:05,IssueCommentEvent,YuriSilenok," 1356 > Как мне кажется, в отчёте, номера Test-ID, должны соответствовать номеру ветки, в которой идёт работа
+
+Думаю документация для белого ящика несколько устарела, актуальные требования к TestID находятся [здесь](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md)"
 3864020069,2020-10-11 22:41:51,mentioned,YuriSilenok, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 3864020071,2020-10-11 22:41:51,subscribed,YuriSilenok, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13806913534,2020-10-11 22:41:08,PushEvent,YuriSilenok, refs/heads/issue-1346 Update README.md
