@@ -302,30 +302,36 @@ def check_user_story(pull, file):
         }
     final_text = {
         'title_first_level' : {
-            r'\#{1}': 'title_second_level'
+            r'^\#{1}': 'title_second_level'
         },
         'title_second_level' : {
-            r'\#{2}': 'title_third_level'
+            r'^\#{2}': 'title_third_level'
         },
         'title_third_level' : {
-            r'\#{3}': 'lists'
+            r'^\#{3}': 'lists'
         },
         'lists' : {
-            r'^\W{1}': 'list'
+            r'^\-{1}': 'list'
         }
     }
     for line in range(len(text_file)):
-        for failing in failing_text['numbering']:
-            if re.match(failing, text_file[line]==True):
-                mes = f'В файле `{file.filename}` не должно быть нумерации'
-            pass
-        for final in final_text:
-            if(re.match(final,final['title_first_level'])!=True and line!=0):
-                mes = f'В файле `{file.filename}` отсутствует заглавие 1-го уровня'
-            elif(re.match(final,final['title_second_level'])==True and line!=0):
-                pass
+        if re.match(failing_text['numbering'], text_file[line]==True):
+            mes = f'В файле `{file.filename}` не должно быть нумерации'
+
+        if(re.match(final_text['title_first_level'],text_file[line])!=True and line==0):
+            mes = f'В файле `{file.filename}` отсутствует заглавие 1-го уровня'
+        elif(re.match(final_text['title_first_level'],text_file[line])==True and line!=0):
+            if(re.match(final_text['title_second_level'],text_file[line])==True):
+                if(re.match(final_text['title_third_level'],text_file[line])==True):
+                    pass
+                else:
+                    pass
             else:
-                mes = f'В файле `{file.filename}` в первой строке заглавие второго уровня вместо первого уровня'
+                mes = f'В файле `{file.filename}` в строке `{line+1}` не должно быть заглавия первого уровня'
+            if re.match(failing_text['character_restriction_title'], text_file[line]!=True):
+                mes = f'В файле `{file.filename}` в строке `{line+1}` в заглавии не должно превышать 20 символов'
+        else:
+            mes = f'В файле `{file.filename}` в первой строке заглавие второго уровня вместо первого уровня'
     pull.create_issue_comment(mes)
 
 def check_files(pull):
