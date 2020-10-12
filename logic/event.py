@@ -298,6 +298,9 @@ def check_user_story(pull, file):
             },
             'character_restriction_title' : {
                 r'.{0,20}' : 'title'
+            },
+            'tabs' : {
+                r'^\t' : 'tab'
             }
         }
     final_text = {
@@ -314,24 +317,34 @@ def check_user_story(pull, file):
             r'^\-{1}': 'list'
         }
     }
+    second = 0
+    third = 0
     for line in range(len(text_file)):
         if re.match(failing_text['numbering'], text_file[line]==True):
             mes = f'В файле `{file.filename}` не должно быть нумерации'
+        
+        if re.match(failing_text['tabs'], text_file[line]==True):
+            mes = f'В файле `{file.filename}` не должна присутствовать табуляция'
 
         if(re.match(final_text['title_first_level'],text_file[line])!=True and line==0):
             mes = f'В файле `{file.filename}` отсутствует заглавие 1-го уровня'
         elif(re.match(final_text['title_first_level'],text_file[line])==True and line!=0):
             if(re.match(final_text['title_second_level'],text_file[line])==True):
                 if(re.match(final_text['title_third_level'],text_file[line])==True):
-                    pass
+                    if(second==0):
+                        mes = f'В файле `{file.filename}` после заглавия 1-го уровня идет заглавие 2-го уровня'
+                    else:
+                        third = third + 1
                 else:
-                    pass
+                    second = second + 1
             else:
                 mes = f'В файле `{file.filename}` в строке `{line+1}` не должно быть заглавия первого уровня'
             if re.match(failing_text['character_restriction_title'], text_file[line]!=True):
                 mes = f'В файле `{file.filename}` в строке `{line+1}` в заглавии не должно превышать 20 символов'
         else:
             mes = f'В файле `{file.filename}` в первой строке заглавие второго уровня вместо первого уровня'
+    if (second==0):
+        mes = f'В файле `{file.filename}` отсутствует заглавие 2-го уровня'
     pull.create_issue_comment(mes)
 
 def check_files(pull):
