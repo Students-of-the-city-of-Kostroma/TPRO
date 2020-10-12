@@ -1,4 +1,5 @@
 id,date,event,user,message
+13816518733,2020-10-12 19:08:31,PullRequestReviewEvent,ifuwmnn, approved 1361 Разработала методические рекомендации к составлению пользовательской истории 
 13813881631,2020-10-12 15:30:49,PushEvent,NesgovorovVS, refs/heads/issue-1087 delgraph
 13813866999,2020-10-12 15:29:28,PushEvent,NesgovorovVS, refs/heads/issue-1240 delgraph
 13807083687,2020-10-11 23:26:05,IssueCommentEvent,YuriSilenok," 1356 > Как мне кажется, в отчёте, номера Test-ID, должны соответствовать номеру ветки, в которой идёт работа
