@@ -1,4 +1,6 @@
 id,date,event,user,message
+3868106758,2020-10-12 23:01:07,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13818749724,2020-10-12 23:01:00,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13816797661,2020-10-12 19:34:22,PullRequestReviewEvent,ifuwmnn, changes_requested 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13816740585,2020-10-12 19:28:50,PullRequestReviewEvent,ifuwmnn, changes_requested 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 13816744300,2020-10-12 19:29:12,PullRequestReviewEvent,ifuwmnn, changes_requested 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
