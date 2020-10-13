@@ -1,4 +1,6 @@
 id,date,event,user,message
+13834627082,2020-10-14 00:26:04,PullRequestReviewEvent,YuriSilenok, changes_requested 1361 Разработала методические рекомендации к составлению пользовательской истории 
+13834627285,2020-10-14 00:26:05,IssueCommentEvent,YuriSilenok, 1361 Неизвестный файл `Docs/Technical/UserStories/Story-0/READMY.md`
 3873631668,2020-10-14 00:24:54,review_requested,badsster, 1361 YuriSilenok Разработала методические рекомендации к составлению пользовательской истории 
 13834602630,2020-10-14 00:23:46,PullRequestReviewEvent,badsster, changes_requested 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13834613164,2020-10-14 00:24:47,IssueCommentEvent,badsster," 1361 > У вас большая очередь в запросах, посмотрите их?
