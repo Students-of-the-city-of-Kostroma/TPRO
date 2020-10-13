@@ -303,7 +303,7 @@ def check_user_story(pull, file):
 def check_files(pull):
     for file in pull.get_files():
         if file.status != 'removed':
-            if re.match(r'.*\.cs$', file.filename):
+            if re.match(r'.*UnitTest\.cs$', file.filename):
                 check_code(pull, file)
             elif re.match(TESTS_PATH+r'(code\.png|graph\.png|whiteBox\.md)$', file.filename):
                 pass
