@@ -1,7 +1,13 @@
 id,date,event,user,message
-13827503336,2020-10-13 15:44:06,IssueCommentEvent,YuriSilenok," 1356 > ![image](https://user-images.githubusercontent.com/47635280/95769784-1413de80-0cc1-11eb-92f2-8d1c9f0da318.png)
-> Видимо Test-ID должны называться примерно так.
+13828766751,2020-10-13 17:06:37,IssueCommentEvent,YuriSilenok," 1364 > Проблема в файле LibOfTimetableOfClasses/MDirectionOfPreparation.cs. После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
 
+я отключу проверку кода, кроме модульных тестов."
+13827503336,2020-10-13 15:44:06,IssueCommentEvent,YuriSilenok," 1356 > ![image](https://user-images.githubusercontent.com/47635280/95769784-1413de80-0cc1-11eb-92f2-8d1c9f0da318.png)
+
+> Видимо Test-ID должны называться примерно так.
+
+
+
 Да, это так, но я не в состоянии сейчас исправить документацию."
 13827464980,2020-10-13 15:41:04,IssueCommentEvent,VinogradovAlexandr781227, 1366 Увидел косяк в комите. Вечером залью ещё раз 
 13820112361,2020-10-13 01:45:50,PushEvent,NesgovorovVS, refs/heads/issue-1065 delwb
