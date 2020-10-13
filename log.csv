@@ -1,4 +1,5 @@
 id,date,event,user,message
+13834113762,2020-10-13 23:41:01,PullRequestReviewEvent,badsster, changes_requested 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
 13834051294,2020-10-13 23:35:38,PullRequestReviewEvent,badsster, changes_requested 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
 13834058427,2020-10-13 23:36:15,PullRequestReviewEvent,badsster, changes_requested 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
 13833939546,2020-10-13 23:26:05,IssueCommentEvent,badsster," 1368 ![image](https://user-images.githubusercontent.com/47521045/95912113-0b97d280-0dab-11eb-8f2e-bc0c9f514ac5.png)
