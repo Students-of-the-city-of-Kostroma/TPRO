@@ -1,4 +1,8 @@
 id,date,event,user,message
+13834190304,2020-10-13 23:47:29,IssueCommentEvent,NordScandinavian," 1357 > ![image](https://user-images.githubusercontent.com/47635280/95769784-1413de80-0cc1-11eb-92f2-8d1c9f0da318.png)
+> Видимо Test-ID должны называться примерно так.
+
+То есть работа уже идёт не только над отчётом, но и над кодом?"
 13834113762,2020-10-13 23:41:01,PullRequestReviewEvent,badsster, changes_requested 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
 13834051294,2020-10-13 23:35:38,PullRequestReviewEvent,badsster, changes_requested 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
 13834058427,2020-10-13 23:36:15,PullRequestReviewEvent,badsster, changes_requested 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
