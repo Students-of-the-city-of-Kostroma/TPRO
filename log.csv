@@ -1,4 +1,7 @@
 id,date,event,user,message
+13828881271,2020-10-13 17:13:26,PullRequestReviewEvent,YuriSilenok," changes_requested 1364 Добавил расписание для студентов на форму ""расписание"""
+13828881559,2020-10-13 17:13:27,IssueCommentEvent,YuriSilenok, 1364 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13828881999,2020-10-13 17:13:28,IssueCommentEvent,YuriSilenok, 1364 Неизвестный файл `LibOfTimetableOfClasses/CAcademicLoad.cs`
 3871562188,2020-10-13 17:10:29,review_requested,YuriSilenok," 1364 YuriSilenok Добавил расписание для студентов на форму ""расписание"""
 13828766751,2020-10-13 17:06:37,IssueCommentEvent,YuriSilenok," 1364 > Проблема в файле LibOfTimetableOfClasses/MDirectionOfPreparation.cs. После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
 
