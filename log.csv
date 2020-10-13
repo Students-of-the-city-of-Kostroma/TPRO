@@ -1,4 +1,11 @@
 id,date,event,user,message
+3873631668,2020-10-14 00:24:54,review_requested,badsster, 1361 YuriSilenok Разработала методические рекомендации к составлению пользовательской истории 
+13834602630,2020-10-14 00:23:46,PullRequestReviewEvent,badsster, changes_requested 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13834613164,2020-10-14 00:24:47,IssueCommentEvent,badsster," 1361 > У вас большая очередь в запросах, посмотрите их?
+
+
+
+Проверила запросы."
 3873565933,2020-10-14 00:08:25,mentioned,MyachevM, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3873565937,2020-10-14 00:08:25,subscribed,MyachevM, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13834431521,2020-10-14 00:08:25,IssueCommentEvent,badsster," 1357 Например, у @MyachevM в папке помимо CODE. png GRAPH.png и whiteBox.md есть еще файл UnitTest.cs. У тебя он отсутствует. Я предполагаю, что у тебя его не хватает. 
