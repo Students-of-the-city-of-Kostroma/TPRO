@@ -1,6 +1,9 @@
 id,date,event,user,message
-13828766751,2020-10-13 17:06:37,IssueCommentEvent,YuriSilenok," 1364 > Проблема в файле LibOfTimetableOfClasses/MDirectionOfPreparation.cs. После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
-
+3871562188,2020-10-13 17:10:29,review_requested,YuriSilenok," 1364 YuriSilenok Добавил расписание для студентов на форму ""расписание"""
+13828766751,2020-10-13 17:06:37,IssueCommentEvent,YuriSilenok," 1364 > Проблема в файле LibOfTimetableOfClasses/MDirectionOfPreparation.cs. После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+
+
+
 я отключу проверку кода, кроме модульных тестов."
 13827503336,2020-10-13 15:44:06,IssueCommentEvent,YuriSilenok," 1356 > ![image](https://user-images.githubusercontent.com/47635280/95769784-1413de80-0cc1-11eb-92f2-8d1c9f0da318.png)
 
