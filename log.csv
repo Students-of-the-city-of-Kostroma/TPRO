@@ -1,4 +1,5 @@
 id,date,event,user,message
+13834281472,2020-10-13 23:55:24,PullRequestReviewEvent,badsster, changes_requested 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13834259184,2020-10-13 23:53:29,PullRequestReviewEvent,badsster, approved 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13834226885,2020-10-13 23:50:41,PullRequestReviewEvent,badsster, changes_requested 1360 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
 13834190304,2020-10-13 23:47:29,IssueCommentEvent,NordScandinavian," 1357 > ![image](https://user-images.githubusercontent.com/47635280/95769784-1413de80-0cc1-11eb-92f2-8d1c9f0da318.png)
