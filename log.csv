@@ -1,4 +1,8 @@
 id,date,event,user,message
+13846731826,2020-10-14 20:56:17,PullRequestReviewEvent,MyachevM, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13846731858,2020-10-14 20:56:16,PullRequestReviewCommentEvent,MyachevM," 1355 Не понимаю почему комментарий не проходит
+
+Если я поставлю ниже рефдаты комментарий, он сошлётся на строку после Рефдаты"
 13843290794,2020-10-14 16:31:50,PullRequestReviewCommentEvent,YuriSilenok, 1355 После строки `    {` ожидается любое из списка`[' {8}readonly RefData refData = new RefData\\(\\);$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
 13843290757,2020-10-14 16:31:50,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3876592384,2020-10-14 16:29:23,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
