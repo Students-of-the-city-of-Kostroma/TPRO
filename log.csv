@@ -1,4 +1,6 @@
 id,date,event,user,message
+3876592384,2020-10-14 16:29:23,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13843255439,2020-10-14 16:29:14,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13843223505,2020-10-14 16:26:52,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13843223544,2020-10-14 16:26:51,PullRequestReviewCommentEvent,YuriSilenok, 1355 После строки `{` ожидается любое из списка`[' {4}\\[TestClass\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
 3876575016,2020-10-14 16:25:51,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
