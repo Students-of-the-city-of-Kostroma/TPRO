@@ -1,4 +1,5 @@
 id,date,event,user,message
+13847759073,2020-10-14 22:33:20,PushEvent,NesgovorovVS, refs/heads/issue-1328 f
 13846731826,2020-10-14 20:56:17,PullRequestReviewEvent,MyachevM, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13846731858,2020-10-14 20:56:16,PullRequestReviewCommentEvent,MyachevM," 1355 Не понимаю почему комментарий не проходит
 
