@@ -3,8 +3,8 @@ Traceback (most recent call last):
     student = Listener(repo)
   File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 17, in __init__
     trpo_repo.check_issues()
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 86, in check_issues
-    branch.commit.raw_data
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 101, in check_issues
+    if pr.raw_data['head']['ref'] == branch.name\
   File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 105, in raw_data
     self._completeIfNeeded()
   File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 303, in _completeIfNeeded
@@ -15,4 +15,4 @@ Traceback (most recent call last):
     return self.__check(
   File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
     raise self.__createException(status, responseHeaders, output)
-github.GithubException.GithubException: 500 null
+github.GithubException.GithubException: 502 {"message": "Unexpected problem serving your request. Please try again and contact us at https://github.com/contact if the problem persists including 49C7:13331:121DA7A1:151498F1:5F879B27 in your message."}
