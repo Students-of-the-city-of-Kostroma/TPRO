@@ -194,7 +194,8 @@ def check_code(pull, file):
             if state in messages and position > 0:
                 mess = messages[state]
             else:
-                mess = f'После строки `{oldLine}` ожидается любое из списка`{list(graph[state])}`'+\
+                indOldLine = ind-1
+                mess = f'После строки `{oldLine}` (номер строки {indOldLine}) ожидается любое из списка`{list(graph[state])}`'+\
                     ' Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.'
             if position < 1:
                 pull.create_review(
