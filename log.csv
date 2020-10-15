@@ -1,4 +1,8 @@
 id,date,event,user,message
+13861257271,2020-10-15 21:48:08,PullRequestReviewEvent,YuriSilenok," changes_requested 1364 Добавил расписание для студентов на форму ""расписание"""
+13861257428,2020-10-15 21:48:09,IssueCommentEvent,YuriSilenok," 1364 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13861257581,2020-10-15 21:48:10,IssueCommentEvent,YuriSilenok, 1364 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13861257811,2020-10-15 21:48:11,IssueCommentEvent,YuriSilenok, 1364 Неизвестный файл `Docs/entities.md`
 3883071587,2020-10-15 21:44:47,review_requested,ZhizhikinIvan," 1364 YuriSilenok Добавил расписание для студентов на форму ""расписание"""
 13861174104,2020-10-15 21:40:12,IssueCommentEvent,YuriSilenok," 1361 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13861174382,2020-10-15 21:40:14,IssueCommentEvent,YuriSilenok, 1361 Неизвестный файл `Docs/Technical/UserStories/Story-0/READMY.md`
