@@ -175,8 +175,8 @@ def check_code(pull, file):
         'param_test_class' : 'Ожидается имя класса соответствующее [требованиям](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md)'
     }
     oldLine = ''
-    for ind in range(len(text)):
-        line = text[ind]
+    for indLine in range(len(text)):
+        line = text[indLine]
         reg = None
         for transfer in graph[state]:
             reg = re.match(transfer, line)
@@ -194,7 +194,7 @@ def check_code(pull, file):
             if state in messages and position > 0:
                 mess = messages[state]
             else:
-                indOldLine = ind - 1
+                indOldLine = indLine - 1
                 mess = f'После строки `{oldLine}` (номер строки {indOldLine}) ожидается любое из списка`{list(graph[state])}`'+\
                     ' Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.'
             if position < 1:
