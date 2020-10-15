@@ -123,10 +123,17 @@ def check_code(pull, file):
             r' {4}public class UT_M|('+CLASSES+r')$' : 'header_model_test_class'
         },
         'header_controller_test_class' : {
-            r' {4}\{$' : 'begin_controller_test_class'
+            r' {4}\{$' : 'begin_ref_data'
         },
         'header_model_test_class' : {
             r' {4}\{$' : 'pre_comment'
+        },
+        'begin_ref_data' : {
+            r' {8}/// <summary>$' : 'comment_start_summary_RD',
+        },
+        'comment_start_summary_RD' : {
+            r' {8}/// </summary>$' : 'begin_controller_test_class',
+            r' {8}///[\w+ \.]+' : 'comment_start_summary_RD'
         },
         'begin_controller_test_class' : {
             r' {8}readonly RefData refData = new RefData\(\);$' : 'pre_comment'
