@@ -109,6 +109,13 @@ def check_code(pull, file):
             r'\{$' : 'namespace_begin'
         },
         'namespace_begin' : {
+            r' {4}/// <summary>$' : 'comment_start_summary_class'
+        },
+        'comment_start_summary_class' : {
+            r' {4}/// </summary>$' : 'comment_end_summary_class',
+            r' {4}///[\w+ \.]+' : 'comment_start_summary_class'
+        },
+        'comment_end_summary_class' : {
             r' {4}\[TestClass\]$' : 'param_test_class'
         },
         'param_test_class' : {
