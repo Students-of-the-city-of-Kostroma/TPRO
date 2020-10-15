@@ -1,7 +1,13 @@
 id,date,event,user,message
-13862692412,2020-10-16 00:11:26,IssueCommentEvent,MyachevM," 1355 > ![image](https://user-images.githubusercontent.com/47521045/96171410-8a1c7d80-0f2d-11eb-8929-4bcaa048ecb8.png)
-> Этот файл так и должен быть удален?
-
+3883634597,2020-10-16 00:24:49,unassigned,VinogradovAlexandr781227, YuriSilenok 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
+3883634612,2020-10-16 00:24:49,assigned,YuriSilenok, YuriSilenok 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
+13862814628,2020-10-16 00:24:48,IssueCommentEvent,YuriSilenok," 1346 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1346 составляет 8 дней. Активность в ветке issue-1346 составляет 4 дней. Активность по запросу #1366 составляет 2 дней. Нет запросов, которые должен проверить преподаватель"
+13862692412,2020-10-16 00:11:26,IssueCommentEvent,MyachevM," 1355 > ![image](https://user-images.githubusercontent.com/47521045/96171410-8a1c7d80-0f2d-11eb-8929-4bcaa048ecb8.png)
+
+> Этот файл так и должен быть удален?
+
+
+
 Да"
 13861326791,2020-10-15 21:54:43,PullRequestReviewEvent,ZhizhikinIvan, commented 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
 13861257271,2020-10-15 21:48:08,PullRequestReviewEvent,YuriSilenok," changes_requested 1364 Добавил расписание для студентов на форму ""расписание"""
