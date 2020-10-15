@@ -1,4 +1,8 @@
 id,date,event,user,message
+13854630616,2020-10-15 12:46:47,IssueCommentEvent,NordScandinavian," 1358 > Номера Test-ID, должны соответствовать номеру ветки, в которой идёт работа
+
+
+Изменение кода теста идёт параллельно с разработкой отчёта по этому тесту? Или я что то не так  понял"
 3880587388,2020-10-15 12:43:49,mentioned,MyachevM, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3880587392,2020-10-15 12:43:49,subscribed,MyachevM, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13854594770,2020-10-15 12:43:49,IssueCommentEvent,NordScandinavian," 1357 > Например, у @MyachevM в папке помимо CODE. png GRAPH.png и whiteBox.md есть еще файл UnitTest.cs. У тебя он отсутствует. Я предполагаю, что у тебя его не хватает.
