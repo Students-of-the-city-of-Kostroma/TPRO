@@ -95,10 +95,7 @@ class Repository:
                 if branch is not None:
                     # Ищем запрос связанный с веткой
                     for pr in self.repo.get_pulls(state='open'):
-                        review_requests = pr.get_review_requests()
-                        if pr.raw_data['head']['ref'] == branch.name\
-                        and 'YuriSilenok' not in [u.login for u in review_requests[0]]\
-                        and 'Elite' not in [t.name for t in review_requests[1]]:
+                        if pr.raw_data['head']['ref'] == branch.name:
                             pull_inactive = pr
                             break                
                 if pull_inactive is not None:
