@@ -1,4 +1,21 @@
 id,date,event,user,message
+3882266688,2020-10-15 18:36:32,unlabeled,NesgovorovVS, refactoring 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+3882266692,2020-10-15 18:36:32,labeled,NesgovorovVS, 1354 info
+3882267716,2020-10-15 18:36:44,unlabeled,NesgovorovVS, info 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+3882267717,2020-10-15 18:36:44,labeled,NesgovorovVS, 1354 refactoring
+3882268344,2020-10-15 18:36:52,unlabeled,NesgovorovVS, refactoring 1359 Текущая активность по задачам
+3882268346,2020-10-15 18:36:52,labeled,NesgovorovVS, 1359 info
+3882274220,2020-10-15 18:38:04,labeled,NesgovorovVS, 1371 refactoring
+3882274233,2020-10-15 18:38:04,milestoned,NesgovorovVS, Backlog 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+3882274255,2020-10-15 18:38:04,review_requested,NesgovorovVS, 1371 VinogradovAlexandr781227 Реструктуризация проекта UnitTestOfTimetableOfClasses
+3882274257,2020-10-15 18:38:04,review_requested,NesgovorovVS, 1371 badsster Реструктуризация проекта UnitTestOfTimetableOfClasses
+3882274260,2020-10-15 18:38:04,review_requested,NesgovorovVS, 1371 NordScandinavian Реструктуризация проекта UnitTestOfTimetableOfClasses
+3882274265,2020-10-15 18:38:04,review_requested,NesgovorovVS, 1371 MyachevM Реструктуризация проекта UnitTestOfTimetableOfClasses
+3882274267,2020-10-15 18:38:04,review_requested,NesgovorovVS, 1371 ZhizhikinIvan Реструктуризация проекта UnitTestOfTimetableOfClasses
+3882274270,2020-10-15 18:38:04,review_requested,NesgovorovVS, 1371 Elite Реструктуризация проекта UnitTestOfTimetableOfClasses
+3882274309,2020-10-15 18:38:05,assigned,NesgovorovVS, NesgovorovVS 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+3882274320,2020-10-15 18:38:05,added_to_project,NesgovorovVS, 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13859066507,2020-10-15 18:38:05,PullRequestEvent,NesgovorovVS, opened 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 3882263147,2020-10-15 18:35:50,unlabeled,NesgovorovVS, info 1359 Текущая активность по задачам
 3882263148,2020-10-15 18:35:50,labeled,NesgovorovVS, 1359 refactoring
 3882263360,2020-10-15 18:35:52,added_to_project,NesgovorovVS, 1359 Текущая активность по задачам
