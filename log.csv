@@ -1,4 +1,5 @@
 id,date,event,user,message
+3882819914,2020-10-15 20:41:04,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3882744924,2020-10-15 20:22:21,review_requested,YuriSilenok, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13860338656,2020-10-15 20:22:43,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13860493859,2020-10-15 20:36:55,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
