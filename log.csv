@@ -1,4 +1,6 @@
 id,date,event,user,message
+13859451694,2020-10-15 19:07:06,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13859451982,2020-10-15 19:07:07,IssueCommentEvent,YuriSilenok, 1355 Проблема в файле UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs. После строки `{` ожидается любое из списка`[' {4}/// <summary>$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
 3882278986,2020-10-15 18:38:57,review_requested,YuriSilenok, 1371 ifuwmnn Реструктуризация проекта UnitTestOfTimetableOfClasses
 3882278988,2020-10-15 18:38:57,review_requested,YuriSilenok, 1371 YuriSilenok Реструктуризация проекта UnitTestOfTimetableOfClasses
 3882285900,2020-10-15 18:40:18,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
