@@ -191,7 +191,7 @@ def check_code(pull, file):
                     ' Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.'
             if position < 1:
                 pull.create_issue_comment(
-                    f'Проблема в файле {file.filename}. ' + mess
+                    f'Проблема в файле {file.filename}. \n' + mess
                 )
             else:
                 pull.create_review_comment(
