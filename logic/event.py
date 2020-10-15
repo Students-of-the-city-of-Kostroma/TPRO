@@ -335,20 +335,12 @@ def check_user_story(pull, file):
     comments = ''
 
     for line in range(len(text_file)):
-
-        if (re.match(failing_text['numbering'], text_file[line]==True)):
-            comments = add_failing_comment(comments, f'В файле `{file.filename}` не должно быть нумерации')
-        
-        if (re.match(failing_text['tabs'], text_file[line]==True)):
-            comments = add_failing_comment(comments, f'В файле `{file.filename}` не должна присутствовать табуляция')
-
         if (re.match(final_text['alien_element'],text_file[line])==True):
             if (line==0):
                 if (re.match(final_text['title_first_level'],text_file[line])!=True):
-                    comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` ожидается символ #')
-                else:
-                    if (re.match(final_text['title_second_level'],text_file[line])==True):
-                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в первой строке заглавие второго уровня вместо первого уровня')
+                    comments = add_failing_comment(comments, f'В файле `{file.filename}` в первой строке ожидается символ #')
+                elif (re.match(final_text['title_second_level'],text_file[line])==True):
+                    comments = add_failing_comment(comments, f'В файле `{file.filename}` в первой строке заглавие второго уровня вместо первого уровня')
             else:
                 if (re.match(final_text['title_first_level'],text_file[line])==True):
                     if(re.match(final_text['title_second_level'],text_file[line])==True):
@@ -360,15 +352,20 @@ def check_user_story(pull, file):
                         else:
                             second = second + 1
                     else:
-                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line+1}` не должно быть заглавия первого уровня')
+                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должно быть заглавия первого уровня')
 
                     if (re.match(failing_text['character_restriction_title'], text_file[line]!=True)):
-                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line+1}` в заглавии не должно превышать 20 символов')
+                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` заглавие не должно превышать 20 символов')
                 elif (re.match(failing_text['lists'], text_file[line]!=True)):
-                    comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line+1}` ошибка в символе')
+                    if (re.match(failing_text['tabs'], text_file[line]==True)):
+                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должна присутствовать табуляция')
+                    elif (re.match(failing_text['numbering'], text_file[line]==True)):
+                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должно быть нумерации')
+                    else:
+                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` ошибка в заглавии')
 
     if (second==0):
-        comments = add_failing_comment(comments, f'В файле `{file.filename}` отсутствует заглавие 2-го уровня')
+        comments = add_failing_comment(comments, f'В файле `{file.filename}` отсутствуют заглавия 2-го уровня')
 
     pull.create_issue_comment(comments)
 
