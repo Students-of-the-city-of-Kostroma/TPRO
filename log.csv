@@ -1,4 +1,9 @@
 id,date,event,user,message
+13860939328,2020-10-15 21:18:07,IssueCommentEvent,badsster," 1361 > Неизвестный файл `Docs/Technical/UserStories/Story-0/READMY.md`
+
+Данный файл это образец пользовательской истории, которую Вы попросили создать. Поэтому я расположила его по этому пути Student-timetable/Docs/Technical/UserStories/Story-0/READMY.md
+
+Мне изменить путь?"
 13860707335,2020-10-15 20:56:33,PushEvent,NesgovorovVS, refs/heads/issue-1065 addwb
 13860695737,2020-10-15 20:55:30,PushEvent,NesgovorovVS, refs/heads/issue-1087 addGraph
 13860680775,2020-10-15 20:54:08,PushEvent,NesgovorovVS, refs/heads/issue-1240 addGraph
