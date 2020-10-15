@@ -1,4 +1,5 @@
 id,date,event,user,message
+3882285900,2020-10-15 18:40:18,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13859586754,2020-10-15 19:17:52,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13859572649,2020-10-15 19:16:42,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13859451694,2020-10-15 19:07:06,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
