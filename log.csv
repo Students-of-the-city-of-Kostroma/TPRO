@@ -1,4 +1,6 @@
 id,date,event,user,message
+13859849165,2020-10-15 19:39:52,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13859849185,2020-10-15 19:39:51,PullRequestReviewCommentEvent,YuriSilenok, 1355 Здесь что-то пошло не так
 13859834839,2020-10-15 19:38:37,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13859835269,2020-10-15 19:38:38,PullRequestReviewCommentEvent,YuriSilenok, 1355 После строки `    {` ожидается любое из списка`[' {8}readonly RefData refData = new RefData\\(\\);$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
 13859835233,2020-10-15 19:38:39,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
