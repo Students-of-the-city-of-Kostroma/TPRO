@@ -189,7 +189,7 @@ def check_code(pull, file):
             else:
                 mess = f'После строки `{oldLine}` ожидается любое из списка`{list(graph[state])}`'+\
                     ' Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.'
-            if position == -1:
+            if position < 1:
                 pull.create_issue_comment(
                     f'Проблема в файле {file.filename}. ' + mess
                 )

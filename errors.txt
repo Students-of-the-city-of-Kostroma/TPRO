@@ -1,73 +1,22 @@
 Traceback (most recent call last):
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 426, in _make_request
-    six.raise_from(e, None)
-  File "<string>", line 3, in raise_from
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
-    httplib_response = conn.getresponse()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 1347, in getresponse
-    response.begin()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 307, in begin
-    version, status, reason = self._read_status()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 268, in _read_status
-    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 669, in readinto
-    return self._sock.recv_into(b)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\ssl.py", line 1241, in recv_into
-    return self.read(nbytes, buffer)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\ssl.py", line 1099, in read
-    return self._sslobj.read(len, buffer)
-socket.timeout: The read operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
-    retries = retries.increment(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\util\retry.py", line 403, in increment
-    raise six.reraise(type(error), error, _stacktrace)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
-    raise value
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
-    httplib_response = self._make_request(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 428, in _make_request
-    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 335, in _raise_timeout
-    raise ReadTimeoutError(
-urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=15)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
   File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 19, in <module>
     student = Listener(repo)
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 17, in __init__
-    trpo_repo.check_issues()
-  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 101, in check_issues
-    if pr.raw_data['head']['ref'] == branch.name\
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 105, in raw_data
-    self._completeIfNeeded()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 303, in _completeIfNeeded
-    self.__complete()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\GithubObject.py", line 310, in __complete
-    headers, data = self._requester.requestJsonAndCheck("GET", self._url.value)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 318, in requestJsonAndCheck
-    *self.requestJson(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 410, in requestJson
-    return self.__requestEncode(cnx, verb, url, parameters, headers, input, encode)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 486, in __requestEncode
-    status, responseHeaders, output = self.__requestRaw(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 513, in __requestRaw
-    response = cnx.getresponse()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 110, in getresponse
-    r = verb(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 543, in get
-    return self.request('GET', url, **kwargs)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 530, in request
-    resp = self.send(prep, **send_kwargs)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 643, in send
-    r = adapter.send(request, **kwargs)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\adapters.py", line 529, in send
-    raise ReadTimeout(e, request=request)
-requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.github.com', port=443): Read timed out. (read timeout=15)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 13, in __init__
+    self.process_events(repo.get_issues_events())
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 34, in process_events
+    EV.process(event)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 483, in process
+    EVENTS[event.type](event)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 223, in review_requested
+    check_files(pull)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 307, in check_files
+    check_code(pull, file)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\event.py", line 190, in check_code
+    pull.create_review_comment(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PullRequest.py", line 414, in create_review_comment
+    headers, data = self._requester.requestJsonAndCheck(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
+    return self.__check(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.GithubException: 422 {"message": "Validation Failed", "errors": [{"resource": "PullRequestReviewComment", "code": "invalid", "field": "position"}], "documentation_url": "https://docs.github.com/rest/reference/pulls#create-a-review-comment-for-a-pull-request"}

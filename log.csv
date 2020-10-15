@@ -1,4 +1,31 @@
 id,date,event,user,message
+3882278986,2020-10-15 18:38:57,review_requested,YuriSilenok, 1371 ifuwmnn Реструктуризация проекта UnitTestOfTimetableOfClasses
+3882278988,2020-10-15 18:38:57,review_requested,YuriSilenok, 1371 YuriSilenok Реструктуризация проекта UnitTestOfTimetableOfClasses
+3882285900,2020-10-15 18:40:18,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13859363840,2020-10-15 19:00:25,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13859391913,2020-10-15 19:02:31,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+3882285900,2020-10-15 18:40:18,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13859363840,2020-10-15 19:00:25,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+3882285900,2020-10-15 18:40:18,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13859270654,2020-10-15 18:53:24,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+3882285900,2020-10-15 18:40:18,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13859239592,2020-10-15 18:51:06,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+3882285900,2020-10-15 18:40:18,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13859208854,2020-10-15 18:48:48,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+3882285900,2020-10-15 18:40:18,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13859178574,2020-10-15 18:46:30,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+3882285900,2020-10-15 18:40:18,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3882288899,2020-10-15 18:40:55,moved_columns_in_project,YuriSilenok, 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13859080811,2020-10-15 18:39:07,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
+13859105121,2020-10-15 18:40:54,PullRequestReviewEvent,YuriSilenok, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13859105229,2020-10-15 18:40:55,IssueCommentEvent,YuriSilenok, 1371 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13859105736,2020-10-15 18:40:56,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CAcademicDegree\\.Delete$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+13859105715,2020-10-15 18:40:57,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13859106059,2020-10-15 18:40:59,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13859106079,2020-10-15 18:40:58,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CAcademicDegree\\.Insert$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+13859106546,2020-10-15 18:41:01,IssueCommentEvent,YuriSilenok, 1371 Неизвестный файл `UnitTestOfTimetableOfClasses/CAcademicLoad/Update/CODE.PNG`
+13859106405,2020-10-15 18:40:59,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CAcademicDegree\\.Update$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+13859106396,2020-10-15 18:41:00,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 3882266688,2020-10-15 18:36:32,unlabeled,NesgovorovVS, refactoring 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
 3882266692,2020-10-15 18:36:32,labeled,NesgovorovVS, 1354 info
 3882267716,2020-10-15 18:36:44,unlabeled,NesgovorovVS, info 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
