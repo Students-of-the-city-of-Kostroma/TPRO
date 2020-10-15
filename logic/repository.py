@@ -73,8 +73,6 @@ class Repository:
                 issue_inactive_days = issue_inactive_delta.days
                 issue_inactive_hours = int(issue_inactive_delta.seconds / 3600)
                 branch = None
-                try: branch = self.repo.get_branch('task-'+ str(issue.number))
-                except: pass
                 try: branch = self.repo.get_branch('issue-'+ str(issue.number))
                 except: pass
                 # количество дней отсутствия активности в ветке
