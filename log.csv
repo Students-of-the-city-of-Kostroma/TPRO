@@ -1,4 +1,22 @@
 id,date,event,user,message
+3880587388,2020-10-15 12:43:49,mentioned,MyachevM, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3880587392,2020-10-15 12:43:49,subscribed,MyachevM, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13854594770,2020-10-15 12:43:49,IssueCommentEvent,NordScandinavian," 1357 > Например, у @MyachevM в папке помимо CODE. png GRAPH.png и whiteBox.md есть еще файл UnitTest.cs. У тебя он отсутствует. Я предполагаю, что у тебя его не хватает.
+
+> ![image](https://user-images.githubusercontent.com/47521045/95916426-47359b00-0db1-11eb-924d-b333cd179a53.png)
+
+
+
+Разве не сначала идёт разработка отчёта, а только потом работа с юнит-тестом?"
+13854617834,2020-10-15 12:45:43,IssueCommentEvent,NordScandinavian," 1356 > ![image](https://user-images.githubusercontent.com/47635280/95769784-1413de80-0cc1-11eb-92f2-8d1c9f0da318.png)
+
+> Видимо Test-ID должны называться примерно так.
+
+
+
+Это уже работа с кодом теста, 
+
+она идёт совместно с разработкой отчёта? Или я что то не понимаю"
 13847842209,2020-10-14 22:41:31,PushEvent,NesgovorovVS, refs/heads/issue-1354 endUT
 13847759073,2020-10-14 22:33:20,PushEvent,NesgovorovVS, refs/heads/issue-1328 f
 13846731826,2020-10-14 20:56:17,PullRequestReviewEvent,MyachevM, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
