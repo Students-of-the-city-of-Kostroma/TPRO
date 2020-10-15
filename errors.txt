@@ -1,61 +1,20 @@
 Traceback (most recent call last):
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
-    conn = connection.create_connection(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\util\connection.py", line 61, in create_connection
-    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno 11001] getaddrinfo failed
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 670, in urlopen
-    httplib_response = self._make_request(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 381, in _make_request
-    self._validate_conn(conn)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 978, in _validate_conn
-    conn.connect()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connection.py", line 309, in connect
-    conn = self._new_conn()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
-    raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x03FB3298>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\adapters.py", line 439, in send
-    resp = conn.urlopen(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
-    retries = retries.increment(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\util\retry.py", line 439, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Students-of-the-city-of-Kostroma/Student-timetable (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x03FB3298>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 15, in <module>
-    repo = GITHUB.get_repo(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\MainClass.py", line 333, in get_repo
+  File "C:\Users\VB\Documents\GitHub\TPRO\main.py", line 19, in <module>
+    student = Listener(repo)
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\listener.py", line 17, in __init__
+    trpo_repo.check_issues()
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 102, in check_issues
+    and 'YuriSilenok' not in [u.login for u in review_requests[0]]\
+  File "C:\Users\VB\Documents\GitHub\TPRO\logic\repository.py", line 102, in <listcomp>
+    and 'YuriSilenok' not in [u.login for u in review_requests[0]]\
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 59, in __iter__
+    newElements = self._grow()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 71, in _grow
+    newElements = self._fetchNextPage()
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\PaginatedList.py", line 203, in _fetchNextPage
     headers, data = self.__requester.requestJsonAndCheck(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 318, in requestJsonAndCheck
-    *self.requestJson(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 410, in requestJson
-    return self.__requestEncode(cnx, verb, url, parameters, headers, input, encode)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 486, in __requestEncode
-    status, responseHeaders, output = self.__requestRaw(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 513, in __requestRaw
-    response = cnx.getresponse()
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 110, in getresponse
-    r = verb(
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 543, in get
-    return self.request('GET', url, **kwargs)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 530, in request
-    resp = self.send(prep, **send_kwargs)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 643, in send
-    r = adapter.send(request, **kwargs)
-  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\adapters.py", line 516, in send
-    raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Students-of-the-city-of-Kostroma/Student-timetable (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x03FB3298>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 317, in requestJsonAndCheck
+    return self.__check(
+  File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\github\Requester.py", line 342, in __check
+    raise self.__createException(status, responseHeaders, output)
+github.GithubException.GithubException: 502 {"message": "Server Error"}
