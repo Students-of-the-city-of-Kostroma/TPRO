@@ -1,4 +1,6 @@
 id,date,event,user,message
+3881754915,2020-10-15 17:00:51,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13857662354,2020-10-15 17:00:10,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13855156826,2020-10-15 13:31:33,PullRequestReviewEvent,ifuwmnn," approved 1364 Добавил расписание для студентов на форму ""расписание"""
 13854630616,2020-10-15 12:46:47,IssueCommentEvent,NordScandinavian," 1358 > Номера Test-ID, должны соответствовать номеру ветки, в которой идёт работа
 
