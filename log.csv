@@ -1,4 +1,6 @@
 id,date,event,user,message
+3884724425,2020-10-16 09:12:27,connected,NesgovorovVS, 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+3884724426,2020-10-16 09:12:27,connected,NesgovorovVS, 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
 13863932355,2020-10-16 03:00:04,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
 13863933501,2020-10-16 03:00:12,IssueCommentEvent,YuriSilenok, 1361 Неизвестный файл `Docs/Technical/UserStories/Story-0/READMY.md`
 13863934538,2020-10-16 03:00:21,IssueCommentEvent,YuriSilenok, 1361 Неизвестный файл `Docs/Technical/UserStories/Story-0/READMY.md`
