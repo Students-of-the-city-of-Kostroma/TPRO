@@ -1,4 +1,5 @@
 id,date,event,user,message
+13869549402,2020-10-16 14:46:34,PullRequestReviewEvent,MyachevM, approved 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 3884724425,2020-10-16 09:12:27,connected,NesgovorovVS, 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 3884724426,2020-10-16 09:12:27,connected,NesgovorovVS, 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
 13863932355,2020-10-16 03:00:04,PushEvent,YuriSilenok, refs/heads/issue-1344 Update README.md
