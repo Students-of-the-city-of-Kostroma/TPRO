@@ -1,4 +1,6 @@
 id,date,event,user,message
+3889401731,2020-10-17 18:49:23,review_requested,NesgovorovVS, 1367 badsster Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3889401780,2020-10-17 18:49:27,review_request_removed,NesgovorovVS, 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
 3889400863,2020-10-17 18:48:32,review_request_removed,NesgovorovVS, 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
 3889400864,2020-10-17 18:48:32,review_request_removed,NesgovorovVS, 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
 13879754070,2020-10-17 18:48:14,PushEvent,NesgovorovVS, refs/heads/issue-1240 del
