@@ -1,4 +1,10 @@
 id,date,event,user,message
+3888842753,2020-10-17 07:58:53,review_requested,NordScandinavian, 1356 ifuwmnn Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3888842761,2020-10-17 07:58:54,review_requested,NordScandinavian, 1356 MyachevM Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3888842773,2020-10-17 07:58:54,review_requested,NordScandinavian, 1356 badsster Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13877592175,2020-10-17 07:58:42,PushEvent,NordScandinavian," refs/heads/issue-1032 Update whiteBox.md
+
+fix nameing of unit-tests"
 13874627077,2020-10-16 22:19:01,IssueCommentEvent,VinogradovAlexandr781227, 1366 Понял. Посмотрю обновленные рекомендации и согласно ним обновлю. Завтра залью изменения.
 13874368000,2020-10-16 21:51:30,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1361']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13874368343,2020-10-16 21:51:32,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
