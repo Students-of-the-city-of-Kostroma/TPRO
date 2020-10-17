@@ -1,4 +1,12 @@
 id,date,event,user,message
+3888846070,2020-10-17 08:03:32,review_requested,NordScandinavian, 1358 MyachevM Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+3888846081,2020-10-17 08:03:32,review_requested,NordScandinavian, 1358 badsster Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+3888846090,2020-10-17 08:03:33,review_requested,NordScandinavian, 1358 YuriSilenok Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+3888846150,2020-10-17 08:03:37,review_requested,NordScandinavian, 1358 ifuwmnn Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+3888846178,2020-10-17 08:03:39,review_requested,NordScandinavian, 1358 ZhizhikinIvan Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+13877605846,2020-10-17 08:03:20,PushEvent,NordScandinavian," refs/heads/issue-1095 Update whiteBox.md
+
+fix naming of unit-tests"
 3888843908,2020-10-17 08:00:38,review_requested,NordScandinavian, 1357 ifuwmnn Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3888843927,2020-10-17 08:00:39,review_requested,NordScandinavian, 1357 badsster Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3888843984,2020-10-17 08:00:43,review_requested,NordScandinavian, 1357 MyachevM Исправление сбоев в автотестах в файле UT_Update_CUniversity
