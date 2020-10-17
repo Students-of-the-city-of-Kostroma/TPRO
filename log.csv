@@ -1,4 +1,8 @@
 id,date,event,user,message
+13877611731,2020-10-17 08:05:19,PullRequestReviewEvent,YuriSilenok, changes_requested 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+13877611771,2020-10-17 08:05:20,IssueCommentEvent,YuriSilenok," 1358 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13877611819,2020-10-17 08:05:21,IssueCommentEvent,YuriSilenok, 1358 Неизвестный файл `LibOfTimetableOfClasses/CUniversity.cs`
+13877617136,2020-10-17 08:07:15,PullRequestReviewEvent,NordScandinavian," approved 1364 Добавил расписание для студентов на форму ""расписание"""
 3888846070,2020-10-17 08:03:32,review_requested,NordScandinavian, 1358 MyachevM Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 3888846081,2020-10-17 08:03:32,review_requested,NordScandinavian, 1358 badsster Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 3888846090,2020-10-17 08:03:33,review_requested,NordScandinavian, 1358 YuriSilenok Исправление сбоев в автотестах в файле UT_Delete_CInstitute
