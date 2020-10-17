@@ -1,4 +1,6 @@
 id,date,event,user,message
+3889407505,2020-10-17 18:54:49,connected,NesgovorovVS, 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3889407507,2020-10-17 18:54:49,connected,NesgovorovVS, 1240 Разработать и автоматизировать сценарии тестирования метода Insert (Model model) сущности Нагрузка
 13879763995,2020-10-17 18:50:46,IssueCommentEvent,YuriSilenok," 1367 Описание запроса должно содержать сведения о том, какую задачу он закрывает в случае мержа"
 13879766542,2020-10-17 18:51:25,PushEvent,NesgovorovVS, refs/heads/issue-1065 del
 3889401731,2020-10-17 18:49:23,review_requested,NesgovorovVS, 1367 badsster Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
