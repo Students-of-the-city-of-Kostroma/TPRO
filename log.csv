@@ -1,4 +1,7 @@
 id,date,event,user,message
+3889400863,2020-10-17 18:48:32,review_request_removed,NesgovorovVS, 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3889400864,2020-10-17 18:48:32,review_request_removed,NesgovorovVS, 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
+13879754070,2020-10-17 18:48:14,PushEvent,NesgovorovVS, refs/heads/issue-1240 del
 13877611731,2020-10-17 08:05:19,PullRequestReviewEvent,YuriSilenok, changes_requested 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13877611771,2020-10-17 08:05:20,IssueCommentEvent,YuriSilenok," 1358 У вас есть непроверенные запросы ['#1371']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13877611819,2020-10-17 08:05:21,IssueCommentEvent,YuriSilenok, 1358 Неизвестный файл `LibOfTimetableOfClasses/CUniversity.cs`
