@@ -1,4 +1,7 @@
 id,date,event,user,message
+3889550745,2020-10-17 21:25:13,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13880348886,2020-10-17 21:22:46,PullRequestReviewEvent,MyachevM, approved 1361 Разработала методические рекомендации к составлению пользовательской истории 
+13880357040,2020-10-17 21:25:02,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 3889409649,2020-10-17 18:56:55,connected,NesgovorovVS, 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
 3889409650,2020-10-17 18:56:55,connected,NesgovorovVS, 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
 3889407505,2020-10-17 18:54:49,connected,NesgovorovVS, 1367 Разработал и автоматизировал сценарии тестирования метода Insert (Model model) сущности Нагрузка
