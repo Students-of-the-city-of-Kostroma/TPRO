@@ -1,4 +1,6 @@
 id,date,event,user,message
+3890129814,2020-10-18 14:00:37,review_requested,NesgovorovVS, 1371 YuriSilenok Реструктуризация проекта UnitTestOfTimetableOfClasses
+3890129844,2020-10-18 14:00:40,review_requested,NesgovorovVS, 1371 badsster Реструктуризация проекта UnitTestOfTimetableOfClasses
 13880361745,2020-10-17 21:26:15,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1358', '#1357', '#1356']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13880361898,2020-10-17 21:26:17,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13880361904,2020-10-17 21:26:17,PullRequestReviewCommentEvent,YuriSilenok, 1355 После строки `{` (номер строки 4) ожидается любое из списка`[' {4}/// <summary>$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
