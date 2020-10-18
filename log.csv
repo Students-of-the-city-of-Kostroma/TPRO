@@ -1,4 +1,6 @@
 id,date,event,user,message
+3890370751,2020-10-18 18:51:38,review_requested,ZhizhikinIvan," 1364 MyachevM Добавил расписание для студентов на форму ""расписание"""
+3890370794,2020-10-18 18:51:41,review_requested,ZhizhikinIvan," 1364 YuriSilenok Добавил расписание для студентов на форму ""расписание"""
 13883472463,2020-10-18 15:09:39,PushEvent,NesgovorovVS, refs/heads/issue-1328 sizr
 13883352405,2020-10-18 14:35:26,PullRequestReviewEvent,ZhizhikinIvan, approved 1361 Разработала методические рекомендации к составлению пользовательской истории 
 13883242915,2020-10-18 14:03:29,PullRequestReviewEvent,YuriSilenok, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
