@@ -1,4 +1,13 @@
 id,date,event,user,message
+13883242915,2020-10-18 14:03:29,PullRequestReviewEvent,YuriSilenok, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13883242958,2020-10-18 14:03:30,IssueCommentEvent,YuriSilenok, 1371 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13883243067,2020-10-18 14:03:31,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 2) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CAcademicDegree\\.Delete$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+13883243069,2020-10-18 14:03:32,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13883243140,2020-10-18 14:03:34,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13883243149,2020-10-18 14:03:33,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 2) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CAcademicDegree\\.Insert$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+13883243271,2020-10-18 14:03:35,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13883243275,2020-10-18 14:03:35,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 2) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CAcademicDegree\\.Update$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+13883243309,2020-10-18 14:03:36,IssueCommentEvent,YuriSilenok, 1371 Неизвестный файл `UnitTestOfTimetableOfClasses/CAcademicLoad/Update/CODE.PNG`
 3890129814,2020-10-18 14:00:37,review_requested,NesgovorovVS, 1371 YuriSilenok Реструктуризация проекта UnitTestOfTimetableOfClasses
 3890129844,2020-10-18 14:00:40,review_requested,NesgovorovVS, 1371 badsster Реструктуризация проекта UnitTestOfTimetableOfClasses
 13880361745,2020-10-17 21:26:15,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1358', '#1357', '#1356']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
