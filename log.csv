@@ -1,4 +1,7 @@
 id,date,event,user,message
+13885086809,2020-10-18 21:35:18,IssueCommentEvent,NordScandinavian," 1358 Прошу не снимать задачу, жду ревью."
+13885087522,2020-10-18 21:35:27,IssueCommentEvent,NordScandinavian," 1357 Прошу не снимать задачу, жду ревью."
+13885088044,2020-10-18 21:35:33,IssueCommentEvent,NordScandinavian," 1356 Прошу не снимать задачу, жду ревью."
 13885076395,2020-10-18 21:32:46,PullRequestReviewEvent,NordScandinavian, changes_requested 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13885078262,2020-10-18 21:33:15,PullRequestReviewEvent,NordScandinavian, approved 1361 Разработала методические рекомендации к составлению пользовательской истории 
 13884373623,2020-10-18 18:54:18,PullRequestReviewEvent,YuriSilenok," changes_requested 1364 Добавил расписание для студентов на форму ""расписание"""
