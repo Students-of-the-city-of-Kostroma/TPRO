@@ -1,4 +1,5 @@
 id,date,event,user,message
+13883352405,2020-10-18 14:35:26,PullRequestReviewEvent,ZhizhikinIvan, approved 1361 Разработала методические рекомендации к составлению пользовательской истории 
 13883242915,2020-10-18 14:03:29,PullRequestReviewEvent,YuriSilenok, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 13883242958,2020-10-18 14:03:30,IssueCommentEvent,YuriSilenok, 1371 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
 13883243067,2020-10-18 14:03:31,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 2) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CAcademicDegree\\.Delete$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
