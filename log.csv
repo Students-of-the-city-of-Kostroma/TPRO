@@ -1,4 +1,10 @@
 id,date,event,user,message
+13891529793,2020-10-19 13:49:29,IssueCommentEvent,MyachevM," 1358 > > Номера Test-ID, должны соответствовать номеру ветки, в которой идёт работа
+> 
+> Изменение кода теста идёт параллельно с разработкой отчёта по этому тесту? Или я что то не так понял
+
+И в отчёте, и в коде потом тоже надо будет поменять Test-ID, как указано в требованиях"
+13891532374,2020-10-19 13:49:44,PullRequestReviewEvent,MyachevM, approved 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13891514186,2020-10-19 13:47:58,PullRequestReviewEvent,MyachevM, approved 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13891506480,2020-10-19 13:47:13,PullRequestReviewEvent,MyachevM, approved 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 13885086809,2020-10-18 21:35:18,IssueCommentEvent,NordScandinavian," 1358 Прошу не снимать задачу, жду ревью."
