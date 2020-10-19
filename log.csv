@@ -1,4 +1,7 @@
 id,date,event,user,message
+13891576643,2020-10-19 13:53:52,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1364']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13891576958,2020-10-19 13:53:54,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13891576972,2020-10-19 13:53:53,PullRequestReviewCommentEvent,YuriSilenok, 1355 После строки `        /// </summary>` (номер строки 17) ожидается любое из списка`[' {8}\\[TestMethod\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
 3892725296,2020-10-19 13:51:49,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13891553237,2020-10-19 13:51:39,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13891529793,2020-10-19 13:49:29,IssueCommentEvent,MyachevM," 1358 > > Номера Test-ID, должны соответствовать номеру ветки, в которой идёт работа
