@@ -1,4 +1,6 @@
 id,date,event,user,message
+13900261565,2020-10-20 02:53:04,PullRequestReviewEvent,ifuwmnn, approved 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13900265408,2020-10-20 02:53:41,PullRequestReviewEvent,ifuwmnn, approved 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 13900238246,2020-10-20 02:49:22,PullRequestReviewEvent,ifuwmnn, approved 1361 Разработала методические рекомендации к составлению пользовательской истории 
 13900199073,2020-10-20 02:43:09,PullRequestReviewEvent,ifuwmnn, approved 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 3895008287,2020-10-19 21:48:41,mentioned,YuriSilenok, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
