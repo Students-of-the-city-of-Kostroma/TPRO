@@ -1,4 +1,5 @@
 id,date,event,user,message
+13891514186,2020-10-19 13:47:58,PullRequestReviewEvent,MyachevM, approved 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13891506480,2020-10-19 13:47:13,PullRequestReviewEvent,MyachevM, approved 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 13885086809,2020-10-18 21:35:18,IssueCommentEvent,NordScandinavian," 1358 Прошу не снимать задачу, жду ревью."
 13885087522,2020-10-18 21:35:27,IssueCommentEvent,NordScandinavian," 1357 Прошу не снимать задачу, жду ревью."
