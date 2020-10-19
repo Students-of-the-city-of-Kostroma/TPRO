@@ -1,4 +1,6 @@
 id,date,event,user,message
+13891668863,2020-10-19 14:02:19,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13891668882,2020-10-19 14:02:18,PullRequestReviewCommentEvent,YuriSilenok, 1355 Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса
 3892763180,2020-10-19 14:01:47,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13891643749,2020-10-19 14:00:14,PullRequestReviewEvent,MyachevM," approved 1364 Добавил расписание для студентов на форму ""расписание"""
 13891656222,2020-10-19 14:01:17,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
