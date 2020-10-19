@@ -1,4 +1,6 @@
 id,date,event,user,message
+13891717072,2020-10-19 14:06:36,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13891717132,2020-10-19 14:06:36,PullRequestReviewCommentEvent,YuriSilenok, 1355 После строки `        /// </summary>` (номер строки 17) ожидается любое из списка`[' {8}\\[TestMethod\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
 3892774721,2020-10-19 14:04:26,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13891692434,2020-10-19 14:04:23,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13891668863,2020-10-19 14:02:19,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
