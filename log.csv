@@ -1,4 +1,14 @@
 id,date,event,user,message
+13910049419,2020-10-20 18:36:25,IssueCommentEvent,MyachevM," 1355 > ![image](https://user-images.githubusercontent.com/47635280/96524166-2a510a00-1280-11eb-8fdd-a5a6c758e4b5.png)
+> тут точно ничего не пропущено?
+
+
+
+> ![image](https://user-images.githubusercontent.com/47635280/96524166-2a510a00-1280-11eb-8fdd-a5a6c758e4b5.png)
+> тут точно ничего не пропущено?
+
+не уверен
+возможно мне кажется в конце названия класса нужно ()"
 3898186408,2020-10-20 14:37:25,unassigned,YuriSilenok, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
 3898186420,2020-10-20 14:37:25,assigned,NesgovorovVS, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
 13906709723,2020-10-20 14:39:02,PushEvent,NesgovorovVS, refs/heads/issue-1328 size
