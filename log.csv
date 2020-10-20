@@ -1,4 +1,7 @@
 id,date,event,user,message
+3898052524,2020-10-20 14:05:16,unassigned,NesgovorovVS, YuriSilenok 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+3898052534,2020-10-20 14:05:16,assigned,YuriSilenok, YuriSilenok 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+13906310157,2020-10-20 14:05:16,IssueCommentEvent,YuriSilenok," 1354 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1354 составляет 4 дней. Активность в ветке issue-1354 составляет 5 дней. Активность по запросу #1371 составляет 2 дней. Нет запросов, которые должен проверить преподаватель"
 13900300128,2020-10-20 02:59:09,PullRequestReviewEvent,ifuwmnn, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13900261565,2020-10-20 02:53:04,PullRequestReviewEvent,ifuwmnn, approved 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13900265408,2020-10-20 02:53:41,PullRequestReviewEvent,ifuwmnn, approved 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
