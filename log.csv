@@ -1,4 +1,6 @@
 id,date,event,user,message
+13920875014,2020-10-21 14:05:17,PushEvent,NesgovorovVS, refs/heads/issue-1240 r
+13920890269,2020-10-21 14:06:37,PushEvent,NesgovorovVS, refs/heads/issue-1065 wb
 13919683377,2020-10-21 12:24:25,PullRequestReviewEvent,YuriSilenok, changes_requested 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13919683592,2020-10-21 12:24:26,IssueCommentEvent,YuriSilenok, 1358 Неизвестный файл `LibOfTimetableOfClasses/CUniversity.cs`
 13919693066,2020-10-21 12:25:12,PullRequestReviewEvent,YuriSilenok, changes_requested 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
