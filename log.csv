@@ -1,4 +1,7 @@
 id,date,event,user,message
+13922575650,2020-10-21 16:26:32,PullRequestReviewEvent,ZhizhikinIvan, approved 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13922580325,2020-10-21 16:26:52,PullRequestReviewEvent,ZhizhikinIvan, approved 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+13922587708,2020-10-21 16:27:25,PullRequestReviewEvent,ZhizhikinIvan, approved 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 13920904515,2020-10-21 14:07:53,PushEvent,NesgovorovVS, refs/heads/issue-1087 graph
 13920875014,2020-10-21 14:05:17,PushEvent,NesgovorovVS, refs/heads/issue-1240 r
 13920890269,2020-10-21 14:06:37,PushEvent,NesgovorovVS, refs/heads/issue-1065 wb
