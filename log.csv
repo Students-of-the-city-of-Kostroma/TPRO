@@ -1,4 +1,10 @@
 id,date,event,user,message
+3905447928,2020-10-21 21:48:46,closed,YuriSilenok, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3905447956,2020-10-21 21:48:46,head_ref_deleted,YuriSilenok, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3905447965,2020-10-21 21:48:47,moved_columns_in_project,YuriSilenok, 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13926787745,2020-10-21 21:48:45,DeleteEvent,YuriSilenok, issue-1346
+13926787788,2020-10-21 21:48:46,IssueCommentEvent,YuriSilenok, 1346 Ветка issue-1346 удалена
+13926787935,2020-10-21 21:48:46,PullRequestEvent,YuriSilenok, closed 1366 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13925527096,2020-10-21 19:58:03,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13925527118,2020-10-21 19:58:03,PullRequestReviewCommentEvent,YuriSilenok, 1355 Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса
 3904968253,2020-10-21 19:56:59,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
