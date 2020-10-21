@@ -1,4 +1,7 @@
 id,date,event,user,message
+3902820622,2020-10-21 12:22:59,review_requested,NordScandinavian, 1357 YuriSilenok Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3902821276,2020-10-21 12:23:08,review_requested,NordScandinavian, 1356 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3902821999,2020-10-21 12:23:18,review_requested,NordScandinavian, 1358 YuriSilenok Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13914252757,2020-10-21 00:49:22,PullRequestReviewEvent,YuriSilenok," changes_requested 1364 Добавил расписание для студентов на форму ""расписание"""
 13914252822,2020-10-21 00:49:22,IssueCommentEvent,YuriSilenok, 1364 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
 13914253044,2020-10-21 00:49:24,IssueCommentEvent,YuriSilenok, 1364 Неизвестный файл `Docs/entities.md`
