@@ -1,4 +1,8 @@
 id,date,event,user,message
+13919683377,2020-10-21 12:24:25,PullRequestReviewEvent,YuriSilenok, changes_requested 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+13919683592,2020-10-21 12:24:26,IssueCommentEvent,YuriSilenok, 1358 Неизвестный файл `LibOfTimetableOfClasses/CUniversity.cs`
+13919693066,2020-10-21 12:25:12,PullRequestReviewEvent,YuriSilenok, changes_requested 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13919702663,2020-10-21 12:25:57,PullRequestReviewEvent,YuriSilenok, changes_requested 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3902820622,2020-10-21 12:22:59,review_requested,NordScandinavian, 1357 YuriSilenok Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3902821276,2020-10-21 12:23:08,review_requested,NordScandinavian, 1356 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 3902821999,2020-10-21 12:23:18,review_requested,NordScandinavian, 1358 YuriSilenok Исправление сбоев в автотестах в файле UT_Delete_CInstitute
