@@ -1,6 +1,10 @@
 id,date,event,user,message
-13941603683,2020-10-22 22:40:17,IssueCommentEvent,MyachevM," 1355 > Поняли в чем проблема?
-
+3910844334,2020-10-22 22:42:01,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13941619448,2020-10-22 22:41:47,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
+13941603683,2020-10-22 22:40:17,IssueCommentEvent,MyachevM," 1355 > Поняли в чем проблема?
+
+
+
 в пробелах ?"
 13941553008,2020-10-22 22:35:40,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13941597954,2020-10-22 22:39:46,IssueCommentEvent,YuriSilenok, 1355 Поняли в чем проблема?
