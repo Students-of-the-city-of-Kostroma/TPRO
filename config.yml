@@ -15,6 +15,7 @@ ENTITIES:
 - TrainingProfiles
 - TypesOfOccupations
 - University
+- CourseSchedule
 INACTIVE_DAYS: 2
 ORG: Students-of-the-city-of-Kostroma
 REPO: Student-timetable
