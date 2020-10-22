@@ -1,4 +1,7 @@
 id,date,event,user,message
+13941270931,2020-10-22 22:09:10,IssueCommentEvent,MyachevM," 1355 > следите за пробелами в конце строки, их не должно быть.
+
+В том то и дело, что их там нету"
 13941250923,2020-10-22 22:07:18,PullRequestReviewEvent,ZhizhikinIvan, changes_requested 1360 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
 13941231832,2020-10-22 22:05:39,IssueCommentEvent,YuriSilenok," 1355 следите за пробелами в конце строки, их не должно быть."
 13941203933,2020-10-22 22:03:09,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
