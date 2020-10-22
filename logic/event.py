@@ -321,12 +321,9 @@ def check_files(pull):
             if re.match(r'.*UnitTest\.cs$', file.filename):
                 check_code(pull, file)
             elif re.match(TESTS_PATH+r'(code\.png|graph\.png|whiteBox\.md)$', file.filename):
-                pass
-            elif re.match(r'(.*\.md|.*\.csproj)$', file.filename):
-                pass
-            elif re.match(r'\.csproj$', file.filename):
-                with open('errors.txt', 'w', encoding='utf-8') as f:
-                    f.write(f'Неизвестный файл `{file.filename}`')
+                print(f'Неизвестный файл `{file.filename}`')
+            elif re.match(r'(.*\.md|.*\.csproj|.*\.cs)$', file.filename):
+                print(f'Неизвестный файл `{file.filename}`')
             else: 
                 pull.create_issue_comment(f'Неизвестный файл `{file.filename}`')
                 break
