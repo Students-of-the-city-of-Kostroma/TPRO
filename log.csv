@@ -1,4 +1,5 @@
 id,date,event,user,message
+13940615457,2020-10-22 21:09:53,IssueCommentEvent,YuriSilenok, 1355 На текущий момент у вас комментарии с неправильным сдвигом.
 13931437514,2020-10-22 08:15:43,PullRequestReviewEvent,YuriSilenok, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 13931437547,2020-10-22 08:15:44,IssueCommentEvent,YuriSilenok, 1371 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
 13931437725,2020-10-22 08:15:46,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
