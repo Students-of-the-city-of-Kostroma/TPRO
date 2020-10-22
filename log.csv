@@ -1,4 +1,5 @@
 id,date,event,user,message
+13941231832,2020-10-22 22:05:39,IssueCommentEvent,YuriSilenok," 1355 следите за пробелами в конце строки, их не должно быть."
 13941203933,2020-10-22 22:03:09,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13941204012,2020-10-22 22:03:08,PullRequestReviewCommentEvent,YuriSilenok, 1355 После строки `        /// </summary>` (номер строки 17) ожидается любое из списка`[' {8}\\[TestMethod\\]$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
 3910686020,2020-10-22 22:01:48,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
