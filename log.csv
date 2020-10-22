@@ -1,4 +1,13 @@
 id,date,event,user,message
+13931437514,2020-10-22 08:15:43,PullRequestReviewEvent,YuriSilenok, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13931437547,2020-10-22 08:15:44,IssueCommentEvent,YuriSilenok, 1371 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13931437725,2020-10-22 08:15:46,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13931437801,2020-10-22 08:15:45,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 2) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CAcademicDegree\\.Delete$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+13931437899,2020-10-22 08:15:47,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13931437912,2020-10-22 08:15:47,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 2) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CAcademicDegree\\.Insert$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+13931438053,2020-10-22 08:15:49,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13931438064,2020-10-22 08:15:48,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 2) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CAcademicDegree\\.Update$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+13931438122,2020-10-22 08:15:49,IssueCommentEvent,YuriSilenok, 1371 Неизвестный файл `UnitTestOfTimetableOfClasses/CAcademicLoad/Update/CODE.PNG`
 3907082718,2020-10-22 08:12:23,review_requested,NesgovorovVS, 1371 YuriSilenok Реструктуризация проекта UnitTestOfTimetableOfClasses
 13931410596,2020-10-22 08:11:40,PushEvent,NesgovorovVS, refs/heads/issue-1328 sz
 3906396185,2020-10-22 02:50:41,unassigned,badsster, YuriSilenok 1344 Разработать методические рекомендации к составлению пользовательской истории
