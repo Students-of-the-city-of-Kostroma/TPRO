@@ -154,7 +154,7 @@ def check_code(pull, file):
             r' {8}public void ((I|U|D)C)|('+CLASSES+r')_\d+\(\)$' : 'header_method'
         },
         'header_method' : {
-            r' {8}\{$' : 'begin_method'
+            r' {8}\{$' : 'body_method'
         },
         'body_method' : {
             r' {12}.*' : 'body_method',
