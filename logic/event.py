@@ -141,7 +141,7 @@ def check_code(pull, file):
         'pre_comment' : {
             r'$' : 'pre_comment',
             r' {8}/// <summary>$' : 'comment_start_summary',
-            r' {8}\}$' : 'end_class'
+            r' {4}\}$' : 'end_class'
         },
         'comment_start_summary' : {
             r' {8}/// </summary>$' : 'comment_end_summary',
@@ -161,10 +161,7 @@ def check_code(pull, file):
             r' {8}\}$' : 'pre_comment'
         },
         'end_class' : {
-            r' {4}\}$' : 'end_namespace'
-        },
-        'end_namespace' : {
-            r'\}$' : 'end_file'
+            r'\}$' : 'end_namespace'
         },
         'end_namespace' : {
             r'$' : 'end_file'
