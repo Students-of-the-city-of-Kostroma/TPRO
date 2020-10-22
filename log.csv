@@ -1,4 +1,7 @@
 id,date,event,user,message
+3910488233,2020-10-22 21:12:41,unassigned,YuriSilenok, YuriSilenok 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
+3910488242,2020-10-22 21:12:41,assigned,VinogradovAlexandr781227, YuriSilenok 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
+13940652821,2020-10-22 21:13:10,IssueCommentEvent,YuriSilenok, 1346 Возобновите работу над задачей
 13940615457,2020-10-22 21:09:53,IssueCommentEvent,YuriSilenok, 1355 На текущий момент у вас комментарии с неправильным сдвигом.
 13931437514,2020-10-22 08:15:43,PullRequestReviewEvent,YuriSilenok, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 13931437547,2020-10-22 08:15:44,IssueCommentEvent,YuriSilenok, 1371 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
