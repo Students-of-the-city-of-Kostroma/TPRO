@@ -1,4 +1,16 @@
 id,date,event,user,message
+13941731482,2020-10-22 22:52:39,PullRequestReviewEvent,MyachevM, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13941731484,2020-10-22 22:52:38,PullRequestReviewCommentEvent,MyachevM," 1355 > Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса
+
+
+
+а вот здесь непонятно как то
+
+если смотреть по требованиям, комментарий причины сбоя присутствует внутри метода
+
+а /// <summary> здесь вставлять некуда
+
+на пробелы также всё проверено в этом месте"
 13941703814,2020-10-22 22:49:56,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13941703855,2020-10-22 22:49:56,PullRequestReviewCommentEvent,YuriSilenok," 1355 я посмотрю в чем проблема, мне не очевидна проблема в этом месте."
 13941640214,2020-10-22 22:43:46,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
