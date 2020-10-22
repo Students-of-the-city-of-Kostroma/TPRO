@@ -1,4 +1,6 @@
 id,date,event,user,message
+3910815830,2020-10-22 22:35:01,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13941542978,2020-10-22 22:34:47,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13941466808,2020-10-22 22:27:43,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13941466874,2020-10-22 22:27:42,PullRequestReviewCommentEvent,YuriSilenok, 1355 После строки `        public void DCTeacher_2()` (номер строки 29) ожидается любое из списка`[' {8}\\{$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
 3910782781,2020-10-22 22:26:26,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
