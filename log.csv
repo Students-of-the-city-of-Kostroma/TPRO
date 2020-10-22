@@ -1,4 +1,6 @@
 id,date,event,user,message
+13941001448,2020-10-22 21:44:48,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13941001459,2020-10-22 21:44:47,PullRequestReviewCommentEvent,YuriSilenok, 1355 Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса
 3910615699,2020-10-22 21:44:36,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13940997229,2020-10-22 21:44:23,PushEvent,MyachevM, refs/heads/issue-1281 Update UnitTest.cs
 13940790413,2020-10-22 21:25:28,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
