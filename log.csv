@@ -1,5 +1,6 @@
 id,date,event,user,message
 3910844334,2020-10-22 22:42:01,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3910844334,2020-10-22 22:42:01,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13941731482,2020-10-22 22:52:39,PullRequestReviewEvent,MyachevM, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13941731484,2020-10-22 22:52:38,PullRequestReviewCommentEvent,MyachevM," 1355 > Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса
 
