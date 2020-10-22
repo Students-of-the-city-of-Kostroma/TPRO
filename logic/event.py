@@ -322,9 +322,9 @@ def check_files(pull):
                 check_code(pull, file)
             elif re.match(TESTS_PATH+r'(code\.png|graph\.png|whiteBox\.md)$', file.filename):
                 pass
-            elif re.match(r'(.*README\.md|.*\.csproj)$', file.filename):
+            elif re.match(r'(.*\.md|.*\.csproj)$', file.filename):
                 pass
-            elif re.match(r'\.csproj', file.filename):
+            elif re.match(r'\.csproj$', file.filename):
                 with open('errors.txt', 'w', encoding='utf-8') as f:
                     f.write(f'Неизвестный файл `{file.filename}`')
             else: 
