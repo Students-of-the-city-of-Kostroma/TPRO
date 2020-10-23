@@ -1,4 +1,5 @@
 id,date,event,user,message
+13948132087,2020-10-23 12:59:31,PushEvent,NesgovorovVS, refs/heads/issue-1240 редактирование
 3913089529,2020-10-23 12:45:33,closed,YuriSilenok, 1344 Разработать методические рекомендации к составлению пользовательской истории
 3913089622,2020-10-23 12:45:34,moved_columns_in_project,YuriSilenok, 1344 Разработать методические рекомендации к составлению пользовательской истории
 13947977628,2020-10-23 12:45:33,IssueCommentEvent,YuriSilenok, 1344 [Зачтено](https://docs.google.com/spreadsheets/d/1uBd4d3VvI4rYeuXkXmqLyEZSitS8K9pfVUDtM3i1Vg4/edit#gid=1029316146&range=M6)
