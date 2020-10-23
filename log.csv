@@ -1,4 +1,5 @@
 id,date,event,user,message
+13948228729,2020-10-23 13:08:07,PushEvent,NesgovorovVS, refs/heads/issue-1328 s
 13948192405,2020-10-23 13:04:47,PushEvent,YuriSilenok, refs/heads/issue-1087 Create user_story.md
 13948176821,2020-10-23 13:03:24,PushEvent,NesgovorovVS, refs/heads/issue-1087 отображение
 13948138446,2020-10-23 13:00:06,PushEvent,YuriSilenok, refs/heads/issue-1240 Create user_story.md
