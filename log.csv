@@ -1,4 +1,7 @@
 id,date,event,user,message
+13946521540,2020-10-23 10:30:16,PullRequestReviewEvent,YuriSilenok, changes_requested 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13946521589,2020-10-23 10:30:16,PullRequestReviewEvent,YuriSilenok, changes_requested 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13946521587,2020-10-23 10:30:01,PullRequestReviewCommentEvent,YuriSilenok, 1357 и где дублирование?
 13945924266,2020-10-23 09:20:42,PullRequestReviewEvent,YuriSilenok, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 13945900576,2020-10-23 09:17:39,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13945828047,2020-10-23 09:08:00,PullRequestReviewEvent,YuriSilenok, approved 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
