@@ -1,4 +1,17 @@
 id,date,event,user,message
+13947377558,2020-10-23 11:52:45,IssueCommentEvent,MyachevM," 1355 > Автотесты не запускаются
+
+![image](https://user-images.githubusercontent.com/47633738/96977806-3eb63080-1526-11eb-9a28-6e4f43fc7a56.png)
+"
+13947383239,2020-10-23 11:53:16,IssueCommentEvent,MyachevM," 1355 > > Автотесты не запускаются
+
+> 
+
+> ![image](https://user-images.githubusercontent.com/47633738/96977806-3eb63080-1526-11eb-9a28-6e4f43fc7a56.png)
+
+
+
+Азура пишет что файл с автотестами вообще не найден"
 13946548595,2020-10-23 10:33:07,IssueCommentEvent,YuriSilenok, 1356 Как вы можете апрувить если нет автотестов?
 13946521540,2020-10-23 10:30:16,PullRequestReviewEvent,YuriSilenok, changes_requested 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13946521589,2020-10-23 10:30:16,PullRequestReviewEvent,YuriSilenok, changes_requested 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
