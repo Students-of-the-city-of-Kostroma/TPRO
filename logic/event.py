@@ -335,32 +335,64 @@ def check_user_story(pull, file):
     comments = ''
 
     for line in range(len(text_file)):
-        if (re.match(final_text['alien_element'],text_file[line])==True):
+
+        state = 'alien_element'
+
+        if (re.match(final_text[state], text_file[line])):
+
+            state = 'tabs'
+
+            if (re.match(failing_text[state], text_file[line])):
+                comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должна присутствовать табуляция')
+            
+            state = 'numbering'
+
+            if (re.match(failing_text[state], text_file[line])):
+                comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должно быть нумерации')
+
             if (line==0):
-                if (re.match(final_text['title_first_level'],text_file[line])!=True):
-                    comments = add_failing_comment(comments, f'В файле `{file.filename}` в первой строке ожидается символ #')
-                elif (re.match(final_text['title_second_level'],text_file[line])==True):
+
+                state = 'title_first_level'
+                if (re.match(final_text[state],text_file[line])!=True):
+                    comments = add_failing_comment(comments, f'В файле `{file.filename}` в первой строке ожидается символ `{list(final_text[state])}`')
+                
+                state = 'title_second_level'
+                if (re.match(final_text[state],text_file[line])):
                     comments = add_failing_comment(comments, f'В файле `{file.filename}` в первой строке заглавие второго уровня вместо первого уровня')
+
             else:
-                if (re.match(final_text['title_first_level'],text_file[line])==True):
-                    if(re.match(final_text['title_second_level'],text_file[line])==True):
-                        if(re.match(final_text['title_third_level'],text_file[line])==True):
-                            if(second==0):
+                state = 'title_first_level'
+
+                if (re.match(final_text[state],text_file[line])):
+                    state = 'title_second_level'
+
+                    if (re.match(final_text[state],text_file[line])):
+                        state = 'title_third_level'
+
+                        if (re.match(final_text[state],text_file[line])):
+
+                            if (second==0):
                                 comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` нарушено последовательность уровня заглавий')
                                 third = third - 1
+
                             third = third + 1
+
                         else:
                             second = second + 1
                     else:
                         comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должно быть заглавия первого уровня')
 
-                    if (re.match(failing_text['character_restriction_title'], text_file[line]!=True)):
+                    if (re.match(failing_text['character_restriction_title'], text_file[line])!=True):
                         comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` заглавие не должно превышать 20 символов')
-                elif (re.match(failing_text['lists'], text_file[line]!=True)):
-                    if (re.match(failing_text['tabs'], text_file[line]==True)):
+
+                elif (re.match(failing_text['lists'], text_file[line])!=True):
+
+                    if (re.match(failing_text['tabs'], text_file[line])):
                         comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должна присутствовать табуляция')
-                    elif (re.match(failing_text['numbering'], text_file[line]==True)):
+
+                    elif (re.match(failing_text['numbering'], text_file[line])):
                         comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должно быть нумерации')
+
                     else:
                         comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` ошибка в заглавии')
 
