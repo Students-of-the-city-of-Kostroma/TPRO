@@ -1,4 +1,6 @@
 id,date,event,user,message
+13945773474,2020-10-23 09:00:27,PullRequestReviewEvent,NordScandinavian, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13945783380,2020-10-23 09:01:48,PullRequestReviewEvent,NordScandinavian, approved 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3912206321,2020-10-23 08:46:42,mentioned,badsster, 1361 Разработала методические рекомендации к составлению пользовательской истории 
 3912206323,2020-10-23 08:46:42,subscribed,badsster, 1361 Разработала методические рекомендации к составлению пользовательской истории 
 13945680886,2020-10-23 08:46:42,IssueCommentEvent,YuriSilenok," 1361 > > @badsster Дальше знаете что делать?
