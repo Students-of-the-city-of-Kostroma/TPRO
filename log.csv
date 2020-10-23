@@ -1,4 +1,7 @@
 id,date,event,user,message
+3912243123,2020-10-23 09:02:09,review_requested,NordScandinavian, 1358 YuriSilenok Исправление сбоев в автотестах в файле UT_Delete_CInstitute
+3912243245,2020-10-23 09:02:11,review_requested,NordScandinavian, 1357 YuriSilenok Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3912243369,2020-10-23 09:02:14,review_requested,NordScandinavian, 1356 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
 13945773474,2020-10-23 09:00:27,PullRequestReviewEvent,NordScandinavian, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 13945783380,2020-10-23 09:01:48,PullRequestReviewEvent,NordScandinavian, approved 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3912206321,2020-10-23 08:46:42,mentioned,badsster, 1361 Разработала методические рекомендации к составлению пользовательской истории 
