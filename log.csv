@@ -1,7 +1,11 @@
 id,date,event,user,message
-13947377558,2020-10-23 11:52:45,IssueCommentEvent,MyachevM," 1355 > Автотесты не запускаются
-
-![image](https://user-images.githubusercontent.com/47633738/96977806-3eb63080-1526-11eb-9a28-6e4f43fc7a56.png)
+13947508151,2020-10-23 12:04:10,IssueCommentEvent,YuriSilenok, 1355 Это вопрос или утверждение?
+13947377558,2020-10-23 11:52:45,IssueCommentEvent,MyachevM," 1355 > Автотесты не запускаются
+
+
+
+![image](https://user-images.githubusercontent.com/47633738/96977806-3eb63080-1526-11eb-9a28-6e4f43fc7a56.png)
+
 "
 13947383239,2020-10-23 11:53:16,IssueCommentEvent,MyachevM," 1355 > > Автотесты не запускаются
 
