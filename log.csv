@@ -1,4 +1,5 @@
 id,date,event,user,message
+13945799945,2020-10-23 09:04:09,IssueCommentEvent,YuriSilenok, 1358 Неизвестный файл `UnitTestOfTimetableOfClasses/CInstitute/Delete/CODE.PNG`
 3912243123,2020-10-23 09:02:09,review_requested,NordScandinavian, 1358 YuriSilenok Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 3912243245,2020-10-23 09:02:11,review_requested,NordScandinavian, 1357 YuriSilenok Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3912243369,2020-10-23 09:02:14,review_requested,NordScandinavian, 1356 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
