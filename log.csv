@@ -1,4 +1,11 @@
 id,date,event,user,message
+3916962733,2020-10-24 20:34:32,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+3916962737,2020-10-24 20:34:32,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+13959690663,2020-10-24 20:34:32,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
+
+Юрий Викторович, я проверил все имеющиеся запросы. 
+
+Пожалуйста, проверьте задачу."
 13959649762,2020-10-24 20:23:04,IssueCommentEvent,YuriSilenok, 1364 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
 13959649867,2020-10-24 20:23:05,IssueCommentEvent,YuriSilenok, 1364 Неизвестный файл `TimetableOfClasses/DirectionOfPreparation.resx`
 13959649873,2020-10-24 20:23:05,PullRequestReviewEvent,ZhizhikinIvan, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
