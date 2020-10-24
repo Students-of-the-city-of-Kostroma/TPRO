@@ -1,4 +1,10 @@
 id,date,event,user,message
+13959860123,2020-10-24 21:20:22,PushEvent,YuriSilenok, refs/heads/issue-1088 Create user_story.md
+13959861104,2020-10-24 21:20:36,IssueCommentEvent,NordScandinavian," 1358 > Неизвестный файл `UnitTestOfTimetableOfClasses/CInstitute/Delete/CODE.PNG`
+
+
+
+Здесь проблема только с именем файла?"
 3917057734,2020-10-24 21:19:01,review_dismissed,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3917057736,2020-10-24 21:19:01,review_dismissed,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3917057738,2020-10-24 21:19:01,review_dismissed,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
