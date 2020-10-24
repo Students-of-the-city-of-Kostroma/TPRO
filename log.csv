@@ -1,4 +1,5 @@
 id,date,event,user,message
+13960580205,2020-10-25 00:49:22,PushEvent,VinogradovAlexandr781227, refs/heads/issue-1346 User_Story v6
 13960540929,2020-10-25 00:36:28,CreateEvent,VinogradovAlexandr781227, issue-1346
 3917102667,2020-10-24 21:52:46,connected,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3917102668,2020-10-24 21:52:46,connected,MyachevM, 1281 Исправить сбои в автотестах расположенных в файле UT_Deleted_CTeacher 
