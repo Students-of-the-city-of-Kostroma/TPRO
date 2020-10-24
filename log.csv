@@ -1,4 +1,14 @@
 id,date,event,user,message
+3917057734,2020-10-24 21:19:01,review_dismissed,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3917057736,2020-10-24 21:19:01,review_dismissed,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3917057738,2020-10-24 21:19:01,review_dismissed,NordScandinavian, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3917060476,2020-10-24 21:20:05,mentioned,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+3917060480,2020-10-24 21:20:05,subscribed,YuriSilenok, 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13959854327,2020-10-24 21:19:01,PullRequestReviewEvent,ZhizhikinIvan, dismissed 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13959854331,2020-10-24 21:19:01,PullRequestReviewEvent,ifuwmnn, dismissed 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13959854337,2020-10-24 21:19:02,PullRequestReviewEvent,MyachevM, dismissed 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13959854395,2020-10-24 21:19:02,PushEvent,NordScandinavian, refs/heads/issue-1088 Update whiteBox.md
+13959858889,2020-10-24 21:20:05,IssueCommentEvent,NordScandinavian," 1356 @YuriSilenok, если я правильно понял, в отчёте всё верно. Можно приступать к работе над самими тестами?"
 3916962733,2020-10-24 20:34:32,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
 3916962737,2020-10-24 20:34:32,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
 13959690663,2020-10-24 20:34:32,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
