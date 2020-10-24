@@ -1,4 +1,7 @@
 id,date,event,user,message
+3917240766,2020-10-25 00:56:52,moved_columns_in_project,YuriSilenok, 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917242532,2020-10-25 00:59:32,labeled,VinogradovAlexandr781227, 1372 Story
+13960603185,2020-10-25 00:56:52,PullRequestReviewEvent,YuriSilenok, changes_requested 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 3917238559,2020-10-25 00:53:29,labeled,VinogradovAlexandr781227, 1372 Documentation
 3917238561,2020-10-25 00:53:29,labeled,VinogradovAlexandr781227, 1372 Methodological
 3917238566,2020-10-25 00:53:29,milestoned,VinogradovAlexandr781227, Backlog 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
