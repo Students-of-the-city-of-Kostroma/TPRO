@@ -1,4 +1,20 @@
 id,date,event,user,message
+3917238559,2020-10-25 00:53:29,labeled,VinogradovAlexandr781227, 1372 Documentation
+3917238561,2020-10-25 00:53:29,labeled,VinogradovAlexandr781227, 1372 Methodological
+3917238566,2020-10-25 00:53:29,milestoned,VinogradovAlexandr781227, Backlog 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238567,2020-10-25 00:53:30,review_requested,VinogradovAlexandr781227, 1372 YuriSilenok Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238570,2020-10-25 00:53:30,review_requested,VinogradovAlexandr781227, 1372 JennyShel18 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238571,2020-10-25 00:53:30,review_requested,VinogradovAlexandr781227, 1372 badsster Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238572,2020-10-25 00:53:30,review_requested,VinogradovAlexandr781227, 1372 NordScandinavian Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238573,2020-10-25 00:53:30,review_requested,VinogradovAlexandr781227, 1372 MyachevM Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238574,2020-10-25 00:53:30,review_requested,VinogradovAlexandr781227, 1372 ifuwmnn Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238576,2020-10-25 00:53:30,review_requested,VinogradovAlexandr781227, 1372 NesgovorovVS Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238577,2020-10-25 00:53:30,review_requested,VinogradovAlexandr781227, 1372 ZhizhikinIvan Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238579,2020-10-25 00:53:30,review_requested,VinogradovAlexandr781227, 1372 Heriuple Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238581,2020-10-25 00:53:30,review_requested,VinogradovAlexandr781227, 1372 Kruuliter Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238588,2020-10-25 00:53:30,added_to_project,VinogradovAlexandr781227, 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3917238589,2020-10-25 00:53:30,assigned,VinogradovAlexandr781227, VinogradovAlexandr781227 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+13960592967,2020-10-25 00:53:30,PullRequestEvent,VinogradovAlexandr781227, opened 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13960580205,2020-10-25 00:49:22,PushEvent,VinogradovAlexandr781227, refs/heads/issue-1346 User_Story v6
 13960540929,2020-10-25 00:36:28,CreateEvent,VinogradovAlexandr781227, issue-1346
 3917102667,2020-10-24 21:52:46,connected,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
