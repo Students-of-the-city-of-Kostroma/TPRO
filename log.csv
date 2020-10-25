@@ -1,4 +1,5 @@
 id,date,event,user,message
+13962655046,2020-10-25 13:36:08,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13962636455,2020-10-25 13:30:35,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 3917605580,2020-10-25 12:01:28,review_requested,MyachevM, 1355 ZhizhikinIvan Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3917605589,2020-10-25 12:01:29,review_requested,MyachevM, 1355 NordScandinavian Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
