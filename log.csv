@@ -1,4 +1,5 @@
 id,date,event,user,message
+13962776774,2020-10-25 14:11:53,PullRequestReviewEvent,YuriSilenok, commented 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
 13962755465,2020-10-25 14:05:47,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13962755471,2020-10-25 14:05:47,PullRequestReviewCommentEvent,ZhizhikinIvan, 1364 Идентификаторы для новых моделей не заданы. Это уникальный идентификатор строки в таблице для связи с другими сущностями.
 3917695912,2020-10-25 14:02:56,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
