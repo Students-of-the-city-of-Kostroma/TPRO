@@ -1,4 +1,21 @@
 id,date,event,user,message
+3917695912,2020-10-25 14:02:56,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+3917695913,2020-10-25 14:02:56,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+13962745199,2020-10-25 14:02:54,PullRequestReviewEvent,YuriSilenok, commented 1356 Исправление сбоев в автотестах расположенных в файле UT_Insert_CTeacher
+13962745361,2020-10-25 14:02:57,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok Юрий Викторович, я писал об этой проблеме (https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1364#pullrequestreview-516344596) выше ( `Я не нашёл решения проблемы, как уменьшить высоту последнего ряд в таблице расписания.` ). 
+
+
+
+Я проверил несколько вариантов настройки компонента TableLayoutPanel из интернета, к сожалению не один из них не сработал."
+13962749465,2020-10-25 14:04:07,IssueCommentEvent,YuriSilenok," 1358 > > Неизвестный файл `UnitTestOfTimetableOfClasses/CInstitute/Delete/CODE.PNG`
+
+> 
+
+> Здесь проблема только с именем файла?
+
+
+
+У вас есть возможность проверить свое предположение? Если да, то просто проверьте."
 13962744254,2020-10-25 14:02:38,IssueCommentEvent,YuriSilenok," 1356 Ошибки есть в отчете, но Вы можете сейчас приступать к автоматизации. Они вскроются по хорду автоматизации."
 13962725294,2020-10-25 13:57:24,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13962725299,2020-10-25 13:57:23,PullRequestReviewCommentEvent,YuriSilenok, 1364 Посмотрите [здесь](https://www.codeproject.com/Questions/412998/bind-data-to-dropdownlist-with-csharp) как правильно подключать данные из таблицы
