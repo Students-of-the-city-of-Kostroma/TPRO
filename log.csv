@@ -1,4 +1,6 @@
 id,date,event,user,message
+13964089015,2020-10-25 19:43:50,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13964089019,2020-10-25 19:43:49,PullRequestReviewCommentEvent,YuriSilenok, 1364 Лучше [здесь](https://docs.microsoft.com/ru-ru/dotnet/api/system.data.datatable.select?view=netframework-4.5) посмотреть
 13964079553,2020-10-25 19:41:32,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13964079559,2020-10-25 19:41:32,PullRequestReviewCommentEvent,YuriSilenok," 1364 На источники данных можно налагать фильтры, например [здесь](https://stackoverflow.com/questions/48878184/how-to-bind-data-to-a-dropdownlist-after-applying-filter-on-the-table/48878364)"
 13963506430,2020-10-25 17:26:54,IssueCommentEvent,YuriSilenok, 1372 а что с коммитом?
