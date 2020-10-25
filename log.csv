@@ -1,4 +1,6 @@
 id,date,event,user,message
+13962683146,2020-10-25 13:44:50,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13962683151,2020-10-25 13:44:50,PullRequestReviewCommentEvent,YuriSilenok, 1364 Мы допускаем сокращение для ученого звания из 1 символа?
 13962674144,2020-10-25 13:41:57,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13962674154,2020-10-25 13:41:57,PullRequestReviewCommentEvent,YuriSilenok, 1364 а зачем нам эти идентификаторы которые могут быть не заданы?
 13962655046,2020-10-25 13:36:08,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
