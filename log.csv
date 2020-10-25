@@ -1,4 +1,6 @@
 id,date,event,user,message
+13962725294,2020-10-25 13:57:24,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13962725299,2020-10-25 13:57:23,PullRequestReviewCommentEvent,YuriSilenok, 1364 Посмотрите [здесь](https://www.codeproject.com/Questions/412998/bind-data-to-dropdownlist-with-csharp) как правильно подключать данные из таблицы
 13962714323,2020-10-25 13:54:21,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13962714338,2020-10-25 13:54:20,PullRequestReviewCommentEvent,YuriSilenok," 1364 Почему вызов загрузки данных происходит не в самой форме, а здесь?"
 13962708702,2020-10-25 13:52:38,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
