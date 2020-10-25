@@ -1,4 +1,7 @@
 id,date,event,user,message
+13962240306,2020-10-25 11:30:02,IssueCommentEvent,NesgovorovVS," 1371 > Проверьте, что перенесенные юнит тесты могут выполняться.
+
+они не смогут выполняться, т.к не смогут быть добавлены в проект из-за одинаковых названий ""UnitTest.cs"""
 13962187061,2020-10-25 11:12:49,PushEvent,NesgovorovVS, refs/heads/issue-1087 deltestscen
 13962177822,2020-10-25 11:09:51,PushEvent,NesgovorovVS, refs/heads/issue-1240 del
 13962144620,2020-10-25 10:59:06,PushEvent,NesgovorovVS, refs/heads/issue-1328 fix
