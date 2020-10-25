@@ -303,30 +303,21 @@ def check_user_story(pull, file):
     text_file = content.decoded_content.decode('utf-8').split('\n')
     
     final_text = {
-        'alien_element' : {
-            r'^\W': 'title_first_level'
-        },
-        'numbering' : {
-            r'^\d+\W' : 'numb'
-        },
-        'character_restriction_title' : {
-            r'.{0,20}' : 'title'
-        },
-        'tabs' : {
-            r'^\t' : 'tab'
-        },
-        'title_first_level' : {
-            r'^\#{1}': 'title_second_level'
-        },
-        'title_second_level' : {
-            r'^\#{2}': 'title_third_level'
-        },
-        'title_third_level' : {
-            r'^\#{3}': 'lists'
-        },
-        'lists' : {
-            r'^\-{1}': 'list'
-        }
+        'alien_element' : r'^\W',
+
+        'numbering' : r'^\d+\W',
+
+        'character_restriction_title' : r'.{0,20}',
+
+        'tabs' : r'^\t',
+
+        'title_first_level' : r'^\#{1}',
+
+        'title_second_level' : r'^\#{2}',
+
+        'title_third_level' : r'^\#{3}',
+
+        'lists' : r'^\-{1}'
     }
 
     second = 0
@@ -371,19 +362,20 @@ def check_user_story(pull, file):
                     else:
                         comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должно быть заглавия первого уровня')
 
-                    if ( re.match( final_text[ 'character_restriction_title' ], text_file[line] ) !=True ):
+                    if ( len(text_file[line]) > 20 ):
                         comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` заглавие не должно превышать 20 символов')
 
-                elif ( re.match( final_text[ 'lists' ], text_file[line] ) != True ):
+                else:  
+                    if ( re.match( final_text[ 'lists' ], text_file[line] ) != True ):
 
-                    if ( re.match( final_text[ 'tabs' ], text_file[line] ) ):
-                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должна присутствовать табуляция')
+                        if ( re.match( final_text[ 'tabs' ], text_file[line] ) ):
+                            comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должна присутствовать табуляция')
 
-                    elif ( re.match( final_text[ 'numbering' ], text_file[line] ) ):
-                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должно быть нумерации')
+                        elif ( re.match( final_text[ 'numbering' ], text_file[line] ) ):
+                            comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` не должно быть нумерации')
 
-                    else:
-                        comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` ошибка в заглавии')
+                        else:
+                            comments = add_failing_comment(comments, f'В файле `{file.filename}` в строке `{line + 1}` ошибка в заглавии')
 
     if ( second == 0 ):
         comments = add_failing_comment(comments, f'В файле `{file.filename}` отсутствуют заглавия 2-го уровня')
