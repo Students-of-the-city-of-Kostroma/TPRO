@@ -1,4 +1,8 @@
 id,date,event,user,message
+13962796844,2020-10-25 14:17:34,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13962796849,2020-10-25 14:17:33,PullRequestReviewCommentEvent,ZhizhikinIvan," 1364 По условию задачи (https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1338#issuecomment-694012238), кнопка загрузки тестовых данных должна была быть на форме Start.
+
+"
 13962788585,2020-10-25 14:15:16,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13962788594,2020-10-25 14:15:16,PullRequestReviewCommentEvent,ZhizhikinIvan, 1364 Я подумаю над этим.
 13962785052,2020-10-25 14:14:18,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
