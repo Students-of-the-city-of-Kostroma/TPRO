@@ -1,6 +1,11 @@
 id,date,event,user,message
-13962240306,2020-10-25 11:30:02,IssueCommentEvent,NesgovorovVS," 1371 > Проверьте, что перенесенные юнит тесты могут выполняться.
-
+3917602761,2020-10-25 11:57:48,review_dismissed,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13962329497,2020-10-25 11:57:48,PushEvent,MyachevM, refs/heads/issue-1281 update code
+13962329548,2020-10-25 11:57:49,PullRequestReviewEvent,NordScandinavian, dismissed 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13962240306,2020-10-25 11:30:02,IssueCommentEvent,NesgovorovVS," 1371 > Проверьте, что перенесенные юнит тесты могут выполняться.
+
+
+
 они не смогут выполняться, т.к не смогут быть добавлены в проект из-за одинаковых названий ""UnitTest.cs"""
 13962187061,2020-10-25 11:12:49,PushEvent,NesgovorovVS, refs/heads/issue-1087 deltestscen
 13962177822,2020-10-25 11:09:51,PushEvent,NesgovorovVS, refs/heads/issue-1240 del
