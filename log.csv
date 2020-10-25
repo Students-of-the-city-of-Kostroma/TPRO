@@ -1,4 +1,5 @@
 id,date,event,user,message
+13962177822,2020-10-25 11:09:51,PushEvent,NesgovorovVS, refs/heads/issue-1240 del
 13962144620,2020-10-25 10:59:06,PushEvent,NesgovorovVS, refs/heads/issue-1328 fix
 3917240766,2020-10-25 00:56:52,moved_columns_in_project,YuriSilenok, 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 3917242532,2020-10-25 00:59:32,labeled,VinogradovAlexandr781227, 1372 Story
