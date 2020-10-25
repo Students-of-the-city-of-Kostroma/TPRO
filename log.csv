@@ -1,4 +1,6 @@
 id,date,event,user,message
+13962708702,2020-10-25 13:52:38,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13962708705,2020-10-25 13:52:37,PullRequestReviewCommentEvent,YuriSilenok," 1364 это выглядит как костыль, вы лучше кнопку делайте неактивной, в место флагов. у кнопки можно получить через свойство активна она или нет."
 13962683146,2020-10-25 13:44:50,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13962683151,2020-10-25 13:44:50,PullRequestReviewCommentEvent,YuriSilenok, 1364 Мы допускаем сокращение для ученого звания из 1 символа?
 13962674144,2020-10-25 13:41:57,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
