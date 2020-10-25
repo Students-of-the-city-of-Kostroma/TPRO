@@ -1,4 +1,5 @@
 id,date,event,user,message
+13964267952,2020-10-25 20:27:35,PushEvent,MyachevM, refs/heads/issue-1281 update
 13964089015,2020-10-25 19:43:50,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13964089019,2020-10-25 19:43:49,PullRequestReviewCommentEvent,YuriSilenok, 1364 Лучше [здесь](https://docs.microsoft.com/ru-ru/dotnet/api/system.data.datatable.select?view=netframework-4.5) посмотреть
 13964079553,2020-10-25 19:41:32,PullRequestReviewEvent,YuriSilenok," commented 1364 Добавил расписание для студентов на форму ""расписание"""
