@@ -1,4 +1,6 @@
 id,date,event,user,message
+13962788585,2020-10-25 14:15:16,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13962788594,2020-10-25 14:15:16,PullRequestReviewCommentEvent,ZhizhikinIvan, 1364 Я подумаю над этим.
 13962785052,2020-10-25 14:14:18,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13962785056,2020-10-25 14:14:18,PullRequestReviewCommentEvent,ZhizhikinIvan," 1364 Учёного звания может не быть. Я добавил в справочник значение ""Нет звания"", которое в сокращённом виде (MTitle.Reduction) выглядит как пробел. Пустое значение невозможно по требованиям контроллера. Контроллер я не переделывал."
 13962776774,2020-10-25 14:11:53,PullRequestReviewEvent,YuriSilenok, commented 1358 Исправление сбоев в автотестах в файле UT_Delete_CInstitute
