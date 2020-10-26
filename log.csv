@@ -1,4 +1,5 @@
 id,date,event,user,message
+13972297288,2020-10-26 16:32:45,PullRequestReviewEvent,YuriSilenok, commented 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13972265885,2020-10-26 16:30:22,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3920647461,2020-10-26 16:17:03,review_request_removed,NesgovorovVS, 1360 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
 13971785326,2020-10-26 15:51:52,IssueCommentEvent,YuriSilenok," 1357 У вас есть непроверенные запросы ['#1372', '#1355']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
