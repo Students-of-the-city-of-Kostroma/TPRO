@@ -1,4 +1,5 @@
 id,date,event,user,message
+13977697600,2020-10-26 23:38:41,IssueCommentEvent,VinogradovAlexandr781227, 1372 Почему-то снова настройка пользователя слетела в гит баше. Вопрос с анонимностью комитов вроде должен быть решен.
 13975686217,2020-10-26 20:36:32,PullRequestReviewEvent,ZhizhikinIvan, commented 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13975631472,2020-10-26 20:32:03,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13975631492,2020-10-26 20:32:03,PullRequestReviewCommentEvent,ZhizhikinIvan, 1364 Сделал списки приватными (https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1364/commits/bc926b88001616a02c43a0ee0039b384eb33b3c2)
