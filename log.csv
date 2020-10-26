@@ -1,4 +1,13 @@
 id,date,event,user,message
+3921973568,2020-10-26 20:30:53,review_dismissed,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
+3921973570,2020-10-26 20:30:53,review_dismissed,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
+3921973573,2020-10-26 20:30:53,review_dismissed,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
+3921973574,2020-10-26 20:30:53,review_dismissed,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
+13975617164,2020-10-26 20:30:53,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Объявил списки Private
+13975617320,2020-10-26 20:30:54,PullRequestReviewEvent,NordScandinavian," dismissed 1364 Добавил расписание для студентов на форму ""расписание"""
+13975617332,2020-10-26 20:30:54,PullRequestReviewEvent,badsster," dismissed 1364 Добавил расписание для студентов на форму ""расписание"""
+13975617351,2020-10-26 20:30:54,PullRequestReviewEvent,ifuwmnn," dismissed 1364 Добавил расписание для студентов на форму ""расписание"""
+13975617338,2020-10-26 20:30:54,PullRequestReviewEvent,MyachevM," dismissed 1364 Добавил расписание для студентов на форму ""расписание"""
 13975576593,2020-10-26 20:27:40,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13975576637,2020-10-26 20:27:40,PullRequestReviewCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
 
