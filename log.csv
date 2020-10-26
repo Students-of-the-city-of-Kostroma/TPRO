@@ -1,6 +1,12 @@
 id,date,event,user,message
-13971572895,2020-10-26 15:32:55,IssueCommentEvent,MyachevM," 1355 > Недочёты по белому ящику исправлены, теперь нужно что-то решать с тем, что azure не видит автотесты.
-
+3920527180,2020-10-26 15:50:05,review_requested,NordScandinavian, 1357 MyachevM Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3920527231,2020-10-26 15:50:06,review_requested,NordScandinavian, 1357 ifuwmnn Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3920527369,2020-10-26 15:50:08,review_requested,NordScandinavian, 1357 ZhizhikinIvan Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3920527531,2020-10-26 15:50:11,review_requested,NordScandinavian, 1357 YuriSilenok Исправление сбоев в автотестах в файле UT_Update_CUniversity
+13971572895,2020-10-26 15:32:55,IssueCommentEvent,MyachevM," 1355 > Недочёты по белому ящику исправлены, теперь нужно что-то решать с тем, что azure не видит автотесты.
+
+
+
 Проблема решена !"
 3920430530,2020-10-26 15:25:28,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13971481934,2020-10-26 15:24:51,PullRequestReviewEvent,MyachevM, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
