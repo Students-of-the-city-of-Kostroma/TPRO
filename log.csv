@@ -1,4 +1,16 @@
 id,date,event,user,message
+13975576593,2020-10-26 20:27:40,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13975576637,2020-10-26 20:27:40,PullRequestReviewCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
+
+
+
+` private bool isRefDataLoaded = false;`
+
+Этот флаг используется только для того, чтобы понять какое сообщение выводить о результате загрузки тестовых данных, либо ошибку, либо ""ОК"". 
+
+Вы выдвигали требования о необходимости повторной загрузки тестовых данных, в данном комментарии:  https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1338#issuecomment-695822170
+
+Поэтому делать кнопку неактивной нельзя, она должна быть всегда доступной."
 13975454239,2020-10-26 20:17:54,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13975454289,2020-10-26 20:17:54,PullRequestReviewCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
 
