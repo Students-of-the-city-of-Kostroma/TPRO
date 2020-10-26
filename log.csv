@@ -1,4 +1,6 @@
 id,date,event,user,message
+13975631472,2020-10-26 20:32:03,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13975631492,2020-10-26 20:32:03,PullRequestReviewCommentEvent,ZhizhikinIvan, 1364 Сделал списки приватными (https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1364/commits/bc926b88001616a02c43a0ee0039b384eb33b3c2)
 3921973568,2020-10-26 20:30:53,review_dismissed,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
 3921973570,2020-10-26 20:30:53,review_dismissed,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
 3921973573,2020-10-26 20:30:53,review_dismissed,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
