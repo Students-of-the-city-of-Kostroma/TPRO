@@ -1,4 +1,6 @@
 id,date,event,user,message
+3920414158,2020-10-26 15:21:03,review_requested,MyachevM, 1355 ifuwmnn Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3920414258,2020-10-26 15:21:04,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13971428712,2020-10-26 15:19:53,PushEvent,MyachevM, refs/heads/issue-1281 update
 3918269423,2020-10-26 00:52:18,mentioned,YuriSilenok, 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 3918269424,2020-10-26 00:52:18,subscribed,YuriSilenok, 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
