@@ -1,4 +1,7 @@
 id,date,event,user,message
+3920430530,2020-10-26 15:25:28,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+13971481934,2020-10-26 15:24:51,PullRequestReviewEvent,MyachevM, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13971486693,2020-10-26 15:25:15,PullRequestReviewEvent,MyachevM, changes_requested 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
 13971456724,2020-10-26 15:22:28,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13971456882,2020-10-26 15:22:29,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1372']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 3920414158,2020-10-26 15:21:03,review_requested,MyachevM, 1355 ifuwmnn Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
