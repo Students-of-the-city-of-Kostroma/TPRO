@@ -1,4 +1,48 @@
 id,date,event,user,message
+13975454239,2020-10-26 20:17:54,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13975454289,2020-10-26 20:17:54,PullRequestReviewCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
+
+
+
+`List<InstituteDto> institutes = new List<InstituteDto>();`
+
+Здесь я только объявляю список, который потом будет выступать в качестве источника данных для дропдауна.
+
+Да, надо было сразу сделать эти списки приватными. Поправил и закомичу.
+
+Далее,  выбираю сведения и фильтрую из таблицы, с помощью Select() и Lambda:
+
+```
+
+institutes = data.CInstitute.AsEnumerable()
+
+                .Select(row => new InstituteDto
+
+                {
+
+                    ID = row.Field<string>(""ShortName""),
+
+                    FullName = row.Field<string>(""FullName"")
+
+                }).ToList();
+
+```
+
+И потом указываю источник данных для дропдауна:
+
+```
+
+            cboInstitute.DataSource = institutes;
+
+            cboInstitute.DisplayMember = ""FullName"";
+
+            cboInstitute.ValueMember = ""ID"";  
+
+```
+
+
+
+Я использовал отдельные DTO (в примере InstituteDto), потому что не хотел использовать тип DataRow при определении свойств дропдаунов, и со списками простых (DTO) объектов понятнее и удобнее работать. "
 13972297288,2020-10-26 16:32:45,PullRequestReviewEvent,YuriSilenok, commented 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13972265885,2020-10-26 16:30:22,PullRequestReviewEvent,YuriSilenok, commented 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3920647461,2020-10-26 16:17:03,review_request_removed,NesgovorovVS, 1360 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
