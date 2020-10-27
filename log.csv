@@ -1,4 +1,5 @@
 id,date,event,user,message
+13990163283,2020-10-27 20:31:16,IssueCommentEvent,NordScandinavian, 1357 Буду разбираться и искать ошибки
 3927175960,2020-10-27 20:19:14,mentioned,NesgovorovVS, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3927175965,2020-10-27 20:19:14,subscribed,NesgovorovVS, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13990005013,2020-10-27 20:19:14,IssueCommentEvent,NesgovorovVS," 1355 > Прежде чем закончить проверку, я хотел бы увидеть проверку от @NesgovorovVS
