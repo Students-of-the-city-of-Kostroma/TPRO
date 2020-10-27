@@ -1,4 +1,5 @@
 id,date,event,user,message
+13992132749,2020-10-27 23:23:53,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Убрал DTO
 13991150045,2020-10-27 21:53:58,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1357']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
 13991150267,2020-10-27 21:53:59,IssueCommentEvent,YuriSilenok, 1355 Неизвестный файл `UnitTestOfTimetableOfClasses/UnitTestOfTimetableOfClasses.csproj`
 13991156591,2020-10-27 21:54:34,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
