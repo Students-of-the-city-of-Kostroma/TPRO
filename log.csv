@@ -1,4 +1,32 @@
 id,date,event,user,message
+13991150045,2020-10-27 21:53:58,IssueCommentEvent,YuriSilenok," 1355 У вас есть непроверенные запросы ['#1357']. Пожалуйста, выполните проверку этих запросов и после этого повторно запросите проверку своего запроса"
+13991150267,2020-10-27 21:53:59,IssueCommentEvent,YuriSilenok, 1355 Неизвестный файл `UnitTestOfTimetableOfClasses/UnitTestOfTimetableOfClasses.csproj`
+13991156591,2020-10-27 21:54:34,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
+13991156606,2020-10-27 21:54:33,PullRequestReviewCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
+
+
+
+Да, для списка институтов это сделать легко, потому что здесь не требуется фильтрация.
+
+Далее, если мы будем далее использовать Select() для выбора направления подготовки, в виде 
+
+`DataRow[] courses = refData.CDirectionOfPreparation.Select(""InstituteShortName = '"" + cboInstitute.SelectedValue + ""'"");`
+
+то просто уже не получится.
+
+```
+
+cboCourse.DisplayMember = ""NameOfDP"";
+
+cboCourse.ValueMember = ""CodeOfDP"";
+
+cboCourse.DataSource = courses;
+
+```
+
+Такой код не сработает, потому что у DataRow нет DataColumn. И надо будет переводить массив в DataTable.
+
+Именно этого я и не хотел делать, когда говорил, что ""не хотел использовать тип DataRow при определении свойств дропдаунов, и со списками простых (DTO) объектов понятнее и удобнее работать."""
 3927590142,2020-10-27 21:51:56,review_requested,MyachevM, 1355 YuriSilenok Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 13990163283,2020-10-27 20:31:16,IssueCommentEvent,NordScandinavian, 1357 Буду разбираться и искать ошибки
 3927175960,2020-10-27 20:19:14,mentioned,NesgovorovVS, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
