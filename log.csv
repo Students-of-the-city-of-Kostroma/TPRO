@@ -1,4 +1,6 @@
 id,date,event,user,message
+3930407069,2020-10-28 13:10:09,review_requested,NesgovorovVS, 1371 YuriSilenok Реструктуризация проекта UnitTestOfTimetableOfClasses
+13998954946,2020-10-28 13:09:23,PushEvent,NesgovorovVS, refs/heads/issue-1354 save
 13996416427,2020-10-28 08:51:39,PullRequestReviewEvent,MyachevM, commented 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 13992143766,2020-10-27 23:24:55,PullRequestReviewEvent,ZhizhikinIvan," commented 1364 Добавил расписание для студентов на форму ""расписание"""
 13992143797,2020-10-27 23:24:54,PullRequestReviewCommentEvent,ZhizhikinIvan, 1364 Убрал DTO (https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1364/commits/8edec0ef78b567b8feb5f3076ee473ff6aa89f53)
