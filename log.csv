@@ -1,4 +1,19 @@
 id,date,event,user,message
+3930407384,2020-10-28 13:10:13,review_requested,NesgovorovVS, 1371 MyachevM Реструктуризация проекта UnitTestOfTimetableOfClasses
+3930407531,2020-10-28 13:10:16,review_requested,NesgovorovVS, 1371 ZhizhikinIvan Реструктуризация проекта UnitTestOfTimetableOfClasses
+3930407868,2020-10-28 13:10:20,review_requested,NesgovorovVS, 1371 NordScandinavian Реструктуризация проекта UnitTestOfTimetableOfClasses
+3930414918,2020-10-28 13:11:59,unassigned,NesgovorovVS, NesgovorovVS 1360 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
+3930415114,2020-10-28 13:12:02,assigned,NesgovorovVS, NesgovorovVS 1360 Исправление сбоев в автотестах расположенных в файле UT_Delete_CGroup 
+3930421918,2020-10-28 13:13:37,unassigned,NesgovorovVS, NesgovorovVS 1328 На форму расписание добавить расписание для преподавателей
+3930422129,2020-10-28 13:13:40,assigned,NesgovorovVS, NesgovorovVS 1328 На форму расписание добавить расписание для преподавателей
+13998971708,2020-10-28 13:10:47,IssueCommentEvent,NesgovorovVS," 1371 > Проверьте, что перенесенные юнит тесты могут выполняться.
+
+
+
+Перенесенные тесты выполняются"
+13998982705,2020-10-28 13:11:43,PullRequestReviewEvent,YuriSilenok, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+13998982855,2020-10-28 13:11:43,IssueCommentEvent,YuriSilenok, 1371 Метка определяющая тип задачи не найдена. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+13998983048,2020-10-28 13:11:45,IssueCommentEvent,YuriSilenok, 1371 Неизвестный файл `Docs/Unit-test/README.md`
 3930407069,2020-10-28 13:10:09,review_requested,NesgovorovVS, 1371 YuriSilenok Реструктуризация проекта UnitTestOfTimetableOfClasses
 13998954946,2020-10-28 13:09:23,PushEvent,NesgovorovVS, refs/heads/issue-1354 save
 13996416427,2020-10-28 08:51:39,PullRequestReviewEvent,MyachevM, commented 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
