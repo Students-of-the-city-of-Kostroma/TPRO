@@ -1,4 +1,7 @@
 id,date,event,user,message
+3935692616,2020-10-29 14:00:44,mentioned,YuriSilenok, 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+3935692619,2020-10-29 14:00:44,subscribed,YuriSilenok, 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
+14013842492,2020-10-29 14:00:44,IssueCommentEvent,VinogradovAlexandr781227, 1372 @YuriSilenok Извините. Сегодня загружу 
 14006172709,2020-10-28 22:32:54,IssueCommentEvent,NordScandinavian, 1358 Разбираюсь с документацией
 3930407384,2020-10-28 13:10:13,review_requested,NesgovorovVS, 1371 MyachevM Реструктуризация проекта UnitTestOfTimetableOfClasses
 3930407531,2020-10-28 13:10:16,review_requested,NesgovorovVS, 1371 ZhizhikinIvan Реструктуризация проекта UnitTestOfTimetableOfClasses
