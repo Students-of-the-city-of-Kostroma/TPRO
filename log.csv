@@ -1,4 +1,7 @@
 id,date,event,user,message
+3936417097,2020-10-29 16:46:54,review_dismissed,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+14015797144,2020-10-29 16:46:54,PushEvent,MyachevM, refs/heads/issue-1281 Update whiteBox.md
+14015797288,2020-10-29 16:46:54,PullRequestReviewEvent,NesgovorovVS, dismissed 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 14015578839,2020-10-29 16:30:32,IssueCommentEvent,NordScandinavian, 1356 Разбираюсь с документацией
 14015585080,2020-10-29 16:31:00,IssueCommentEvent,NordScandinavian, 1357 Разбираюсь с документацией
 3935692616,2020-10-29 14:00:44,mentioned,YuriSilenok, 1372 Разработал историю функции корректировки учебной нагрузки для студентов вуза
