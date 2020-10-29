@@ -1,4 +1,13 @@
 id,date,event,user,message
+3937798672,2020-10-29 21:27:00,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+3937798675,2020-10-29 21:27:00,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+14019623467,2020-10-29 21:27:00,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok Юрий Викторович, Microsoft пишет: ""Use the TableLayoutPanel control sparingly. You should not use it in all situations that require a resizable layout."" (https://docs.microsoft.com/en-us/dotnet/desktop/winforms/controls/best-practices-for-the-tablelayoutpanel-control?view=netframeworkdesktop-4.8)
+
+Поэтому, я запретил минимизацию и максимизацию окна с расписанием.
+
+
+
+"
 3936417097,2020-10-29 16:46:54,review_dismissed,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 14015797144,2020-10-29 16:46:54,PushEvent,MyachevM, refs/heads/issue-1281 Update whiteBox.md
 14015797288,2020-10-29 16:46:54,PullRequestReviewEvent,NesgovorovVS, dismissed 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
