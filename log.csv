@@ -1,4 +1,15 @@
 id,date,event,user,message
+3940447040,2020-10-30 13:01:53,unassigned,NesgovorovVS, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+3940447265,2020-10-30 13:01:57,assigned,NesgovorovVS, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+3940447547,2020-10-30 13:02:01,unassigned,NesgovorovVS, NesgovorovVS 1328 На форму расписание добавить расписание для преподавателей
+3940447666,2020-10-30 13:02:03,assigned,NesgovorovVS, NesgovorovVS 1328 На форму расписание добавить расписание для преподавателей
+3940448142,2020-10-30 13:02:09,unassigned,NesgovorovVS, NesgovorovVS 1240 Разработать и автоматизировать сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3940448356,2020-10-30 13:02:12,assigned,NesgovorovVS, NesgovorovVS 1240 Разработать и автоматизировать сценарии тестирования метода Insert (Model model) сущности Нагрузка
+3940448592,2020-10-30 13:02:16,unassigned,NesgovorovVS, NesgovorovVS 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
+3940448788,2020-10-30 13:02:19,assigned,NesgovorovVS, NesgovorovVS 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
+3940449069,2020-10-30 13:02:23,unassigned,NesgovorovVS, NesgovorovVS 1065 Исправить сбои в автотестах расположенных в файле  UT_Delete_CGroup 
+3940449240,2020-10-30 13:02:25,assigned,NesgovorovVS, NesgovorovVS 1065 Исправить сбои в автотестах расположенных в файле  UT_Delete_CGroup 
+14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
 14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
 14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
 14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
