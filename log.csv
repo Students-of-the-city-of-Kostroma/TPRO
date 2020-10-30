@@ -1,4 +1,8 @@
 id,date,event,user,message
+3940167892,2020-10-30 11:56:38,review_requested,NordScandinavian, 1357 MyachevM Исправление сбоев в автотестах в файле UT_Update_CUniversity
+3940168050,2020-10-30 11:56:40,review_requested,NordScandinavian, 1357 YuriSilenok Исправление сбоев в автотестах в файле UT_Update_CUniversity
+14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
+14026238805,2020-10-30 11:56:20,PushEvent,NordScandinavian, refs/heads/issue-1088 fix auto-test
 14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
 14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
 14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
