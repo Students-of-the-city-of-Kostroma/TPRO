@@ -306,7 +306,7 @@ def check_user_story(pull, file):
         'alien_element' : {
             r'^\t' : 'fail',
 
-            r'^\d+\W' : 'fail',
+            r'^\d' : 'numbering',
 
             r'^\#{3}' : 'title_third_level',
 
@@ -354,6 +354,14 @@ def check_user_story(pull, file):
             comments = add_failing_comment(comments, f'В строке {line + 1} символ `{err}` не обрабатывается')
             continue
 
+        if ( ment is 'numbering' ):
+            if ( re.match(failing_text[ment], text_file[line]) ):
+                err = re.match( failing_text[ ment ], text_file[line] ).group(0)
+                ment = 'lists'
+                comments = add_failing_comment(comments, f'В строке {line + 1} вместо символа `{err}` ожидается символ `{failing_text[ment]}`')
+            continue
+
+
         if ( re.match( failing_text[ment], text_file[line] ) is None ):
             comments = add_failing_comment(comments, f'В строке {line + 1} ожидается `{failing_text[ment]}`')
             continue
@@ -367,6 +375,7 @@ def check_user_story(pull, file):
                     comments = add_failing_comment(comments, f'В строке {line + 1} нарушено последовательность уровня заглавий')
                     continue
                 second = second + 1
+
             if ( ment is 'title_first_level' ):
                 first = first + 1
 
