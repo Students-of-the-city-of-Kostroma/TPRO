@@ -403,14 +403,19 @@ def check_user_story(pull, file):
 
 def check_files(pull):
     for file in pull.get_files():
+        mess = None
         if file.status != 'removed':
             if re.match(r'.*UnitTest\.cs$', file.filename):
                 check_code(pull, file)
+            #if re.match(r'.*')
             elif re.match(TESTS_PATH+r'(code\.png|graph\.png|whiteBox\.md|.*\.csproj)$', file.filename):
                 print(f'Неизвестный файл `{file.filename}`')
             else:
-                pull.create_issue_comment(f'Неизвестный файл `{file.filename}`')
-                break
+                if mess is None:
+                    mess = 'Обнаружены неизвестные файлы:\n'
+                mess += f'- `{file.filename}`\n'
+        if mess:
+            pull.create_issue_comment(mess)
 
 def check_label(event):
     if 'Unit test' == event.label.name:
