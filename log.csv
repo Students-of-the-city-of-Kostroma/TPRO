@@ -1,4 +1,7 @@
 id,date,event,user,message
+3945151710,2020-11-01 16:02:14,closed,YuriSilenok, 1281 Исправить сбои в автотестах расположенных в файле UT_Deleted_CTeacher 
+14042368038,2020-11-01 16:02:14,IssueCommentEvent,YuriSilenok, 1281 [зачтено](https://docs.google.com/spreadsheets/d/1uBd4d3VvI4rYeuXkXmqLyEZSitS8K9pfVUDtM3i1Vg4/edit#gid=870820066&range=M4)
+14042368052,2020-11-01 16:02:14,IssuesEvent,YuriSilenok, closed 1281 Исправить сбои в автотестах расположенных в файле UT_Deleted_CTeacher 
 3945139029,2020-11-01 15:47:35,unassigned,YuriSilenok, NesgovorovVS 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
 3945139031,2020-11-01 15:47:35,assigned,NesgovorovVS, NesgovorovVS 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
 3945135030,2020-11-01 15:42:26,connected,YuriSilenok, 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
