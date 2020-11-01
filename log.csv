@@ -1,7 +1,20 @@
 id,date,event,user,message
-14042116189,2020-11-01 14:55:01,IssueCommentEvent,NesgovorovVS," 1371 > Есть ошибки в путях, а что у нас с моделями?
-> ![image](https://user-images.githubusercontent.com/14871471/97801363-3f00ab00-1c4d-11eb-90c9-6cfa11e14064.png)
-
+3945096126,2020-11-01 14:56:37,review_dismissed,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3945096135,2020-11-01 14:56:37,moved_columns_in_project,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3945096546,2020-11-01 14:57:11,referenced,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3945096548,2020-11-01 14:57:11,merged,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3945096552,2020-11-01 14:57:11,closed,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3945096560,2020-11-01 14:57:12,moved_columns_in_project,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+3945096569,2020-11-01 14:57:12,head_ref_deleted,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+14042121352,2020-11-01 14:56:37,PullRequestReviewEvent,ZhizhikinIvan, dismissed 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+14042123372,2020-11-01 14:57:12,PullRequestEvent,MyachevM, closed 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
+14042123425,2020-11-01 14:57:13,DeleteEvent,MyachevM, issue-1281
+14042116189,2020-11-01 14:55:01,IssueCommentEvent,NesgovorovVS," 1371 > Есть ошибки в путях, а что у нас с моделями?
+
+> ![image](https://user-images.githubusercontent.com/14871471/97801363-3f00ab00-1c4d-11eb-90c9-6cfa11e14064.png)
+
+
+
 а вот я сам не знаю, что с моделями, про них в документации ни слова"
 14042065788,2020-11-01 14:40:21,IssueCommentEvent,YuriSilenok, 1355 похоже что VS меня подвела в плане получения последний изменений из ветки.
 14042067632,2020-11-01 14:40:53,PullRequestReviewEvent,YuriSilenok, approved 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
