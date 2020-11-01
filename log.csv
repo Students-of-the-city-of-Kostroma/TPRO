@@ -1,4 +1,8 @@
 id,date,event,user,message
+14042116189,2020-11-01 14:55:01,IssueCommentEvent,NesgovorovVS," 1371 > Есть ошибки в путях, а что у нас с моделями?
+> ![image](https://user-images.githubusercontent.com/14871471/97801363-3f00ab00-1c4d-11eb-90c9-6cfa11e14064.png)
+
+а вот я сам не знаю, что с моделями, про них в документации ни слова"
 14042065788,2020-11-01 14:40:21,IssueCommentEvent,YuriSilenok, 1355 похоже что VS меня подвела в плане получения последний изменений из ветки.
 14042067632,2020-11-01 14:40:53,PullRequestReviewEvent,YuriSilenok, approved 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 14042061818,2020-11-01 14:39:12,IssueCommentEvent,YuriSilenok," 1355 да, у меня была старая версия проекта, смотрю последнюю"
