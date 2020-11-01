@@ -1,4 +1,7 @@
 id,date,event,user,message
+3945199125,2020-11-01 16:52:38,head_ref_deleted,YuriSilenok, 1262 Разработка и автоматизация сценария тестирования метода Insert (Model model) сущности Нагрузка
+14042573686,2020-11-01 16:52:34,DeleteEvent,YuriSilenok, task-1087
+14042573867,2020-11-01 16:52:38,DeleteEvent,YuriSilenok, task-1240
 14042566382,2020-11-01 16:50:51,DeleteEvent,YuriSilenok, issue-1347
 3945153068,2020-11-01 16:03:55,unassigned,NesgovorovVS, YuriSilenok 1328 На форму расписание добавить расписание для преподавателей
 3945153070,2020-11-01 16:03:55,assigned,YuriSilenok, YuriSilenok 1328 На форму расписание добавить расписание для преподавателей
