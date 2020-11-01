@@ -1,4 +1,7 @@
 id,date,event,user,message
+3945135030,2020-11-01 15:42:26,connected,YuriSilenok, 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+3945135032,2020-11-01 15:42:26,connected,YuriSilenok, 1374 Уточнить структуру для модульных тестов моделей
+14042298660,2020-11-01 15:43:22,IssueCommentEvent,YuriSilenok, 1371 создал [задачу](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/issues/1374) на уточнение требований к тестам для моделей.
 3945133686,2020-11-01 15:40:36,labeled,YuriSilenok, 1374 Documentation
 3945133687,2020-11-01 15:40:36,milestoned,YuriSilenok, Backlog 1374 Уточнить структуру для модульных тестов моделей
 3945133691,2020-11-01 15:40:36,assigned,YuriSilenok, YuriSilenok 1374 Уточнить структуру для модульных тестов моделей
