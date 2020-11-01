@@ -407,7 +407,7 @@ def check_files(pull):
         if file.status != 'removed':
             if re.match(r'.*UnitTest\.cs$', file.filename):
                 check_code(pull, file)
-            if re.match(r'/Docs/Technical/UserStories/Story-\d+/READMY.md'):
+            if re.match(r'/Docs/Technical/UserStories/Story-\d+/READMY.md', file.filename):
                 check_user_story(pull, file)
             elif re.match(TESTS_PATH+r'(code\.png|graph\.png|whiteBox\.md|.*\.csproj)$', file.filename):
                 print(f'Неизвестный файл `{file.filename}`')
