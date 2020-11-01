@@ -1,5 +1,7 @@
 id,date,event,user,message
 14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
+14041466112,2020-11-01 11:40:17,PullRequestReviewEvent,MyachevM, changes_requested 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
+14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
 14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
 14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
 14024164041,2020-10-30 07:07:32,WatchEvent,NordScandinavian,
