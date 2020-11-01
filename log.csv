@@ -1,4 +1,6 @@
 id,date,event,user,message
+3945153068,2020-11-01 16:03:55,unassigned,NesgovorovVS, YuriSilenok 1328 На форму расписание добавить расписание для преподавателей
+3945153070,2020-11-01 16:03:55,assigned,YuriSilenok, YuriSilenok 1328 На форму расписание добавить расписание для преподавателей
 3945151710,2020-11-01 16:02:14,closed,YuriSilenok, 1281 Исправить сбои в автотестах расположенных в файле UT_Deleted_CTeacher 
 14042368038,2020-11-01 16:02:14,IssueCommentEvent,YuriSilenok, 1281 [зачтено](https://docs.google.com/spreadsheets/d/1uBd4d3VvI4rYeuXkXmqLyEZSitS8K9pfVUDtM3i1Vg4/edit#gid=870820066&range=M4)
 14042368052,2020-11-01 16:02:14,IssuesEvent,YuriSilenok, closed 1281 Исправить сбои в автотестах расположенных в файле UT_Deleted_CTeacher 
