@@ -1,4 +1,8 @@
 id,date,event,user,message
+3945097037,2020-11-01 14:57:47,unassigned,MyachevM, YuriSilenok 1281 Исправить сбои в автотестах расположенных в файле UT_Deleted_CTeacher 
+3945097039,2020-11-01 14:57:47,assigned,YuriSilenok, YuriSilenok 1281 Исправить сбои в автотестах расположенных в файле UT_Deleted_CTeacher 
+14042123924,2020-11-01 14:57:22,PushEvent,MyachevM, refs/heads/dev Docs in task-1281
+14042125284,2020-11-01 14:57:47,IssueCommentEvent,YuriSilenok," 1281 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1281 составляет 34 дней. Ветка отсутствует. Запрос отсутствует. Нет запросов, которые должен проверить преподаватель"
 3945096126,2020-11-01 14:56:37,review_dismissed,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3945096135,2020-11-01 14:56:37,moved_columns_in_project,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 3945096546,2020-11-01 14:57:11,referenced,MyachevM, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
