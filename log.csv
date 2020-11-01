@@ -1,4 +1,6 @@
 id,date,event,user,message
+14042050539,2020-11-01 14:35:54,IssueCommentEvent,YuriSilenok," 1355 dev тут не причем, я смотрел в ветке issue-1281, сейчас перепроверю и пришлю полный скрин
+"
 3945078474,2020-11-01 14:32:50,mentioned,ifuwmnn, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3945078478,2020-11-01 14:32:50,subscribed,ifuwmnn, 1357 Исправление сбоев в автотестах в файле UT_Update_CUniversity
 3945079386,2020-11-01 14:33:55,mentioned,NesgovorovVS, 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
