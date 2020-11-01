@@ -313,8 +313,8 @@ def check_user_story(pull, file):
     pass
 
 def check_files(pull):
+    mess = None
     for file in pull.get_files():
-        mess = None
         if file.status != 'removed':
             if re.match(r'.*UnitTest\.cs$', file.filename):
                 check_code(pull, file)
@@ -326,8 +326,8 @@ def check_files(pull):
                 if mess is None:
                     mess = 'Обнаружены неизвестные файлы:\n'
                 mess += f'- `{file.filename}`\n'
-        if mess:
-            pull.create_issue_comment(mess)
+    if mess:
+        pull.create_issue_comment(mess)
 
 def check_label(event):
     if 'Unit test' == event.label.name:

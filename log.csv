@@ -1,4 +1,98 @@
 id,date,event,user,message
+14041970372,2020-11-01 14:13:40,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CInstitute/Insert/UnitTest.cs`
+"
+14041970488,2020-11-01 14:13:42,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041970495,2020-11-01 14:13:42,PullRequestReviewCommentEvent,YuriSilenok, 1371 После строки `{` (номер строки 4) ожидается любое из списка`[' {4}/// <summary>$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+14041970521,2020-11-01 14:13:43,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CInstitute/Update/UnitTest.cs`
+"
+14041970631,2020-11-01 14:13:45,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041970635,2020-11-01 14:13:44,PullRequestReviewCommentEvent,YuriSilenok, 1371 После строки `{` (номер строки 4) ожидается любое из списка`[' {4}/// <summary>$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+14041970681,2020-11-01 14:13:45,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTeacher/Delete/UnitTest.cs`
+"
+14041970801,2020-11-01 14:13:47,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041970811,2020-11-01 14:13:46,PullRequestReviewCommentEvent,YuriSilenok, 1371 После строки `{` (номер строки 5) ожидается любое из списка`[' {4}/// <summary>$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+14041970845,2020-11-01 14:13:48,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTeacher/Insert/UnitTest.cs`
+"
+14041970927,2020-11-01 14:13:49,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTeacher/Update/CODE.PNG`
+"
+14041970988,2020-11-01 14:13:50,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTeacher/Update/GRAPH.PNG`
+"
+14041971091,2020-11-01 14:13:51,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041971097,2020-11-01 14:13:51,PullRequestReviewCommentEvent,YuriSilenok, 1371 После строки `{` (номер строки 5) ожидается любое из списка`[' {4}/// <summary>$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+14041971131,2020-11-01 14:13:52,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTeacher/Update/UnitTest.cs`
+"
+14041971186,2020-11-01 14:13:53,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTeacher/Update/whitebox.md`
+"
+14041971294,2020-11-01 14:13:54,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041971300,2020-11-01 14:13:54,PullRequestReviewCommentEvent,YuriSilenok, 1371 После строки `{` (номер строки 5) ожидается любое из списка`[' {4}/// <summary>$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+14041971340,2020-11-01 14:13:55,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTitle/Delete/UnitTest.cs`
+"
+14041971380,2020-11-01 14:13:56,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTitle/Insert/CODE.PNG`
+"
+14041971421,2020-11-01 14:13:56,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTitle/Insert/GRAPH.PNG`
+"
+14041971479,2020-11-01 14:13:57,PullRequestReviewEvent,YuriSilenok, changes_requested 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041971512,2020-11-01 14:13:58,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTitle/Insert/UnitTest.cs`
+"
+14041971553,2020-11-01 14:13:59,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTitle/Insert/whitebox.md`
+"
+14041971642,2020-11-01 14:14:00,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041971655,2020-11-01 14:14:00,PullRequestReviewCommentEvent,YuriSilenok, 1371 После строки `{` (номер строки 4) ожидается любое из списка`[' {4}/// <summary>$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+14041971676,2020-11-01 14:14:01,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTitle/Update/UnitTest.cs`
+"
+14041971781,2020-11-01 14:14:02,PullRequestReviewCommentEvent,YuriSilenok, 1371 После строки `{` (номер строки 4) ожидается любое из списка`[' {4}/// <summary>$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+14041971777,2020-11-01 14:14:03,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041971835,2020-11-01 14:14:03,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTrainingProfile/Delete/UnitTest.cs`
+"
+14041971911,2020-11-01 14:14:05,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041971918,2020-11-01 14:14:04,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 2) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CTypesOfOccupation\\.Delete$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+14041971947,2020-11-01 14:14:05,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTypesOfOccupation/Delete/UnitTest.cs`
+"
+14041972049,2020-11-01 14:14:07,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041972053,2020-11-01 14:14:07,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 2) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CTypesOfOccupation\\.Insert$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+14041972093,2020-11-01 14:14:08,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTypesOfOccupation/Insert/UnitTest.cs`
+"
+14041972199,2020-11-01 14:14:09,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041972205,2020-11-01 14:14:09,PullRequestReviewCommentEvent,YuriSilenok, 1371 После строки `{` (номер строки 4) ожидается любое из списка`[' {4}/// <summary>$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.
+14041972234,2020-11-01 14:14:10,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CTypesOfOccupation/Update/UnitTest.cs`
+"
+14041972342,2020-11-01 14:14:11,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041972357,2020-11-01 14:14:11,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 2) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CUniversity\\.Delete$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+14041972391,2020-11-01 14:14:12,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CUniversity/Delete/UnitTest.cs`
+"
+14041972493,2020-11-01 14:14:14,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041972504,2020-11-01 14:14:13,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 3) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CUniversity\\.Insert$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+14041972535,2020-11-01 14:14:14,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CUniversity/Insert/UnitTest.cs`
+"
+14041972632,2020-11-01 14:14:16,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+14041972639,2020-11-01 14:14:15,PullRequestReviewCommentEvent,YuriSilenok," 1371 После строки `` (номер строки 3) ожидается любое из списка`['$', 'namespace UnitTestOfTimetableOfClasses\\.CUniversity\\.Update$']` Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода."
+14041972680,2020-11-01 14:14:17,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/CUniversity/Update/UnitTest.cs`
+"
+14041972729,2020-11-01 14:14:17,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
+- `UnitTestOfTimetableOfClasses/UnitTestOfTimetableOfClasses.csproj`
+"
+14041978714,2020-11-01 14:15:47,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 3945058920,2020-11-01 14:11:12,review_requested,YuriSilenok, 1371 YuriSilenok Реструктуризация проекта UnitTestOfTimetableOfClasses
 14041905025,2020-11-01 13:54:28,PullRequestReviewEvent,YuriSilenok, changes_requested 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 14041838347,2020-11-01 13:35:08,PullRequestReviewEvent,NesgovorovVS, approved 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
