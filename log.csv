@@ -1,4 +1,6 @@
 id,date,event,user,message
+14042065788,2020-11-01 14:40:21,IssueCommentEvent,YuriSilenok, 1355 похоже что VS меня подвела в плане получения последний изменений из ветки.
+14042067632,2020-11-01 14:40:53,PullRequestReviewEvent,YuriSilenok, approved 1355 Исправление сбоев в автотестах расположенных в файле UT-Deleted-CTeacher
 14042061818,2020-11-01 14:39:12,IssueCommentEvent,YuriSilenok," 1355 да, у меня была старая версия проекта, смотрю последнюю"
 14042050539,2020-11-01 14:35:54,IssueCommentEvent,YuriSilenok," 1355 dev тут не причем, я смотрел в ветке issue-1281, сейчас перепроверю и пришлю полный скрин
 
