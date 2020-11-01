@@ -1,4 +1,5 @@
 id,date,event,user,message
+14042566382,2020-11-01 16:50:51,DeleteEvent,YuriSilenok, issue-1347
 3945153068,2020-11-01 16:03:55,unassigned,NesgovorovVS, YuriSilenok 1328 На форму расписание добавить расписание для преподавателей
 3945153070,2020-11-01 16:03:55,assigned,YuriSilenok, YuriSilenok 1328 На форму расписание добавить расписание для преподавателей
 3945151710,2020-11-01 16:02:14,closed,YuriSilenok, 1281 Исправить сбои в автотестах расположенных в файле UT_Deleted_CTeacher 
