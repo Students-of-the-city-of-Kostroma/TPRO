@@ -1,4 +1,11 @@
 id,date,event,user,message
+3945074684,2020-11-01 14:28:23,labeled,YuriSilenok, 1373 refactoring
+3945074685,2020-11-01 14:28:23,milestoned,YuriSilenok, Backlog 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
+3945074693,2020-11-01 14:28:24,assigned,YuriSilenok, YuriSilenok 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
+3945074694,2020-11-01 14:28:24,added_to_project,YuriSilenok, 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
+3945075240,2020-11-01 14:29:12,connected,YuriSilenok, 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
+3945075242,2020-11-01 14:29:12,connected,YuriSilenok, 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
+14042024804,2020-11-01 14:28:24,IssuesEvent,YuriSilenok, opened 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
 14041992976,2020-11-01 14:19:28,PullRequestReviewEvent,YuriSilenok, commented 1371 Реструктуризация проекта UnitTestOfTimetableOfClasses
 14041970372,2020-11-01 14:13:40,IssueCommentEvent,YuriSilenok," 1371 Обнаружены неизвестные файлы:
 - `UnitTestOfTimetableOfClasses/CInstitute/Insert/UnitTest.cs`
