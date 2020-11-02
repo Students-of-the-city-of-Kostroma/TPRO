@@ -346,15 +346,15 @@ def check_user_story(pull, file):
                 ment = failing_text[ ment ][lenr]
                 break
         
-        if (ment is 'alien_element'):
+        if (ment == 'alien_element'):
             continue
 
-        if ( ment is 'fail' ):
+        if ( ment == 'fail' ):
             err = re.match( failing_text[ ment ], text_file[line] ).group(0)
             comments = add_failing_comment(comments, f'В строке {line + 1} символ `{err}` не обрабатывается')
             continue
 
-        if ( ment is 'numbering' ):
+        if ( ment == 'numbering' ):
             if ( re.match(failing_text[ment], text_file[line]) ):
                 err = re.match( failing_text[ ment ], text_file[line] ).group(0)
                 ment = 'lists'
@@ -366,17 +366,17 @@ def check_user_story(pull, file):
             comments = add_failing_comment(comments, f'В строке {line + 1} ожидается `{failing_text[ment]}`')
             continue
         else:
-            if( ment is 'title_third_level' and second == 0):
+            if( ment == 'title_third_level' and second == 0):
                 comments = add_failing_comment(comments, f'В строке {line + 1} нарушено последовательность уровня заглавий')
                 continue
 
-            if (ment is 'title_second_level'):
+            if (ment == 'title_second_level'):
                 if ( first == 0 ):
                     comments = add_failing_comment(comments, f'В строке {line + 1} нарушено последовательность уровня заглавий')
                     continue
                 second = second + 1
 
-            if ( ment is 'title_first_level' ):
+            if ( ment == 'title_first_level' ):
                 first = first + 1
 
     pull.create_issue_comment( comments )
