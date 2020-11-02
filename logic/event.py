@@ -31,11 +31,10 @@ def mute(event):
 def issue_closed(event):
     if event.raw_data['actor']['login'] != 'YuriSilenok':
         event.issue.edit(state = 'open')
-        event.issue.create_comment(
-            body = 'Прежде чем закрыть задачу, \
-ее нужно перевесить на преподавателя, \
-с целью выставления отметки в журнал.'
-        )    
+        create_comment(event.issue,
+            'Прежде чем закрыть задачу, '
+            'ее нужно перевесить на преподавателя, '
+            'с целью выставления отметки в журнал.')    
 
 def check_for_unreviewed_requests(pull):
     if pull.state == 'open':
@@ -92,76 +91,89 @@ def check_base_and_head_branch_in_request(pull):
 def check_code(pull, file):
     content_file = pull.repo.get_contents(file.filename, pull.head.ref)
     text = content_file.decoded_content.decode('utf-8').split('\n')
+    path_ns = file.filename.split('/')
+    path_ns.remove(path_ns[-1])
+    ns  = 'namespace ' + r'\.'.join(path_ns) + '$'
     
     state = 'using'
     graph = {
         'using' : {
-            r'(\ufeff){,1}using [\w+\.]+;': 'using',
+            r'(\ufeff){,1}using [\w+\.]+;$': 'using',
             r'$' : 'post_using'
         },
         'post_using' : {
             r'$' : 'post_using',
-            r'namespace UnitTestOfTimetableOfClasses' : 'namespace'
+            ns : 'namespace'
         },
         'namespace' : {
-            r'\{' : 'namespace_begin'
+            r'\{$' : 'namespace_begin'
         },
         'namespace_begin' : {
-            r' {4}\[TestClass\]' : 'param_test_class'
+            r' {4}/// <summary>$' : 'comment_start_summary_class'
+        },
+        'comment_start_summary_class' : {
+            r' {4}/// </summary>$' : 'comment_end_summary_class',
+            r' {4}///[\w+ \.]+' : 'comment_start_summary_class'
+        },
+        'comment_end_summary_class' : {
+            r' {4}\[TestClass\]$' : 'param_test_class'
         },
         'param_test_class' : {
-            r' {4}public class UT_((I|U|D)С)|('+CLASSES+r')' : 'header_controller_test_class',
-            r' {4}public class UT_M|('+CLASSES+r')' : 'header_model_test_class'
+            r' {4}public class UT_((I|U|D)С)|('+CLASSES+r')$' : 'header_controller_test_class',
+            r' {4}public class UT_M|('+CLASSES+r')$' : 'header_model_test_class'
         },
         'header_controller_test_class' : {
-            r' {4}\{' : 'begin_controller_test_class'
+            r' {4}\{$' : 'begin_ref_data'
         },
         'header_model_test_class' : {
-            r' {4}\{' : 'pre_comment'
+            r' {4}\{$' : 'pre_comment'
+        },
+        'begin_ref_data' : {
+            r' {8}/// <summary>$' : 'comment_start_summary_RD',
+        },
+        'comment_start_summary_RD' : {
+            r' {8}/// </summary>$' : 'begin_controller_test_class',
+            r' {8}///[\w+ \.]+' : 'comment_start_summary_RD'
         },
         'begin_controller_test_class' : {
-            r' {8}readonly RefData refData = new RefData\(\);' : 'pre_comment'
+            r' {8}readonly RefData refData = new RefData\(\);$' : 'pre_comment'
         },
         'pre_comment' : {
             r'$' : 'pre_comment',
-            r' {8}/// <summary>' : 'comment_start_summary',
-            r' {8}\}$' : 'end_class'
+            r' {8}/// <summary>$' : 'comment_start_summary',
+            r' {4}\}$' : 'end_class'
         },
         'comment_start_summary' : {
-            r' {8}///[\w+\.]+' : 'comment_summary',
-            r' {8}/// </summary>' : 'comment_end_summary'
+            r' {8}/// </summary>$' : 'comment_end_summary',
+            r' {8}///[\w+ \.]+' : 'comment_start_summary'
         },
         'comment_end_summary' : {
-            r'\[TestMethod\]' : 'param_method'
+            r' {8}\[TestMethod\]$' : 'param_method'
         },
         'param_method' : {
-            r' {8}public void ((I|U|D)C)|('+CLASSES+r')_\d+\(\)' : 'header_method'
+            r' {8}public void ((I|U|D)C)|('+CLASSES+r')_\d+\(\)$' : 'header_method'
         },
         'header_method' : {
-            r' {8}\{' : 'begin_method'
-        },
-        'header_method' : {
-            r' {12}\{' : 'body_method'
+            r' {8}\{$' : 'body_method'
         },
         'body_method' : {
             r' {12}.*' : 'body_method',
             r' {8}\}$' : 'pre_comment'
         },
         'end_class' : {
-            r' {4}\}$' : 'end_namespace'
-        },
-        'end_namespace' : {
-            r'\}$' : 'end_file'
+            r'\}$' : 'end_namespace'
         },
         'end_namespace' : {
             r'$' : 'end_file'
         }
     }
     messages ={
-        'pre_comment' : 'Ожидается начало комментария `/// <summary>` или конец класса'
+        'pre_comment' : 'Ожидается [начало комментария](https://habr.com/ru/post/41514/) `/// <summary>` или конец класса',
+        'param_test_class' : 'Ожидается имя класса соответствующее [требованиям](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md)'
     }
-    for ind in range(len(text)):
-        line = text[ind]
+    oldLine = ''
+    for indLine in range(len(text)):
+        line = text[indLine]
         reg = None
         for transfer in graph[state]:
             reg = re.match(transfer, line)
@@ -176,14 +188,16 @@ def check_code(pull, file):
                     position = ind
                     break
             mess = ''
-            if state in messages and position > -1:
+            if state in messages and position > 0:
                 mess = messages[state]
             else:
-                mess = f'В файле `{file.filename}` после строки `{line}` ожидается любое из списка`{list(graph[state])}`'
-            if position == -1:
-                pull.create_issue_comment(
-                    mess
-                )
+                indOldLine = indLine - 1
+                mess = f'После строки `{oldLine}` (номер строки {indOldLine}) ожидается любое из списка`{list(graph[state])}`'+\
+                    ' Нарушено [требование](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Code-review/README.md) для кода.'
+            if position < 1:
+                pull.create_review(
+                    body = f'Проблема в файле {file.filename}. \n {mess}',
+                    event = 'REQUEST_CHANGES')
             else:
                 pull.create_review_comment(
                     body = mess,
@@ -192,6 +206,7 @@ def check_code(pull, file):
                     position=position
                 )
             break
+        oldLine = line
 
 def check_reviewrs(pull):
     org = pull.repo.github.get_organization(ymls.CONFIG['ORG'])
@@ -227,44 +242,49 @@ def review_requested(event):
 def unassigned(event):
     if len(event.issue.assignees) < 1:
         event.issue.edit(
-            assignees = [event.assigner.login]
-        )
-        event.issue.create_comment(
-            body = f'У каждой задачи должен быть ответсвенный'
-        )
+            assignee = event.assignee.login)
+        create_comment(event.issue,
+            f'У каждой задачи должен быть ответсвенный')
 
 def assigned(event):
-    assigned_pull(event)
     if len(event.issue.assignees) > 1:
         event.issue.edit(
-            assignee = [a.login for a in event.issue.assignees if a.login != 'YuriSilenok'][0]
-        )
-        event.issue.create_comment(
-            body = f'У одной задачи может быть только один ответсвенный'
-        )
+            assignee = [a.login for a in event.issue.assignees if a.login != 'YuriSilenok'][0])
+        create_comment(event.issue,
+            f'У одной задачи/запроса может быть только один ответсвенный')
 
-def assigned_pull(event):
-    if event.issue.pull_request is not None\
-    and event.assigner.login != 'YuriSilenok'\
-    and event.assignee.login == 'YuriSilenok':
-        branch = event.repo.get_pull(event.issue.number).raw_data['head']['ref']
-        task_number = re.search(r'.*-(.*)', branch).group(1)
-        event.issue.create_comment(
-            body = f'После того, как преподаватель \
-провел положительную проверку запроса #{event.issue.number}, \
-Вы должны смержить запрос. После этого перевесить основную \
-задачу #{task_number} на преподавателя.'
-        )
-        assignees = [a.login for a in event.issue.assignees if a.login != 'YuriSilenok']
-        event.issue.edit(
-            assignees = assignees
-        )
+    if event.issue.pull_request is None:
+        issue = event.issue
+        if issue.state == 'close':
+            issue.edit(
+                assignee = [user.login for user in issue.assignees if user.login != event.raw_data['assignee']['login']])
+            create_comment(event.issue,
+                'Нельзя менять ответсвенного в закрытых задачах')
+    else:
+        pull = event.repo.get_pull(event.issue.number)
+        if event.assigner.login != 'YuriSilenok'\
+        and event.assignee.login == 'YuriSilenok':
+            branch = event.repo.get_pull(event.issue.number).raw_data['head']['ref']
+            task_number = re.search(r'.*-(.*)', branch).group(1)
+            create_comment(event.issue,
+                f'После того, как преподаватель '
+                'провел положительную проверку запроса #{event.issue.number}, '
+                'Вы должны смержить запрос. После этого перевесить основную '
+                'задачу #{task_number} на преподавателя.'
+            )
+            event.issue.edit(
+                assignees = [a.login for a in event.issue.assignees if a.login != 'YuriSilenok']
+            )
 
 def pull_open(event):
     pull_number = event.raw_data['payload']['number']
     pull = event.repo.get_pull(pull_number)
     if pull.state != 'open':
         return
+
+    if pull.body == '':
+        pull.create_issue_comment(body='Описание запроса должно содержать сведения о том, какую задачу он закрывает в случае мержа')
+
     re_branch = re.search(WORK_BRANCH, pull.raw_data['head']['ref'])
     if re_branch:
         if len(re_branch.regs) == 2:
@@ -272,12 +292,12 @@ def pull_open(event):
             issue = event.repo.get_issue(issue_number)
             if 'YuriSilenok' == issue.assignee.login:
                 pull.create_issue_comment(
-                    f'Основная задача #{issue_number} назначена на преподавателя. Вы не можете вести дальнейшую активность по этой задаче.')
+                    f'Основная задача #{issue_number} назначена на преподавателя. Вы не можете вести дальнейшую активность по этому запросу.')
                 pull.edit(state='close')
-    else:
-        pull.create_issue_comment(
-            f'{MESS_BRANCH} Головная ветка {pull.raw_data["head"]["ref"]} не соответствует требованиям.')
-        pull.edit(state='close')
+            if 'open' != issue.state:
+                pull.create_issue_comment(
+                    f'Основная задача #{issue_number} закрыта. Вы не можете вести дальнейшую активность по этому запросу.')
+                pull.edit(state='close')
 
 
 def check_white_box(pull):
@@ -288,15 +308,6 @@ def check_white_box(pull):
                     body = f'Файл `{f.filename}` не соответствует требованиям. {MESS_UT}',
                     event = 'REQUEST_CHANGES')
                 break
-
-def add_failing_comment(old_comm, add_comm):
-    if old_comm  is '':
-        return add_comm
-    else:
-        new_comm = old_comm
-        new_comm = new_comm + '\n'
-        new_comm = new_comm + add_comm
-        return new_comm
 
 def check_user_story(pull, file):
     content = pull.repo.get_contents(file.filename, pull.head.ref)
@@ -382,42 +393,49 @@ def check_user_story(pull, file):
     pull.create_issue_comment( comments )
 
 def check_files(pull):
+    mess = None
     for file in pull.get_files():
         if file.status != 'removed':
-            if re.match(r'.*\.cs$', file.filename):
+            if re.match(r'.*UnitTest\.cs$', file.filename):
                 check_code(pull, file)
-            elif re.match(TESTS_PATH+r'(code\.png|graph\.png)$', file.filename):
-                pass
-            else: 
-                pull.create_issue_comment(f'Нет обработчика для файла {file.filename}')
+            if re.match(r'/Docs/Technical/UserStories/Story-\d+/READMY.md', file.filename):
+                check_user_story(pull, file)
+            elif re.match(TESTS_PATH+r'(code\.png|graph\.png|whiteBox\.md|\.csproj|Docs/Unit-test/README\.md)$', file.filename):
+                print(f'Неизвестный файл `{file.filename}`')
+            else:
+                if mess is None:
+                    mess = 'Обнаружены неизвестные файлы:\n'
+                mess += f'- `{file.filename}`\n'
+    if mess:
+        pull.create_issue_comment(mess)
 
 def check_label(event):
     if 'Unit test' == event.label.name:
         issue = event.repo.get_issue(event.raw_data['issue']['number'])
         entities_labels = [l.name for l in issue.labels if re.search(ENTITIES, l.name)]
         if not entities_labels:
-            issue.create_comment(
-                f'Не найдены сопутствующие метки для `{event.label.name}`. {MESS_LABEL}'                
-            )
+            create_comment(event.issue,
+                f'Не найдены сопутствующие метки для `{event.label.name}`. {MESS_LABEL}')
+
+def create_comment(issue, comment):
+    cr_comm = issue.create_comment if  isinstance(issue, Issue) else issue.create_issue_comment
+    cr_comm(body=comment)
+
 
 def check_labels(issue):
-    create_comment = issue.create_comment if  isinstance(issue, Issue) else issue.create_issue_comment
     labels = set([l.name for l in issue.labels])
     if list({'Unit test'} & labels):
         entities_labels = [l.name for l in issue.labels if re.search(ENTITIES, l.name)]
         if not entities_labels:
-            create_comment(
-                f'Не найдены сопутствующие метки для `Unit test`. {MESS_LABEL}'
-            )
+            create_comment(issue, 
+                f'Не найдены сопутствующие метки для `Unit test`. {MESS_LABEL}')
     elif list({'Documentation'} & labels):
         if not list({'Methodological'} & labels):
-            create_comment(
-                f'Не найдены сопутствующие метки для `Documentation`. {MESS_LABEL}'
-            )
+            create_comment(issue, 
+                f'Не найдены сопутствующие метки для `Documentation`. {MESS_LABEL}')
     else: 
-        create_comment(
-            f'Метка определяющая тип задачи не найдена. {MESS_LABEL}'
-        )
+        create_comment(issue, 
+            f'Метка определяющая тип задачи не найдена. {MESS_LABEL}')
 
 def create_branch(event):
     rgx = re.search(WORK_BRANCH, event.raw_data['payload']['ref'])
@@ -430,9 +448,8 @@ def create_branch(event):
         if rgx is not None and len(rgx.regs) > 1:
             number = rgx[1]
             try:
-                event.repo.get_issue(int(number)).create_comment(
-                    f"{MESS_BRANCH} Созданная ветка `{event.raw_data['payload']['ref']}` была удалена."
-                )
+                create_comment(event.repo.get_issue(int(number)),
+                    f"{MESS_BRANCH} Созданная ветка `{event.raw_data['payload']['ref']}` была удалена.")
             except: 
                 print(traceback.format_exc())
 def push_event(event):
@@ -443,8 +460,9 @@ def push_event(event):
         if re_branch_name is not None and len(re_branch_name.regs) > 1:
                 try:
                     issue = event.repo.get_issue(re_branch_name[1])
-                    issue.create_comment(f'Ветка {branch_name} в которой Вы ведете активность не соответствует [требованиям]'
-                    '(https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md)')
+                    create_comment(issue,
+                        f'Ветка {branch_name} в которой Вы ведете активность не соответствует [требованиям]'
+                        '(https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/branches.md)')
                 except: pass
     if branch_name not in ['master', 'dev']:
         command = f'cd ..\\Student-timetable && git checkout dev && git pull && git checkout {branch_name} && git pull'
@@ -498,7 +516,9 @@ EVENTS = {
     'review_request_removed' : mute,
     'ready_for_review' : mute,
     'comment_deleted' : mute,
-    'unlabeled' : mute
+    'unlabeled' : mute,
+    'head_ref_restored' : mute,
+    'WatchEvent' : mute
 }
 
 def to_string(event):

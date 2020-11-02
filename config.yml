@@ -1,4 +1,4 @@
-CORRECT_TIME: 0.03
+CORRECT_TIME: 0.05
 ENTITIES:
 - AcademicDegree
 - AcademicLoad
@@ -15,7 +15,8 @@ ENTITIES:
 - TrainingProfiles
 - TypesOfOccupations
 - University
-INACTIVE_DAYS: 2
+- CourseSchedule
+INACTIVE_DAYS: 7
 ORG: Students-of-the-city-of-Kostroma
 REPO: Student-timetable
 TEAM: Elite
@@ -49,7 +50,7 @@ TO_STRING:
   - issue.number
   - issue.title
   assigned:
-  - assignee.login
+  - assigner.login
   - issue.number
   - issue.title
   base_ref_changed:
@@ -111,7 +112,7 @@ TO_STRING:
   - issue.number
   - issue.title
   unassigned:
-  - assignee.login
+  - assigner.login
   - issue.number
   - issue.title
   unlabeled:

@@ -73,8 +73,6 @@ class Repository:
                 issue_inactive_days = issue_inactive_delta.days
                 issue_inactive_hours = int(issue_inactive_delta.seconds / 3600)
                 branch = None
-                try: branch = self.repo.get_branch('task-'+ str(issue.number))
-                except: pass
                 try: branch = self.repo.get_branch('issue-'+ str(issue.number))
                 except: pass
                 # количество дней отсутствия активности в ветке
@@ -97,10 +95,7 @@ class Repository:
                 if branch is not None:
                     # Ищем запрос связанный с веткой
                     for pr in self.repo.get_pulls(state='open'):
-                        review_requests = pr.get_review_requests()
-                        if pr.raw_data['head']['ref'] == branch.name\
-                        and 'YuriSilenok' not in [u.login for u in review_requests[0]]\
-                        and 'Elite' not in [t.name for t in review_requests[1]]:
+                        if pr.raw_data['head']['ref'] == branch.name:
                             pull_inactive = pr
                             break                
                 if pull_inactive is not None:
