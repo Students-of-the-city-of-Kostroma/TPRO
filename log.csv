@@ -1,4 +1,25 @@
 id,date,event,user,message
+3969949941,2020-11-07 17:43:02,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+3969949942,2020-11-07 17:43:02,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+14114143908,2020-11-07 17:40:44,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Форма расписания отображается на весь экран
+14114151871,2020-11-07 17:43:02,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok Юрий Викторович, реализовано отображение формы расписания на весь экран (https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1364/commits/f711d8747e3ae6bb6cb52ab47cbc35eaa7c38f2d).
+
+
+
+Прошу продолжить ревью."
+14119284790,2020-11-08 19:57:13,IssueCommentEvent,NesgovorovVS, 1367 Приболел. Завтра займусь задачей.
+14119286376,2020-11-08 19:57:35,IssueCommentEvent,NesgovorovVS, 1371 https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1367#issuecomment-723635061
+14119287819,2020-11-08 19:57:57,IssueCommentEvent,NesgovorovVS, 1373 https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1367#issuecomment-723635061
+14180718347,2020-11-13 12:39:40,IssueCommentEvent,NesgovorovVS," 1367 > Приболел. Завтра займусь задачей.
+
+
+
+Чуть дольше чем ожидалось. Завтра вечером приступлю снова ко всем задачам."
+14180721070,2020-11-13 12:39:55,IssueCommentEvent,NesgovorovVS," 1373 > [#1367 (comment)](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1367#issuecomment-723635061)
+
+
+
+https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1367#issuecomment-726659794"
 14112671783,2020-11-07 09:48:42,IssueCommentEvent,YuriSilenok," 1364 в целом устраивает, добавьте пробел после номера аудитории и перед скобкой с типом занятия. переносы стабилизируются, так как на этой форме много информации, то стоит ее запускать сразу с максимальным размером. В свойствах формы есть такой параметр. не забывайте коммитить."
 14102492866,2020-11-06 11:50:47,IssueCommentEvent,NordScandinavian," 1358 Возникли проблемы, работа застопорилась"
 3964552552,2020-11-06 00:51:33,review_request_removed,NesgovorovVS, 1368 Разработка сценариев для автотестов расположенных в файле UT_Insert_CUniversity
