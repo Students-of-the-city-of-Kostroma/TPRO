@@ -1,4 +1,13 @@
 id,date,event,user,message
+4015783981,2020-11-19 16:15:31,unassigned,YuriSilenok, NesgovorovVS 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
+4015783991,2020-11-19 16:15:31,assigned,NesgovorovVS, NesgovorovVS 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
+4015784542,2020-11-19 16:15:38,unassigned,YuriSilenok, NesgovorovVS 1065 Исправить сбои в автотестах расположенных в файле  UT_Delete_CGroup 
+4015784551,2020-11-19 16:15:38,assigned,NesgovorovVS, NesgovorovVS 1065 Исправить сбои в автотестах расположенных в файле  UT_Delete_CGroup 
+4015785811,2020-11-19 16:15:57,unassigned,NesgovorovVS, NesgovorovVS 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
+4015785817,2020-11-19 16:15:57,unassigned,NesgovorovVS, NesgovorovVS 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
+4015786011,2020-11-19 16:16:00,assigned,NesgovorovVS, NesgovorovVS 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
+4015786634,2020-11-19 16:16:09,unassigned,NesgovorovVS, NesgovorovVS 1240 Разработать и автоматизировать сценарии тестирования метода Insert (Model model) сущности Нагрузка
+4015786861,2020-11-19 16:16:12,assigned,NesgovorovVS, NesgovorovVS 1240 Разработать и автоматизировать сценарии тестирования метода Insert (Model model) сущности Нагрузка
 4015782308,2020-11-19 16:15:07,unassigned,YuriSilenok, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
 4015782557,2020-11-19 16:15:10,assigned,NesgovorovVS, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
 4014737087,2020-11-19 12:11:02,closed,YuriSilenok, 1374 Уточнить структуру для модульных тестов моделей
