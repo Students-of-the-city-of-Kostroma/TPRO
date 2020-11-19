@@ -1,4 +1,6 @@
 id,date,event,user,message
+4015782308,2020-11-19 16:15:07,unassigned,YuriSilenok, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+4015782557,2020-11-19 16:15:10,assigned,NesgovorovVS, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
 4014737087,2020-11-19 12:11:02,closed,YuriSilenok, 1374 Уточнить структуру для модульных тестов моделей
 4014737111,2020-11-19 12:11:02,moved_columns_in_project,YuriSilenok, 1374 Уточнить структуру для модульных тестов моделей
 4014737284,2020-11-19 12:11:05,closed,YuriSilenok, 1370 Статистика активности по проекту
