@@ -1,4 +1,7 @@
 id,date,event,user,message
+14259114931,2020-11-20 10:40:50,IssueCommentEvent,YuriSilenok," 1364 Если вы считаете что ваша работа готова к повторной проверке каким-то из участников проекта, нужно нажать на соответствующую кнопку, см.скрин ниже.
+![image](https://user-images.githubusercontent.com/14871471/99773006-d7879e00-2b1c-11eb-9bfa-a79a5c884e80.png)
+"
 4015783981,2020-11-19 16:15:31,unassigned,YuriSilenok, NesgovorovVS 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
 4015783991,2020-11-19 16:15:31,assigned,NesgovorovVS, NesgovorovVS 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
 4015784542,2020-11-19 16:15:38,unassigned,YuriSilenok, NesgovorovVS 1065 Исправить сбои в автотестах расположенных в файле  UT_Delete_CGroup 
