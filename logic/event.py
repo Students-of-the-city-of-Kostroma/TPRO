@@ -362,29 +362,29 @@ def check_user_story(pull, file):
 
         if ( ment == 'fail' ):
             err = re.match( failing_text[ ment ], text_file[line] ).group(0)
-            comments = add_failing_comment(comments, f'В строке {line + 1} символ `{err}` не обрабатывается')
-            continue
+            comments = f'В строке {line + 1} символ `{err}` не обрабатывается'
+            break
 
         if ( ment == 'numbering' ):
             if ( re.match(failing_text[ment], text_file[line]) ):
                 err = re.match( failing_text[ ment ], text_file[line] ).group(0)
                 ment = 'lists'
-                comments = add_failing_comment(comments, f'В строке {line + 1} вместо символа `{err}` ожидается символ `{failing_text[ment]}`')
-            continue
+                comments = f'В строке {line + 1} вместо символа `{err}` ожидается символ `{failing_text[ment]}`'
+                break
 
 
         if ( re.match( failing_text[ment], text_file[line] ) is None ):
-            comments = add_failing_comment(comments, f'В строке {line + 1} ожидается `{failing_text[ment]}`')
-            continue
+            comments = f'В строке {line + 1} ожидается `{failing_text[ment]}`'
+            break
         else:
             if( ment == 'title_third_level' and second == 0):
-                comments = add_failing_comment(comments, f'В строке {line + 1} нарушено последовательность уровня заглавий')
-                continue
+                comments = f'В строке {line + 1} нарушено последовательность уровня заглавий'
+                break
 
             if (ment == 'title_second_level'):
                 if ( first == 0 ):
-                    comments = add_failing_comment(comments, f'В строке {line + 1} нарушено последовательность уровня заглавий')
-                    continue
+                    comments = f'В строке {line + 1} нарушено последовательность уровня заглавий'
+                    break
                 second = second + 1
 
             if ( ment == 'title_first_level' ):
