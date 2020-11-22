@@ -326,6 +326,8 @@ def check_user_story(pull, file):
             r'^\#{1}' : 'title_first_level',
 
             r'^\-{1}' : 'lists',
+
+            r'^\*{1}' : 'criterion',
             
             r'^\W' : 'fail'
         },
@@ -339,6 +341,8 @@ def check_user_story(pull, file):
         'title_third_level' : r'^\#{3}\b[А-Я]',
 
         'lists' : r'^\-{1}\b[А-Я]',
+
+        'criterion' : r'^\*\s\*{2}\D{1,20}\*{2}$',
 
         'fail' : r'^\W'
     }
@@ -373,7 +377,7 @@ def check_user_story(pull, file):
                 break
 
 
-        if ( re.match( failing_text[ment], text_file[line] ) is None ):
+        if ( re.match( failing_text[ment], text_file[line] ) == None ):
             comments = f'В строке {line + 1} ожидается `{failing_text[ment]}`'
             break
         else:
