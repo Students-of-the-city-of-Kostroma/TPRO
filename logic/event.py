@@ -349,7 +349,7 @@ def check_user_story(pull, file):
 
     first = 0
     second = 0
-    comments = ''
+    comment = []
 
     for line in range(len(text_file)):
         ment = 'alien_element'
@@ -366,34 +366,38 @@ def check_user_story(pull, file):
 
         if ( ment == 'fail' ):
             err = re.match( failing_text[ ment ], text_file[line] ).group(0)
-            comments = f'В строке {line + 1} символ `{err}` не обрабатывается'
-            break
+            comment.append(f'В строке {line + 1} символ `{err}` не обрабатывается')
+            continue
 
         if ( ment == 'numbering' ):
             if ( re.match(failing_text[ment], text_file[line]) ):
                 err = re.match( failing_text[ ment ], text_file[line] ).group(0)
                 ment = 'lists'
-                comments = f'В строке {line + 1} вместо символа `{err}` ожидается символ `{failing_text[ment]}`'
-                break
+                comment.append(f'В строке {line + 1} вместо символа `{err}` ожидается символ `{failing_text[ment]}`')
+                continue
 
 
         if ( re.match( failing_text[ment], text_file[line] ) == None ):
-            comments = f'В строке {line + 1} ожидается `{failing_text[ment]}`'
-            break
+            comment.append(f'В строке {line + 1} ожидается `{failing_text[ment]}`')
+            continue
         else:
             if( ment == 'title_third_level' and second == 0):
-                comments = f'В строке {line + 1} нарушено последовательность уровня заглавий'
-                break
+                comment.append(f'В строке {line + 1} нарушено последовательность уровня заглавий')
+                continue
 
             if (ment == 'title_second_level'):
                 if ( first == 0 ):
-                    comments = f'В строке {line + 1} нарушено последовательность уровня заглавий'
-                    break
+                    comment.append(f'В строке {line + 1} нарушено последовательность уровня заглавий')
+                    continue
                 second = second + 1
 
             if ( ment == 'title_first_level' ):
                 first = first + 1
 
+    comments = ''
+    for com in comment:
+        comments = comments + com + '\n'
+        
     pull.create_issue_comment( comments )
 
 def check_files(pull):
