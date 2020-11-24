@@ -393,12 +393,14 @@ def check_user_story(pull, file):
 
             if ( ment == 'title_first_level' ):
                 first = first + 1
+    
 
-    comments = ''
-    for com in comment:
-        comments = comments + com + '\n'
-        
-    pull.create_issue_comment( comments )
+    if (comment != []):
+        comments = ''
+        for com in comment:
+            comments = comments + com + '\n'
+            
+        pull.create_issue_comment( comments )
 
 def check_files(pull):
     mess = None
