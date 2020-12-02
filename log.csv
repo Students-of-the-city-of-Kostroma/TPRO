@@ -1,4 +1,130 @@
 id,date,event,user,message
+4014737087,2020-11-19 12:11:02,closed,YuriSilenok, 1374 Уточнить структуру для модульных тестов моделей
+4014737111,2020-11-19 12:11:02,moved_columns_in_project,YuriSilenok, 1374 Уточнить структуру для модульных тестов моделей
+4014737284,2020-11-19 12:11:05,closed,YuriSilenok, 1370 Статистика активности по проекту
+4014737484,2020-11-19 12:11:08,closed,YuriSilenok, 1359 Текущая активность по задачам
+4014737503,2020-11-19 12:11:08,moved_columns_in_project,YuriSilenok, 1359 Текущая активность по задачам
+4014737944,2020-11-19 12:11:15,unassigned,NesgovorovVS, YuriSilenok 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+4014737956,2020-11-19 12:11:15,assigned,YuriSilenok, YuriSilenok 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+4014738253,2020-11-19 12:11:19,unassigned,VinogradovAlexandr781227, YuriSilenok 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
+4014738258,2020-11-19 12:11:19,assigned,YuriSilenok, YuriSilenok 1346 Разработать функцию корректировки учебной нагрузки для студентов вуза
+4014739970,2020-11-19 12:11:43,unassigned,NordScandinavian, YuriSilenok 1095 Исправить сбои в автотестах расположенных в файле  UT_Delete_CInstitute 
+4014739989,2020-11-19 12:11:43,assigned,YuriSilenok, YuriSilenok 1095 Исправить сбои в автотестах расположенных в файле  UT_Delete_CInstitute 
+4014740496,2020-11-19 12:11:50,unassigned,NordScandinavian, YuriSilenok 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
+4014740514,2020-11-19 12:11:50,assigned,YuriSilenok, YuriSilenok 1088 Исправить сбои в автотестах расположенных в файле UT_Update_CUniversity 
+4014740998,2020-11-19 12:11:56,unassigned,NesgovorovVS, YuriSilenok 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
+4014741007,2020-11-19 12:11:56,assigned,YuriSilenok, YuriSilenok 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
+4014741434,2020-11-19 12:12:03,unassigned,NesgovorovVS, YuriSilenok 1065 Исправить сбои в автотестах расположенных в файле  UT_Delete_CGroup 
+4014741440,2020-11-19 12:12:03,assigned,YuriSilenok, YuriSilenok 1065 Исправить сбои в автотестах расположенных в файле  UT_Delete_CGroup 
+4014741982,2020-11-19 12:12:10,unassigned,NordScandinavian, YuriSilenok 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
+4014741987,2020-11-19 12:12:11,assigned,YuriSilenok, YuriSilenok 1032 Исправить сбои в автотестах расположенных в файле UT_Insert_CTeacher
+4014742117,2020-11-19 12:12:12,labeled,YuriSilenok, 1375 info
+4014742122,2020-11-19 12:12:12,milestoned,YuriSilenok, Backlog 1375 Текущая активность по задачам
+4014742133,2020-11-19 12:12:12,assigned,YuriSilenok, YuriSilenok 1375 Текущая активность по задачам
+4014742809,2020-11-19 12:12:22,labeled,YuriSilenok, 1376 info
+4014742814,2020-11-19 12:12:22,milestoned,YuriSilenok, Backlog 1376 Статистика активности по проекту
+4014742830,2020-11-19 12:12:22,assigned,YuriSilenok, YuriSilenok 1376 Статистика активности по проекту
+4015782308,2020-11-19 16:15:07,unassigned,YuriSilenok, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+4015782557,2020-11-19 16:15:10,assigned,NesgovorovVS, NesgovorovVS 1354 Реструктуризация проекта UnitTestOfTimetableOfClasse
+4015783981,2020-11-19 16:15:31,unassigned,YuriSilenok, NesgovorovVS 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
+4015783991,2020-11-19 16:15:31,assigned,NesgovorovVS, NesgovorovVS 1087 Исправить сбои в автотестах расположенных в файле  UT_Insert_CUniversity
+4015784542,2020-11-19 16:15:38,unassigned,YuriSilenok, NesgovorovVS 1065 Исправить сбои в автотестах расположенных в файле  UT_Delete_CGroup 
+4015784551,2020-11-19 16:15:38,assigned,NesgovorovVS, NesgovorovVS 1065 Исправить сбои в автотестах расположенных в файле  UT_Delete_CGroup 
+4015785811,2020-11-19 16:15:57,unassigned,NesgovorovVS, NesgovorovVS 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
+4015785817,2020-11-19 16:15:57,unassigned,NesgovorovVS, NesgovorovVS 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
+4015786011,2020-11-19 16:16:00,assigned,NesgovorovVS, NesgovorovVS 1373 Исправить замечания предъявляемые к проверке кода для запроса #1371
+4015786634,2020-11-19 16:16:09,unassigned,NesgovorovVS, NesgovorovVS 1240 Разработать и автоматизировать сценарии тестирования метода Insert (Model model) сущности Нагрузка
+4015786861,2020-11-19 16:16:12,assigned,NesgovorovVS, NesgovorovVS 1240 Разработать и автоматизировать сценарии тестирования метода Insert (Model model) сущности Нагрузка
+4021572132,2020-11-20 19:00:40,review_requested,ZhizhikinIvan," 1364 badsster Добавил расписание для студентов на форму ""расписание"""
+4021572161,2020-11-20 19:00:40,review_requested,ZhizhikinIvan," 1364 NordScandinavian Добавил расписание для студентов на форму ""расписание"""
+4021572234,2020-11-20 19:00:41,review_requested,ZhizhikinIvan," 1364 ifuwmnn Добавил расписание для студентов на форму ""расписание"""
+4021572433,2020-11-20 19:00:44,review_requested,ZhizhikinIvan," 1364 MyachevM Добавил расписание для студентов на форму ""расписание"""
+4028001563,2020-11-23 17:41:32,mentioned,YuriSilenok, 1374 Уточнить структуру для модульных тестов моделей
+4028001567,2020-11-23 17:41:32,subscribed,YuriSilenok, 1374 Уточнить структуру для модульных тестов моделей
+4028203529,2020-11-23 18:20:31,reopened,YuriSilenok, 1374 Уточнить структуру для модульных тестов моделей
+4028203602,2020-11-23 18:20:32,moved_columns_in_project,YuriSilenok, 1374 Уточнить структуру для модульных тестов моделей
+4028204682,2020-11-23 18:20:45,unassigned,YuriSilenok, YuriSilenok 1374 Уточнить структуру для модульных тестов моделей
+4028204690,2020-11-23 18:20:45,assigned,NesgovorovVS, YuriSilenok 1374 Уточнить структуру для модульных тестов моделей
+4028263387,2020-11-23 18:32:43,labeled,NesgovorovVS, 1377 Documentation
+4028263397,2020-11-23 18:32:43,milestoned,NesgovorovVS, Backlog 1377 Уточнил структуру для модульных тестов моделей
+4028263419,2020-11-23 18:32:43,assigned,NesgovorovVS, NesgovorovVS 1377 Уточнил структуру для модульных тестов моделей
+4028263426,2020-11-23 18:32:43,added_to_project,NesgovorovVS, 1377 Уточнил структуру для модульных тестов моделей
+14042298660,2020-11-01 15:43:22,IssueCommentEvent,YuriSilenok, 1371 создал [задачу](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/issues/1374) на уточнение требований к тестам для моделей.
+14042368038,2020-11-01 16:02:14,IssueCommentEvent,YuriSilenok, 1281 [зачтено](https://docs.google.com/spreadsheets/d/1uBd4d3VvI4rYeuXkXmqLyEZSitS8K9pfVUDtM3i1Vg4/edit#gid=870820066&range=M4)
+14042368052,2020-11-01 16:02:14,IssuesEvent,YuriSilenok, closed 1281 Исправить сбои в автотестах расположенных в файле UT_Deleted_CTeacher 
+14042566382,2020-11-01 16:50:51,DeleteEvent,YuriSilenok, issue-1347
+14042573686,2020-11-01 16:52:34,DeleteEvent,YuriSilenok, task-1087
+14042573867,2020-11-01 16:52:38,DeleteEvent,YuriSilenok, task-1240
+14042573978,2020-11-01 16:52:39,DeleteEvent,YuriSilenok, task-1328
+14042697653,2020-11-01 17:21:47,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok 
+
+Юрий Викторович, я делал такой вариант. Но получается вот что, если экран не полный. AutoScroll = true.
+
+![image](https://user-images.githubusercontent.com/47943099/97805234-ef7aa900-1c65-11eb-9c95-952737e47dca.png)
+
+Поэтому мне кажется, что мой вариант был лучше и расписание отображалось нормально."
+14082325702,2020-11-04 21:51:39,IssueCommentEvent,NordScandinavian," 1356 Возникли проблемы с ПК, пытаюсь решить ситуацию и разобраться с задачей"
+14097906433,2020-11-06 00:52:24,IssueCommentEvent,NesgovorovVS, 1360 Приболел. Временно отстранился от работы. Через 2 дня вернусь к таскам.
+14102492866,2020-11-06 11:50:47,IssueCommentEvent,NordScandinavian," 1358 Возникли проблемы, работа застопорилась"
+14112671783,2020-11-07 09:48:42,IssueCommentEvent,YuriSilenok," 1364 в целом устраивает, добавьте пробел после номера аудитории и перед скобкой с типом занятия. переносы стабилизируются, так как на этой форме много информации, то стоит ее запускать сразу с максимальным размером. В свойствах формы есть такой параметр. не забывайте коммитить."
+14114143908,2020-11-07 17:40:44,PushEvent,ZhizhikinIvan, refs/heads/issue-1326 Форма расписания отображается на весь экран
+14114151871,2020-11-07 17:43:02,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok Юрий Викторович, реализовано отображение формы расписания на весь экран (https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1364/commits/f711d8747e3ae6bb6cb52ab47cbc35eaa7c38f2d).
+
+
+
+Прошу продолжить ревью."
+14119284790,2020-11-08 19:57:13,IssueCommentEvent,NesgovorovVS, 1367 Приболел. Завтра займусь задачей.
+14119286376,2020-11-08 19:57:35,IssueCommentEvent,NesgovorovVS, 1371 https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1367#issuecomment-723635061
+14119287819,2020-11-08 19:57:57,IssueCommentEvent,NesgovorovVS, 1373 https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1367#issuecomment-723635061
+14180718347,2020-11-13 12:39:40,IssueCommentEvent,NesgovorovVS," 1367 > Приболел. Завтра займусь задачей.
+
+
+
+Чуть дольше чем ожидалось. Завтра вечером приступлю снова ко всем задачам."
+14180721070,2020-11-13 12:39:55,IssueCommentEvent,NesgovorovVS," 1373 > [#1367 (comment)](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1367#issuecomment-723635061)
+
+
+
+https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1367#issuecomment-726659794"
+14245792604,2020-11-19 12:11:02,IssuesEvent,YuriSilenok, closed 1374 Уточнить структуру для модульных тестов моделей
+14245793170,2020-11-19 12:11:05,IssuesEvent,YuriSilenok, closed 1370 Статистика активности по проекту
+14245793745,2020-11-19 12:11:08,IssuesEvent,YuriSilenok, closed 1359 Текущая активность по задачам
+14245794644,2020-11-19 12:11:12,PushEvent,YuriSilenok, refs/heads/issue-1326 Docs in task-1281
+14245794890,2020-11-19 12:11:14,IssueCommentEvent,YuriSilenok," 1354 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1354 составляет 19 дней. Активность в ветке issue-1354 составляет 21 дней. Активность по запросу #1371 составляет 10 дней. Нет запросов, которые должен проверить преподаватель"
+14245795744,2020-11-19 12:11:18,IssueCommentEvent,YuriSilenok," 1346 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1346 составляет 26 дней. Активность в ветке issue-1346 составляет 25 дней. Активность по запросу #1372 составляет 17 дней. Нет запросов, которые должен проверить преподаватель"
+14245797573,2020-11-19 12:11:28,DeleteEvent,YuriSilenok, issue-1328
+14245797642,2020-11-19 12:11:28,IssueCommentEvent,YuriSilenok, 1328 Ветка issue-1328 удалена
+14245800364,2020-11-19 12:11:43,IssueCommentEvent,YuriSilenok," 1095 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1095 составляет 40 дней. Активность в ветке issue-1095 составляет 33 дней. Активность по запросу #1358 составляет 13 дней. Нет запросов, которые должен проверить преподаватель"
+14245801709,2020-11-19 12:11:50,IssueCommentEvent,YuriSilenok," 1088 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1088 составляет 43 дней. Активность в ветке issue-1088 составляет 20 дней. Активность по запросу #1357 составляет 17 дней. Нет запросов, которые должен проверить преподаватель"
+14245802844,2020-11-19 12:11:55,IssueCommentEvent,YuriSilenok," 1087 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1087 составляет 19 дней. Активность в ветке issue-1087 составляет 25 дней. Активность по запросу #1368 составляет 13 дней. Нет запросов, которые должен проверить преподаватель"
+14245804097,2020-11-19 12:12:02,IssueCommentEvent,YuriSilenok," 1065 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1065 составляет 19 дней. Активность в ветке issue-1065 составляет 25 дней. Активность по запросу #1360 составляет 13 дней. Нет запросов, которые должен проверить преподаватель"
+14245805773,2020-11-19 12:12:10,IssueCommentEvent,YuriSilenok," 1032 Задача с Вас  снята, так как по ней давно не было активности. Активность по основной задаче #1032 составляет 43 дней. Активность в ветке issue-1032 составляет 33 дней. Активность по запросу #1356 составляет 14 дней. Нет запросов, которые должен проверить преподаватель"
+14245806262,2020-11-19 12:12:12,IssuesEvent,YuriSilenok, opened 1375 Текущая активность по задачам
+14245808290,2020-11-19 12:12:22,IssuesEvent,YuriSilenok, opened 1376 Статистика активности по проекту
+14259114931,2020-11-20 10:40:50,IssueCommentEvent,YuriSilenok," 1364 Если вы считаете что ваша работа готова к повторной проверке каким-то из участников проекта, нужно нажать на соответствующую кнопку, см.скрин ниже.
+
+![image](https://user-images.githubusercontent.com/14871471/99773006-d7879e00-2b1c-11eb-9bfa-a79a5c884e80.png)
+
+"
+14268670514,2020-11-21 02:00:29,IssueCommentEvent,VinogradovAlexandr781227, 1372 Извините пожалуйста. Перенесу комит на завтра. Интернет отвалился. С работы загружу
+14286051153,2020-11-23 17:41:32,IssueCommentEvent,NesgovorovVS," 1374 @YuriSilenok готов взять эту задачу, если вы её переоткроете и завершил бы полностью лабы с реструктуризацией т.е 1354 и 1373, этими тремя лабами закрыл бы все долги."
+14286175122,2020-11-23 17:50:24,IssueCommentEvent,YuriSilenok," 1374 Думаю эта задача имеет решение вот в [этом](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md) документе. Проверьте, так ли это?"
+14286494651,2020-11-23 18:13:17,IssueCommentEvent,NesgovorovVS," 1374 > Думаю эта задача имеет решение вот в [этом](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/Unit-test/README.md) документе. Проверьте, так ли это?
+
+
+
+Нет, не имеет, поэтому эта задача и была создана."
+14286598131,2020-11-23 18:20:32,IssueCommentEvent,YuriSilenok," 1374 Да, я не сразу вспомнил зачем эта задача была создана, в документации, которую я привел выше, описывались названия относительно контроллера и его методом, а относительно модели нет описания.  "
+14286598223,2020-11-23 18:20:32,IssuesEvent,YuriSilenok, reopened 1374 Уточнить структуру для модульных тестов моделей
+14286725650,2020-11-23 18:29:47,CreateEvent,NesgovorovVS, issue-1374
+14286748723,2020-11-23 18:31:26,PushEvent,NesgovorovVS, refs/heads/issue-1374 add
+14286766326,2020-11-23 18:32:44,PullRequestEvent,NesgovorovVS, opened 1377 Уточнил структуру для модульных тестов моделей
+14286843373,2020-11-23 18:38:29,PushEvent,NesgovorovVS, refs/heads/issue-1374 add text
+14287086687,2020-11-23 18:56:17,PushEvent,NesgovorovVS, refs/heads/issue-1374 new path
+14341216163,2020-11-28 00:11:59,IssueCommentEvent,NesgovorovVS, 1377 Здесь вроде всё. Завтра отправлю на проверку.
+14341219530,2020-11-28 00:12:40,IssueCommentEvent,NesgovorovVS, 1371 Завтра залью новые изменения на гит. В связи с новыми требованиями.
+14341221675,2020-11-28 00:13:05,IssueCommentEvent,NesgovorovVS, 1373 Завтра займусь этой задачей.
+14386349305,2020-12-02 16:09:46,PullRequestReviewEvent,NesgovorovVS," approved 1364 Добавил расписание для студентов на форму ""расписание"""
 4021572132,2020-11-20 19:00:40,review_requested,ZhizhikinIvan," 1364 badsster Добавил расписание для студентов на форму ""расписание"""
 4021572161,2020-11-20 19:00:40,review_requested,ZhizhikinIvan," 1364 NordScandinavian Добавил расписание для студентов на форму ""расписание"""
 4021572234,2020-11-20 19:00:41,review_requested,ZhizhikinIvan," 1364 ifuwmnn Добавил расписание для студентов на форму ""расписание"""
