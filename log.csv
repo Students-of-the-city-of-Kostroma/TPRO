@@ -1,4 +1,7 @@
 id,date,event,user,message
+14402270025,2020-12-03 17:43:07,IssueCommentEvent,NesgovorovVS, 1377 Временно не могу продолжать работу. В субботу-воскресенье закончу с задачами.
+14402273180,2020-12-03 17:43:20,IssueCommentEvent,NesgovorovVS, 1373 https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1377#issuecomment-738037801
+14402276640,2020-12-03 17:43:35,IssueCommentEvent,NesgovorovVS, 1354 https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1377#issuecomment-738037801
 14390303161,2020-12-02 20:58:57,PullRequestReviewEvent,ifuwmnn," approved 1364 Добавил расписание для студентов на форму ""расписание"""
 4062338439,2020-12-02 16:26:34,closed,YuriSilenok, 1376 Статистика активности по проекту
 4062338558,2020-12-02 16:26:36,closed,YuriSilenok, 1375 Текущая активность по задачам
