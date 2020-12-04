@@ -1,4 +1,7 @@
 id,date,event,user,message
+4074826985,2020-12-05 02:11:22,mentioned,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+4074826988,2020-12-05 02:11:22,subscribed,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
+14421400916,2020-12-05 02:11:22,IssueCommentEvent,ZhizhikinIvan," 1364 @YuriSilenok Юрий Викторович, двое моих коллег проверили задачу. Пожалуйста, проведите ревью."
 14402270025,2020-12-03 17:43:07,IssueCommentEvent,NesgovorovVS, 1377 Временно не могу продолжать работу. В субботу-воскресенье закончу с задачами.
 14402273180,2020-12-03 17:43:20,IssueCommentEvent,NesgovorovVS, 1373 https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1377#issuecomment-738037801
 14402276640,2020-12-03 17:43:35,IssueCommentEvent,NesgovorovVS, 1354 https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/pull/1377#issuecomment-738037801
