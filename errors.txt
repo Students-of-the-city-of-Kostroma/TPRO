@@ -20,7 +20,7 @@ Traceback (most recent call last):
     conn = self._new_conn()
   File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\connection.py", line 171, in _new_conn
     raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x03E57130>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x039F7130>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
 
 During handling of the above exception, another exception occurred:
 
@@ -31,7 +31,7 @@ Traceback (most recent call last):
     retries = retries.increment(
   File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\util\retry.py", line 439, in increment
     raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Students-of-the-city-of-Kostroma/Student-timetable (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x03E57130>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Students-of-the-city-of-Kostroma/Student-timetable (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x039F7130>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
 
 During handling of the above exception, another exception occurred:
 
@@ -58,4 +58,4 @@ Traceback (most recent call last):
     r = adapter.send(request, **kwargs)
   File "C:\Users\VB\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\adapters.py", line 516, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Students-of-the-city-of-Kostroma/Student-timetable (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x03E57130>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/Students-of-the-city-of-Kostroma/Student-timetable (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x039F7130>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
