@@ -1,4 +1,24 @@
 id,date,event,user,message
+14443399562,2020-12-07 22:35:31,IssueCommentEvent,YuriSilenok, 1377 Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+14443399856,2020-12-07 22:35:33,IssueCommentEvent,YuriSilenok," 1377 Обнаружены неизвестные файлы:
+- `Docs/Unit-test/README.md`
+"
+14443400852,2020-12-07 22:35:38,IssueCommentEvent,YuriSilenok, 1377 Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+14443401035,2020-12-07 22:35:39,IssueCommentEvent,YuriSilenok," 1377 Обнаружены неизвестные файлы:
+- `Docs/Unit-test/README.md`
+"
+14443402169,2020-12-07 22:35:46,IssueCommentEvent,YuriSilenok, 1377 Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+14443402426,2020-12-07 22:35:47,IssueCommentEvent,YuriSilenok," 1377 Обнаружены неизвестные файлы:
+- `Docs/Unit-test/README.md`
+"
+14443403422,2020-12-07 22:35:53,IssueCommentEvent,YuriSilenok, 1377 Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+14443403644,2020-12-07 22:35:54,IssueCommentEvent,YuriSilenok," 1377 Обнаружены неизвестные файлы:
+- `Docs/Unit-test/README.md`
+"
+14443404689,2020-12-07 22:36:00,IssueCommentEvent,YuriSilenok, 1377 Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+14443404860,2020-12-07 22:36:01,IssueCommentEvent,YuriSilenok," 1377 Обнаружены неизвестные файлы:
+- `Docs/Unit-test/README.md`
+"
 4081329560,2020-12-07 22:34:09,review_requested,YuriSilenok, 1377 ifuwmnn Уточнил структуру для модульных тестов моделей
 4081329561,2020-12-07 22:34:09,review_requested,YuriSilenok, 1377 MyachevM Уточнил структуру для модульных тестов моделей
 4081329562,2020-12-07 22:34:09,review_requested,YuriSilenok, 1377 NordScandinavian Уточнил структуру для модульных тестов моделей
