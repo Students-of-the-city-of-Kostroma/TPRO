@@ -1,4 +1,8 @@
 id,date,event,user,message
+4081409437,2020-12-07 22:54:26,closed,YuriSilenok, 1326 На форму расписание добавить расписание для студентов
+4081409509,2020-12-07 22:54:26,moved_columns_in_project,YuriSilenok, 1326 На форму расписание добавить расписание для студентов
+14443600337,2020-12-07 22:54:26,IssueCommentEvent,YuriSilenok, 1326 [зачтено](https://docs.google.com/spreadsheets/d/1uBd4d3VvI4rYeuXkXmqLyEZSitS8K9pfVUDtM3i1Vg4/edit#gid=1029316146&range=L10)
+14443600424,2020-12-07 22:54:26,IssuesEvent,YuriSilenok, closed 1326 На форму расписание добавить расписание для студентов
 4081382877,2020-12-07 22:47:06,referenced,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
 4081382884,2020-12-07 22:47:06,merged,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
 4081382905,2020-12-07 22:47:06,closed,ZhizhikinIvan," 1364 Добавил расписание для студентов на форму ""расписание"""
