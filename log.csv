@@ -1,4 +1,7 @@
 id,date,event,user,message
+14443447702,2020-12-07 22:40:03,PullRequestReviewEvent,YuriSilenok, commented 1377 Уточнил структуру для модульных тестов моделей
+14443447719,2020-12-07 22:40:02,PullRequestReviewCommentEvent,YuriSilenok," 1377 Logs это не модель, MTeacher модель. Классы, которые начинаются с M/"
+14443466034,2020-12-07 22:41:40,PullRequestReviewEvent,YuriSilenok, commented 1377 Уточнил структуру для модульных тестов моделей
 14443399562,2020-12-07 22:35:31,IssueCommentEvent,YuriSilenok, 1377 Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
 14443399856,2020-12-07 22:35:33,IssueCommentEvent,YuriSilenok," 1377 Обнаружены неизвестные файлы:
 - `Docs/Unit-test/README.md`
