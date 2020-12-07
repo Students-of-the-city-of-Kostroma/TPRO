@@ -1,4 +1,16 @@
 id,date,event,user,message
+4081329560,2020-12-07 22:34:09,review_requested,YuriSilenok, 1377 ifuwmnn Уточнил структуру для модульных тестов моделей
+4081329561,2020-12-07 22:34:09,review_requested,YuriSilenok, 1377 MyachevM Уточнил структуру для модульных тестов моделей
+4081329562,2020-12-07 22:34:09,review_requested,YuriSilenok, 1377 NordScandinavian Уточнил структуру для модульных тестов моделей
+4081329563,2020-12-07 22:34:09,review_requested,YuriSilenok, 1377 VinogradovAlexandr781227 Уточнил структуру для модульных тестов моделей
+4081329566,2020-12-07 22:34:09,review_requested,YuriSilenok, 1377 ZhizhikinIvan Уточнил структуру для модульных тестов моделей
+4081331972,2020-12-07 22:34:44,mentioned,YuriSilenok, 1377 Уточнил структуру для модульных тестов моделей
+4081331973,2020-12-07 22:34:44,subscribed,YuriSilenok, 1377 Уточнил структуру для модульных тестов моделей
+14443385575,2020-12-07 22:34:13,IssueCommentEvent,YuriSilenok, 1377 Не найдены сопутствующие метки для `Documentation`. Нарушены [требования](https://github.com/Students-of-the-city-of-Kostroma/Student-timetable/blob/dev/Docs/labels.md) для меток.
+14443385787,2020-12-07 22:34:14,IssueCommentEvent,YuriSilenok," 1377 Обнаружены неизвестные файлы:
+- `Docs/Unit-test/README.md`
+"
+14443391208,2020-12-07 22:34:44,IssueCommentEvent,NesgovorovVS," 1377 @YuriSilenok добавил только вас на проверку, т.к требования вам виднее."
 4081328628,2020-12-07 22:33:56,review_requested,NesgovorovVS, 1377 YuriSilenok Уточнил структуру для модульных тестов моделей
 4081275345,2020-12-07 22:20:34,moved_columns_in_project,YuriSilenok," 1364 Добавил расписание для студентов на форму ""расписание"""
 14443237238,2020-12-07 22:20:34,PullRequestReviewEvent,YuriSilenok," approved 1364 Добавил расписание для студентов на форму ""расписание"""
